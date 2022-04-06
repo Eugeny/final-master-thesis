@@ -1,0 +1,113 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Uni Duesseldorf
+% Lehrstuhl fuer Datenbanken und Informationssysteme
+% Vorlage fuer Bachelor-/Masterarbeiten
+% Optimiert fuer den Original-Latex-Kompiler LATEX.EXE (LaTeX=>PS=>PDF)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Ueberarbeitung für pdflatex (LaTeX=>PDF)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Vorlage Changelog:
+% 10.09.2015 (Matthias Liebeck): Nummerierung des Inhaltsverzeichnis nun römisch, Beispiel für einen Anhang eingebaut, \raggedbottom hinter sections eingefügt
+% 11.07.2018 (Matthias Liebeck): Ersetzung des Bibliographiestils, Einsatz von Biber
+% 04.09.2018 (Matthias Liebeck):
+%   * Bibtex: unnötige Bibtexfelder beim Rendern ausblenden (thx @ Markus Brenneis)
+%   * ngerman: "et al." im BibTeX für drei oder mehr Autoren
+%   * Neuer Befehl \sectionforcestartright: Sections immer rechts beginnen (thx @ Philipp Grawe)
+%   * ngerman: Deutsche Anführungszeichen im Literaturverzeichnis (thx @ Markus Brenneis)
+%   * ngerman: Deutsche Anführungszeichen im Literaturverzeichnis (thx @ Markus Brenneis)
+% 16.10.2018 (Matthias Liebeck): Zwei fixes an \sectionforcestartright (thx @ Markus Brenneis)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%% BEGINN EINSTELLUNG FUER DIE ARBEIT. UNBEDINGT ERFORDERLICH! %%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Geben Sie Ihren Namen hier an:
+
+\newcommand{\bearbeiter}{Hanna Pankova}
+
+% Geben Sie hier den Titel Ihrer Arbeit an:
+\newcommand{\titel}{AI-based fluorescent labeling for cell line development}
+
+% Geben Sie das Datum des Beginns und Ende der Bachelorarbeit ein:
+\newcommand{\beginndatum}{01. April 2022}
+\newcommand{\abgabedatum}{29. August 2022}
+
+% Geben Sie die Namen des Erst- und Zweitgutachters an:
+\newcommand{\erstgutachter}{Prof. Dr. Markus Kollmann}
+\newcommand{\zweitgutachter}{Dr. Wolfgang Halter}
+
+% Falls Sie die Arbeit zweiseitig ausdrucken wollen,
+% benutzen Sie die folgende Zeile mit
+% \AN fuer zweiseitigen Druck
+% \AUS fuer einseitigen Druck
+\newcommand{\zweiseitig}{\AN}
+% true fuer biber, false fuer klassischen Zitierstil
+%\newcommand{\biber}{false}
+\newcommand{\biber}{true}
+
+% Falls Sections immer rechts beginnen sollen. Gerade für Masterarbeiten
+% interessant. Bei kurzen Bachelorarbeiten eher weniger zu verwenden.
+\newcommand{\sectionforcestartright}{false}
+%\newcommand{\sectionforcestartright}{true}
+
+% Falls die Arbeit in englischer Sprache verfasst
+% werden soll, dann benutzen Sie die folgende Zeile mit
+% englisch fuer englische Sprache
+% deutsch fuer deutsche Sprache
+\newcommand{\sprache}{englisch}
+
+% Hier wird eingestellt, ob es sich bei der Arbeit um eine Bachelor-
+% oder Masterarbeit handelt (unpassendes auskommentieren!):
+\newcommand{\arbeit}{Master thesis}
+%~ \newcommand{\arbeit}{Masterarbeit}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%% ENDE EINSTELLUNGEN %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Die folgende Zeile NICHT EDITIEREN oder loeschen
+\input{imports}
+\begin{document}
+\input{titelmakros}
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%% BEGINN TEXTTEIL %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Text entweder direkt hier hinein schreiben oder, im Sinne der
+% besseren Uebersichtlich- und Bearbeitbarkeit mittels \input die
+% einzelnen Textteile hier einbinden.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{einleitung}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%% ENDE TEXTTEIL %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\clearpage
+
+% Entfernen Sie das Kommentar aus der nachfolgenden Zeile, falls Sie einen Anhang in der Arbeit verwenden wollen. Beachten Sie, dass Sie sich im Verlauf der Arbeit mit \ref{...} (z.B. \ref{anhang:zusatz1}) auf den Anhang beziehen.
+%\input{anhang}
+
+\ifthenelse{\boolean{\biber}}{ %with biber do
+	\DeclareNameAlias{sortname}{first-last}
+	\printbibliography[heading=bibintoc, title=\references]
+}{ %without biber do
+	\bibliography{references}
+	\bibliographystyle{alphadin}
+}
+%\vspace*{\fill}
+
+\clearpage
+
+\listoffigures
+
+\listoftables
+
+%\pagebreak
+
+%\printindex
+\end{document}

@@ -1,0 +1,59 @@
+\input{chapter 1.tex}
+\input{chapter 2.tex}
+\ifthenelse{\boolean{\biber}}{ % Beispiel um mit Biber zu zitieren (\citet und \citep)
+	\citet{Con97} hat ein Buch geschrieben. Es gibt auch andere Arbeiten \citep{PeHe97} die referenziert sind. In Abbildung \ref{fig_Gallien} ist ein Sachverhalt dargestellt.
+
+
+	1 Autor: \citet{Con97} \hspace*{1cm} \citep{Con97}\\
+	2 Autoren: \citet{IWNLP} \hspace*{1cm} \citep{IWNLP}\\
+	3 Autoren: \citet{liebeck-esau-conrad:2016:ArgMining2016} \hspace*{1cm} \citep{liebeck-esau-conrad:2016:ArgMining2016}
+
+	Online resource: \citet{ILSVRC2016}
+}{ %  Beispiel um klassisch zu zitieren (\cite)
+	\cite{Con97} hat ein Buch geschrieben. Es gibt auch andere Arbeiten \cite{PeHe97} die referenziert sind. In Abbildung \ref{fig_Gallien} ist ein Sachverhalt dargestellt.
+
+
+	1 Autor: \cite{Con97} \hspace*{1cm} \cite{Con97}\\
+	2 Autoren: \cite{IWNLP} \hspace*{1cm} \cite{IWNLP}\\
+	3 Autoren: \cite{liebeck-esau-conrad:2016:ArgMining2016} \hspace*{1cm} \cite{liebeck-esau-conrad:2016:ArgMining2016}
+
+	Online resource: \cite{ILSVRC2016}
+}
+
+\begin{figure}[htb]
+	\begin{center}
+		\includegraphics[width=175pt, angle=270]{bilder/Galia}
+		\caption{Gallien zur Zeit Caesars}\label{fig_Gallien}
+	\end{center}
+\end{figure}
+
+
+\begin{table}[htb]
+	\begin{center}
+		\begin{tabular}{|l|l|l|}
+			\hline
+			Jahr  & Erster Consul        & Zweiter Consul        \\
+			\hline \hline
+			1     & C. Caesar            & L. Aemilius Paullus   \\
+			2     & P. Vinicius          & P. Alfenus Varus      \\
+			3     & L. Aelius Lamia      & M. Servilius          \\
+			4     & Sex. Aelius Catus    & C. Sentius Saturninus \\
+			5     & L. Valerius Messalla & Cn. Cornelius Cinna   \\
+			suff. & C. Vibius Postumus   & C. Ateius Capito      \\
+			6     & M. Aemilius Lepidus  & L. Arruntius          \\
+			\hline
+		\end{tabular}
+		\caption{Römische Konsulen}\label{tab_Konsulen}
+	\end{center}
+\end{table}
+
+
+\pagebreak
+
+\input{chapter 2.tex}
+\input{summary.tex}
+
+\pagebreak
+\section{Weiteres Kapitel}\raggedbottom
+\subsection{Unterkapitel}
+\subsection{Unterkapitel}

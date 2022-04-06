@@ -1,0 +1,124 @@
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Obere Titelmakros. Editieren Sie diese Datei nur, wenn
+% Sie sich ABSOLUT sicher sind, was Sie da tun!!!
+% (Z.B. zum Abaendern der BA-Vorlage in eine MA-Vorlage)
+% Uni Duesseldorf
+% Lehrstuhl fuer Datenbanken und Informationssysteme
+% Version 2.2 - 2.3.2010
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\AN}{twoside}
+\newcommand{\AUS}{}
+
+
+%\newcommand{\englisch}{}
+%\newcommand{\deutsch}{\usepackage[german]{babel}}
+
+%% Die folgenden auskommentierten Optionen dienen der automatischen
+%% Erkennung des Latex-Kompilers und dem Setzen der davon abhängigen
+%% Einstellungen. Bei Problem z.B. mit dem Einbinden von verschiedenen
+%% Grafiktypen bei Verwendung von PdfLatex oder Latex, einfach die
+%% verschiedenen \usepackage(s) ausprobieren. (Mit diesen Einstellungen
+%% funktionierte diese Vorlage bei der Verwenundg von latex.exe als
+%% Kompiler bei den meisten Studierenden.)
+
+%\newif\ifpdf \ifx\pdfoutput\undefined
+%\pdffalse % we are not running pdflatex
+%\else
+%\pdfoutput=1 % we are running pdflatex
+%\pdfcompresslevel=9 % compression level for text and image;
+%\pdftrue \fi
+
+\documentclass[11pt,a4paper, \zweiseitig]{article}
+\usepackage{ifthen}
+
+
+%\usepackage[iso]{umlaute}
+\usepackage[utf8]{inputenc}
+\usepackage{palatino} % palatino Schriftart
+%\usepackage{makeidx} % um ein Index zu erstellen
+\usepackage[nottoc]{tocbibind}
+\usepackage[T1]{fontenc} %fuer richtige Trennung bei Umlauten
+\usepackage{fancybox} % fuer die Rahmen
+\usepackage{shortvrb}
+\usepackage{url}
+\usepackage{xcolor}
+\usepackage[colorlinks,citecolor=blue,linkcolor=black]{hyperref} %anklickbares Inhaltsverzeichnis
+
+\ifthenelse{\boolean{\biber}}{
+  % only needed for biber
+  \usepackage[style=authoryear,natbib=true,backend=biber,mincitenames=1,maxcitenames=2,maxbibnames=99,uniquelist=false,dashed=false]{biblatex}
+
+  % https://tex.stackexchange.com/a/334703/8850
+  \AtEveryBibitem{%
+    \clearfield{issn}
+    \clearfield{isbn}
+    \clearfield{doi}
+    \clearfield{location}
+    \clearlist{location}
+    \clearlist{address}
+
+    \ifentrytype{online}{}{% Remove url except for @online
+      \clearfield{url}
+    }
+  }
+}
+{}%no else
+
+% Falls es bei \citet ein Komma zwischen Name und Jahr gibt:
+% https://tex.stackexchange.com/questions/312539/unwanted-comma-between-author-and-year-using-citet-command
+% (thx @ Markus Brenneis)
+%\DeclareDelimFormat[cbx@textcite]{nameyeardelim}{\addspace}
+
+
+
+\ifthenelse{\equal{\sprache}{deutsch}}{
+  \usepackage[ngerman]{babel}
+  % Bibtex u.a -> et al.
+  \ifthenelse{\boolean{\biber}}{
+    \DefineBibliographyStrings{ngerman}{
+      andothers = {{et\,al\adddot}},
+    }
+    \newcommand{\references}{Literatur}
+  }
+  {} % do nothing when not using biber
+  \usepackage[autostyle, german=quotes]{csquotes} % Deutsche Anführungszeichen im Literaturverzeichnis (thx @ Markus Brenneis)
+
+}{ \newcommand{\references}{References}}
+
+\usepackage{a4wide} % ganze A4 Weite verwenden
+
+
+
+%\ifpdf
+%\usepackage[pdftex,xdvi]{graphicx}
+%\usepackage{thumbpdf} %thumbs fuer Pdf
+%\usepackage[pdfstartview=FitV]{hyperref} %anklickbares Inhaltsverzeichnis
+%\else
+%\usepackage[dvips,xdvi]{graphicx}
+\usepackage{graphicx}
+
+%\fi
+
+\newcommand{\redt}[1] {
+  \textcolor{red}{#1}}
+
+\newcommand{\oranget}[1] {
+  \textcolor{orange}{#1}}
+
+\newcommand{\purplet}[1] {
+  \textcolor{purple}{#1}}
+
+%%%%%%%%%%%%%%%%%%%%%%% Massangaben fuer die Arbeit %%%%%%%%%%%%%%%
+\setlength{\textwidth}{15cm}
+
+\setlength{\oddsidemargin}{35mm}
+\setlength{\evensidemargin}{25mm}
+
+\addtolength{\oddsidemargin}{-1in}
+\addtolength{\evensidemargin}{-1in}
+
+\ifthenelse{\boolean{\biber}}{\addbibresource{references.bib}}{}
+
+%\makeindex

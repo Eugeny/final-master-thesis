@@ -1,0 +1,224 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{Con97}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4b8417ed39a01d60ac2c91832687a9b3}{%
+           family={Conrad},
+           familyi={C\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Berlin}%
+      }
+      \list{publisher}{1}{%
+        {Springer Verlag}%
+      }
+      \strng{namehash}{4b8417ed39a01d60ac2c91832687a9b3}
+      \strng{fullhash}{4b8417ed39a01d60ac2c91832687a9b3}
+      \strng{bibnamehash}{4b8417ed39a01d60ac2c91832687a9b3}
+      \strng{authorbibnamehash}{4b8417ed39a01d60ac2c91832687a9b3}
+      \strng{authornamehash}{4b8417ed39a01d60ac2c91832687a9b3}
+      \strng{authorfullhash}{4b8417ed39a01d60ac2c91832687a9b3}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9783642590283}
+      \field{title}{{Föderierte Datenbanksysteme: Konzepte der Datenintegration}}
+      \field{year}{1997}
+      \verb{doi}
+      \verb 10.1007/978-3-642-59028-3
+      \endverb
+    \endentry
+    \entry{ILSVRC2016}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=2e13fff4ceb3eef538e6c081c4edacdb}{%
+           family={{ILSVRC2016}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{2e13fff4ceb3eef538e6c081c4edacdb}
+      \strng{fullhash}{2e13fff4ceb3eef538e6c081c4edacdb}
+      \strng{bibnamehash}{2e13fff4ceb3eef538e6c081c4edacdb}
+      \strng{authorbibnamehash}{2e13fff4ceb3eef538e6c081c4edacdb}
+      \strng{authornamehash}{2e13fff4ceb3eef538e6c081c4edacdb}
+      \strng{authorfullhash}{2e13fff4ceb3eef538e6c081c4edacdb}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{ILSVRC 2016}}
+      \field{urlday}{17}
+      \field{urlmonth}{7}
+      \field{urlyear}{2017}
+      \field{year}{2017}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://image-net.org
+      \endverb
+      \verb{url}
+      \verb http://image-net.org
+      \endverb
+    \endentry
+    \entry{IWNLP}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=31dcec86b56f574c18eaa2243e987aa6}{%
+           family={Liebeck},
+           familyi={L\bibinitperiod},
+           given={Matthias},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4b8417ed39a01d60ac2c91832687a9b3}{%
+           family={Conrad},
+           familyi={C\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Beijing, China}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computational Linguistics}%
+      }
+      \strng{namehash}{d9056bebe1dcc76bbe8cd6054f1c46b1}
+      \strng{fullhash}{d9056bebe1dcc76bbe8cd6054f1c46b1}
+      \strng{bibnamehash}{d9056bebe1dcc76bbe8cd6054f1c46b1}
+      \strng{authorbibnamehash}{d9056bebe1dcc76bbe8cd6054f1c46b1}
+      \strng{authornamehash}{d9056bebe1dcc76bbe8cd6054f1c46b1}
+      \strng{authorfullhash}{d9056bebe1dcc76bbe8cd6054f1c46b1}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 53rd Annual Meeting of the Association for Computational Linguistics and the 7th International Joint Conference on Natural Language Processing (Volume 2: Short Papers)}
+      \field{month}{7}
+      \field{title}{{IWNLP: Inverse Wiktionary for Natural Language Processing}}
+      \field{year}{2015}
+      \field{pages}{414\bibrangedash 418}
+      \range{pages}{5}
+      \verb{urlraw}
+      \verb http://www.aclweb.org/anthology/P15-2068
+      \endverb
+      \verb{url}
+      \verb http://www.aclweb.org/anthology/P15-2068
+      \endverb
+    \endentry
+    \entry{liebeck-esau-conrad:2016:ArgMining2016}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=31dcec86b56f574c18eaa2243e987aa6}{%
+           family={Liebeck},
+           familyi={L\bibinitperiod},
+           given={Matthias},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7b5c03cef2baeedf75ef0dd99414a03f}{%
+           family={Esau},
+           familyi={E\bibinitperiod},
+           given={Katharina},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4b8417ed39a01d60ac2c91832687a9b3}{%
+           family={Conrad},
+           familyi={C\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Berlin, Germany}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computational Linguistics}%
+      }
+      \strng{namehash}{f649a895c84aeaa5181a4651fa1b1bee}
+      \strng{fullhash}{26a69f5a08311f400e4dbc593bb27706}
+      \strng{bibnamehash}{26a69f5a08311f400e4dbc593bb27706}
+      \strng{authorbibnamehash}{26a69f5a08311f400e4dbc593bb27706}
+      \strng{authornamehash}{f649a895c84aeaa5181a4651fa1b1bee}
+      \strng{authorfullhash}{26a69f5a08311f400e4dbc593bb27706}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the Third Workshop on Argument Mining (ArgMining2016)}
+      \field{month}{8}
+      \field{title}{What to Do with an Airport? Mining Arguments in the German Online Participation Project Tempelhofer Feld}
+      \field{year}{2016}
+      \field{pages}{144\bibrangedash 153}
+      \range{pages}{10}
+      \verb{urlraw}
+      \verb http://www.aclweb.org/anthology/W16-2817
+      \endverb
+      \verb{url}
+      \verb http://www.aclweb.org/anthology/W16-2817
+      \endverb
+    \endentry
+    \entry{PeHe97}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=95486d328725c1c6a933929c9442fe2a}{%
+           family={Patterson},
+           familyi={P\bibinitperiod},
+           given={David\bibnamedelima A.},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4a72d9e0de431dadafab463df2ea7b0f}{%
+           family={Hennessy},
+           familyi={H\bibinitperiod},
+           given={John\bibnamedelima L.},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {San Francisco}%
+      }
+      \list{publisher}{1}{%
+        {Morgan Kaufmann Publishers}%
+      }
+      \strng{namehash}{80dcd96d4af78aec55cda074050a4718}
+      \strng{fullhash}{80dcd96d4af78aec55cda074050a4718}
+      \strng{bibnamehash}{80dcd96d4af78aec55cda074050a4718}
+      \strng{authorbibnamehash}{80dcd96d4af78aec55cda074050a4718}
+      \strng{authornamehash}{80dcd96d4af78aec55cda074050a4718}
+      \strng{authorfullhash}{80dcd96d4af78aec55cda074050a4718}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Computer Organization and Design}}
+      \field{year}{2004}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
