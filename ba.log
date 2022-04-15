@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.5.29)  12 APR 2022 21:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.5.29)  15 APR 2022 20:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -189,8 +189,73 @@ Package: amsthm 2020/05/29 v2.20.6
 \thm@postskip=\skip52
 \thm@headsep=\skip53
 \dth@everypar=\toks27
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2019/10/16 v2.13 Sectioning titles
+\ttl@box=\box95
+\beforetitleunit=\skip54
+\aftertitleunit=\skip55
+\ttl@plus=\dimen158
+\ttl@minus=\dimen159
+\ttl@toksa=\toks28
+\titlewidth=\dimen160
+\titlewidthlast=\dimen161
+\titlewidthfirst=\dimen162
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2020/09/23 v2.17i AMS math features
+\@mathmargin=\skip56
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks29
+\ex@=\dimen163
+)) (/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen164
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
 )
-\c@definition=\count199
+\inf@bad=\count199
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count266
+\leftroot@=\count267
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count268
+\DOTSCASE@=\count269
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box96
+\strutbox@=\box97
+\big@size=\dimen165
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count270
+\c@MaxMatrixCols=\count271
+\dotsspace@=\muskip17
+\c@parentequation=\count272
+\dspbrk@lvl=\count273
+\tag@help=\toks30
+\row@=\count274
+\column@=\count275
+\maxfields@=\count276
+\andhelp@=\toks31
+\eqnshift@=\dimen166
+\alignsep@=\dimen167
+\tagshift@=\dimen168
+\tagwidth@=\dimen169
+\totwidth@=\dimen170
+\lineht@=\dimen171
+\@envbody=\toks32
+\multlinegap=\skip57
+\multlinetaggap=\skip58
+\mathdisplay@stack=\toks33
+LaTeX Info: Redefining \[ on input line 2923.
+LaTeX Info: Redefining \] on input line 2924.
+)
+\c@definition=\count277
  (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2021-02-27 v7.00k Hypertext links for LaTeX
  (/usr/local/texlive/2021/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
@@ -220,9 +285,9 @@ Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 )
-\@linkdim=\dimen158
-\Hy@linkcounter=\count266
-\Hy@pagecounter=\count267
+\@linkdim=\dimen172
+\Hy@linkcounter=\count278
+\Hy@pagecounter=\count279
  (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2021-02-27 v7.00k Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
@@ -234,7 +299,7 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 ) (/usr/local/texlive/2021/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count268
+\Hy@SavedSpaceFactor=\count280
  (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2021-02-27 v7.00k Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
@@ -248,17 +313,17 @@ Package hyperref Info: Plain pages OFF on input line 4207.
 Package hyperref Info: Backreferencing OFF on input line 4212.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4445.
-\c@Hy@tempcnt=\count269
+\c@Hy@tempcnt=\count281
 LaTeX Info: Redefining \url on input line 4804.
-\XeTeXLinkMargin=\dimen159
+\XeTeXLinkMargin=\dimen173
  (/usr/local/texlive/2021/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
  (/usr/local/texlive/2021/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
-\Fld@menulength=\count270
-\Field@Width=\dimen160
-\Fld@charsize=\dimen161
+\Fld@menulength=\count282
+\Field@Width=\dimen174
+\Fld@charsize=\dimen175
 Package hyperref Info: Hyper figures OFF on input line 6075.
 Package hyperref Info: Link nesting OFF on input line 6080.
 Package hyperref Info: Hyper index ON on input line 6083.
@@ -272,9 +337,9 @@ LaTeX Info: Redefining \pageref on input line 6149.
 Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi package
 with kernel methods
 )
-\Hy@abspage=\count271
-\c@Item=\count272
-\c@Hfootnote=\count273
+\Hy@abspage=\count283
+\c@Item=\count284
+\c@Hfootnote=\count285
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/hpdftex.def
@@ -283,8 +348,8 @@ File: hpdftex.def 2021-02-27 v7.00k Hyperref driver for pdfTeX
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery package
 with kernel methods
 )
-\Fld@listcount=\count274
-\c@bookmark@seq@number=\count275
+\Fld@listcount=\count286
+\c@bookmark@seq@number=\count287
  (/usr/local/texlive/2021/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
  (/usr/local/texlive/2021/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
@@ -292,74 +357,74 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 286.
 )
-\Hy@SectionHShift=\skip54
+\Hy@SectionHShift=\skip59
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2020/12/31 v3.16 programmable bibliographies (PK/MW)
  (/usr/local/texlive/2021/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count276
+\etb@tempcnta=\count288
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count277
+\lrq@indent=\count289
  (/usr/local/texlive/2021/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-\c@tabx@nest=\count278
-\c@listtotal=\count279
-\c@listcount=\count280
-\c@liststart=\count281
-\c@liststop=\count282
-\c@citecount=\count283
-\c@citetotal=\count284
-\c@multicitecount=\count285
-\c@multicitetotal=\count286
-\c@instcount=\count287
-\c@maxnames=\count288
-\c@minnames=\count289
-\c@maxitems=\count290
-\c@minitems=\count291
-\c@citecounter=\count292
-\c@maxcitecounter=\count293
-\c@savedcitecounter=\count294
-\c@uniquelist=\count295
-\c@uniquename=\count296
-\c@refsection=\count297
-\c@refsegment=\count298
-\c@maxextratitle=\count299
-\c@maxextratitleyear=\count300
-\c@maxextraname=\count301
-\c@maxextradate=\count302
-\c@maxextraalpha=\count303
-\c@abbrvpenalty=\count304
-\c@highnamepenalty=\count305
-\c@lownamepenalty=\count306
-\c@maxparens=\count307
-\c@parenlevel=\count308
-\blx@tempcnta=\count309
-\blx@tempcntb=\count310
-\blx@tempcntc=\count311
-\blx@maxsection=\count312
-\blx@maxsegment@0=\count313
-\blx@notetype=\count314
-\blx@parenlevel@text=\count315
-\blx@parenlevel@foot=\count316
-\blx@sectionciteorder@0=\count317
-\blx@entrysetcounter=\count318
-\blx@biblioinstance=\count319
-\labelnumberwidth=\skip55
-\labelalphawidth=\skip56
-\biblabelsep=\skip57
-\bibitemsep=\skip58
-\bibnamesep=\skip59
-\bibinitsep=\skip60
-\bibparsep=\skip61
-\bibhang=\skip62
+\c@tabx@nest=\count290
+\c@listtotal=\count291
+\c@listcount=\count292
+\c@liststart=\count293
+\c@liststop=\count294
+\c@citecount=\count295
+\c@citetotal=\count296
+\c@multicitecount=\count297
+\c@multicitetotal=\count298
+\c@instcount=\count299
+\c@maxnames=\count300
+\c@minnames=\count301
+\c@maxitems=\count302
+\c@minitems=\count303
+\c@citecounter=\count304
+\c@maxcitecounter=\count305
+\c@savedcitecounter=\count306
+\c@uniquelist=\count307
+\c@uniquename=\count308
+\c@refsection=\count309
+\c@refsegment=\count310
+\c@maxextratitle=\count311
+\c@maxextratitleyear=\count312
+\c@maxextraname=\count313
+\c@maxextradate=\count314
+\c@maxextraalpha=\count315
+\c@abbrvpenalty=\count316
+\c@highnamepenalty=\count317
+\c@lownamepenalty=\count318
+\c@maxparens=\count319
+\c@parenlevel=\count320
+\blx@tempcnta=\count321
+\blx@tempcntb=\count322
+\blx@tempcntc=\count323
+\blx@maxsection=\count324
+\blx@maxsegment@0=\count325
+\blx@notetype=\count326
+\blx@parenlevel@text=\count327
+\blx@parenlevel@foot=\count328
+\blx@sectionciteorder@0=\count329
+\blx@entrysetcounter=\count330
+\blx@biblioinstance=\count331
+\labelnumberwidth=\skip60
+\labelalphawidth=\skip61
+\biblabelsep=\skip62
+\bibitemsep=\skip63
+\bibnamesep=\skip64
+\bibinitsep=\skip65
+\bibparsep=\skip66
+\bibhang=\skip67
 \blx@bcfin=\read3
 \blx@bcfout=\write4
 \blx@langwohyphens=\language87
-\c@mincomprange=\count320
-\c@maxcomprange=\count321
-\c@mincompwidth=\count322
+\c@mincomprange=\count332
+\c@maxcomprange=\count333
+\c@mincompwidth=\count334
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/biblatex/blx-dm.def
@@ -369,88 +434,88 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'authoryear.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count323
-\c@savedafterword=\count324
-\c@annotator=\count325
-\c@savedannotator=\count326
-\c@author=\count327
-\c@savedauthor=\count328
-\c@bookauthor=\count329
-\c@savedbookauthor=\count330
-\c@commentator=\count331
-\c@savedcommentator=\count332
-\c@editor=\count333
-\c@savededitor=\count334
-\c@editora=\count335
-\c@savededitora=\count336
-\c@editorb=\count337
-\c@savededitorb=\count338
-\c@editorc=\count339
-\c@savededitorc=\count340
-\c@foreword=\count341
-\c@savedforeword=\count342
-\c@holder=\count343
-\c@savedholder=\count344
-\c@introduction=\count345
-\c@savedintroduction=\count346
-\c@namea=\count347
-\c@savednamea=\count348
-\c@nameb=\count349
-\c@savednameb=\count350
-\c@namec=\count351
-\c@savednamec=\count352
-\c@translator=\count353
-\c@savedtranslator=\count354
-\c@shortauthor=\count355
-\c@savedshortauthor=\count356
-\c@shorteditor=\count357
-\c@savedshorteditor=\count358
-\c@labelname=\count359
-\c@savedlabelname=\count360
-\c@institution=\count361
-\c@savedinstitution=\count362
-\c@lista=\count363
-\c@savedlista=\count364
-\c@listb=\count365
-\c@savedlistb=\count366
-\c@listc=\count367
-\c@savedlistc=\count368
-\c@listd=\count369
-\c@savedlistd=\count370
-\c@liste=\count371
-\c@savedliste=\count372
-\c@listf=\count373
-\c@savedlistf=\count374
-\c@location=\count375
-\c@savedlocation=\count376
-\c@organization=\count377
-\c@savedorganization=\count378
-\c@origlocation=\count379
-\c@savedoriglocation=\count380
-\c@origpublisher=\count381
-\c@savedorigpublisher=\count382
-\c@publisher=\count383
-\c@savedpublisher=\count384
-\c@language=\count385
-\c@savedlanguage=\count386
-\c@origlanguage=\count387
-\c@savedoriglanguage=\count388
-\c@pageref=\count389
-\c@savedpageref=\count390
-\shorthandwidth=\skip63
-\shortjournalwidth=\skip64
-\shortserieswidth=\skip65
-\shorttitlewidth=\skip66
-\shortauthorwidth=\skip67
-\shorteditorwidth=\skip68
-\locallabelnumberwidth=\skip69
-\locallabelalphawidth=\skip70
-\localshorthandwidth=\skip71
-\localshortjournalwidth=\skip72
-\localshortserieswidth=\skip73
-\localshorttitlewidth=\skip74
-\localshortauthorwidth=\skip75
-\localshorteditorwidth=\skip76
+\c@afterword=\count335
+\c@savedafterword=\count336
+\c@annotator=\count337
+\c@savedannotator=\count338
+\c@author=\count339
+\c@savedauthor=\count340
+\c@bookauthor=\count341
+\c@savedbookauthor=\count342
+\c@commentator=\count343
+\c@savedcommentator=\count344
+\c@editor=\count345
+\c@savededitor=\count346
+\c@editora=\count347
+\c@savededitora=\count348
+\c@editorb=\count349
+\c@savededitorb=\count350
+\c@editorc=\count351
+\c@savededitorc=\count352
+\c@foreword=\count353
+\c@savedforeword=\count354
+\c@holder=\count355
+\c@savedholder=\count356
+\c@introduction=\count357
+\c@savedintroduction=\count358
+\c@namea=\count359
+\c@savednamea=\count360
+\c@nameb=\count361
+\c@savednameb=\count362
+\c@namec=\count363
+\c@savednamec=\count364
+\c@translator=\count365
+\c@savedtranslator=\count366
+\c@shortauthor=\count367
+\c@savedshortauthor=\count368
+\c@shorteditor=\count369
+\c@savedshorteditor=\count370
+\c@labelname=\count371
+\c@savedlabelname=\count372
+\c@institution=\count373
+\c@savedinstitution=\count374
+\c@lista=\count375
+\c@savedlista=\count376
+\c@listb=\count377
+\c@savedlistb=\count378
+\c@listc=\count379
+\c@savedlistc=\count380
+\c@listd=\count381
+\c@savedlistd=\count382
+\c@liste=\count383
+\c@savedliste=\count384
+\c@listf=\count385
+\c@savedlistf=\count386
+\c@location=\count387
+\c@savedlocation=\count388
+\c@organization=\count389
+\c@savedorganization=\count390
+\c@origlocation=\count391
+\c@savedoriglocation=\count392
+\c@origpublisher=\count393
+\c@savedorigpublisher=\count394
+\c@publisher=\count395
+\c@savedpublisher=\count396
+\c@language=\count397
+\c@savedlanguage=\count398
+\c@origlanguage=\count399
+\c@savedoriglanguage=\count400
+\c@pageref=\count401
+\c@savedpageref=\count402
+\shorthandwidth=\skip68
+\shortjournalwidth=\skip69
+\shortserieswidth=\skip70
+\shorttitlewidth=\skip71
+\shortauthorwidth=\skip72
+\shorteditorwidth=\skip73
+\locallabelnumberwidth=\skip74
+\locallabelalphawidth=\skip75
+\localshorthandwidth=\skip76
+\localshortjournalwidth=\skip77
+\localshortserieswidth=\skip78
+\localshorttitlewidth=\skip79
+\localshortauthorwidth=\skip80
+\localshorteditorwidth=\skip81
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/biblatex/blx-compat.def
@@ -460,19 +525,19 @@ Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2020/12/31 v3.16 biblatex compatibility (PK/MW)
-\c@textcitecount=\count391
-\c@textcitetotal=\count392
-\c@textcitemaxnames=\count393
-\c@biburlbigbreakpenalty=\count394
-\c@biburlbreakpenalty=\count395
-\c@biburlnumpenalty=\count396
-\c@biburlucpenalty=\count397
-\c@biburllcpenalty=\count398
-\biburlbigskip=\muskip17
-\biburlnumskip=\muskip18
-\biburlucskip=\muskip19
-\biburllcskip=\muskip20
-\c@smartand=\count399
+\c@textcitecount=\count403
+\c@textcitetotal=\count404
+\c@textcitemaxnames=\count405
+\c@biburlbigbreakpenalty=\count406
+\c@biburlbreakpenalty=\count407
+\c@biburlnumpenalty=\count408
+\c@biburlucpenalty=\count409
+\c@biburllcpenalty=\count410
+\biburlbigskip=\muskip18
+\biburlnumskip=\muskip19
+\biburlucskip=\muskip20
+\biburllcskip=\muskip21
+\c@smartand=\count411
 )
 Package biblatex Info: Trying to load natbib compatibility...
 Package biblatex Info: ... file 'blx-natbib.def' found.
@@ -488,8 +553,8 @@ Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2020/12/31 v3.16 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count400
-\c@bbx:relatedtotal=\count401
+\c@bbx:relatedcount=\count412
+\c@bbx:relatedtotal=\count413
 ))
 Package biblatex Info: Trying to load citation style 'authoryear'...
 Package biblatex Info: ... file 'authoryear.cbx' found.
@@ -512,12 +577,12 @@ Package: a4wide 1994/08/30
  (/usr/local/texlive/2021/texmf-dist/tex/latex/ntgclass/a4.sty
 Package: a4 2020/02/18 v1.2g A4 based page layout
 )))
-\@quotelevel=\count402
-\@quotereset=\count403
+\@quotelevel=\count414
+\@quotereset=\count415
  (/usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count404
-\l__pdf_internal_box=\box95
+\l__color_backend_stack_int=\count416
+\l__pdf_internal_box=\box98
 ) (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/ba.aux)
 \openout1 = `ba.aux'.
 
@@ -541,17 +606,17 @@ LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 69.
 LaTeX Font Info:    ... okay on input line 69.
  (/usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count405
-\scratchdimen=\dimen162
-\scratchbox=\box96
-\nofMPsegments=\count406
-\nofMParguments=\count407
-\everyMPshowfont=\toks28
-\MPscratchCnt=\count408
-\MPscratchDim=\dimen163
-\MPnumerator=\count409
-\makeMPintoPDFobject=\count410
-\everyMPtoPDFconversion=\toks29
+\scratchcounter=\count417
+\scratchdimen=\dimen176
+\scratchbox=\box99
+\nofMPsegments=\count418
+\nofMParguments=\count419
+\everyMPshowfont=\toks34
+\MPscratchCnt=\count420
+\MPscratchDim=\dimen177
+\MPnumerator=\count421
+\makeMPintoPDFobject=\count422
+\everyMPtoPDFconversion=\toks35
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -569,7 +634,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/usr/local/texlive/2021/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count411
+\c@section@level=\count423
 )
 LaTeX Info: Redefining \ref on input line 69.
 LaTeX Info: Redefining \pageref on input line 69.
@@ -605,17 +670,11 @@ Package biblatex Info: ... file 'ba.bbl' found.
 Package biblatex Info: Reference section=0 on input line 69.
 Package biblatex Info: Reference segment=0 on input line 69.
  (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/titelmakros.tex
-<bilder/HHU_Logo.pdf, id=52, 896.34875pt x 218.8175pt>
+<bilder/HHU_Logo.pdf, id=50, 896.34875pt x 218.8175pt>
 File: bilder/HHU_Logo.pdf Graphic file (type pdf)
 <use bilder/HHU_Logo.pdf>
 Package pdftex.def Info: bilder/HHU_Logo.pdf  used on input line 47.
 (pdftex.def)             Requested size: 130.0pt x 31.73273pt.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 93.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 93.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 93.
  [1
 
 {/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map} </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/HHU_Logo.pdf>]pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
@@ -657,7 +716,14 @@ l.157 ...rpage\begin{titlepage}~\end{titlepage}}{}
 ] [2
 
 
-]) (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/einleitung.tex (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/chapter 1.tex) (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/chapter 2.tex
+]) (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/einleitung.tex (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/chapter 1.tex)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.3 \input
+          {chapter 2.tex} [1] (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/chapter 2.tex
 Underfull \hbox (badness 7851) in paragraph at lines 3--4
 \T1/ppl/m/n/10.95 Cell line de-vel-op-ment is a pro-cess of gen-er-at-ing sin-gle cell-derived clones
  []
@@ -677,11 +743,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--12
 \T1/ppl/m/n/10.95 (copy paste from https://www.beckman.de/resources/product-applications/lead-
  []
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.17 
-      [1]
+
 Underfull \hbox (badness 1616) in paragraph at lines 18--19
 \T1/ppl/m/n/10.95 metabolic pro-file and etc. This is not ideal for in-dus-trial pro-duc-tion - all the
  []
@@ -691,41 +753,52 @@ Underfull \hbox (badness 1052) in paragraph at lines 18--19
 \T1/ppl/m/n/10.95 flu-o-res-cence la-bel-ing is ex-pen-sive and may ruin the cell due to its pho-to-tox-i-c-ity
  []
 
-[2])
-<bilder/Galia.pdf, id=125, 515.9275pt x 722.7pt>
-File: bilder/Galia.pdf Graphic file (type pdf)
-<use bilder/Galia.pdf>
-Package pdftex.def Info: bilder/Galia.pdf  used on input line 25.
-(pdftex.def)             Requested size: 175.0pt x 245.13028pt.
 
+Underfull \vbox (badness 7344) has occurred while \output is active []
+
+ [2] [3]
+<bilder/Unet.png, id=114, 1875.005pt x 792.9625pt>
+File: bilder/Unet.png Graphic file (type png)
+<use bilder/Unet.png>
+Package pdftex.def Info: bilder/Unet.png  used on input line 42.
+(pdftex.def)             Requested size: 426.79134pt x 180.48999pt.
+) (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/chapter 3.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [3 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/Galia.pdf>] (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/chapter 3.tex
-<bilder/firt-train-overfit.png, id=140, 462.528pt x 346.896pt>
+ [4 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/Unet.png>]
+<bilder/overfit.png, id=122, 797.98125pt x 652.4375pt>
+File: bilder/overfit.png Graphic file (type png)
+<use bilder/overfit.png>
+Package pdftex.def Info: bilder/overfit.png  used on input line 12.
+(pdftex.def)             Requested size: 256.0774pt x 209.37163pt.
+
+Underfull \vbox (badness 4595) has occurred while \output is active []
+
+ [5 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/overfit.png>]
+<bilder/dropout.png, id=132, 783.92876pt x 411.5375pt>
+File: bilder/dropout.png Graphic file (type png)
+<use bilder/dropout.png>
+Package pdftex.def Info: bilder/dropout.png  used on input line 51.
+(pdftex.def)             Requested size: 341.43436pt x 179.24342pt.
+ [6]
+<bilder/firt-train-overfit.png, id=149, 462.528pt x 346.896pt>
 File: bilder/firt-train-overfit.png Graphic file (type png)
 <use bilder/firt-train-overfit.png>
-Package pdftex.def Info: bilder/firt-train-overfit.png  used on input line 6.
+Package pdftex.def Info: bilder/firt-train-overfit.png  used on input line 65.
 (pdftex.def)             Requested size: 213.39566pt x 160.05048pt.
-<bilder/first-train-regularized.png, id=142, 566.115pt x 410.53375pt>
+<bilder/first-train-regularized.png, id=150, 566.115pt x 410.53375pt>
 File: bilder/first-train-regularized.png Graphic file (type png)
 <use bilder/first-train-regularized.png>
-Package pdftex.def Info: bilder/first-train-regularized.png  used on input line 12.
+Package pdftex.def Info: bilder/first-train-regularized.png  used on input line 71.
 (pdftex.def)             Requested size: 213.39566pt x 154.74533pt.
-) (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/summary.tex
+)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [4 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/firt-train-overfit.png> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/first-train-regularized.png>])) [5]
+ [7 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/dropout.png> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/firt-train-overfit.png> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/first-train-regularized.png>] (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/summary.tex)) [8]
 
-Package biblatex Warning: Name format 'first-last' deprecated.
-(biblatex)                Please use 'given-family' instead.
-(biblatex)                Using 'given-family' now.
+LaTeX Warning: Empty bibliography on input line 101.
 
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 101.
-(/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-) [6
-
-] (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/ba.lof)
+(/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/ba.lof)
 \tf@lof=\write7
 \openout7 = `ba.lof'.
 
@@ -733,28 +806,29 @@ File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 \tf@lot=\write8
 \openout8 = `ba.lot'.
 
- [7
+ [9
+
 
 ] (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/ba.aux)
 Package rerunfilecheck Info: File `ba.out' has not changed.
-(rerunfilecheck)             Checksum: 4866267FFF77E6C888162778B9216769;1288.
+(rerunfilecheck)             Checksum: E2C247DAF0C7C11CA3EF0E1394B4C2BB;1284.
 Package logreq Info: Writing requests to 'ba.run.xml'.
 \openout1 = `ba.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 17703 strings out of 478994
- 303751 string characters out of 5858184
- 1016615 words of memory out of 5000000
- 34908 multiletter control sequences out of 15000+600000
- 423815 words of font info for 59 fonts, out of 8000000 for 9000
+ 18322 strings out of 478994
+ 309337 string characters out of 5858184
+ 1037310 words of memory out of 5000000
+ 35512 multiletter control sequences out of 15000+600000
+ 421618 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 76i,9n,77p,1204b,1422s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on "/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/ba.pdf" (15 pages, 259693 bytes).
+ 76i,15n,77p,1204b,759s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on "/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/ba.pdf" (17 pages, 561556 bytes).
 PDF statistics:
- 209 PDF objects out of 1000 (max. 8388607)
- 174 compressed objects within 2 object streams
- 34 named destinations out of 1000 (max. 500000)
- 117 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 217 PDF objects out of 1000 (max. 8388607)
+ 173 compressed objects within 2 object streams
+ 32 named destinations out of 1000 (max. 500000)
+ 127 words of extra memory for PDF output out of 10000 (max. 10000000)
 

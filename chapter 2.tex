@@ -21,6 +21,9 @@ Once the cells are cloned, phenotypical and genetical heterogeneity is reduced, 
 
 However there are also some disadtantages of this approach. First, it can be less accurate than skilled cells staining perfomed manually. Extreme or unsual clones and phenotypes might be challenging if they were not used in the training set of images.
 
+\subsection{Imaging}
+The microscope used in the experiments takes photos of the well plate in random locations. The reason for that hides in the focusing problem, to get a reasonably good photo without blur it has to focus on a specific location, this is done there automatically, therefore the location of the focus is almost random. Although it might be problematic in the following sense: photos takes by the microscope in such manner do not gurantee that the focus will land in distinct spots all the time. This means that some cells taken during one of the photos might appear in the later ones. Since the photos have a high-resolution the crops are first performed and it might happen that same cell might appear in several crops. Afterwards, when crops are split between train, test and validation datasets it might happen that the same cell will once land in the train set and another time in the validation set, which will lead to a not completely fair and representative validaiton loss during training.
+
 \subsection{ML}
 Background on Unet and ML in general
 
@@ -33,4 +36,10 @@ CNNs also uses non-linearities like RELU, ELU, Tahn, Sigmoids and etc. They are 
 Overfitting is one of the most often problems in deep learning that prevents model to generalize well for unseen data. This can happen when the model is too big for the amount of training data given, it was not regularized well or there is just not enough data for training. 
 
 U-Net architecture is widely used for segmentation purposes. It is a convolutional neural network with the following architecture: [img] . It first performs image downsampling and upsampling afterwards.
-[https://arxiv.org/pdf/1505.04597.pdf]
+[https://arxiv.org/pdf/1505.04597.pdf] The following architecture have been used for nuclei prediction. 
+\begin{figure}[htb]
+	\begin{center}
+		\includegraphics[width=\linewidth]{bilder/Unet.png}
+		\caption{Unet}\label{fig:unet}
+	\end{center}
+\end{figure}

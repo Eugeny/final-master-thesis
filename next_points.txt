@@ -1,0 +1,3 @@
+Nuclei prediction examples
+Crops
+Explanations why val loss is so close or the same as train loss

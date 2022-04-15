@@ -2345,15 +2345,6 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">references.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">Con97</bcf:citekey>
-    <bcf:citekey order="2">PeHe97</bcf:citekey>
-    <bcf:citekey order="3">Con97</bcf:citekey>
-    <bcf:citekey order="4">Con97</bcf:citekey>
-    <bcf:citekey order="5">IWNLP</bcf:citekey>
-    <bcf:citekey order="6">IWNLP</bcf:citekey>
-    <bcf:citekey order="7">liebeck-esau-conrad:2016:ArgMining2016</bcf:citekey>
-    <bcf:citekey order="8">liebeck-esau-conrad:2016:ArgMining2016</bcf:citekey>
-    <bcf:citekey order="9">ILSVRC2016</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

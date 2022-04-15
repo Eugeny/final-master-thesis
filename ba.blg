@@ -1,18 +1,9 @@
 [0] Config.pm:311> INFO - This is Biber 2.16
 [0] Config.pm:314> INFO - Logfile is 'ba.blg'
-[88] biber-darwin:340> INFO - === Tue Apr 12, 2022, 20:54:45
-[128] Biber.pm:415> INFO - Reading 'ba.bcf'
-[263] Biber.pm:952> INFO - Found 5 citekeys in bib section 0
-[278] Biber.pm:4340> INFO - Processing section 0
-[289] Biber.pm:4531> INFO - Looking for bibtex format file 'references.bib' for section 0
-[290] bibtex.pm:1689> INFO - LaTeX decoding ...
-[300] bibtex.pm:1494> INFO - Found BibTeX data source 'references.bib'
-[356] Utils.pm:395> WARN - legacy month field 'July' in entry 'IWNLP' is not an integer - this will probably not sort properly.
-[363] Utils.pm:395> WARN - legacy month field 'August' in entry 'liebeck-esau-conrad:2016:ArgMining2016' is not an integer - this will probably not sort properly.
-[382] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[382] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[382] Biber.pm:4168> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
-[382] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
-[393] bbl.pm:654> INFO - Writing 'ba.bbl' with encoding 'UTF-8'
-[397] bbl.pm:757> INFO - Output to ba.bbl
-[398] Biber.pm:128> INFO - WARNINGS: 2
+[91] biber-darwin:340> INFO - === Thu Apr 14, 2022, 21:59:00
+[114] Biber.pm:415> INFO - Reading 'ba.bcf'
+[218] Biber.pm:952> INFO - Found 0 citekeys in bib section 0
+[224] Utils.pm:395> WARN - The file 'ba.bcf' does not contain any citations!
+[233] bbl.pm:654> INFO - Writing 'ba.bbl' with encoding 'UTF-8'
+[233] bbl.pm:757> INFO - Output to ba.bbl
+[233] Biber.pm:128> INFO - WARNINGS: 1
