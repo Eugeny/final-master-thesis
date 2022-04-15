@@ -1,3 +1,13 @@
 Nuclei prediction examples
-Crops
-Explanations why val loss is so close or the same as train loss
+
+Results in terms of the metrics created, no need to put the figures of violin plots right now, but just explain their creation
+
+Spot for the speed measurements
+
+Embeddings, subspaces, how they should look like, Unet embeddings, read on that a bit
+
+Sliding window, image, how does it work
+
+Further post processing steps, nuclei segmentation, algorithm that is used now
+
+

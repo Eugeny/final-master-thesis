@@ -22,8 +22,10 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.1.2}Regularization}{6}{subsubsection.3.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Summary}{8}{section.4}%
+\contentsline {section}{\numberline {4}Crops combination}{8}{section.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{List of Figures}{9}{section.4}%
+\contentsline {section}{\numberline {5}Summary}{9}{section.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{List of Tables}{9}{section.4}%
+\contentsline {section}{List of Figures}{10}{section.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{List of Tables}{10}{section.5}%
