@@ -1,9 +1,9 @@
 [0] Config.pm:311> INFO - This is Biber 2.16
-[0] Config.pm:314> INFO - Logfile is 'ba.blg'
-[91] biber-darwin:340> INFO - === Fri Apr 15, 2022, 21:14:40
-[108] Biber.pm:415> INFO - Reading 'ba.bcf'
-[212] Biber.pm:952> INFO - Found 0 citekeys in bib section 0
-[219] Utils.pm:395> WARN - The file 'ba.bcf' does not contain any citations!
-[228] bbl.pm:654> INFO - Writing 'ba.bbl' with encoding 'UTF-8'
-[228] bbl.pm:757> INFO - Output to ba.bbl
-[228] Biber.pm:128> INFO - WARNINGS: 1
+[1] Config.pm:314> INFO - Logfile is 'ba.blg'
+[144] biber-darwin:340> INFO - === Wed Apr 20, 2022, 20:53:52
+[195] Biber.pm:415> INFO - Reading 'ba.bcf'
+[354] Biber.pm:952> INFO - Found 0 citekeys in bib section 0
+[363] Utils.pm:395> WARN - The file 'ba.bcf' does not contain any citations!
+[379] bbl.pm:654> INFO - Writing 'ba.bbl' with encoding 'UTF-8'
+[380] bbl.pm:757> INFO - Output to ba.bbl
+[380] Biber.pm:128> INFO - WARNINGS: 1

@@ -1,0 +1,13 @@
+\section{Predicting cell organelles}
+\subsection{Nuclei}
+In this subsection the results of the nuclei predictions will be presented. You can see examples of predictions presented in Figures TODO and TODO. There are TODO visible problems with the predictions:
+\begin{itemize}
+    \item The form of the nucleus is captured, but the texture inside is not
+    \item Blurry border aorund the nuclei
+    \item Problems with the predictions on the borders of the crop
+\end{itemize}
+Predictions of the border of the crops are quite challenging for the model as there is not enough of the information due to the cropped parts of the cell. However this can be easily solved with using overlaps while cropping the image to avoid the use of the pixels predicted on the border. There more information on this in Chapter TODO (Crops combination).
+
+Explanation for the lack of details inside TODO
+
+The nucleus is relatively a simple task for predictions as it might be relatively easier to spot the nuclei manually as well. They are relatively big with respect to the cell as well. More challenging task would be a prediction of Golgi Apparatus.
