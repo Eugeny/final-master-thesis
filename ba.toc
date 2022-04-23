@@ -12,7 +12,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2}Imaging}{3}{subsection.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3}ML}{3}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.3}ML}{4}{subsection.2.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3}Prediction of cell organelles}{5}{section.3}%
 \defcounter {refsection}{0}\relax 
@@ -32,8 +32,12 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {6.1}Nuclei segmentation}{10}{subsection.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Summary}{11}{section.7}%
+\contentsline {subsubsection}{\numberline {6.1.1}Challenge}{10}{subsubsection.6.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{List of Figures}{12}{section.7}%
+\contentsline {subsubsection}{\numberline {6.1.2}Algorithm}{11}{subsubsection.6.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{List of Tables}{12}{section.7}%
+\contentsline {section}{\numberline {7}Summary}{15}{section.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{List of Figures}{16}{section.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{List of Tables}{16}{section.7}%

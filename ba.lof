@@ -1,17 +1,25 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1}{\ignorespaces Unet\relax }}{4}{figure.caption.1}%
+\contentsline {figure}{\numberline {1}{\ignorespaces Way in which photos of the well-plate were taken\relax }}{3}{figure.caption.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2}{\ignorespaces Overfitting\relax }}{5}{figure.caption.2}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Unet\relax }}{5}{figure.caption.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3}{\ignorespaces Dropout\relax }}{7}{figure.caption.3}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Overfitting\relax }}{6}{figure.caption.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4}{\ignorespaces Not regularized\relax }}{7}{figure.caption.4}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Dropout\relax }}{7}{figure.caption.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5}{\ignorespaces Regularized\relax }}{7}{figure.caption.4}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Not regularized\relax }}{8}{figure.caption.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6}{\ignorespaces No overlap\relax }}{8}{figure.caption.5}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Regularized\relax }}{8}{figure.caption.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7}{\ignorespaces 30 pixels overlap\relax }}{8}{figure.caption.5}%
+\contentsline {figure}{\numberline {7}{\ignorespaces No overlap\relax }}{9}{figure.caption.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8}{\ignorespaces Different lightning conditions\relax }}{10}{figure.caption.6}%
+\contentsline {figure}{\numberline {8}{\ignorespaces 30 pixels overlap\relax }}{9}{figure.caption.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {9}{\ignorespaces Different lightning conditions\relax }}{10}{figure.caption.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {10}{\ignorespaces Closely located cells\relax }}{11}{figure.caption.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {11}{\ignorespaces Histogram as a probability density function\relax }}{13}{figure.caption.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {12}{\ignorespaces Local vs. Global thresholding\relax }}{15}{figure.caption.11}%
