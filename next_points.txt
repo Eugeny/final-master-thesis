@@ -8,7 +8,6 @@ Embeddings, subspaces, how they should look like, Unet embeddings, read on that 
 
 Sliding window, image, how does it work
 
-Further post processing steps, nuclei segmentation, algorithm that is used now
 
 Overview of the articles existed before, why this one was chosen.
 

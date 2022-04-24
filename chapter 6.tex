@@ -33,7 +33,6 @@ For example, different brightness of the images that comes from different exposu
 Another challenge for segmentation bring nuclei that are very close to each other. This might happen sometimes because some of the cells are currently in the process of the division. Also when some have already fully divided, they might still be located close to one another. The example of such situation is presented in Figure \ref{fig:closely-located-cells}.
 
 
-
 \begin{figure}[H]
     \centering
     \setkeys{Gin}{width=\linewidth}
@@ -158,7 +157,8 @@ TODO table with timing. Therefore there as an alternative one can use \textit{mi
     \label{tab:threshold-timing}
 \end{table}
 
-Comparison of the prdections in difficult lightning conditions of minimum thresholding and local adaptive thresholding are presented in the Figure TODO
+Comparison of the prdections in difficult lightning conditions of minimum thresholding and local adaptive thresholding are presented in the Figure TODO. In extreme cases of difficult lighting conditions the local adaptive thresholding is much better than the minimum thresholding, however on the images of the better quality TODO (see Figure \ref{fig:local-vs-global-normal}) minimum thresholding might successfully sibstitute the local adaptive thresholding when the time of processing is crucial.
+
 \begin{figure}[ht] 
     \begin{subfigure}[b]{0.5\linewidth}
       \centering
@@ -188,4 +188,35 @@ Comparison of the prdections in difficult lightning conditions of minimum thresh
     \end{subfigure} 
     \caption{Local vs. Global thresholding}
     \label{fig7} 
-  \end{figure}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \setkeys{Gin}{width=\linewidth}
+    \centering
+        \begin{tabularx}{\textwidth}{YY}
+            \textbf{Local thresholding} &
+            \textbf{Minimum thresholding} \\
+            \includegraphics{bilder/difficult-lightning/normal_local.png} & \includegraphics{bilder/difficult-lightning/normal_min.png}
+        \end{tabularx}
+    \caption{Local vs. Global thresholding (normal conditions)}
+    \label{fig:local-vs-global-normal}
+\end{figure}
+
+According to skimage documentation, minimum thresholding works in the following way: (cite  https://doi.org/10.1111/j.1749-6632.1965.tb11715.x) it assumes that the histogram of the image is bimodal, meaning that it has two clearly defined peaks, then it iteratively smoothes the histogram using a running average of size $k=3$ (see Equation \ref{eq:SMA}) until only 2 local maximas are left. Afterwards, the lowest point between these two peaks is found and assigned to be a threshold value.
+
+\begin{equation}
+    a_k = \frac{1}{k}\sum_{i=n-k + 1}^{n}p_i
+\label{eq:SMA}
+\end{equation}
+
+Then the threshold is taken as the minimum between the two local maximas.
+
+\begin{equation}
+    x_k \leq T \leq y_k
+\end{equation}
+
+TODO arrange this equation better
+
+That is why also images which histograms have very unequal peaks or a broad and flat valley will be unsuitable for this method. (cite skimage)
+
