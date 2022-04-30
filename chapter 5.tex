@@ -1,4 +1,23 @@
 \section{Predicting cell organelles}
+\subsection{Loss}
+Although one can easily define a loss function like MSE or Pearson correlation coefficient between ground truth and predicted fluorescence image, there is still a problem is relating this metric to estimating quality of predicted images in practice. There is a clear need to clearly state the down-stream tasks that are going to be performed in the predictions from our data. However these downstream tasks might be different and are not determined right away. For example even though the training of the model happens with the use of Pearson score or MSE, the real practical evaluation will happen in terms of metrics like: the number of the nuclei in the image, the closeness of the intensities of the nuclei of interest, the difference in their mean intensities, the level of details in the Golgi apparatus and the strength of the non specific background fluorescence noise. These metrics are not known in advance and therefore there will always be a gap between the metrics that are used during train and the metrics that are used in practice.
+
+During training 2 following losses have beed used. MSE loss:
+
+\begin{equation}
+    Loss_{MSE} = \frac{1}{N} \sum_{i=1}^{N}{\sum_{j=1}^{W}{\sum_{k=1}^{H}{(y_{j,k} - \hat{y}_{j,k})^2}}}
+\end{equation}
+
+where $N$ is the number of images in the batch and $y_{j,k}$ and $\hat{y}_{j,k}$ are the \{j,k\}th pixel of the ground truth and predicted images respectively.
+
+Pearson Correlation Coefficient (PCC) is commonly used in cell biology when comparing the co-localization of two or more proteins, and also used in computer vision to assess spatial-intensity when determining image similarity (reword and cite Cohen). It is calculated as follows:
+
+\begin{equation}
+    Loss_{PCC} = \frac{\sum_{i=1}^{N}{(y_i - \bar{y_i})(\hat{y_i} - \bar{\hat{y_i}})}}{\sqrt{\sum_{i=1}^{N}{(y_i - \bar{y_i})^2(\hat{y_i} - \bar{\hat{y_i}})^2}}}
+\end{equation}
+
+where $y_i$ is the flattened ground truth image, $\hat{y_i}$ is flattened predicted image and $\bar{y_i}$, $\bar{\hat{y_i}}$ are means of the ground truth and predicted images respectively.
+
 \subsection{Nuclei}
 In this subsection the results of the nuclei predictions will be presented. You can see examples of predictions presented in Figures TODO and TODO. There are TODO visible problems with the predictions:
 \begin{itemize}

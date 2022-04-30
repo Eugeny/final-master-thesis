@@ -13,6 +13,6 @@ Overview of the articles existed before, why this one was chosen.
 
 The description of the architecture of unet. 
 
-Stuff from MIKE!!!
+second stuff from Mike
 
 explain batch and fed-batch in the introduction
