@@ -1058,6 +1058,11 @@ INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/ts1ppl.fd
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/ts1ppl.fd
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/ts1ppl.fd
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/palatino/pplr8c.tfm
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/enhancement.jpg
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/enhancement.jpg
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/enhancement.jpg
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/enhancement.jpg
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/enhancement.jpg
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/chapter 6.tex
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/chapter 6.tex
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/chapter 6.tex
@@ -1200,6 +1205,58 @@ INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/dif
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/difficult-lightning/normal_min.png
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/difficult-lightning/normal_min.png
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/difficult-lightning/normal_min.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/segmentation/nuclei-mask/normalized.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/segmentation/nuclei-mask/normalized.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/segmentation/nuclei-mask/normalized.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/segmentation/nuclei-mask/normalized.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/segmentation/nuclei-mask/normalized.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/segmentation/nuclei-mask/binary_local.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/segmentation/nuclei-mask/binary_local.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/segmentation/nuclei-mask/binary_local.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/segmentation/nuclei-mask/binary_local.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/segmentation/nuclei-mask/binary_local.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/segmentation/nuclei-mask/filled_holes.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/segmentation/nuclei-mask/filled_holes.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/segmentation/nuclei-mask/filled_holes.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/segmentation/nuclei-mask/filled_holes.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/segmentation/nuclei-mask/filled_holes.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/segmentation/nuclei-mask/mask.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/segmentation/nuclei-mask/mask.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/segmentation/nuclei-mask/mask.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/segmentation/nuclei-mask/mask.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/segmentation/nuclei-mask/mask.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/segmentation/nuclei-mask/normalized.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/segmentation/nuclei-mask/normalized.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/segmentation/nuclei-mask/normalized.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/segmentation/nuclei-mask/normalized.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/segmentation/nuclei-mask/binary_local.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/segmentation/nuclei-mask/binary_local.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/segmentation/nuclei-mask/binary_local.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/segmentation/nuclei-mask/binary_local.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/segmentation/nuclei-mask/filled_holes.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/segmentation/nuclei-mask/filled_holes.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/segmentation/nuclei-mask/filled_holes.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/segmentation/nuclei-mask/filled_holes.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/segmentation/nuclei-mask/mask.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/segmentation/nuclei-mask/mask.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/segmentation/nuclei-mask/mask.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/segmentation/nuclei-mask/mask.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/segmentation/nuclei-mask/normalized.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/segmentation/nuclei-mask/normalized.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/segmentation/nuclei-mask/normalized.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/segmentation/nuclei-mask/normalized.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/segmentation/nuclei-mask/binary_local.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/segmentation/nuclei-mask/binary_local.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/segmentation/nuclei-mask/binary_local.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/segmentation/nuclei-mask/binary_local.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/segmentation/nuclei-mask/filled_holes.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/segmentation/nuclei-mask/filled_holes.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/segmentation/nuclei-mask/filled_holes.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/segmentation/nuclei-mask/filled_holes.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/segmentation/nuclei-mask/mask.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/segmentation/nuclei-mask/mask.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/segmentation/nuclei-mask/mask.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/segmentation/nuclei-mask/mask.png
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/summary.tex
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/summary.tex
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/summary.tex

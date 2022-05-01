@@ -30,3 +30,23 @@ Predictions of the border of the crops are quite challenging for the model as th
 Explanation for the lack of details inside TODO
 
 The nucleus is relatively a simple task for predictions as it might be relatively easier to spot the nuclei manually as well. They are relatively big with respect to the cell as well. More challenging task would be a prediction of Golgi Apparatus.
+
+\subsection{Golgi Apparatus}
+Golgi Apparatus (or simply Golgi) is another organelle inside the cell, that packages protein into membrane-bound vescicles. One can see an example of how the staining of the Golgi with fluorescence imaging looks like in Figure TODO ref. It is evident that there is a lighter foreground fluorescence and a bit darker one apart from the black background itself. Truly Golgi is only the lighter part of fluorescence lightning and the other part is called a non-specific fluorescence lightning. It comes from the cell itself, and might occur when the antigen is impure and contains antigenic contaminants. (cite Immunofluorescence in medical science indian) Its brightness may vary due to longer or shorter exposure time. 
+
+Having such a non-specific fluorescence background may have 2 potential challenges for training:
+\begin{itemize}
+    \item The relative area of the background fluorescence is bigger than the area of Golgi themselves. Therefore quite a big part in the loss during training will be dedicated to teaching model to restore this background fluorescence instead of the Golgi itself.
+    \item It also introduces difficulties during the post-processing of the predictions. As well as for nuclei, the mask of the predicted Golgi Apparatuses will be needed. Using the same algorithm for post-processing segmentation that was used for nuclei, the mask of the Golgi Apparatus will consider the background noise to be relevant, altough this is an unwanted behavior.
+\end{itemize}
+
+To escape this one has to subsctract the background first or so-called to enhance the image. The main approach was to replicate the post-processing that is used in practice in labs for segmenting fluorescence images of Golgi.
+
+\begin{figure}[htb]
+	\begin{center}
+		\includegraphics[width=0.5\linewidth]{bilder/enhancement.jpg}
+		\caption{Golgi enhancement}\label{fig:golgi-enhancement}
+	\end{center}
+\end{figure}
+
+On the left of Figure \ref{fig:golgi-enhancement} one can see the original ground truth image and on the right - the images after the background was substracted. To do so the rolling ball algorithm has been used.

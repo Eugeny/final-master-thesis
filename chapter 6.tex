@@ -48,7 +48,7 @@ Another challenge for segmentation bring nuclei that are very close to each othe
 
 Here cells, that are not yet fully divided are highlighted with the green cirles, and ones, that are fully divided, but just located too close to one another are highlighted with red circles. You can see that the segmentation algorithm (described in TODO) recognises both such cases as one cell.
 
-\subsubsection{Algorithm}
+\subsubsection{Thresholding}
 
 Global thresholding is a an algorithm that simply choses one threshold $T$ for the whole histogram of the image. All pixels that are smaller than this threshold $x_i < T$ are assigned to be of class $0$ (background) and all pixels that are larger than this threshold $x_i > T$ are assigned to be of class $1$ (foreground). To find a threshold automatically Gonzalez et al. (cite Digital Image Processing (2nd Edition)) proposed the following algorithm:
 
@@ -220,3 +220,21 @@ TODO arrange this equation better
 
 That is why also images which histograms have very unequal peaks or a broad and flat valley will be unsuitable for this method. (cite skimage)
 
+\subsubsection{Overall algorithm}
+
+\begin{figure}[H]
+    \centering
+    \setkeys{Gin}{width=\linewidth}
+    \centering
+        \begin{tabularx}{\textwidth}{YYYY}
+            \textbf{Normalized input} &
+            \textbf{Local threshold} &
+            \textbf{Filled holes} &
+            \textbf{Filtered regions} \\
+            \includegraphics{bilder/segmentation/nuclei-mask/normalized.png} & \includegraphics{bilder/segmentation/nuclei-mask/binary_local.png} &
+            \includegraphics{bilder/segmentation/nuclei-mask/filled_holes.png} & 
+            \includegraphics{bilder/segmentation/nuclei-mask/mask.png}
+        \end{tabularx}
+    \caption{Fluorescence segmentation}
+    \label{fig:lightning_conditions}
+\end{figure}

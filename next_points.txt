@@ -16,3 +16,7 @@ The description of the architecture of unet.
 second stuff from Mike
 
 explain batch and fed-batch in the introduction
+
+Explain rolling ball chapter 5
+
+Add nuclei segmentation pipeline (only threshold was described so far) chapter 6
