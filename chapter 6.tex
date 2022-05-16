@@ -221,6 +221,19 @@ TODO arrange this equation better
 That is why also images which histograms have very unequal peaks or a broad and flat valley will be unsuitable for this method. (cite skimage)
 
 \subsubsection{Overall algorithm}
+With the chosen type of thresholding, the following algorithm is applied to the image to obtain the mask of nuclei:
+
+\begin{algorithm}
+    \caption{Fluorescence segmentation}\label{alg:global-thresholding}
+    \begin{algorithmic}
+    \item 1. Normalize image.
+    \item 2. Apply chosen thresholding and get a threshold $T$ or a set of local thresholds \{$T_i$\} and create an initial mask: $1$ if $x_i > T$ or $0$ otherwise.  
+    \item 3. Apply \textit{fill\_holes} transformation to the initial mask in order to get rid of unneeded details insides the nuclei.
+    \item 4. Run \textit{findContours} from opencv in order to obtain separate regions and filter them based on the following criteria: filter out too big regions (measure the biggest possible nuclei manually), too small regions (measured manually as well), regions that have a shape that it not very similar to convex circular type of nuclei. The last filter is done by checking the ratio of the area of the region to the area of the convex hull of the region. 
+    \end{algorithmic}
+\end{algorithm}    
+
+Subsequent steps of such algorithm are presented in the Figure \ref{fig:segmentation-nuclei-steps}
 
 \begin{figure}[H]
     \centering
@@ -236,5 +249,65 @@ That is why also images which histograms have very unequal peaks or a broad and 
             \includegraphics{bilder/segmentation/nuclei-mask/mask.png}
         \end{tabularx}
     \caption{Fluorescence segmentation}
-    \label{fig:lightning_conditions}
+    \label{fig:segmentation-nuclei-steps}
+\end{figure}
+
+
+\subsection{ER-segmentation}
+Endoplasmic reticulum or ER is another cell organelle. It is a continuos membrane system that forms a series of flattened sacs within the cell. It has many important functions such as synthesis, folding, modification, and transport of proteins. (Rogers, Kara. "endoplasmic reticulum". Encyclopedia Britannica, 11 Nov. 2020, https://www.britannica.com/science/endoplasmic-reticulum. Accessed 16 May 2022.) Therefore detecting ER within the cell and its quaility and its further analysis can give insights on the protein production of the cell. For example the proximity of the ER to the nucleus allows it to control the protein production. For example, when the protein os misfolded or incorrectly folded it will accumulate in the ER lumen and will be a signal to activate misfolded protein response. 
+
+\begin{figure}[H]
+    \centering
+    \setkeys{Gin}{width=\linewidth}
+    \centering
+        \begin{tabularx}{\textwidth}{YYYY}
+            \textbf{Ground truth} &
+            \textbf{Prediction} &
+            \textbf{Prediction + nuclei} \\
+            \includegraphics{bilder/ER/gt.jpg} & \includegraphics{bilder/ER/er.jpg} &
+            \includegraphics{bilder/ER/gt_nuclei.jpg}
+        \end{tabularx}
+    \caption{ER prediction}
+    \label{fig:er-prediction}
+\end{figure}
+
+For staining this organelle Fluorescein isothiocyanate (FITC) method was used. The process of ER fluorescence segmentation is somewhat different to nuclei segmentation. These fluorescence staining has a stronger "shining" around the ER itself and therefore a simple background removal would be helpful to reduce it. Another big reason to use this approach hides in the escaping of the background noise recognized as a signal by the further local thresholding algorithm as in Figure \ref{fig:segmentation-nuclei-steps} c. Such regions from the background noise cannot be filtered out that easily for ER-fluorescence. Ther reason is the following: the main criteria for filtering such regions in nuclei fluorescence imaging was the shape of the region. All nuclei are almost round and convex, while background noise might be not convex at all. However in FITC imaging some of the cells are located so close one to another that they may form a long non-convex object that would be filtered out based on previous criteria. Therefore removing the background noise if an improvement for pre-processing of images on which the local thresholding would be performed.
+
+In order to do that one can first apply a rough over-predictive global thresholding over the fluorescence image, that will cover a true signal fully and ignore the background noise. Mean thresholding algorithm was chosen for this as it perfectly does the over prediction for these images (see Figure TODO ref). The mask created with the mean thresholding approach is used to zero out all the pixels that are not covered in the mask. Only after that the local thresholding is applied (in comparison to nuclei where one can apply local thresholding directly) with the TODO 181 (Fugure TODO). Then  algorithm covers all the holes in the middle on the cells in fluorescence that might have appeared during the thresholding. Morphological opening (see Section TODO) and Gaussian Blur with the squared kernel 3x3 are applied. Connected components are detected afterwards and filtered based on the limit of the area they occupy, this filters out mostly very small components from the mask which might be produced by the left out background noise. The whole algorithm overview you can find here:
+
+
+\begin{algorithm}
+    \caption{Fluorescence segmentation}\label{alg:global-thresholding}
+    \begin{algorithmic}
+    \item 1. Normalize image
+    \item 2. Apply global \textit{threshold\_mean} to receive initial mask.
+    \item 3. Zero out pixels outside the mask
+    \item 4. Apply local thresholding.  
+    \item 5. Apply \textit{fill\_holes} transformation.
+    \item 6. Morphological opening from opencv and Gaussian blur.
+    \item 7. Run \textit{findContours} from opencv in order to obtain separate regions and filter out too small regions.
+    \end{algorithmic}
+\end{algorithm}    
+
+Segmentation steps are also iilustrated in Figure TODO\begin{figure}[H]
+    \centering
+    \setkeys{Gin}{width=\linewidth}
+    \centering
+        \begin{tabularx}{\textwidth}{YYYYYYY}
+            \textbf{1} &
+            \textbf{2} &
+            \textbf{3} &
+            \textbf{4} &
+            \textbf{5} &
+            \textbf{6} &
+            \textbf{7} \\
+            \includegraphics{bilder/ER/segmentation/pp_1.png} & \includegraphics{bilder/ER/segmentation/pp_2.png} &
+            \includegraphics{bilder/ER/segmentation/pp_3.png} &
+            \includegraphics{bilder/ER/segmentation/pp_4.png} &
+            \includegraphics{bilder/ER/segmentation/pp_5.png} &
+            \includegraphics{bilder/ER/segmentation/pp_6.png} &
+            \includegraphics{bilder/ER/segmentation/pp_7.png} 
+        \end{tabularx}
+    \caption{ER prediction}
+    \label{fig:er-prediction}
 \end{figure}

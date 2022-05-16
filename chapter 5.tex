@@ -50,3 +50,27 @@ To escape this one has to subsctract the background first or so-called to enhanc
 \end{figure}
 
 On the left of Figure \ref{fig:golgi-enhancement} one can see the original ground truth image and on the right - the images after the background was substracted. To do so the rolling ball algorithm has been used.
+
+Rolling ball algorithm has been introduced by Sternberg in 1983 (cite doi:10.1109/mc.1983.1654163) and is still widely used for processing medical and biological data. The idea of this algorithm is based on morphological opening of the image. 
+
+Morphological opening is an operation on the image involving first eroding the image and then dilating it with the same structuring element for both operations. It is helpful for extracting big image features. (cite https://cutt.ly/PGJjucI) Structuring element is a matrix smaller than the image itself that defines the area around the pixel that is going to be processed to define its new value after the morphological operation is performed. It is an analogues of a kernel in image processing. You can see an example of a structuring element on the Figure \ref{fig:structuring-element}
+
+\begin{figure}[htb]
+	\begin{center}
+		\includegraphics[width=0.5\linewidth]{bilder/structuring-element.png}
+		\caption{Structuring Element}\label{fig:structuring-element}
+	\end{center}
+\end{figure}
+
+Morphological dilation takes a new value of the pixel as the maximum value of its neighbours within the structing element. Therefore after this operation lines will be thicker and in general objects will appear bigger.
+
+Morphological erosion on the other hand makes the pixel value as the minimum value of its neighbours within the structuring element. After this operation the floating pixels will be removed and all object become smaller and thinner.
+
+Sternberg has extrapolated the operation of morphological opening from 2D into 3D space. If one can imagine the image to be a 3D plane, with the height of ech pixel being determined by its intesity, such an interpretaion of the image is called umbra. The structuring element for morphological opening of an umbra has to be then also a 3D object - a ball for example. The opening of an umbra then will be a union of translations of the 3-D structuring element that can be rntirely contained inside umbra (see Figure \ref{fig:rolling-ball}). One can image the ball freely moving inside the volume constrained by the upper surface of an umbra. The opening then consists of all the pixels then can be reaches by the ball. The radius of the ball then is the hyper-parameter than has to be tuned. 
+
+\begin{figure}[htb]
+	\begin{center}
+		\includegraphics[width=0.5\linewidth]{bilder/rolling-ball.png}
+		\caption{Rolling Ball}\label{fig:rolling-ball}
+	\end{center}
+\end{figure}
