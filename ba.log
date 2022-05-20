@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.5.29)  16 MAY 2022 20:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.5.29)  20 MAY 2022 20:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -759,7 +759,7 @@ Package biblatex Info: ... file 'ba.bbl' found.
 Package biblatex Info: Reference section=0 on input line 69.
 Package biblatex Info: Reference segment=0 on input line 69.
  (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/titelmakros.tex
-<bilder/HHU_Logo.pdf, id=82, 896.34875pt x 218.8175pt>
+<bilder/HHU_Logo.pdf, id=86, 896.34875pt x 218.8175pt>
 File: bilder/HHU_Logo.pdf Graphic file (type pdf)
 <use bilder/HHU_Logo.pdf>
 Package pdftex.def Info: bilder/HHU_Logo.pdf  used on input line 47.
@@ -815,50 +815,50 @@ Underfull \hbox (badness 4660) in paragraph at lines 23--24
  []
 
 [3]
-Underfull \hbox (badness 1009) in paragraph at lines 35--36
+Underfull \hbox (badness 1009) in paragraph at lines 34--35
 []\T1/ppl/m/n/10.95 Assessing the pro-duc-tiv-ity rates of the clones is very labour in-ten-sive and time-
  []
 
-<bilder/dic-random.png, id=156, 700.6175pt x 443.6575pt>
+<bilder/dic-random.png, id=162, 700.6175pt x 443.6575pt>
 File: bilder/dic-random.png Graphic file (type png)
 <use bilder/dic-random.png>
-Package pdftex.def Info: bilder/dic-random.png  used on input line 46.
+Package pdftex.def Info: bilder/dic-random.png  used on input line 45.
 (pdftex.def)             Requested size: 213.39566pt x 135.12917pt.
 [4 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/dic-random.png>]
-<bilder/Unet.png, id=165, 1875.005pt x 792.9625pt>
+<bilder/Unet.png, id=170, 1875.005pt x 792.9625pt>
 File: bilder/Unet.png Graphic file (type png)
 <use bilder/Unet.png>
-Package pdftex.def Info: bilder/Unet.png  used on input line 69.
+Package pdftex.def Info: bilder/Unet.png  used on input line 68.
 (pdftex.def)             Requested size: 426.79134pt x 180.48999pt.
-) (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/chapter 3.tex [5 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/Unet.png>]
-<bilder/overfit.png, id=173, 797.98125pt x 652.4375pt>
+) (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/chapter 3.tex [5]
+<bilder/overfit.png, id=176, 797.98125pt x 652.4375pt>
 File: bilder/overfit.png Graphic file (type png)
 <use bilder/overfit.png>
 Package pdftex.def Info: bilder/overfit.png  used on input line 12.
 (pdftex.def)             Requested size: 256.0774pt x 209.37163pt.
- [6 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/overfit.png>]
-<bilder/dropout.png, id=182, 783.92876pt x 411.5375pt>
+ [6 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/Unet.png>] [7 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/overfit.png>]
+<bilder/dropout.png, id=200, 783.92876pt x 411.5375pt>
 File: bilder/dropout.png Graphic file (type png)
 <use bilder/dropout.png>
 Package pdftex.def Info: bilder/dropout.png  used on input line 51.
 (pdftex.def)             Requested size: 341.43436pt x 179.24342pt.
-<bilder/firt-train-overfit.png, id=184, 462.528pt x 346.896pt>
+<bilder/firt-train-overfit.png, id=202, 462.528pt x 346.896pt>
 File: bilder/firt-train-overfit.png Graphic file (type png)
 <use bilder/firt-train-overfit.png>
 Package pdftex.def Info: bilder/firt-train-overfit.png  used on input line 62.
 (pdftex.def)             Requested size: 213.39566pt x 160.05048pt.
-<bilder/first-train-regularized.png, id=185, 566.115pt x 410.53375pt>
+<bilder/first-train-regularized.png, id=203, 566.115pt x 410.53375pt>
 File: bilder/first-train-regularized.png Graphic file (type png)
 <use bilder/first-train-regularized.png>
 Package pdftex.def Info: bilder/first-train-regularized.png  used on input line 68.
 (pdftex.def)             Requested size: 213.39566pt x 154.74533pt.
- [7]) (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/chapter 4.tex [8 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/dropout.png> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/firt-train-overfit.png> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/first-train-regularized.png>] [9]
-<bilder/crops_combination/prediction_border_0.png, id=217, 2144.01pt x 2144.01pt>
+) (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/chapter 4.tex [8 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/dropout.png>] [9 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/firt-train-overfit.png> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/first-train-regularized.png>]
+<bilder/crops_combination/prediction_border_0.png, id=222, 2144.01pt x 2144.01pt>
 File: bilder/crops_combination/prediction_border_0.png Graphic file (type png)
 <use bilder/crops_combination/prediction_border_0.png>
 Package pdftex.def Info: bilder/crops_combination/prediction_border_0.png  used on input line 12.
 (pdftex.def)             Requested size: 204.85802pt x 204.82808pt.
-<bilder/crops_combination/prediction_border_34.png, id=218, 2144.01pt x 2144.01pt>
+<bilder/crops_combination/prediction_border_34.png, id=223, 2144.01pt x 2144.01pt>
 File: bilder/crops_combination/prediction_border_34.png Graphic file (type png)
 <use bilder/crops_combination/prediction_border_34.png>
 Package pdftex.def Info: bilder/crops_combination/prediction_border_34.png  used on input line 19.
@@ -868,162 +868,162 @@ LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 24
  (/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/ts1ppl.fd
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 ) [11]
-<bilder/enhancement.jpg, id=231, 1284.8pt x 634.37pt>
+<bilder/enhancement.jpg, id=236, 1284.8pt x 634.37pt>
 File: bilder/enhancement.jpg Graphic file (type jpg)
 <use bilder/enhancement.jpg>
 Package pdftex.def Info: bilder/enhancement.jpg  used on input line 47.
 (pdftex.def)             Requested size: 213.39566pt x 105.36346pt.
  [12]
-Underfull \hbox (badness 10000) in paragraph at lines 54--55
-[]\T1/ppl/m/n/10.95 Rolling ball al-go-rithm has been in-tro-duced by Stern-berg in 1983 (cite
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
+\T1/ppl/m/n/10.95 Rolling ball al-go-rithm has been in-tro-duced by Stern-berg in 1983 (cite
  []
 
 
-Underfull \hbox (badness 1221) in paragraph at lines 54--55
+Underfull \hbox (badness 1221) in paragraph at lines 55--56
 \T1/ppl/m/n/10.95 doi:10.1109/mc.1983.1654163) and is still widely used for pro-cess-ing med-i-cal and
  []
 
-<bilder/structuring-element.png, id=238, 952.55875pt x 550.055pt>
+<bilder/structuring-element.png, id=243, 952.55875pt x 550.055pt>
 File: bilder/structuring-element.png Graphic file (type png)
 <use bilder/structuring-element.png>
-Package pdftex.def Info: bilder/structuring-element.png  used on input line 60.
+Package pdftex.def Info: bilder/structuring-element.png  used on input line 61.
 (pdftex.def)             Requested size: 213.39566pt x 123.21986pt.
 [13 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/enhancement.jpg> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/structuring-element.png>]
-<bilder/rolling-ball.png, id=247, 458.71375pt x 266.9975pt>
+<bilder/rolling-ball.png, id=253, 458.71375pt x 266.9975pt>
 File: bilder/rolling-ball.png Graphic file (type png)
 <use bilder/rolling-ball.png>
-Package pdftex.def Info: bilder/rolling-ball.png  used on input line 73.
+Package pdftex.def Info: bilder/rolling-ball.png  used on input line 74.
 (pdftex.def)             Requested size: 213.39566pt x 124.20958pt.
-) [14 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/rolling-ball.png>] (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/chapter 6.tex
+) (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/chapter 6.tex [14 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/rolling-ball.png>]
 File: bilder/lightning-conditions/lightning-1.png Graphic file (type png)
 <use bilder/lightning-conditions/lightning-1.png>
-Package pdftex.def Info: bilder/lightning-conditions/lightning-1.png  used on input line 26.
+Package pdftex.def Info: bilder/lightning-conditions/lightning-1.png  used on input line 28.
 (pdftex.def)             Requested size: 94.69785pt x 94.67696pt.
 File: bilder/lightning-conditions/lightning-2.png Graphic file (type png)
 <use bilder/lightning-conditions/lightning-2.png>
-Package pdftex.def Info: bilder/lightning-conditions/lightning-2.png  used on input line 26.
+Package pdftex.def Info: bilder/lightning-conditions/lightning-2.png  used on input line 28.
 (pdftex.def)             Requested size: 94.69785pt x 94.67696pt.
 File: bilder/lightning-conditions/lightning-3.png Graphic file (type png)
 <use bilder/lightning-conditions/lightning-3.png>
-Package pdftex.def Info: bilder/lightning-conditions/lightning-3.png  used on input line 26.
+Package pdftex.def Info: bilder/lightning-conditions/lightning-3.png  used on input line 28.
 (pdftex.def)             Requested size: 94.69785pt x 94.67696pt.
 File: bilder/lightning-conditions/lightning-4.png Graphic file (type png)
 <use bilder/lightning-conditions/lightning-4.png>
-Package pdftex.def Info: bilder/lightning-conditions/lightning-4.png  used on input line 26.
+Package pdftex.def Info: bilder/lightning-conditions/lightning-4.png  used on input line 28.
 (pdftex.def)             Requested size: 94.69785pt x 94.67696pt.
  [15 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-1.png (PNG copy)> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-2.png (PNG copy)> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-3.png (PNG copy)> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-4.png (PNG copy)>]
 File: bilder/close-located-cells/original.png Graphic file (type png)
 <use bilder/close-located-cells/original.png>
-Package pdftex.def Info: bilder/close-located-cells/original.png  used on input line 44.
+Package pdftex.def Info: bilder/close-located-cells/original.png  used on input line 46.
 (pdftex.def)             Requested size: 201.39568pt x 201.3989pt.
 File: bilder/close-located-cells/segmented.png Graphic file (type png)
 <use bilder/close-located-cells/segmented.png>
-Package pdftex.def Info: bilder/close-located-cells/segmented.png  used on input line 44.
+Package pdftex.def Info: bilder/close-located-cells/segmented.png  used on input line 46.
 (pdftex.def)             Requested size: 201.39568pt x 201.3989pt.
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 56.
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 58.
  [16 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/close-located-cells/original.png> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/close-located-cells/segmented.png>]
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 71.
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 73.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-<bilder/Gonzalez.png, id=279, 885.3075pt x 476.78125pt>
+<bilder/Gonzalez.png, id=282, 885.3075pt x 476.78125pt>
 File: bilder/Gonzalez.png Graphic file (type png)
 <use bilder/Gonzalez.png>
-Package pdftex.def Info: bilder/Gonzalez.png  used on input line 87.
+Package pdftex.def Info: bilder/Gonzalez.png  used on input line 89.
 (pdftex.def)             Requested size: 341.43436pt x 183.8778pt.
  [17] [18 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/Gonzalez.png>]
-<bilder/difficult-lightning/gradient_local.png, id=307, 2144.01pt x 2144.01pt>
+<bilder/difficult-lightning/gradient_local.png, id=313, 2144.01pt x 2144.01pt>
 File: bilder/difficult-lightning/gradient_local.png Graphic file (type png)
 <use bilder/difficult-lightning/gradient_local.png>
-Package pdftex.def Info: bilder/difficult-lightning/gradient_local.png  used on input line 165.
+Package pdftex.def Info: bilder/difficult-lightning/gradient_local.png  used on input line 167.
 (pdftex.def)             Requested size: 160.04674pt x 160.04137pt.
-<bilder/difficult-lightning/point_local.png, id=308, 2144.01pt x 2144.01pt>
+<bilder/difficult-lightning/point_local.png, id=314, 2144.01pt x 2144.01pt>
 File: bilder/difficult-lightning/point_local.png Graphic file (type png)
 <use bilder/difficult-lightning/point_local.png>
-Package pdftex.def Info: bilder/difficult-lightning/point_local.png  used on input line 172.
+Package pdftex.def Info: bilder/difficult-lightning/point_local.png  used on input line 174.
 (pdftex.def)             Requested size: 160.04674pt x 160.04137pt.
-<bilder/difficult-lightning/gradient_min.png, id=309, 2144.01pt x 2144.01pt>
+<bilder/difficult-lightning/gradient_min.png, id=315, 2144.01pt x 2144.01pt>
 File: bilder/difficult-lightning/gradient_min.png Graphic file (type png)
 <use bilder/difficult-lightning/gradient_min.png>
-Package pdftex.def Info: bilder/difficult-lightning/gradient_min.png  used on input line 179.
+Package pdftex.def Info: bilder/difficult-lightning/gradient_min.png  used on input line 181.
 (pdftex.def)             Requested size: 160.04674pt x 160.04137pt.
-<bilder/difficult-lightning/point_min.png, id=310, 2144.01pt x 2144.01pt>
+<bilder/difficult-lightning/point_min.png, id=316, 2144.01pt x 2144.01pt>
 File: bilder/difficult-lightning/point_min.png Graphic file (type png)
 <use bilder/difficult-lightning/point_min.png>
-Package pdftex.def Info: bilder/difficult-lightning/point_min.png  used on input line 185.
+Package pdftex.def Info: bilder/difficult-lightning/point_min.png  used on input line 187.
 (pdftex.def)             Requested size: 160.04674pt x 160.04137pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 163--189
+Underfull \hbox (badness 10000) in paragraph at lines 165--191
 [][][]
  []
 
 File: bilder/difficult-lightning/normal_local.png Graphic file (type png)
 <use bilder/difficult-lightning/normal_local.png>
-Package pdftex.def Info: bilder/difficult-lightning/normal_local.png  used on input line 201.
+Package pdftex.def Info: bilder/difficult-lightning/normal_local.png  used on input line 203.
 (pdftex.def)             Requested size: 201.39568pt x 201.39302pt.
 File: bilder/difficult-lightning/normal_min.png Graphic file (type png)
 <use bilder/difficult-lightning/normal_min.png>
-Package pdftex.def Info: bilder/difficult-lightning/normal_min.png  used on input line 201.
+Package pdftex.def Info: bilder/difficult-lightning/normal_min.png  used on input line 203.
 (pdftex.def)             Requested size: 201.39568pt x 201.39302pt.
 [19 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/difficult-lightning/normal_local.png (PNG copy)> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/difficult-lightning/normal_min.png (PNG copy)>] [20 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/difficult-lightning/gradient_local.png (PNG copy)> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/difficult-lightning/point_local.png (PNG copy)> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/difficult-lightning/gradient_min.png (PNG copy)> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/difficult-lightning/point_min.png (PNG copy)>]
 File: bilder/segmentation/nuclei-mask/normalized.png Graphic file (type png)
 <use bilder/segmentation/nuclei-mask/normalized.png>
-Package pdftex.def Info: bilder/segmentation/nuclei-mask/normalized.png  used on input line 250.
+Package pdftex.def Info: bilder/segmentation/nuclei-mask/normalized.png  used on input line 252.
 (pdftex.def)             Requested size: 94.69785pt x 94.67696pt.
 File: bilder/segmentation/nuclei-mask/binary_local.png Graphic file (type png)
 <use bilder/segmentation/nuclei-mask/binary_local.png>
-Package pdftex.def Info: bilder/segmentation/nuclei-mask/binary_local.png  used on input line 250.
+Package pdftex.def Info: bilder/segmentation/nuclei-mask/binary_local.png  used on input line 252.
 (pdftex.def)             Requested size: 94.69785pt x 94.67696pt.
 File: bilder/segmentation/nuclei-mask/filled_holes.png Graphic file (type png)
 <use bilder/segmentation/nuclei-mask/filled_holes.png>
-Package pdftex.def Info: bilder/segmentation/nuclei-mask/filled_holes.png  used on input line 250.
+Package pdftex.def Info: bilder/segmentation/nuclei-mask/filled_holes.png  used on input line 252.
 (pdftex.def)             Requested size: 94.69785pt x 94.67696pt.
 File: bilder/segmentation/nuclei-mask/mask.png Graphic file (type png)
 <use bilder/segmentation/nuclei-mask/mask.png>
-Package pdftex.def Info: bilder/segmentation/nuclei-mask/mask.png  used on input line 250.
+Package pdftex.def Info: bilder/segmentation/nuclei-mask/mask.png  used on input line 252.
 (pdftex.def)             Requested size: 94.69785pt x 94.67696pt.
+ [21 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/segmentation/nuclei-mask/normalized.png (PNG copy)> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/segmentation/nuclei-mask/binary_local.png (PNG copy)> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/segmentation/nuclei-mask/filled_holes.png (PNG copy)> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/segmentation/nuclei-mask/mask.png (PNG copy)>]
 File: bilder/ER/gt.jpg Graphic file (type jpg)
 <use bilder/ER/gt.jpg>
-Package pdftex.def Info: bilder/ER/gt.jpg  used on input line 269.
+Package pdftex.def Info: bilder/ER/gt.jpg  used on input line 271.
 (pdftex.def)             Requested size: 130.26378pt x 130.25192pt.
 File: bilder/ER/er.jpg Graphic file (type jpg)
 <use bilder/ER/er.jpg>
-Package pdftex.def Info: bilder/ER/er.jpg  used on input line 269.
+Package pdftex.def Info: bilder/ER/er.jpg  used on input line 271.
 (pdftex.def)             Requested size: 130.26378pt x 130.25192pt.
 File: bilder/ER/gt_nuclei.jpg Graphic file (type jpg)
 <use bilder/ER/gt_nuclei.jpg>
-Package pdftex.def Info: bilder/ER/gt_nuclei.jpg  used on input line 269.
+Package pdftex.def Info: bilder/ER/gt_nuclei.jpg  used on input line 271.
 (pdftex.def)             Requested size: 130.26378pt x 130.25192pt.
- [21 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/segmentation/nuclei-mask/normalized.png (PNG copy)> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/segmentation/nuclei-mask/binary_local.png (PNG copy)> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/segmentation/nuclei-mask/filled_holes.png (PNG copy)> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/segmentation/nuclei-mask/mask.png (PNG copy)>]
 File: bilder/ER/segmentation/pp_1.png Graphic file (type png)
 <use bilder/ER/segmentation/pp_1.png>
-Package pdftex.def Info: bilder/ER/segmentation/pp_1.png  used on input line 310.
+Package pdftex.def Info: bilder/ER/segmentation/pp_1.png  used on input line 312.
 (pdftex.def)             Requested size: 48.9702pt x 48.94151pt.
 File: bilder/ER/segmentation/pp_2.png Graphic file (type png)
 <use bilder/ER/segmentation/pp_2.png>
-Package pdftex.def Info: bilder/ER/segmentation/pp_2.png  used on input line 310.
+Package pdftex.def Info: bilder/ER/segmentation/pp_2.png  used on input line 312.
 (pdftex.def)             Requested size: 48.9702pt x 48.94151pt.
 File: bilder/ER/segmentation/pp_3.png Graphic file (type png)
 <use bilder/ER/segmentation/pp_3.png>
-Package pdftex.def Info: bilder/ER/segmentation/pp_3.png  used on input line 310.
+Package pdftex.def Info: bilder/ER/segmentation/pp_3.png  used on input line 312.
 (pdftex.def)             Requested size: 48.9702pt x 48.94151pt.
 File: bilder/ER/segmentation/pp_4.png Graphic file (type png)
 <use bilder/ER/segmentation/pp_4.png>
-Package pdftex.def Info: bilder/ER/segmentation/pp_4.png  used on input line 310.
+Package pdftex.def Info: bilder/ER/segmentation/pp_4.png  used on input line 312.
 (pdftex.def)             Requested size: 48.9702pt x 48.94151pt.
 File: bilder/ER/segmentation/pp_5.png Graphic file (type png)
 <use bilder/ER/segmentation/pp_5.png>
-Package pdftex.def Info: bilder/ER/segmentation/pp_5.png  used on input line 310.
+Package pdftex.def Info: bilder/ER/segmentation/pp_5.png  used on input line 312.
 (pdftex.def)             Requested size: 48.9702pt x 48.94151pt.
 File: bilder/ER/segmentation/pp_6.png Graphic file (type png)
 <use bilder/ER/segmentation/pp_6.png>
-Package pdftex.def Info: bilder/ER/segmentation/pp_6.png  used on input line 310.
+Package pdftex.def Info: bilder/ER/segmentation/pp_6.png  used on input line 312.
 (pdftex.def)             Requested size: 48.9702pt x 48.94151pt.
 File: bilder/ER/segmentation/pp_7.png Graphic file (type png)
 <use bilder/ER/segmentation/pp_7.png>
-Package pdftex.def Info: bilder/ER/segmentation/pp_7.png  used on input line 310.
+Package pdftex.def Info: bilder/ER/segmentation/pp_7.png  used on input line 312.
 (pdftex.def)             Requested size: 48.9702pt x 48.94151pt.
-) [22 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/ER/gt.jpg> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/ER/er.jpg> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/ER/gt_nuclei.jpg>] [23 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/ER/segmentation/pp_1.png (PNG copy)> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/ER/segmentation/pp_2.png (PNG copy)> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/ER/segmentation/pp_3.png (PNG copy)> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/ER/segmentation/pp_4.png (PNG copy)> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/ER/segmentation/pp_5.png (PNG copy)> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/ER/segmentation/pp_6.png (PNG copy)> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/ER/segmentation/pp_7.png (PNG copy)>] (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/summary.tex)) [24]
+ [22 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/ER/gt.jpg> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/ER/er.jpg> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/ER/gt_nuclei.jpg>]) [23 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/ER/segmentation/pp_1.png (PNG copy)> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/ER/segmentation/pp_2.png (PNG copy)> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/ER/segmentation/pp_3.png (PNG copy)> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/ER/segmentation/pp_4.png (PNG copy)> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/ER/segmentation/pp_5.png (PNG copy)> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/ER/segmentation/pp_6.png (PNG copy)> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/ER/segmentation/pp_7.png (PNG copy)>] (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/summary.tex)) [24]
 
 LaTeX Warning: Empty bibliography on input line 101.
 
@@ -1043,24 +1043,24 @@ LaTeX Warning: Empty bibliography on input line 101.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `ba.out' has not changed.
-(rerunfilecheck)             Checksum: 13A46F2FE68D8EBF5A11E65A3EC2980C;2324.
+(rerunfilecheck)             Checksum: 4D53E69A2A01840BB1BB68D2CEF31632;2407.
 Package logreq Info: Writing requests to 'ba.run.xml'.
 \openout1 = `ba.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 21181 strings out of 478994
- 352834 string characters out of 5858184
- 1075972 words of memory out of 5000000
- 38213 multiletter control sequences out of 15000+600000
+ 21184 strings out of 478994
+ 352883 string characters out of 5858184
+ 1076972 words of memory out of 5000000
+ 38214 multiletter control sequences out of 15000+600000
  422793 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  76i,16n,77p,1360b,1287s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on "/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/ba.pdf" (33 pages, 37149957 bytes).
+Output written on "/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/ba.pdf" (33 pages, 37151022 bytes).
 PDF statistics:
- 463 PDF objects out of 1000 (max. 8388607)
- 357 compressed objects within 4 object streams
- 93 named destinations out of 1000 (max. 500000)
- 356 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 469 PDF objects out of 1000 (max. 8388607)
+ 363 compressed objects within 4 object streams
+ 95 named destinations out of 1000 (max. 500000)
+ 364 words of extra memory for PDF output out of 10000 (max. 10000000)
 

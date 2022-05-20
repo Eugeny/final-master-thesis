@@ -2,10 +2,12 @@
 The evaluation of the model in terms of the loss is not quite objective for the current problem. Even when one model might have a smaller loss, it doesn't nessecarily will perform better than another model. (cite Cohen) Therefore the evaluation of the model is done in terms of the metrics that are defined as follows. The most used ones by the clients were
 \begin{itemize}
     \item Number of nuclei
-    \item The relatuve area of the nuclei
+    \item The relative area of the nuclei
     \item Total intensity
     \item Mean intensity
 \end{itemize}
+
+They would be calculated for each image in the test set and then the distributions of these metrics for ground truth and predictions would be compared visually with violin plots and Spearman rank and Pearson correlation coefficients
 
 \subsection{Nuclei segmentation}
 \subsubsection{Challenge}
@@ -311,3 +313,6 @@ Segmentation steps are also iilustrated in Figure TODO\begin{figure}[H]
     \caption{ER prediction}
     \label{fig:er-prediction}
 \end{figure}
+
+
+\subsection{Golgi}
