@@ -76,4 +76,50 @@ Sternberg has extrapolated the operation of morphological opening from 2D into 3
 	\end{center}
 \end{figure}
 
-However subtracting the background with rolling ball algorithm is not enough to get a reasonably clean signal of Golgi Apparatus from fluorescence imaging. One can clearly see that even after applying such preprocessing there is still some backgorund noise left (see Figure TODO)
+However, subtracting the background with rolling ball algorithm is not enough to get a reasonably clean signal of Golgi Apparatus from fluorescence imaging. To check this one can convert the original image from the vanilla pre-processing with rolling ball algorithm into a mask. To do so, let's just assing all non-zero pixels to the maximum value of image intensity. The mask that have been created like this would look like in Figure \ref{subfig:vanilla-mask}. It clearly still contains a lot of background noise of low intensity and that is why this background noise was not visible for an eye. In order to remove it one could clip lower intensities of the image via the following approach:
+
+\begin{lstlisting}
+	import numpy as np
+		
+	def clip(image):
+		minval = np.percentile(image, 90)
+		image = np.clip(image, minval, image.max())
+		image = (image - image.min()) / (image.max() - image.min())
+		return image
+\end{lstlisting}
+
+
+\begin{figure}
+	\centering
+	\begin{subfigure}[b]{0.22\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{bilder/preprocessing/crop_golgi_not_full_processed.png}
+		\caption{}
+		\label{subfig:vanilla}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.22\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{bilder/preprocessing/crop_golgi_full_processed.png}
+		\caption{}
+		\label{subfig:clipping}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.22\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{bilder/preprocessing/crop_golgi_not_full_processed_mask.png}
+		\caption{}
+		\label{subfig:vanilla-mask}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.22\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{bilder/preprocessing/crop_golgi_full_processed_mask.png}
+		\caption{}
+		\label{subfig:clipping-mask}
+	\end{subfigure}
+	   \caption{(a) Vanilla pre-processing with automatic background removal algorithm only; (b) Additional clipping of lower intensities after vanilla pre-processing; (c) masked or subfigure (a); (d) mask of subfigure (b)}
+	   \label{fig:pre-processing-golgi}
+\end{figure}
+
+The result of the clipped image and its mask are illustated in the Figure \ref{subfig:clipping}, \ref{subfig:clipping-mask} correspondingly. It contains almost no background noise now. Such additional clipping might improve the results slightly.

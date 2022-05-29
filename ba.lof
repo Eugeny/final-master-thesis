@@ -22,18 +22,20 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {11}{\ignorespaces Rolling Ball\relax }}{14}{figure.caption.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {12}{\ignorespaces Different lightning conditions\relax }}{15}{figure.caption.10}%
+\contentsline {figure}{\numberline {12}{\ignorespaces (a) Vanilla pre-processing with automatic background removal algorithm only; (b) Additional clipping of lower intensities after vanilla pre-processing; (c) masked or subfigure (a); (d) mask of subfigure (b)\relax }}{15}{figure.caption.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {13}{\ignorespaces Closely located cells\relax }}{16}{figure.caption.11}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Different lightning conditions\relax }}{16}{figure.caption.11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {14}{\ignorespaces Histogram as a probability density function\relax }}{18}{figure.caption.12}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Closely located cells\relax }}{16}{figure.caption.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {16}{\ignorespaces Local vs. Global thresholding (normal conditions)\relax }}{19}{figure.caption.15}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Histogram as a probability density function\relax }}{18}{figure.caption.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {15}{\ignorespaces Local vs. Global thresholding\relax }}{20}{figure.caption.14}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Local vs. Global thresholding\relax }}{20}{figure.caption.15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {17}{\ignorespaces Fluorescence segmentation\relax }}{21}{figure.caption.16}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Local vs. Global thresholding (normal conditions)\relax }}{20}{figure.caption.16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {18}{\ignorespaces ER prediction\relax }}{22}{figure.caption.17}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Fluorescence segmentation\relax }}{22}{figure.caption.17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {19}{\ignorespaces ER prediction\relax }}{23}{figure.caption.18}%
+\contentsline {figure}{\numberline {19}{\ignorespaces ER prediction\relax }}{22}{figure.caption.18}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {20}{\ignorespaces ER prediction\relax }}{23}{figure.caption.19}%

@@ -410,6 +410,7 @@ INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/caption/subcaption.sty
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/caption/subcaption.sty
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/caption/subcaption.sty
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/caption/caption.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/listings/listings.sty
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/listings/lstlang1.sty
@@ -1075,100 +1076,120 @@ INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/rol
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/rolling-ball.png
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/rolling-ball.png
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/rolling-ball.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/chapter 6.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/chapter 6.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/chapter 6.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/chapter 6.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-1.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-1.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-1.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-1.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-1.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-2.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-2.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-2.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-2.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-2.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-3.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-3.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-3.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-3.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-3.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-4.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-4.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-4.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-4.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-4.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-1.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-1.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-1.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-1.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-2.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-2.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-2.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-2.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-3.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-3.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-3.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-3.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-4.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-4.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-4.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-4.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-1.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-1.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-1.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-1.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-2.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-2.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-2.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-2.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-3.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-3.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-3.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-3.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-4.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-4.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-4.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-4.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/close-located-cells/original.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/close-located-cells/original.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/close-located-cells/original.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/close-located-cells/original.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/close-located-cells/original.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/close-located-cells/segmented.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/close-located-cells/segmented.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/close-located-cells/segmented.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/close-located-cells/segmented.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/close-located-cells/segmented.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/close-located-cells/original.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/close-located-cells/original.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/close-located-cells/original.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/close-located-cells/original.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/close-located-cells/segmented.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/close-located-cells/segmented.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/close-located-cells/segmented.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/close-located-cells/segmented.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/close-located-cells/original.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/close-located-cells/original.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/close-located-cells/original.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/close-located-cells/original.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/close-located-cells/segmented.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/close-located-cells/segmented.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/close-located-cells/segmented.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/close-located-cells/segmented.png
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/t1pcr.fd
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/t1pcr.fd
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/t1pcr.fd
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/t1pcr.fd
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/courier/pcrr8t.tfm
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/Gonzalez.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/Gonzalez.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/Gonzalez.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/Gonzalez.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/Gonzalez.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/preprocessing/crop_golgi_not_full_processed.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/preprocessing/crop_golgi_not_full_processed.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/preprocessing/crop_golgi_not_full_processed.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/preprocessing/crop_golgi_not_full_processed.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/preprocessing/crop_golgi_not_full_processed.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/preprocessing/crop_golgi_full_processed.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/preprocessing/crop_golgi_full_processed.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/preprocessing/crop_golgi_full_processed.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/preprocessing/crop_golgi_full_processed.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/preprocessing/crop_golgi_full_processed.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/preprocessing/crop_golgi_not_full_processed_mask.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/preprocessing/crop_golgi_not_full_processed_mask.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/preprocessing/crop_golgi_not_full_processed_mask.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/preprocessing/crop_golgi_not_full_processed_mask.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/preprocessing/crop_golgi_not_full_processed_mask.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/preprocessing/crop_golgi_full_processed_mask.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/preprocessing/crop_golgi_full_processed_mask.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/preprocessing/crop_golgi_full_processed_mask.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/preprocessing/crop_golgi_full_processed_mask.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/preprocessing/crop_golgi_full_processed_mask.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/chapter 6.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/chapter 6.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/chapter 6.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/chapter 6.tex
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/vf/adobe/courier/pcrr8t.vf
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/courier/pcrr8r.tfm
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-1.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-1.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-1.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-1.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-1.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-2.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-2.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-2.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-2.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-2.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-3.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-3.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-3.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-3.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-3.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-4.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-4.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-4.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-4.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-4.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-1.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-1.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-1.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-1.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-2.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-2.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-2.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-2.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-3.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-3.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-3.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-3.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-4.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-4.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-4.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-4.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-1.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-1.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-1.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-1.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-2.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-2.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-2.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-2.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-3.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-3.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-3.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-3.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-4.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-4.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-4.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/lightning-conditions/lightning-4.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/close-located-cells/original.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/close-located-cells/original.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/close-located-cells/original.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/close-located-cells/original.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/close-located-cells/original.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/close-located-cells/segmented.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/close-located-cells/segmented.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/close-located-cells/segmented.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/close-located-cells/segmented.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/close-located-cells/segmented.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/close-located-cells/original.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/close-located-cells/original.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/close-located-cells/original.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/close-located-cells/original.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/close-located-cells/segmented.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/close-located-cells/segmented.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/close-located-cells/segmented.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/close-located-cells/segmented.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/close-located-cells/original.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/close-located-cells/original.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/close-located-cells/original.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/close-located-cells/original.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/close-located-cells/segmented.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/close-located-cells/segmented.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/close-located-cells/segmented.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/close-located-cells/segmented.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/Gonzalez.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/Gonzalez.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/Gonzalez.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/Gonzalez.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/Gonzalez.png
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/difficult-lightning/gradient_local.png
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/difficult-lightning/gradient_local.png
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/difficult-lightning/gradient_local.png
@@ -1409,6 +1430,10 @@ INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/ER/
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/ER/segmentation/pp_7.png
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/ER/segmentation/pp_7.png
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/bilder/ER/segmentation/pp_7.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/chapter 7.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/chapter 7.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/chapter 7.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/chapter 7.tex
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/summary.tex
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/summary.tex
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/My thesis/summary.tex
