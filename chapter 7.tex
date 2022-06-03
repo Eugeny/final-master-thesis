@@ -36,3 +36,7 @@ In contrast to adding a constant pixelwise to an image to chnage the brightness 
 For both contrast and brightness changes one can use $cv2.convertScaleAbs()$ which directly accepts gain and bias parameters and clips the image to stay within the allowed values range.
 
 Here are presented the results of all the corruption types and their comparison. One can clearly notice that model is quite stable towards different brightness levels and contrast. Adding more contrast to an image even seems to slightly improve the predictions (as the loss becomes lower). 
+
+In order to compare the effect of different corruption types one can calculta the changes in the losses for a subset of the images chosen for the evaluation. The bigger the loss is the worse the prediction is, meaning the stronger the severity of the corruption is. In Figure TODO the comparion of different corruptions with different severities against the loss are presented. The loss is calculated as the Pearson correlation loss for a subset of 10 images that were chosen from the test dataset, therefore the model has never seen these images before.
+
+Howver not only comparing the loss of the network is a good way to evaluate the robustness of the model. One can also compare predcition from corrupted images with the ground truth in terms of the downstream metrics mentioned in the Section TODO. As the model is essetially will be used to predict the downstream metrics, having the robustess estimations for them is as important. The results are presented in Figure TODO.

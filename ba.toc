@@ -66,12 +66,14 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {7.1.5}Contrast}{25}{subsubsection.7.1.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8}Drift Detection}{26}{section.8}%
+\contentsline {section}{\numberline {8}Drift Detection}{27}{section.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.1}Embeddings visualization}{26}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.1}Embeddings visualization}{27}{subsection.8.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9}Summary}{27}{section.9}%
+\contentsline {subsection}{\numberline {8.2}Drift detection on the embedding level}{27}{subsection.8.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{List of Figures}{28}{section.9}%
+\contentsline {section}{\numberline {9}Summary}{28}{section.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{List of Tables}{28}{section.9}%
+\contentsline {section}{List of Figures}{29}{section.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{List of Tables}{29}{section.9}%
