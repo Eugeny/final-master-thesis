@@ -72,6 +72,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {8.2}Drift detection vs Outliers detection}{27}{subsection.8.2}%
 \defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.3}Drift Detection}{28}{subsection.8.3}%
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {9}Summary}{29}{section.9}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{List of Figures}{30}{section.9}%

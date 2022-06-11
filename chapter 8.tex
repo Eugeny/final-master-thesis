@@ -23,3 +23,6 @@ Important observation here is that the drift detector should be robust to outlie
 The need of maintaining drift detection or outlier detection depends on the costs on the errors. If the cost of a single error is too high, one should use an outlier detection, but when one needs a test to decide when to label new data - drift detection would be a better approach.
 
 In summary, the drift detection is needed only when the meaningful shifts of the input data distribution from the training distribution need to be detected, whereas the outlier detector aims at finding unusual single instances uin the inputs.
+
+\subsection{Drift Detection}
+Assume that during training labeled data comes from a distribution $p$, meaning $\{(x_1, y_1), ..., (x_n, y_n)\} \sim p$ and syring deployment unlabeled data comes from a distribution $q$, meaning $\{x_1', ..., x_m'\} \sim q$. The goal of the drift detection is to determine if $q(x')$ is the same data distribution as $p(x)$. Or if to put it more formally $H_0:p(x) = q(x)$ and $H_A:p(x) \neq q(x)$
