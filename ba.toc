@@ -70,10 +70,10 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {8.1}Embeddings visualization}{27}{subsection.8.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.2}Drift detection on the embedding level}{27}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.2}Drift detection vs Outliers detection}{27}{subsection.8.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9}Summary}{28}{section.9}%
+\contentsline {section}{\numberline {9}Summary}{29}{section.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{List of Figures}{29}{section.9}%
+\contentsline {section}{List of Figures}{30}{section.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{List of Tables}{29}{section.9}%
+\contentsline {section}{List of Tables}{30}{section.9}%

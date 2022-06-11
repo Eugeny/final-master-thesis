@@ -6,4 +6,20 @@ One might wonder why the information from the small objects like Golgi for examp
 
 To visualize the embedding of the UNet one has to first flatten the bottleneck layer into a vector, in the current network implementation the size of such vector will be \textit{655536} which too high dimesional. In order to comprehend the embeddings better one has to first perfom any dimensionaluty reduction algorithm. One of the options is to compress the vector to still a somewhat high-dimentional vector, however with a fewer dimention, or to compress it up to 2D or 3D-dimentional representation, which can be easily comprehendable by humans. Both compessions are presented in this section.
 
-\subsection{Drift detection on the embedding level}
+\subsection{Drift detection vs Outliers detection}
+
+After the developement phase or a training of the model is finished, it will be moved into a deployment or a production, where it is supposed to maintain an expected quality of predictions. However input data is not always a stable source, therefore one should constantly maintain the quality of predictions and do a regular check-ups for outliers as well as to alert the drift of the data early enough. Drift detection happens on the raw data in absence of the ground truth labels and serves as a signal that the input data differs a lot from the training data.
+
+There is a significant difference between distinguishing drift of the whole source of data in comparison to detecting single outliers. When one talks about a drift detection, one looks at the whole new input data as a distribution and checks if there is a significant shift in comparison to the data used during training.
+
+There are two possible reactions after the drift is detected, one alerts the user that the predictions became unreliable, and therefore one should consider expanding the dataset by adding the labeled data from the drifted distribution to include it in training or apply some different logic on the model outputs. Although when an outlier is detected, the model might request a human assistant for some particular input, because this input is too unfamiliar to the model and it possible won't give a good prediction on this one.
+
+The goal of outliers detection is to decide on the single instances whether or not they are different from training on unusual in some wy or another. They of course might appear both in training and predictions.
+
+Data drift and outlier detection can co-exist. It might be that the input is drifted, but there are no outliers, it might be that there are a lot of outliers, but the data was not drifted. (cite https://towardsdatascience.com/what-is-the-difference-between-outlier-detection-and-data-drift-detection-534b903056d4) But during the production the good approach is to monitor both.
+
+Important observation here is that the drift detector should be robust to outliers. The system should not send an alert as soon as it sees a suspicious sample due to the fact that outlier might be present in the original data distribution as well. But the alert should happen when there are many such samples. To compare original training data distribution and the new one from inputs different statistical tests like Kolmogorov-Smirnov, Chi-squared and etc. can used.
+
+The need of maintaining drift detection or outlier detection depends on the costs on the errors. If the cost of a single error is too high, one should use an outlier detection, but when one needs a test to decide when to label new data - drift detection would be a better approach.
+
+In summary, the drift detection is needed only when the meaningful shifts of the input data distribution from the training distribution need to be detected, whereas the outlier detector aims at finding unusual single instances uin the inputs.
