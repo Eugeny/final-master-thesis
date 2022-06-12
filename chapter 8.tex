@@ -37,9 +37,19 @@ The test for determinig wether two previously mentioned distributions are the sa
 
 MMD is a kernel-based technique and it allows to distinguish between two distributions based on their mean embeddings (cite and rephrase https://arxiv.org/pdf/1810.11953.pdf) in a reproducing kernel Hilbert space (RKHS).
 
-The idea behind a Hilbert space embedding distribution (or a kernel mean embedding) is to map a distribution into a point in a reproducing Hilbert space. By doing this all powerful kernel methods are allowed to be used for probability measures. One of the widely known kernel methods if a support vector machines (SVM).
+The idea behind a Hilbert space embedding distribution (or a kernel mean embedding) is to map a distribution into a point in a reproducing Hilbert space. By doing this all powerful kernel methods are allowed to be used for probability measures, resulting in methods like kernel two-sample testing for instance. One of the widely known kernel methods if a support vector machines (SVM).
 
+To understand why kernel mean embeddings are so successful one has to first understand what a kernel function is. With
+the help of kernel functions an inner product of elements $x, y \in \mathcal{X}$ in some high-dimensional feature space can be calculated. From cite Smola 2002 if the kernel function if positive definite, then there always exists a dot product space $\mathscr{H}$ as well there exists a function that maps a space from which theses elements are coming from into a mentioned high-dimensional space: $\phi : \mathcal{X} \rightarrow \mathscr{H}$ such that $k(x, y) = {\langle\phi(x), \phi(y)\rangle}_{\mathscr{H}}$ and most importantly there is no need for explicit computation of $\phi$. Therefore if there exists an algorithm that can be expressed through the dot product of $\langle x, y \rangle$ cite Schölkopf Smola 1998 then the kernel function can be applied to this dot product and this is called a \textit{kernel trick}.
 
+Now kernel mean embedding actually extends the above mentioned feature map $\phi$ to the space of probability distributions. In this space each probability distribution will be mapped to a mean function defined as follows:
 
+\begin{equation}
+    \phi(\mathds{P}) = \mu_{\mathds{P}} := \int_{\mathcal{X}}k(x, \cdot)d\mathds{P}(x)
+\end{equation}
+
+Here $k(x, \cdot)$ is a positive definite symmetric kernel function. Generally the main goal is to map a distribution $\mathds{P}$ to an point in the feature space $\mathscr{H}$ and this feature space is exactly an RKHS that corresponds to a kernel $k$. Such a mapping might be useful because it captures all information about the initial distribution $\mathds{P}$. This mapping $\mathds{P} \rightarrow \mu_\mathds{P}$ is injective. This means that $||\mu_\mathds{P} - \mu_\mathds{Q}||_{\mathscr{H}} = 0$ if and only if $\mathds{P} = \mathds{Q}$, which means here that $\mathds{P}$ and $\mathds{Q}$ is the same distribution. Additionally the fact that the mapping is injective makes it possible to use such characterization of a distribution to be used in two-sample homogenneity tests, which is exactly what is needed here. 
+
+To estimate a the kernel mean embedding is much easier than to estimate the distribution itself, this is successfully used in data-generating processes as well as it improves some statistical inference methods like two-sample testin again.  
 
 RKHS methods now can be applied to probability measures, which results in finding out many useful applications one of which is kernel two-sample testing. 
