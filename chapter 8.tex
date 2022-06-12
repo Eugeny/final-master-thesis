@@ -31,7 +31,7 @@ Having the samples from both distributions or the representation of these sample
 
 cite https://arxiv.org/pdf/1605.09522.pdf
 
-\subsubsection{Maximum Mean Discrepancy}
+\subsubsection{Kernel methods and two-sample testing}
 
 The test for determinig wether two previously mentioned distributions are the same that was used in this work is one of the multivariate kernel two-sample tests: Maximum Mean Discrepancy or shotly MMD. The idea behid any two-sample testing is to choose two random samples, where each was taken from one of the two different distributions and afterwards to decide wether the difference in them is statistically significant. 
 
@@ -50,6 +50,30 @@ Now kernel mean embedding actually extends the above mentioned feature map $\phi
 
 Here $k(x, \cdot)$ is a positive definite symmetric kernel function. Generally the main goal is to map a distribution $\mathds{P}$ to an point in the feature space $\mathscr{H}$ and this feature space is exactly an RKHS that corresponds to a kernel $k$. Such a mapping might be useful because it captures all information about the initial distribution $\mathds{P}$. This mapping $\mathds{P} \rightarrow \mu_\mathds{P}$ is injective. This means that $||\mu_\mathds{P} - \mu_\mathds{Q}||_{\mathscr{H}} = 0$ if and only if $\mathds{P} = \mathds{Q}$, which means here that $\mathds{P}$ and $\mathds{Q}$ is the same distribution. Additionally the fact that the mapping is injective makes it possible to use such characterization of a distribution to be used in two-sample homogenneity tests, which is exactly what is needed here. 
 
-To estimate a the kernel mean embedding is much easier than to estimate the distribution itself, this is successfully used in data-generating processes as well as it improves some statistical inference methods like two-sample testin again.  
+To estimate a the kernel mean embedding is much easier than to estimate the distribution itself, this is successfully used in data-generating processes as well as it improves some statistical inference methods like two-sample testing again. It is also a helpful approach when instead of a data points for examples of testing and training datasets there are probability distributions. 
+
+Inner product $\langle x, y \rangle$ can be viewed as a similarity measure between $x$ and $y$. This inner product incudes a class of linear functions and this class is too restrictive for many applications, however there is a simple possible extension to add non-linearities to it with the mapping:
+
+\begin{equation}
+    \phi: \mathcal{X} \rightarrow \mathcal{F}
+\end{equation}
+
+where
+
+\begin{equation}
+    \phi: \mathcal{x} \rightarrow \phi(x)
+\end{equation}
+
+Here $\mathcal{F}$ is high-dimensional feature space and it is possible to evaluate then:
+
+\begin{equation}
+    k(x, y) := {\langle\phi(x), \phi(y)\rangle}_{\mathcal{F}}
+\end{equation}
+
+with 
+
+${\langle \cdot, \cdot \rangle}_{\mathcal{F}}$ denoting an innter product in of $\mathcal{F}$.
+
+Now $ k(x, y)$ is already a non-linear similarity measure between $x$ and $y$.
 
 RKHS methods now can be applied to probability measures, which results in finding out many useful applications one of which is kernel two-sample testing. 
