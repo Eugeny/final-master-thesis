@@ -26,3 +26,20 @@ In summary, the drift detection is needed only when the meaningful shifts of the
 
 \subsection{Drift Detection}
 Assume that during training labeled data comes from a distribution $p$, meaning $\{(x_1, y_1), ..., (x_n, y_n)\} \sim p$ and syring deployment unlabeled data comes from a distribution $q$, meaning $\{x_1', ..., x_m'\} \sim q$. The goal of the drift detection is to determine if $q(x')$ is the same data distribution as $p(x)$. Or if to put it more formally $H_0:p(x) = q(x)$ and $H_A:p(x) \neq q(x)$
+
+Having the samples from both distributions or the representation of these samples in lower dimension, one can then choose a statistical hypothesis test to compare these distributions. 
+
+cite https://arxiv.org/pdf/1605.09522.pdf
+
+\subsubsection{Maximum Mean Discrepancy}
+
+The test for determinig wether two previously mentioned distributions are the same that was used in this work is one of the multivariate kernel two-sample tests: Maximum Mean Discrepancy or shotly MMD. The idea behid any two-sample testing is to choose two random samples, where each was taken from one of the two different distributions and afterwards to decide wether the difference in them is statistically significant. 
+
+MMD is a kernel-based technique and it allows to distinguish between two distributions based on their mean embeddings (cite and rephrase https://arxiv.org/pdf/1810.11953.pdf) in a reproducing kernel Hilbert space (RKHS).
+
+The idea behind a Hilbert space embedding distribution (or a kernel mean embedding) is to map a distribution into a point in a reproducing Hilbert space. By doing this all powerful kernel methods are allowed to be used for probability measures. One of the widely known kernel methods if a support vector machines (SVM).
+
+
+
+
+RKHS methods now can be applied to probability measures, which results in finding out many useful applications one of which is kernel two-sample testing. 

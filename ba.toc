@@ -74,8 +74,10 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {8.3}Drift Detection}{28}{subsection.8.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9}Summary}{29}{section.9}%
+\contentsline {subsubsection}{\numberline {8.3.1}Maximum Mean Discrepancy}{29}{subsubsection.8.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{List of Figures}{30}{section.9}%
+\contentsline {section}{\numberline {9}Summary}{30}{section.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{List of Tables}{30}{section.9}%
+\contentsline {section}{List of Figures}{31}{section.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{List of Tables}{31}{section.9}%
