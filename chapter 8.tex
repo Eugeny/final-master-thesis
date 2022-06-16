@@ -61,7 +61,8 @@ Inner product $\langle x, y \rangle$ can be viewed as a similarity measure betwe
 where
 
 \begin{equation}
-    \phi: \mathcal{x} \rightarrow \phi(x)
+    \phi: x \rightarrow \phi(x)
+    \label{equation:positive-definite}
 \end{equation}
 
 Here $\mathcal{F}$ is high-dimensional feature space and it is possible to evaluate then:
@@ -74,6 +75,55 @@ with
 
 ${\langle \cdot, \cdot \rangle}_{\mathcal{F}}$ denoting an innter product in of $\mathcal{F}$.
 
-Now $ k(x, y)$ is already a non-linear similarity measure between $x$ and $y$.
+Now $ k(x, y)$ is already a non-linear similarity measure between $x$ and $y$. Now to get a non-linear version of the algorithms that use dot product, $\langle x, y\rangle$ can be simply sustituted with $ {\langle\phi(x), \phi(y)\rangle}_{\mathcal{F}}$. 
 
-RKHS methods now can be applied to probability measures, which results in finding out many useful applications one of which is kernel two-sample testing. 
+Let's define the following mapping that represents in $\mathcal{X}$ any probability measure $\mathds{P}$ and denote it as $\mu_{\mathds{P}}$:
+
+
+This mapping is called a kernel mean embedding.
+
+\begin{definition}[Kernel mean embedding]
+    cite Berlinet and Thomas Agnan 2004
+    The kernel mean embedding of probability measure in $M^1_+(\mathcal{X})$ into RKHS $\mathscr{H}$ endowed with a reproducing kernel $k: \mathscr{H} \times \mathscr{H} \rightarrow \mathds{R}$ is defined by a mapping 
+    \begin{equation}
+        \mu : M^1_+(\mathcal{X}) \rightarrow \mathscr{H}, \mathds{P} \rightarrow \int k(x, \cdot)d\mathds{P}(x)
+    \end{equation}
+\end{definition}
+
+However usually there is no access to the distribution $\mathds{P}$ and that is why one cannot directly compute $\mu_{\mathds{P}}$. Fortuntely there are samples that can be drawn from this distribution and with their use one can make a good approximation of $\hat{\mu}_{\mathds{P}}$ of the tru kernel mean embedding $\mu_{\mathds{P}}$. One of such approximations could be the following unbiased estimate:
+\begin{equation}
+    \hat{\mu}_{\mathds{P}} := \frac{1}{n} \sum_{i=1}^n k(x_i, \cdot)
+\end{equation}
+
+Moreover this estimator $\hat{\mu}_{\mathds{P}}$  will converge to $\mu_{\mathds{P}}$ by the law of large numbers as $n \rightarrow \inf$
+
+In machine learning applications and statistics the kernel mean embedding is as a metric for the probability distributions. And mean embeddings metric is actually just a specific case of a more general so-called integral probability metric (IPM) (Müller 1997). 
+
+\begin{definition}[IPM]
+    Let $\mathds{P}$ and  $\mathds{Q}$ be two probability measures on some measurable space $\mathcal{X}$. Then IPM is defined as follows:
+    \begin{equation}
+        \gamma [\mathcal{F}, \mathds{P}, \mathds{Q}] = \sup_{f\in \mathcal{F}} \left\{ \int f(x) d\mathds{P}(x) -  \int f(y) d\mathds{Q}(y) \right\}
+    \end{equation}
+    with $\mathcal{F}$ being a space of real-value bounded functions.
+    \label{eq:ipm}
+\end{definition}
+
+But let's assume that $\mathcal{F} := \left\{f \;\middle| \;{\lVert f \rVert}_{\mathscr{H}} \leq 1\right\}$, it means that the supremum in Definition \ref{eq:ipm} is taken over functions in the unit ball in RKHS, then the mean embedding metric will be called \textit{maximum mean discrepancy} (MMD). 
+
+\begin{definition}[IPM]
+    Maimum mean discrepancy is defined as a distance between two mean embeddings of distributions:
+    \begin{align}
+        \begin{split}
+            \textrm{MMD} [\mathscr{H}, \mathds{P}, \mathds{Q}] & = \sup_{ \lVert f \rVert \leq 1} \left\{ \int f(x) d\mathds{P}(x) -  \int f(y) d\mathds{Q}(y) \right\} \\ 
+            & = \sup_{ \lVert f \rVert \leq 1} \left\{ \langle f, \mu_{\mathds{P}} - \mu_{\mathds{Q}} \rangle_{\mathscr{H}} \right\} \\
+            & = {\lVert \mu_{\mathds{P}} - \mu_{\mathds{Q}} \rVert }_{\mathscr{H}}
+        \end{split}
+    \end{align}
+    \label{eq:mmd}
+\end{definition}
+
+
+
+
+RKHS is defined by a positive definite kernel in (\ref{equation:positive-definite})
+RKHS methods now can be applied to probability measures, which results in finding out many useful applications one of which is kernel two-sample testing. Such a kernel is then also called a reproducing kernel. 
