@@ -97,6 +97,10 @@ However usually there is no access to the distribution $\mathds{P}$ and that is 
 
 Moreover this estimator $\hat{\mu}_{\mathds{P}}$  will converge to $\mu_{\mathds{P}}$ by the law of large numbers as $n \rightarrow \inf$
 
+\begin{definition}[Characteristic kernel]
+    A kernel $k$ is a characteristic kernel if the map $\mu: \mathds{P} \rightarrow \mu_{\mathds{P}}$ is injective. If the reproducing kernel of the RKHS $\mathscr{H}$ is characteristic, then RKHS is called characteristic as well. 
+\end{definition}
+
 In machine learning applications and statistics the kernel mean embedding is as a metric for the probability distributions. And mean embeddings metric is actually just a specific case of a more general so-called integral probability metric (IPM) (Müller 1997). 
 
 \begin{definition}[IPM]
@@ -122,8 +126,33 @@ But let's assume that $\mathcal{F} := \left\{f \;\middle| \;{\lVert f \rVert}_{\
     \label{eq:mmd}
 \end{definition}
 
+From \ref{eq:mmd} if $\mathscr{H}$ is characteristic follows that $\textrm{MMD}[\mathscr{H}, \mathds{P}, \mathds{Q}] = 0$ if and only if $\mathds{P} = \mathds{Q}$.
 
+Similarily to the estimation of the kernel mean embedding through the samples drawn from a distribution, a biased empricial estimator of MMD can be obtained. 
 
+Assume that there are two sets of samples $X=\{x_1, ..., x_n\}$ and $Y=\{y_1, ..., y_m\}$ drawn from two distributions $\mathds{P}$ and $\mathds{Q}$ corrspondingly. Then the biased estimate of MMD can be calculated as follows:
+
+\begin{equation}
+    \widehat{\textrm{MMD}}_b^2 [\mathscr{H}, X, Y] := \sup_{ {\lVert f \rVert}_{\mathscr{H}} \leq 1} \left\{ \frac{1}{n} \sum^n_{i=1}{f(x_i)} - \frac{1}{m} \sum^m_{j=1}{f(y_j)} \right\} 
+\end{equation}
+
+By replacing $\frac{1}{n}\sum^n_{i=1}{f(x_i)}$ with the empirical estimators of mean embeddings one would get:
+
+\begin{equation}
+    \widehat{\textrm{MMD}}_b^2 [\mathscr{H}, X, Y] = {\lVert \widehat{\mu}_{\mathds{P}} - \widehat{\mu}_{\mathds{Q}} \rVert }_{\mathscr{H}}^2
+\end{equation}
+
+However if an unbiased estimator of MMD through the kernel function $k$ is needed then one could use the following estimator from cite Borgwardt et al 2006 Corollary 2.3
+
+\begin{align}
+    \begin{split}
+        \widehat{\textrm{MMD}}_b^2 [\mathscr{H}, X, Y] = & \frac{1}{n(n-1)} \sum^n_{i=1}\sum^n_{j \neq i}k(x_i, x_j)\\
+        & + \frac{1}{m(m-1)} \sum^m_{i=1}\sum^n_{j \neq i}k(y_i, y_j) \\
+        & -\frac{2}{nm} \sum^n_{i=1}\sum^m_{j=1}k(x_i, y_j)
+    \end{split}
+\end{align}
+
+The most common application of MMD in statistics is a two-sample testing. Particularily, in testing the null hypothesis $H_0:{\lVert \widehat{\mu}_{\mathds{P}} - \widehat{\mu}_{\mathds{Q}} \rVert }_{\mathscr{H}}=0$ that two samples come from the same distribution against an alternative hypothesis $H_1:{\lVert \widehat{\mu}_{\mathds{P}} - \widehat{\mu}_{\mathds{Q}} \rVert }_{\mathscr{H}}\neq0$. But one has to be cautios here, even when both samples came from the same distribution it still might be that the MMD will be not zero due to the fact that this is an etimate and not a precise value and we have a finite number of smaples for this estimate.
 
 RKHS is defined by a positive definite kernel in (\ref{equation:positive-definite})
 RKHS methods now can be applied to probability measures, which results in finding out many useful applications one of which is kernel two-sample testing. Such a kernel is then also called a reproducing kernel. 
