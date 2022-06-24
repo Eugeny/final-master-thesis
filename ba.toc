@@ -10,80 +10,80 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.1}Biology}{2}{subsection.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2}Imaging}{4}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.2}Imaging}{2}{subsection.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3}ML}{5}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.3}ML}{2}{subsection.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Prediction of cell organelles}{6}{section.3}%
+\contentsline {section}{\numberline {3}Prediction of cell organelles}{3}{section.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1}Overfitting}{6}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.1}Overfitting}{3}{subsection.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.1}Early-stopping}{6}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Early-stopping}{3}{subsubsection.3.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.2}Regularization}{7}{subsubsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.2}Regularization}{3}{subsubsection.3.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.3}Network reduction}{8}{subsubsection.3.1.3}%
+\contentsline {subsubsection}{\numberline {3.1.3}Network reduction}{3}{subsubsection.3.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.4}Expansion of the training data}{9}{subsubsection.3.1.4}%
+\contentsline {subsubsection}{\numberline {3.1.4}Expansion of the training data}{3}{subsubsection.3.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Crops combination}{10}{section.4}%
+\contentsline {section}{\numberline {4}Crops combination}{4}{section.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Predicting cell organelles}{11}{section.5}%
+\contentsline {section}{\numberline {5}Predicting cell organelles}{5}{section.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1}Loss}{11}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.1}Loss}{5}{subsection.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2}Nuclei}{11}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.2}Nuclei}{5}{subsection.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3}Golgi Apparatus}{12}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.3}Golgi Apparatus}{5}{subsection.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.3.1}Rolling ball algorithm}{13}{subsubsection.5.3.1}%
+\contentsline {subsubsection}{\numberline {5.3.1}Rolling ball algorithm}{6}{subsubsection.5.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Downstream metrics}{15}{section.6}%
+\contentsline {section}{\numberline {6}Downstream metrics}{7}{section.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1}Nuclei segmentation}{15}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.1}Nuclei segmentation}{7}{subsection.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.1.1}Challenge}{15}{subsubsection.6.1.1}%
+\contentsline {subsubsection}{\numberline {6.1.1}Challenge}{7}{subsubsection.6.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.1.2}Thresholding}{17}{subsubsection.6.1.2}%
+\contentsline {subsubsection}{\numberline {6.1.2}Thresholding}{8}{subsubsection.6.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.1.3}Overall algorithm}{21}{subsubsection.6.1.3}%
+\contentsline {subsubsection}{\numberline {6.1.3}Overall algorithm}{10}{subsubsection.6.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2}ER-segmentation}{22}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.2}ER-segmentation}{10}{subsection.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3}Golgi}{23}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.3}Golgi}{10}{subsection.6.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Stability and generalizability}{24}{section.7}%
+\contentsline {section}{\numberline {7}Stability and generalizability}{11}{section.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1}Stability}{24}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.1}Stability}{11}{subsection.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.1.1}Gaussian Noise}{24}{subsubsection.7.1.1}%
+\contentsline {subsubsection}{\numberline {7.1.1}Gaussian Noise}{11}{subsubsection.7.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.1.2}Defocus Blur}{24}{subsubsection.7.1.2}%
+\contentsline {subsubsection}{\numberline {7.1.2}Defocus Blur}{11}{subsubsection.7.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.1.3}Gaussian Blur}{25}{subsubsection.7.1.3}%
+\contentsline {subsubsection}{\numberline {7.1.3}Gaussian Blur}{11}{subsubsection.7.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.1.4}Brightness}{25}{subsubsection.7.1.4}%
+\contentsline {subsubsection}{\numberline {7.1.4}Brightness}{11}{subsubsection.7.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {7.1.5}Contrast}{25}{subsubsection.7.1.5}%
+\contentsline {subsubsection}{\numberline {7.1.5}Contrast}{11}{subsubsection.7.1.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8}Drift Detection}{27}{section.8}%
+\contentsline {section}{\numberline {8}Drift Detection}{12}{section.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.1}Embeddings visualization}{27}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.1}Embeddings visualization}{12}{subsection.8.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.2}Drift detection vs Outliers detection}{27}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.2}Drift detection vs Outliers detection}{12}{subsection.8.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.3}Drift Detection}{28}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.3}Drift Detection}{12}{subsection.8.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {8.3.1}Kernel methods and two-sample testing}{29}{subsubsection.8.3.1}%
+\contentsline {subsubsection}{\numberline {8.3.1}Kernel methods and two-sample testing}{12}{subsubsection.8.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {8.3.2}Maximum Mean Discrepancy}{31}{subsubsection.8.3.2}%
+\contentsline {subsubsection}{\numberline {8.3.2}Maximum Mean Discrepancy}{12}{subsubsection.8.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.4}Practical application of MMD}{32}{subsection.8.4}%
+\contentsline {subsection}{\numberline {8.4}Practical application of MMD}{12}{subsection.8.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {8.4.1}Online MMD}{32}{subsubsection.8.4.1}%
+\contentsline {subsubsection}{\numberline {8.4.1}Online MMD}{12}{subsubsection.8.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9}Summary}{34}{section.9}%
+\contentsline {section}{\numberline {9}Summary}{13}{section.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{List of Figures}{35}{section.9}%
+\contentsline {section}{List of Figures}{14}{section.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{List of Tables}{35}{section.9}%
+\contentsline {section}{List of Tables}{14}{section.9}%
