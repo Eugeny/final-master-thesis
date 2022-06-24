@@ -112,7 +112,9 @@ In machine learning applications and statistics the kernel mean embedding is as 
     \label{eq:ipm}
 \end{definition}
 
-But let's assume that $\mathcal{F} := \left\{f \;\middle| \;{\lVert f \rVert}_{\mathscr{H}} \leq 1\right\}$, it means that the supremum in Definition \ref{eq:ipm} is taken over functions in the unit ball in RKHS, then the mean embedding metric will be called \textit{maximum mean discrepancy} (MMD). 
+\subsubsection{Maximum Mean Discrepancy}
+
+Let's assume that $\mathcal{F} := \left\{f \;\middle| \;{\lVert f \rVert}_{\mathscr{H}} \leq 1\right\}$, it means that the supremum in Definition \ref{eq:ipm} is taken over functions in the unit ball in RKHS, then the mean embedding metric will be called \textit{maximum mean discrepancy} (MMD). 
 
 \begin{definition}[IPM]
     Maimum mean discrepancy is defined as a distance between two mean embeddings of distributions:
@@ -154,5 +156,26 @@ However if an unbiased estimator of MMD through the kernel function $k$ is neede
 
 The most common application of MMD in statistics is a two-sample testing. Particularily, in testing the null hypothesis $H_0:{\lVert \widehat{\mu}_{\mathds{P}} - \widehat{\mu}_{\mathds{Q}} \rVert }_{\mathscr{H}}=0$ that two samples come from the same distribution against an alternative hypothesis $H_1:{\lVert \widehat{\mu}_{\mathds{P}} - \widehat{\mu}_{\mathds{Q}} \rVert }_{\mathscr{H}}\neq0$. But one has to be cautios here, even when both samples came from the same distribution it still might be that the MMD will be not zero due to the fact that this is an etimate and not a precise value and we have a finite number of smaples for this estimate.
 
+
 RKHS is defined by a positive definite kernel in (\ref{equation:positive-definite})
 RKHS methods now can be applied to probability measures, which results in finding out many useful applications one of which is kernel two-sample testing. Such a kernel is then also called a reproducing kernel. 
+
+\subsection{Practical application of MMD}
+The drift detection of corrupted samples for the problem of the thesis has been performed using Alibi DETECT open source library, tha focuses specifically on outlier, adversarial and drift detection algorithms (cite https://github.com/SeldonIO/alibi-detect). Which implements statistical hypothesis testing algorithms for detecting drifts in data. 
+
+In works in the following way, before observing some data, one can specisfy the null hypothesis $H_0$ and the alternative hypothesis $H_1$ about the generating process behind the data (its distribution for ex.) and also specofy the test statistics $S(X)$ that one expects to be small under the hypothesis $H_0$ and large under the hypothesis $H_1$. Then during the observation of the new data after computing the the value of this test statistic $S(X)$, one computes $p = P(S(X)|H_0)$ which is called p-value - a probability that such an extreme value of the test statistic could habe been observed under the null hypothesis. If this probability if below the threshold $t$, then the assume that this is a drifted data, and not otherwise. So low p-value refuses the null-hypothesis. 
+
+
+\subsubsection{Online MMD}
+
+
+More specific an online MMD detector was used for etimating wether the new samples are drifted from the training distribution. The radial basis kernel function (Equation \ref{eq:radial-basis-kernel}) is used there by default, however there are also options to use any kernel function of preference.
+
+\begin{equation}
+    \label{eq:radial-basis-kernel}
+    k(x, y) = exp\left(-\frac{{\lVert x - y \rVert}^2}{2\sigma^2}\right)
+\end{equation}
+
+One os the charateristics of an online drift detector is that it assumes that there is a big dataset of a reference data, that can be used to training as an example of a "correct" distribution. Online algorithms focus on single input at a time during its run. This single input would be sent into a test window where two-sample test-statistics (MMD essentially in this case) will be calculated. As soons as the test-statistic exceeds some pre-defined threshold the drift alert is send to a user. Apart from the threshold one has to define a so-called expected run-time (ERT). This time states how many inputs the detector should process on average before it makes a detection (false positive or true positive depending on which distributions the inputs were taken from). Another hyper parameter here is hidden in a size of a test-window. Becase the larger the window is, the more chance is there to detect a very slight drift, however with a smaller window one gets a much faster response to severe drift. 
+
+It is usually recommened to reduce the dimensionality of the data before feeding it into the algorithm. However in this case the performance was exceptional even for high-dimensional embeddings of the UNET model. However there are also options on how to reduce the dimensionality of the data from the authors of the framework. They recommend even to use an untrained AutoEncoder (UAE), as even an untrained one contains some relatively good information about the global structure of the data. (cite someone?)

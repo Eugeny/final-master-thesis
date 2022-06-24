@@ -76,8 +76,14 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {8.3.1}Kernel methods and two-sample testing}{29}{subsubsection.8.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9}Summary}{33}{section.9}%
+\contentsline {subsubsection}{\numberline {8.3.2}Maximum Mean Discrepancy}{31}{subsubsection.8.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{List of Figures}{34}{section.9}%
+\contentsline {subsection}{\numberline {8.4}Practical application of MMD}{32}{subsection.8.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{List of Tables}{34}{section.9}%
+\contentsline {subsubsection}{\numberline {8.4.1}Online MMD}{32}{subsubsection.8.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9}Summary}{34}{section.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{List of Figures}{35}{section.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{List of Tables}{35}{section.9}%

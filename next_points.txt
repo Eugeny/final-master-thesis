@@ -20,4 +20,12 @@ explain batch and fed-batch in the introduction
 fill holes in chapter 6
 
 
+loss vs the corruption for diff corruption types + diff models
+
+more vs less regularization in models
+
+best explanation of mmd https://stats.stackexchange.com/questions/276497/maximum-mean-discrepancy-distance-distribution
+
+
+
 
