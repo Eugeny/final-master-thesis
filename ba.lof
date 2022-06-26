@@ -1,39 +1,15 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1}{\ignorespaces Way in which photos of the well-plate were taken\relax }}{2}{figure.caption.1}%
+\contentsline {figure}{\numberline {1}{\ignorespaces Dropout\relax }}{3}{figure.caption.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2}{\ignorespaces Overfitting\relax }}{3}{figure.caption.2}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Way in which photos of the well-plate were taken\relax }}{4}{figure.caption.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3}{\ignorespaces Dropout\relax }}{4}{figure.caption.3}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Unet\relax }}{5}{figure.caption.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4}{\ignorespaces Not regularized\relax }}{4}{figure.caption.4}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Overfitting\relax }}{6}{figure.caption.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5}{\ignorespaces Regularized\relax }}{4}{figure.caption.4}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Golgi enhancement\relax }}{10}{figure.caption.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6}{\ignorespaces No overlap\relax }}{5}{figure.caption.5}%
+\contentsline {figure}{\numberline {6}{\ignorespaces No overlap\relax }}{12}{figure.caption.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7}{\ignorespaces 30 pixels overlap\relax }}{5}{figure.caption.5}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8}{\ignorespaces Golgi enhancement\relax }}{5}{figure.caption.6}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {9}{\ignorespaces Structuring Element\relax }}{6}{figure.caption.7}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {10}{\ignorespaces Rolling Ball\relax }}{6}{figure.caption.8}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {11}{\ignorespaces (a) Vanilla pre-processing with automatic background removal algorithm only; (b) Additional clipping of lower intensities after vanilla pre-processing; (c) masked or subfigure (a); (d) mask of subfigure (b)\relax }}{7}{figure.caption.9}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {12}{\ignorespaces Different lightning conditions\relax }}{7}{figure.caption.10}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {13}{\ignorespaces Closely located cells\relax }}{8}{figure.caption.11}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {14}{\ignorespaces Histogram as a probability density function\relax }}{8}{figure.caption.12}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {15}{\ignorespaces Local vs. Global thresholding\relax }}{9}{figure.caption.14}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {16}{\ignorespaces Local vs. Global thresholding (normal conditions)\relax }}{9}{figure.caption.15}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {17}{\ignorespaces Fluorescence segmentation\relax }}{10}{figure.caption.16}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {18}{\ignorespaces ER prediction\relax }}{10}{figure.caption.17}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {19}{\ignorespaces ER prediction\relax }}{10}{figure.caption.18}%
+\contentsline {figure}{\numberline {7}{\ignorespaces 30 pixels overlap\relax }}{12}{figure.caption.6}%
