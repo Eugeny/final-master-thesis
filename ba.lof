@@ -34,14 +34,16 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {17}{\ignorespaces 30 pixels overlap\relax }}{16}{figure.caption.16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {18}{\ignorespaces Autoencoder training convergence\relax }}{18}{figure.caption.18}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Influence of artificial corruptions on the predictions\relax }}{17}{figure.caption.18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {19}{\ignorespaces Samples drawn from the trained autoencoder\relax }}{18}{figure.caption.19}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Autoencoder training convergence\relax }}{18}{figure.caption.19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {20}{\ignorespaces Architectures of two autoencoders\relax }}{19}{figure.caption.20}%
+\contentsline {figure}{\numberline {20}{\ignorespaces Samples drawn from the trained autoencoder\relax }}{18}{figure.caption.20}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {21}{\ignorespaces Autoencoder embeddings after applying PCA with 10 components and UMAP afterwards. Earlier epoch VS later epoch\relax }}{19}{figure.caption.21}%
+\contentsline {figure}{\numberline {21}{\ignorespaces Architectures of two autoencoders\relax }}{19}{figure.caption.21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {22}{\ignorespaces PacMAP does not provide information on the coruption\relax }}{19}{figure.caption.22}%
+\contentsline {figure}{\numberline {22}{\ignorespaces Autoencoder embeddings after applying PCA with 10 components and UMAP afterwards. Earlier epoch VS later epoch\relax }}{19}{figure.caption.22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {23}{\ignorespaces What do two UMAP clusters represent\relax }}{20}{figure.caption.23}%
+\contentsline {figure}{\numberline {23}{\ignorespaces PacMAP does not provide information on the coruption\relax }}{19}{figure.caption.23}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {24}{\ignorespaces What do two UMAP clusters represent\relax }}{20}{figure.caption.24}%
