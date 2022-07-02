@@ -27,5 +27,6 @@ more vs less regularization in models
 best explanation of mmd https://stats.stackexchange.com/questions/276497/maximum-mean-discrepancy-distance-distribution
 
 
-
+different auc roc for other corruptions
+basically any plot in drift detection chapter extend to other corruptions.
 

@@ -65,3 +65,5 @@
 \contentsline {figure}{\numberline {32}{\ignorespaces False negatives rate for drift detection on artificial corruptions\relax }}{23}{figure.caption.32}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {33}{\ignorespaces Expected runtime (ERT) for corrupted and in-distribution data\relax }}{23}{figure.caption.33}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {34}{\ignorespaces AUC ROC scores for various defocus corruptions severities\relax }}{24}{figure.caption.37}%

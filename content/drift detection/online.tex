@@ -37,3 +37,25 @@
             \end{tabular}
         \end{adjustbox}
 \end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{Severity of corruptions on separability}
+        \begin{adjustbox}{width=0.4\textwidth}
+            \begin{tabular}{|l||*{3}{c|}}\hline
+                \makebox{W}
+                &\makebox[3em]{Level 2}
+                &\makebox[3em]{Level 3}
+                &\makebox[3em]{Level 4}
+                \\\hline\hline
+                Auc-Roc &0.84&0.92&0.98\\\hline
+            \end{tabular}
+        \end{adjustbox}
+\end{table}
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=0.8\linewidth]{bilder/drift-detection/auc_roc comparison online.png}
+		\caption{AUC ROC scores for various defocus corruptions severities}\label{fig:online-auc-roc}
+	\end{center}
+\end{figure}
