@@ -1,0 +1,39 @@
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=0.6\linewidth]{bilder/drift-detection/online.png}
+		\caption{Expected runtime (ERT) for corrupted and in-distribution data}\label{fig:online-ert}
+	\end{center}
+\end{figure}
+
+\begin{table}[H]
+    \centering
+    \caption{Test window size influence on separability}
+        \begin{adjustbox}{width=0.6\textwidth}
+            \begin{tabular}{|l||*{5}{c|}}\hline
+                \makebox{W}
+                &\makebox[3em]{2}
+                &\makebox[3em]{5}
+                &\makebox[3em]{10}
+                &\makebox[3em]{15}
+                &\makebox[3em]{20}
+                \\\hline\hline
+                Auc-Roc &0.85&0.92&0.98&0.90&0.88\\\hline
+            \end{tabular}
+        \end{adjustbox}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{ERT influence on separability}
+        \begin{adjustbox}{width=0.5\textwidth}
+            \begin{tabular}{|l||*{4}{c|}}\hline
+                \makebox{W}
+                &\makebox[3em]{32}
+                &\makebox[3em]{64}
+                &\makebox[3em]{128}
+                &\makebox[3em]{256}
+                \\\hline\hline
+                Auc-Roc &0.90&0.95&0.98&0.98\\\hline
+            \end{tabular}
+        \end{adjustbox}
+\end{table}
