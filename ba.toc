@@ -150,8 +150,6 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {11.2.2}Online drift detection}{23}{subsubsection.11.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.3}MMD on UNet embeddings}{24}{subsection.11.3}%
-\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {12}Software Tools}{25}{section.12}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {12.1}Foundry. Palantir}{25}{subsection.12.1}%

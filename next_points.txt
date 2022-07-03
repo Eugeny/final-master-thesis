@@ -30,3 +30,6 @@ best explanation of mmd https://stats.stackexchange.com/questions/276497/maximum
 different auc roc for other corruptions
 basically any plot in drift detection chapter extend to other corruptions.
 
+SVM on Unet embeddings will give good Results fast
+
+Straightforward blur detection with Laplacian https://pyimagesearch.com/2015/09/07/blur-detection-with-opencv/
