@@ -33,3 +33,5 @@ basically any plot in drift detection chapter extend to other corruptions.
 SVM on Unet embeddings will give good Results fast
 
 Straightforward blur detection with Laplacian https://pyimagesearch.com/2015/09/07/blur-detection-with-opencv/
+
+Violin plots of ERTs
