@@ -35,3 +35,5 @@ SVM on Unet embeddings will give good Results fast
 Straightforward blur detection with Laplacian https://pyimagesearch.com/2015/09/07/blur-detection-with-opencv/
 
 Violin plots of ERTs
+
+nuclei troubles in predictions, add gournd truth and predict labels
