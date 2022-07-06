@@ -2,10 +2,12 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {table}{\numberline {1}{\ignorespaces Available data for each fo the organelles\relax }}{5}{table.caption.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {2}{\ignorespaces Hyperparameter for different artificial corruption severities\relax }}{20}{table.caption.28}%
+\contentsline {table}{\numberline {2}{\ignorespaces Correlation coefficients for downstream tasks\relax }}{20}{table.caption.29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {3}{\ignorespaces Test window size influence on separability\relax }}{26}{table.caption.42}%
+\contentsline {table}{\numberline {3}{\ignorespaces Hyperparameter for different artificial corruption severities\relax }}{21}{table.caption.30}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {4}{\ignorespaces ERT influence on separability\relax }}{26}{table.caption.43}%
+\contentsline {table}{\numberline {4}{\ignorespaces Test window size influence on separability\relax }}{27}{table.caption.44}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5}{\ignorespaces Severity of corruptions on separability\relax }}{26}{table.caption.44}%
+\contentsline {table}{\numberline {5}{\ignorespaces ERT influence on separability\relax }}{27}{table.caption.45}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {6}{\ignorespaces Severity of corruptions on separability\relax }}{27}{table.caption.46}%

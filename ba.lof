@@ -54,30 +54,32 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {27}{\ignorespaces 30 pixels overlap\relax }}{19}{figure.caption.27}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {28}{\ignorespaces Influence of artificial corruptions on the predictions\relax }}{20}{figure.caption.29}%
+\contentsline {figure}{\numberline {28}{\ignorespaces Metrics for downstream tasks on nuclei\relax }}{20}{figure.caption.28}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {29}{\ignorespaces Change of loss for artificial corruptions\relax }}{20}{figure.caption.30}%
+\contentsline {figure}{\numberline {29}{\ignorespaces Influence of artificial corruptions on the predictions\relax }}{21}{figure.caption.31}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {30}{\ignorespaces Using corruptions as augmentations improves predictions\relax }}{21}{figure.caption.31}%
+\contentsline {figure}{\numberline {30}{\ignorespaces Change of loss for artificial corruptions\relax }}{21}{figure.caption.32}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {31}{\ignorespaces Autoencoders training convergence\relax }}{22}{figure.caption.32}%
+\contentsline {figure}{\numberline {31}{\ignorespaces Using corruptions as augmentations improves predictions\relax }}{22}{figure.caption.33}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {32}{\ignorespaces Samples drawn from the trained autoencoder\relax }}{22}{figure.caption.33}%
+\contentsline {figure}{\numberline {32}{\ignorespaces Autoencoders training convergence\relax }}{23}{figure.caption.34}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {33}{\ignorespaces Architectures of two autoencoders\relax }}{23}{figure.caption.34}%
+\contentsline {figure}{\numberline {33}{\ignorespaces Samples drawn from the trained autoencoder\relax }}{23}{figure.caption.35}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {34}{\ignorespaces Autoencoder embeddings after applying PCA with 10 components and UMAP afterwards. Earlier epoch VS later epoch\relax }}{23}{figure.caption.35}%
+\contentsline {figure}{\numberline {34}{\ignorespaces Architectures of two autoencoders\relax }}{24}{figure.caption.36}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {35}{\ignorespaces PacMAP does not provide information on the coruption\relax }}{23}{figure.caption.36}%
+\contentsline {figure}{\numberline {35}{\ignorespaces Autoencoder embeddings after applying PCA with 10 components and UMAP afterwards. Earlier epoch VS later epoch\relax }}{24}{figure.caption.37}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {36}{\ignorespaces What do two UMAP clusters represent\relax }}{23}{figure.caption.37}%
+\contentsline {figure}{\numberline {36}{\ignorespaces PacMAP does not provide information on the coruption\relax }}{24}{figure.caption.38}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {37}{\ignorespaces Clustering of UNet Embeddings\relax }}{24}{figure.caption.38}%
+\contentsline {figure}{\numberline {37}{\ignorespaces What do two UMAP clusters represent\relax }}{24}{figure.caption.39}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {38}{\ignorespaces Clustering for different severities levels\relax }}{24}{figure.caption.39}%
+\contentsline {figure}{\numberline {38}{\ignorespaces Clustering of UNet Embeddings\relax }}{25}{figure.caption.40}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {39}{\ignorespaces False negatives rate for drift detection on artificial corruptions\relax }}{25}{figure.caption.40}%
+\contentsline {figure}{\numberline {39}{\ignorespaces Clustering for different severities levels\relax }}{25}{figure.caption.41}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {40}{\ignorespaces Expected runtime (ERT) for corrupted and in-distribution data\relax }}{25}{figure.caption.41}%
+\contentsline {figure}{\numberline {40}{\ignorespaces False negatives rate for drift detection on artificial corruptions\relax }}{26}{figure.caption.42}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {41}{\ignorespaces AUC ROC scores for various defocus corruptions severities\relax }}{26}{figure.caption.45}%
+\contentsline {figure}{\numberline {41}{\ignorespaces Expected runtime (ERT) for corrupted and in-distribution data\relax }}{26}{figure.caption.43}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {42}{\ignorespaces AUC ROC scores for various defocus corruptions severities\relax }}{27}{figure.caption.47}%

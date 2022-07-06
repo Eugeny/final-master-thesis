@@ -112,56 +112,56 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {8.1}Crops combination technique}{19}{subsection.8.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.2}Metrics for downstream tasks}{19}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.2}Metrics for downstream tasks}{20}{subsection.8.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.3}Influence of different loss functions on metrics for downstream tasks}{19}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.3}Influence of different loss functions on metrics for downstream tasks}{20}{subsection.8.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9}Stability}{20}{section.9}%
+\contentsline {section}{\numberline {9}Stability}{21}{section.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.1}Artificial corruptions}{20}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.1}Artificial corruptions}{21}{subsection.9.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.2}Real corruptions}{21}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.2}Real corruptions}{22}{subsection.9.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.3}Influence of corruptions on metrics for downstream tasks}{21}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.3}Influence of corruptions on metrics for downstream tasks}{22}{subsection.9.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.4}Improving predictions with additional corruption augmentations}{21}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.4}Improving predictions with additional corruption augmentations}{22}{subsection.9.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10}Information in the UNET embeddings}{22}{section.10}%
+\contentsline {section}{\numberline {10}Information in the UNET embeddings}{23}{section.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.1}Dimensionality reduction methods}{22}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.1}Dimensionality reduction methods}{23}{subsection.10.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.2}UMAP, t-SNE, PCA}{22}{subsection.10.2}%
+\contentsline {subsection}{\numberline {10.2}UMAP, t-SNE, PCA}{23}{subsection.10.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.3}Autoencoder embeddings as an alternative}{22}{subsection.10.3}%
+\contentsline {subsection}{\numberline {10.3}Autoencoder embeddings as an alternative}{23}{subsection.10.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.4}Clustering}{24}{subsection.10.4}%
+\contentsline {subsection}{\numberline {10.4}Clustering}{25}{subsection.10.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {10.4.1}Clustering methods (HDBSCAN, DBSCAN, K-means)}{24}{subsubsection.10.4.1}%
+\contentsline {subsubsection}{\numberline {10.4.1}Clustering methods (HDBSCAN, DBSCAN, K-means)}{25}{subsubsection.10.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {10.4.2}Clustering on UNet embeddings}{24}{subsubsection.10.4.2}%
+\contentsline {subsubsection}{\numberline {10.4.2}Clustering on UNet embeddings}{25}{subsubsection.10.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11}Drift detection}{25}{section.11}%
+\contentsline {section}{\numberline {11}Drift detection}{26}{section.11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.1}A need to detect drift}{25}{subsection.11.1}%
+\contentsline {subsection}{\numberline {11.1}A need to detect drift}{26}{subsection.11.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.2}MMD}{25}{subsection.11.2}%
+\contentsline {subsection}{\numberline {11.2}MMD}{26}{subsection.11.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {11.2.1}Drift detection}{25}{subsubsection.11.2.1}%
+\contentsline {subsubsection}{\numberline {11.2.1}Drift detection}{26}{subsubsection.11.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {11.2.2}Online drift detection}{25}{subsubsection.11.2.2}%
+\contentsline {subsubsection}{\numberline {11.2.2}Online drift detection}{26}{subsubsection.11.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {12}Software Tools}{27}{section.12}%
+\contentsline {section}{\numberline {12}Software Tools}{28}{section.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {12.1}Foundry. Palantir}{27}{subsection.12.1}%
+\contentsline {subsection}{\numberline {12.1}Foundry. Palantir}{28}{subsection.12.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {12.2}AWS}{27}{subsection.12.2}%
+\contentsline {subsection}{\numberline {12.2}AWS}{28}{subsection.12.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {12.3}Streamlit}{27}{subsection.12.3}%
+\contentsline {subsection}{\numberline {12.3}Streamlit}{28}{subsection.12.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {12.4}ImageJ, CellProfiler}{27}{subsection.12.4}%
+\contentsline {subsection}{\numberline {12.4}ImageJ, CellProfiler}{28}{subsection.12.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {13}Summary}{28}{section.13}%
+\contentsline {section}{\numberline {13}Summary}{29}{section.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{List of Figures}{29}{section.13}%
+\contentsline {section}{List of Figures}{30}{section.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{List of Tables}{30}{section.13}%
+\contentsline {section}{List of Tables}{31}{section.13}%
