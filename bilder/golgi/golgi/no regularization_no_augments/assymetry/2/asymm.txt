@@ -1,0 +1,3 @@
+                residual = outputs - ground_truth
+                loss = torch.where(residual < 0, (residual) ** 2, 2 * (residual) ** 2)
+                loss = torch.sum(loss) / inputs.shape[0] / 256 / 256
