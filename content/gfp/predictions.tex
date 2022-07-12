@@ -1,0 +1,29 @@
+\begin{figure}[htb]
+	\begin{center}
+		\includegraphics[width=0.8\linewidth]{bilder/gfp/binary-bce/enlarged.png}
+		\caption{Binary training with BCE}\label{fig:gfp-bce-predictions}
+	\end{center}
+\end{figure}
+
+\begin{figure}[htb]
+	\begin{center}
+		\includegraphics[width=0.6\linewidth]{bilder/gfp/predictions.png}
+		\caption{Training with Pearson correlation loss}\label{fig:gfp-pcc-predictions}
+	\end{center}
+\end{figure}
+
+\begin{table}[H]
+    \centering
+    \caption{Correlation coefficients for downstream tasks}
+        \begin{adjustbox}{width=0.4\textwidth}
+            \begin{tabular}{|c|c|c|}\hline
+                Binary training&Pearson&Spearman
+                \\\hline\hline
+                Number of ER&0.67&0.64\\\hline
+                Area&0.82&0.75\\\hline\hline
+                Continuos training&Pearson&Spearman\\\hline
+				Number of ER&0.57&0.55\\\hline
+                Area&0.26&0.64\\\hline
+            \end{tabular}
+        \end{adjustbox}
+\end{table}

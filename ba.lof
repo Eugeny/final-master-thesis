@@ -58,36 +58,46 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {29}{\ignorespaces Asymmetrical training predictions\relax }}{18}{figure.caption.30}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {30}{\ignorespaces No overlap\relax }}{20}{figure.caption.31}%
+\contentsline {figure}{\numberline {30}{\ignorespaces Converting gfp to a binary mask\relax }}{19}{figure.caption.31}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {31}{\ignorespaces 30 pixels overlap\relax }}{20}{figure.caption.31}%
+\contentsline {figure}{\numberline {31}{\ignorespaces Binary training with BCE\relax }}{19}{figure.caption.32}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {32}{\ignorespaces Metrics for downstream tasks on nuclei\relax }}{21}{figure.caption.32}%
+\contentsline {figure}{\numberline {32}{\ignorespaces Training with Pearson correlation loss\relax }}{19}{figure.caption.33}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {33}{\ignorespaces Influence of artificial corruptions on the predictions\relax }}{22}{figure.caption.35}%
+\contentsline {figure}{\numberline {33}{\ignorespaces Downstream metrics\relax }}{20}{figure.caption.35}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {34}{\ignorespaces Change of loss for artificial corruptions\relax }}{22}{figure.caption.36}%
+\contentsline {figure}{\numberline {34}{\ignorespaces GFP, Nuclei and ER combined\relax }}{20}{figure.caption.36}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {35}{\ignorespaces Using corruptions as augmentations improves predictions\relax }}{23}{figure.caption.37}%
+\contentsline {figure}{\numberline {35}{\ignorespaces No overlap\relax }}{21}{figure.caption.37}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {36}{\ignorespaces Autoencoders training convergence\relax }}{24}{figure.caption.38}%
+\contentsline {figure}{\numberline {36}{\ignorespaces 30 pixels overlap\relax }}{21}{figure.caption.37}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {37}{\ignorespaces Samples drawn from the trained autoencoder\relax }}{24}{figure.caption.39}%
+\contentsline {figure}{\numberline {37}{\ignorespaces Metrics for downstream tasks on nuclei\relax }}{22}{figure.caption.38}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {38}{\ignorespaces Architectures of two autoencoders\relax }}{25}{figure.caption.40}%
+\contentsline {figure}{\numberline {38}{\ignorespaces Influence of artificial corruptions on the predictions\relax }}{23}{figure.caption.41}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {39}{\ignorespaces Autoencoder embeddings after applying PCA with 10 components and UMAP afterwards. Earlier epoch VS later epoch\relax }}{25}{figure.caption.41}%
+\contentsline {figure}{\numberline {39}{\ignorespaces Change of loss for artificial corruptions\relax }}{23}{figure.caption.42}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {40}{\ignorespaces PacMAP does not provide information on the coruption\relax }}{25}{figure.caption.42}%
+\contentsline {figure}{\numberline {40}{\ignorespaces Using corruptions as augmentations improves predictions\relax }}{24}{figure.caption.43}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {41}{\ignorespaces What do two UMAP clusters represent\relax }}{25}{figure.caption.43}%
+\contentsline {figure}{\numberline {41}{\ignorespaces Autoencoders training convergence\relax }}{25}{figure.caption.44}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {42}{\ignorespaces Clustering of UNet Embeddings\relax }}{26}{figure.caption.44}%
+\contentsline {figure}{\numberline {42}{\ignorespaces Samples drawn from the trained autoencoder\relax }}{25}{figure.caption.45}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {43}{\ignorespaces Clustering for different severities levels\relax }}{26}{figure.caption.45}%
+\contentsline {figure}{\numberline {43}{\ignorespaces Architectures of two autoencoders\relax }}{26}{figure.caption.46}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {44}{\ignorespaces False negatives rate for drift detection on artificial corruptions\relax }}{27}{figure.caption.46}%
+\contentsline {figure}{\numberline {44}{\ignorespaces Autoencoder embeddings after applying PCA with 10 components and UMAP afterwards. Earlier epoch VS later epoch\relax }}{26}{figure.caption.47}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {45}{\ignorespaces Expected runtime (ERT) for corrupted and in-distribution data\relax }}{27}{figure.caption.47}%
+\contentsline {figure}{\numberline {45}{\ignorespaces PacMAP does not provide information on the coruption\relax }}{26}{figure.caption.48}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {46}{\ignorespaces AUC ROC scores for various defocus corruptions severities\relax }}{28}{figure.caption.51}%
+\contentsline {figure}{\numberline {46}{\ignorespaces What do two UMAP clusters represent\relax }}{26}{figure.caption.49}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {47}{\ignorespaces Clustering of UNet Embeddings\relax }}{27}{figure.caption.50}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {48}{\ignorespaces Clustering for different severities levels\relax }}{27}{figure.caption.51}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {49}{\ignorespaces False negatives rate for drift detection on artificial corruptions\relax }}{28}{figure.caption.52}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {50}{\ignorespaces Expected runtime (ERT) for corrupted and in-distribution data\relax }}{28}{figure.caption.53}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {51}{\ignorespaces AUC ROC scores for various defocus corruptions severities\relax }}{29}{figure.caption.57}%
