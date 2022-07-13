@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.5.29)  13 JUL 2022 13:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.5.29)  13 JUL 2022 15:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -854,7 +854,7 @@ Package biblatex Info: ... file 'ba.bbl' found.
 Package biblatex Info: Reference section=0 on input line 69.
 Package biblatex Info: Reference segment=0 on input line 69.
  (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/titelmakros.tex
-<bilder/HHU_Logo.pdf, id=327, 896.34875pt x 218.8175pt>
+<bilder/HHU_Logo.pdf, id=347, 896.34875pt x 218.8175pt>
 File: bilder/HHU_Logo.pdf Graphic file (type pdf)
 <use bilder/HHU_Logo.pdf>
 Package pdftex.def Info: bilder/HHU_Logo.pdf  used on input line 47.
@@ -911,52 +911,52 @@ l.157 ...rpage\begin{titlepage}~\end{titlepage}}{}
  [3] [4
 
 
-]) (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/einleitung.tex (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/intro.texpdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+]) (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/einleitung.tex (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/introduction.texpdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.4     \subsection
-                   {Notation} [1]) [2] (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/background.tex (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/cld-theory.tex) (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/cld in merck.tex) (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/neural networks.tex
-<bilder/dropout.png, id=465, 783.92876pt x 411.5375pt>
+                   {Notation} [1]) [2] (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/domain knwoledge.tex (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/domain knowledge/cld theory.tex) (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/domain knowledge/cld in merck.tex) (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/domain knowledge/neural networks.tex
+<bilder/dropout.png, id=490, 783.92876pt x 411.5375pt>
 File: bilder/dropout.png Graphic file (type png)
 <use bilder/dropout.png>
 Package pdftex.def Info: bilder/dropout.png  used on input line 4.
 (pdftex.def)             Requested size: 341.43436pt x 179.24342pt.
-) (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/clustering.tex) [3 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/dropout.png>] (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/domain knowledge/microscopy imaging.tex
-<bilder/dic-random.png, id=474, 700.6175pt x 443.6575pt>
+) (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/domain knowledge/dimentionality reduction.tex) (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/domain knowledge/clustering.tex) (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/domain knowledge/digital imaging.tex) [3 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/dropout.png>] (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/domain knowledge/microscopy imaging.tex
+<bilder/dic-random.png, id=500, 700.6175pt x 443.6575pt>
 File: bilder/dic-random.png Graphic file (type png)
 <use bilder/dic-random.png>
-Package pdftex.def Info: bilder/dic-random.png  used on input line 4.
+Package pdftex.def Info: bilder/dic-random.png  used on input line 5.
 (pdftex.def)             Requested size: 213.39566pt x 135.12917pt.
- (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/crops combination.tex
-<bilder/crops_combination/prediction_border_0.png, id=475, 2144.01pt x 2144.01pt>
+ (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/domain knowledge/crops combination.tex
+<bilder/crops_combination/prediction_border_0.png, id=501, 2144.01pt x 2144.01pt>
 File: bilder/crops_combination/prediction_border_0.png Graphic file (type png)
 <use bilder/crops_combination/prediction_border_0.png>
 Package pdftex.def Info: bilder/crops_combination/prediction_border_0.png  used on input line 5.
 (pdftex.def)             Requested size: 204.85802pt x 204.82808pt.
-<bilder/crops_combination/prediction_border_34.png, id=476, 2144.01pt x 2144.01pt>
+<bilder/crops_combination/prediction_border_34.png, id=502, 2144.01pt x 2144.01pt>
 File: bilder/crops_combination/prediction_border_34.png Graphic file (type png)
 <use bilder/crops_combination/prediction_border_34.png>
 Package pdftex.def Info: bilder/crops_combination/prediction_border_34.png  used on input line 12.
 (pdftex.def)             Requested size: 204.85802pt x 204.82808pt.
-))) (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/training experiments.tex [4 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/dic-random.png>] (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/nn architecture.tex
-<bilder/Unet.png, id=484, 1875.005pt x 792.9625pt>
+ [4 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/dic-random.png>]))) (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/model training.tex [5 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/crops_combination/prediction_border_0.png (PNG copy)> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/crops_combination/prediction_border_34.png (PNG copy)>] (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/nn architecture.tex
+<bilder/Unet.png, id=514, 1875.005pt x 792.9625pt>
 File: bilder/Unet.png Graphic file (type png)
 <use bilder/Unet.png>
 Package pdftex.def Info: bilder/Unet.png  used on input line 3.
 (pdftex.def)             Requested size: 426.79134pt x 180.48999pt.
-) (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/losses.tex) [5 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/crops_combination/prediction_border_0.png (PNG copy)> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/crops_combination/prediction_border_34.png (PNG copy)> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/Unet.png>] (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/data.tex) (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/costs and times.tex) (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/augmentations.tex) (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/convergence.tex) (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/wi.tex
-<bilder/nuclei/wi-no-wi.png, id=492, 1253.68375pt x 518.93875pt>
+) (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/losses.tex) (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/data.tex) (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/costs and times.tex) [6 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/Unet.png>] (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/augmentations.tex) (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/convergence.tex) (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/wi.tex
+<bilder/nuclei/wi-no-wi.png, id=522, 1253.68375pt x 518.93875pt>
 File: bilder/nuclei/wi-no-wi.png Graphic file (type png)
 <use bilder/nuclei/wi-no-wi.png>
 Package pdftex.def Info: bilder/nuclei/wi-no-wi.png  used on input line 4.
 (pdftex.def)             Requested size: 426.79134pt x 176.65855pt.
- [6]) (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/regularization.tex
-<bilder/overfit.png, id=498, 797.98125pt x 652.4375pt>
+) (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/regularization.tex
+<bilder/overfit.png, id=523, 797.98125pt x 652.4375pt>
 File: bilder/overfit.png Graphic file (type png)
 <use bilder/overfit.png>
 Package pdftex.def Info: bilder/overfit.png  used on input line 3.
 (pdftex.def)             Requested size: 256.0774pt x 209.37163pt.
-) (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/optimizers.tex)) (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/nuclei.tex [7 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/nuclei/wi-no-wi.png (PNG copy)> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/overfit.png>] [8] (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/nuclei preprocessing.tex
+) (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/optimizers.tex)) (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/nuclei.tex [7 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/nuclei/wi-no-wi.png (PNG copy)>] [8 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/overfit.png>] (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/nuclei preprocessing.tex
 File: bilder/lightning-conditions/lightning-1.png Graphic file (type png)
 <use bilder/lightning-conditions/lightning-1.png>
 Package pdftex.def Info: bilder/lightning-conditions/lightning-1.png  used on input line 13.
@@ -974,22 +974,22 @@ File: bilder/lightning-conditions/lightning-4.png Graphic file (type png)
 Package pdftex.def Info: bilder/lightning-conditions/lightning-4.png  used on input line 13.
 (pdftex.def)             Requested size: 94.69785pt x 94.67696pt.
 ) (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/thresholding.tex
-<bilder/difficult-lightning/gradient_local.png, id=514, 2144.01pt x 2144.01pt>
+<bilder/difficult-lightning/gradient_local.png, id=539, 2144.01pt x 2144.01pt>
 File: bilder/difficult-lightning/gradient_local.png Graphic file (type png)
 <use bilder/difficult-lightning/gradient_local.png>
 Package pdftex.def Info: bilder/difficult-lightning/gradient_local.png  used on input line 8.
 (pdftex.def)             Requested size: 160.04674pt x 160.04137pt.
-<bilder/difficult-lightning/point_local.png, id=515, 2144.01pt x 2144.01pt>
+<bilder/difficult-lightning/point_local.png, id=540, 2144.01pt x 2144.01pt>
 File: bilder/difficult-lightning/point_local.png Graphic file (type png)
 <use bilder/difficult-lightning/point_local.png>
 Package pdftex.def Info: bilder/difficult-lightning/point_local.png  used on input line 15.
 (pdftex.def)             Requested size: 160.04674pt x 160.04137pt.
-<bilder/difficult-lightning/gradient_min.png, id=516, 2144.01pt x 2144.01pt>
+<bilder/difficult-lightning/gradient_min.png, id=541, 2144.01pt x 2144.01pt>
 File: bilder/difficult-lightning/gradient_min.png Graphic file (type png)
 <use bilder/difficult-lightning/gradient_min.png>
 Package pdftex.def Info: bilder/difficult-lightning/gradient_min.png  used on input line 22.
 (pdftex.def)             Requested size: 160.04674pt x 160.04137pt.
-<bilder/difficult-lightning/point_min.png, id=517, 2144.01pt x 2144.01pt>
+<bilder/difficult-lightning/point_min.png, id=542, 2144.01pt x 2144.01pt>
 File: bilder/difficult-lightning/point_min.png Graphic file (type png)
 <use bilder/difficult-lightning/point_min.png>
 Package pdftex.def Info: bilder/difficult-lightning/point_min.png  used on input line 28.
@@ -1008,29 +1008,29 @@ File: bilder/difficult-lightning/normal_min.png Graphic file (type png)
 Package pdftex.def Info: bilder/difficult-lightning/normal_min.png  used on input line 44.
 (pdftex.def)             Requested size: 201.39568pt x 201.39302pt.
 ) (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/nuclei/convergence.tex
-<bilder/nuclei/full-dataset.jpg, id=520, 1284.8pt x 868.24374pt>
+<bilder/nuclei/full-dataset.jpg, id=545, 1284.8pt x 868.24374pt>
 File: bilder/nuclei/full-dataset.jpg Graphic file (type jpg)
 <use bilder/nuclei/full-dataset.jpg>
 Package pdftex.def Info: bilder/nuclei/full-dataset.jpg  used on input line 17.
 (pdftex.def)             Requested size: 213.39566pt x 144.20792pt.
  [9 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/lightning-conditions/lightning-1.png (PNG copy)> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/lightning-conditions/lightning-2.png (PNG copy)> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/lightning-conditions/lightning-3.png (PNG copy)> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/lightning-conditions/lightning-4.png (PNG copy)> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/difficult-lightning/normal_local.png (PNG copy)> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/difficult-lightning/normal_min.png (PNG copy)>] [10 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/difficult-lightning/gradient_local.png (PNG copy)> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/difficult-lightning/point_local.png (PNG copy)> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/difficult-lightning/gradient_min.png (PNG copy)> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/difficult-lightning/point_min.png (PNG copy)>]
-<bilder/nuclei/full-dataset-regularized.jpg, id=533, 1284.8pt x 820.06375pt>
+<bilder/nuclei/full-dataset-regularized.jpg, id=558, 1284.8pt x 820.06375pt>
 File: bilder/nuclei/full-dataset-regularized.jpg Graphic file (type jpg)
 <use bilder/nuclei/full-dataset-regularized.jpg>
 Package pdftex.def Info: bilder/nuclei/full-dataset-regularized.jpg  used on input line 24.
 (pdftex.def)             Requested size: 213.39566pt x 136.20563pt.
-<bilder/nuclei/no-reg-but-aug.jpg, id=534, 1284.8pt x 805.0075pt>
+<bilder/nuclei/no-reg-but-aug.jpg, id=559, 1284.8pt x 805.0075pt>
 File: bilder/nuclei/no-reg-but-aug.jpg Graphic file (type jpg)
 <use bilder/nuclei/no-reg-but-aug.jpg>
 Package pdftex.def Info: bilder/nuclei/no-reg-but-aug.jpg  used on input line 31.
 (pdftex.def)             Requested size: 213.39566pt x 133.70491pt.
-<bilder/nuclei/comparison-chzn-phx.png, id=535, 2291.56125pt x 1803.73875pt>
+<bilder/nuclei/comparison-chzn-phx.png, id=560, 2291.56125pt x 1803.73875pt>
 File: bilder/nuclei/comparison-chzn-phx.png Graphic file (type png)
 <use bilder/nuclei/comparison-chzn-phx.png>
 Package pdftex.def Info: bilder/nuclei/comparison-chzn-phx.png  used on input line 38.
 (pdftex.def)             Requested size: 213.39566pt x 167.94414pt.
 ) [11 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/nuclei/full-dataset.jpg> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/nuclei/full-dataset-regularized.jpg> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/nuclei/no-reg-but-aug.jpg>] (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/nuclei/quality.tex
-<bilder/nuclei/problems.png, id=543, 2065.7175pt x 437.635pt>
+<bilder/nuclei/problems.png, id=568, 2065.7175pt x 437.635pt>
 File: bilder/nuclei/problems.png Graphic file (type png)
 <use bilder/nuclei/problems.png>
 Package pdftex.def Info: bilder/nuclei/problems.png  used on input line 3.
@@ -1061,7 +1061,7 @@ File: bilder/segmentation/nuclei-mask/mask.png Graphic file (type png)
 <use bilder/segmentation/nuclei-mask/mask.png>
 Package pdftex.def Info: bilder/segmentation/nuclei-mask/mask.png  used on input line 27.
 (pdftex.def)             Requested size: 94.69785pt x 94.67696pt.
-) (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/nuclei/scaling influence.tex)) [13 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/close-located-cells/original.png> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/close-located-cells/segmented.png> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/segmentation/nuclei-mask/normalized.png (PNG copy)> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/segmentation/nuclei-mask/binary_local.png (PNG copy)> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/segmentation/nuclei-mask/filled_holes.png (PNG copy)> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/segmentation/nuclei-mask/mask.png (PNG copy)>] (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/er.tex (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/er preprocessing.tex
+) (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/nuclei/scaling influence.tex)) [13 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/close-located-cells/original.png> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/close-located-cells/segmented.png> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/segmentation/nuclei-mask/normalized.png (PNG copy)> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/segmentation/nuclei-mask/binary_local.png (PNG copy)> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/segmentation/nuclei-mask/filled_holes.png (PNG copy)> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/segmentation/nuclei-mask/mask.png (PNG copy)>] [14] (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/er.tex (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/er preprocessing.tex
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 4.
 File: bilder/ER/segmentation/pp_1.png Graphic file (type png)
 <use bilder/ER/segmentation/pp_1.png>
@@ -1092,17 +1092,17 @@ File: bilder/ER/segmentation/pp_7.png Graphic file (type png)
 Package pdftex.def Info: bilder/ER/segmentation/pp_7.png  used on input line 34.
 (pdftex.def)             Requested size: 48.9702pt x 48.94151pt.
 ) (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/actin/convergence.tex
-<bilder/actin/overfit.jpg, id=573, 1284.8pt x 785.93625pt>
+<bilder/actin/overfit.jpg, id=602, 1284.8pt x 785.93625pt>
 File: bilder/actin/overfit.jpg Graphic file (type jpg)
 <use bilder/actin/overfit.jpg>
 Package pdftex.def Info: bilder/actin/overfit.jpg  used on input line 4.
 (pdftex.def)             Requested size: 213.39566pt x 130.53734pt.
-<bilder/actin/no-overfit.jpg, id=574, 1284.8pt x 774.895pt>
+<bilder/actin/no-overfit.jpg, id=603, 1284.8pt x 774.895pt>
 File: bilder/actin/no-overfit.jpg Graphic file (type jpg)
 <use bilder/actin/no-overfit.jpg>
 Package pdftex.def Info: bilder/actin/no-overfit.jpg  used on input line 11.
 (pdftex.def)             Requested size: 213.39566pt x 128.70348pt.
-) [14 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/ER/segmentation/pp_1.png (PNG copy)> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/ER/segmentation/pp_2.png (PNG copy)> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/ER/segmentation/pp_3.png (PNG copy)> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/ER/segmentation/pp_4.png (PNG copy)> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/ER/segmentation/pp_5.png (PNG copy)> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/ER/segmentation/pp_6.png (PNG copy)> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/ER/segmentation/pp_7.png (PNG copy)> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/actin/overfit.jpg>] (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/er nuclei combined.tex
+) [15 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/ER/segmentation/pp_1.png (PNG copy)> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/ER/segmentation/pp_2.png (PNG copy)> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/ER/segmentation/pp_3.png (PNG copy)> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/ER/segmentation/pp_4.png (PNG copy)> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/ER/segmentation/pp_5.png (PNG copy)> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/ER/segmentation/pp_6.png (PNG copy)> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/ER/segmentation/pp_7.png (PNG copy)> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/actin/overfit.jpg>] (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/er nuclei combined.tex
 File: bilder/ER/gt.jpg Graphic file (type jpg)
 <use bilder/ER/gt.jpg>
 Package pdftex.def Info: bilder/ER/gt.jpg  used on input line 11.
@@ -1115,207 +1115,207 @@ File: bilder/ER/gt_nuclei.jpg Graphic file (type jpg)
 <use bilder/ER/gt_nuclei.jpg>
 Package pdftex.def Info: bilder/ER/gt_nuclei.jpg  used on input line 11.
 (pdftex.def)             Requested size: 130.26378pt x 130.25192pt.
-)) (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/golgi.tex [15 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/actin/no-overfit.jpg> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/ER/gt.jpg> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/ER/er.jpg> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/ER/gt_nuclei.jpg>] (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/golgi/golgi preprocessing.tex
-<bilder/enhancement.jpg, id=593, 1284.8pt x 634.37pt>
+)) (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/golgi.tex [16 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/actin/no-overfit.jpg> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/ER/gt.jpg> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/ER/er.jpg> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/ER/gt_nuclei.jpg>] (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/golgi/golgi preprocessing.tex
+<bilder/enhancement.jpg, id=623, 1284.8pt x 634.37pt>
 File: bilder/enhancement.jpg Graphic file (type jpg)
 <use bilder/enhancement.jpg>
 Package pdftex.def Info: bilder/enhancement.jpg  used on input line 3.
 (pdftex.def)             Requested size: 213.39566pt x 105.36346pt.
 ) (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/background removal.tex
-<bilder/structuring-element.png, id=594, 952.55875pt x 550.055pt>
+<bilder/structuring-element.png, id=624, 952.55875pt x 550.055pt>
 File: bilder/structuring-element.png Graphic file (type png)
 <use bilder/structuring-element.png>
 Package pdftex.def Info: bilder/structuring-element.png  used on input line 3.
 (pdftex.def)             Requested size: 213.39566pt x 123.21986pt.
-<bilder/rolling-ball.png, id=595, 458.71375pt x 266.9975pt>
+<bilder/rolling-ball.png, id=625, 458.71375pt x 266.9975pt>
 File: bilder/rolling-ball.png Graphic file (type png)
 <use bilder/rolling-ball.png>
 Package pdftex.def Info: bilder/rolling-ball.png  used on input line 11.
 (pdftex.def)             Requested size: 213.39566pt x 124.20958pt.
-<bilder/preprocessing/crop_golgi_not_full_processed.png, id=596, 200.75pt x 200.75pt>
+<bilder/preprocessing/crop_golgi_not_full_processed.png, id=626, 200.75pt x 200.75pt>
 File: bilder/preprocessing/crop_golgi_not_full_processed.png Graphic file (type png)
 <use bilder/preprocessing/crop_golgi_not_full_processed.png>
 Package pdftex.def Info: bilder/preprocessing/crop_golgi_not_full_processed.png  used on input line 23.
 (pdftex.def)             Requested size: 93.8946pt x 93.89609pt.
-<bilder/preprocessing/crop_golgi_full_processed.png, id=597, 200.75pt x 200.75pt>
+<bilder/preprocessing/crop_golgi_full_processed.png, id=627, 200.75pt x 200.75pt>
 File: bilder/preprocessing/crop_golgi_full_processed.png Graphic file (type png)
 <use bilder/preprocessing/crop_golgi_full_processed.png>
 Package pdftex.def Info: bilder/preprocessing/crop_golgi_full_processed.png  used on input line 30.
 (pdftex.def)             Requested size: 93.8946pt x 93.89609pt.
-<bilder/preprocessing/crop_golgi_not_full_processed_mask.png, id=598, 200.75pt x 200.75pt>
+<bilder/preprocessing/crop_golgi_not_full_processed_mask.png, id=628, 200.75pt x 200.75pt>
 File: bilder/preprocessing/crop_golgi_not_full_processed_mask.png Graphic file (type png)
 <use bilder/preprocessing/crop_golgi_not_full_processed_mask.png>
 Package pdftex.def Info: bilder/preprocessing/crop_golgi_not_full_processed_mask.png  used on input line 37.
 (pdftex.def)             Requested size: 93.8946pt x 93.89609pt.
-<bilder/preprocessing/crop_golgi_full_processed_mask.png, id=599, 200.75pt x 200.75pt>
+<bilder/preprocessing/crop_golgi_full_processed_mask.png, id=629, 200.75pt x 200.75pt>
 File: bilder/preprocessing/crop_golgi_full_processed_mask.png Graphic file (type png)
 <use bilder/preprocessing/crop_golgi_full_processed_mask.png>
 Package pdftex.def Info: bilder/preprocessing/crop_golgi_full_processed_mask.png  used on input line 44.
 (pdftex.def)             Requested size: 93.8946pt x 93.89609pt.
 ) (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/golgi/convergence.tex
-<bilder/golgi/pcc-no-reg.jpg, id=600, 1284.8pt x 747.79375pt>
+<bilder/golgi/pcc-no-reg.jpg, id=630, 1284.8pt x 747.79375pt>
 File: bilder/golgi/pcc-no-reg.jpg Graphic file (type jpg)
 <use bilder/golgi/pcc-no-reg.jpg>
 Package pdftex.def Info: bilder/golgi/pcc-no-reg.jpg  used on input line 4.
 (pdftex.def)             Requested size: 213.39566pt x 124.2022pt.
- [16 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/enhancement.jpg> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/structuring-element.png>]
-<bilder/golgi/too-dark.png, id=608, 369.38pt x 120.45pt>
+ [17 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/enhancement.jpg> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/structuring-element.png>]
+<bilder/golgi/too-dark.png, id=638, 369.38pt x 120.45pt>
 File: bilder/golgi/too-dark.png Graphic file (type png)
 <use bilder/golgi/too-dark.png>
 Package pdftex.def Info: bilder/golgi/too-dark.png  used on input line 12.
 (pdftex.def)             Requested size: 341.43436pt x 111.3373pt.
- [17 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/rolling-ball.png> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/preprocessing/crop_golgi_not_full_processed.png> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/preprocessing/crop_golgi_full_processed.png> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/preprocessing/crop_golgi_not_full_processed_mask.png> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/preprocessing/crop_golgi_full_processed_mask.png> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/golgi/pcc-no-reg.jpg>]
-<bilder/golgi/full-img.png, id=617, 1284.8pt x 399.4925pt>
+ [18 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/rolling-ball.png> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/preprocessing/crop_golgi_not_full_processed.png> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/preprocessing/crop_golgi_full_processed.png> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/preprocessing/crop_golgi_not_full_processed_mask.png> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/preprocessing/crop_golgi_full_processed_mask.png> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/golgi/pcc-no-reg.jpg>]
+<bilder/golgi/full-img.png, id=647, 1284.8pt x 399.4925pt>
 File: bilder/golgi/full-img.png Graphic file (type png)
 <use bilder/golgi/full-img.png>
 Package pdftex.def Info: bilder/golgi/full-img.png  used on input line 19.
 (pdftex.def)             Requested size: 341.43436pt x 106.1637pt.
-<bilder/golgi/enhanced-crop.png, id=618, 1405.25pt x 282.05376pt>
+<bilder/golgi/enhanced-crop.png, id=648, 1405.25pt x 282.05376pt>
 File: bilder/golgi/enhanced-crop.png Graphic file (type png)
 <use bilder/golgi/enhanced-crop.png>
 Package pdftex.def Info: bilder/golgi/enhanced-crop.png  used on input line 26.
 (pdftex.def)             Requested size: 213.39566pt x 42.8313pt.
 ) (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/golgi/asymmetrical training.tex
-<bilder/golgi/asymmetrical-training.jpg, id=619, 1284.8pt x 736.7525pt>
+<bilder/golgi/asymmetrical-training.jpg, id=649, 1284.8pt x 736.7525pt>
 File: bilder/golgi/asymmetrical-training.jpg Graphic file (type jpg)
 <use bilder/golgi/asymmetrical-training.jpg>
 Package pdftex.def Info: bilder/golgi/asymmetrical-training.jpg  used on input line 3.
 (pdftex.def)             Requested size: 213.39566pt x 122.36833pt.
- [18 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/golgi/too-dark.png (PNG copy)> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/golgi/full-img.png (PNG copy)> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/golgi/enhanced-crop.png>]
-<bilder/golgi/asymmetrical-predictions.png, id=629, 1803.73875pt x 336.25626pt>
+ [19 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/golgi/too-dark.png (PNG copy)> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/golgi/full-img.png (PNG copy)> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/golgi/enhanced-crop.png>]
+<bilder/golgi/asymmetrical-predictions.png, id=658, 1803.73875pt x 336.25626pt>
 File: bilder/golgi/asymmetrical-predictions.png Graphic file (type png)
 <use bilder/golgi/asymmetrical-predictions.png>
 Package pdftex.def Info: bilder/golgi/asymmetrical-predictions.png  used on input line 10.
 (pdftex.def)             Requested size: 426.79134pt x 79.55896pt.
-)) [19 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/golgi/asymmetrical-training.jpg> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/golgi/asymmetrical-predictions.png (PNG copy)>] (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/GFP prediction.tex (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/gfp/preprocessing.tex
-<bilder/gfp/binary-bce/preprocessing/preprocessing-gfp.png, id=636, 2437.105pt x 883.3pt>
+)) [20 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/golgi/asymmetrical-training.jpg> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/golgi/asymmetrical-predictions.png (PNG copy)>] (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/GFP prediction.tex (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/gfp/preprocessing.tex
+<bilder/gfp/binary-bce/preprocessing/preprocessing-gfp.png, id=665, 2437.105pt x 883.3pt>
 File: bilder/gfp/binary-bce/preprocessing/preprocessing-gfp.png Graphic file (type png)
 <use bilder/gfp/binary-bce/preprocessing/preprocessing-gfp.png>
 Package pdftex.def Info: bilder/gfp/binary-bce/preprocessing/preprocessing-gfp.png  used on input line 3.
 (pdftex.def)             Requested size: 213.39566pt x 77.33708pt.
 ) (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/gfp/predictions.tex
-<bilder/gfp/binary-bce/enlarged.png, id=637, 1505.625pt x 501.875pt>
+<bilder/gfp/binary-bce/enlarged.png, id=666, 1505.625pt x 501.875pt>
 File: bilder/gfp/binary-bce/enlarged.png Graphic file (type png)
 <use bilder/gfp/binary-bce/enlarged.png>
 Package pdftex.def Info: bilder/gfp/binary-bce/enlarged.png  used on input line 3.
 (pdftex.def)             Requested size: 341.43436pt x 113.81297pt.
-<bilder/gfp/predictions.png, id=638, 2208.25pt x 811.03pt>
+<bilder/gfp/predictions.png, id=667, 2208.25pt x 811.03pt>
 File: bilder/gfp/predictions.png Graphic file (type png)
 <use bilder/gfp/predictions.png>
 Package pdftex.def Info: bilder/gfp/predictions.png  used on input line 10.
 (pdftex.def)             Requested size: 256.0774pt x 94.03993pt.
-) [20 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/gfp/binary-bce/preprocessing/preprocessing-gfp.png> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/gfp/binary-bce/enlarged.png (PNG copy)> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/gfp/predictions.png>] (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/gfp/postprocessing.tex
-<bilder/gfp/binary-bce/gfp-bce-metrics.png, id=648, 2509.375pt x 479.7925pt>
+) [21 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/gfp/binary-bce/preprocessing/preprocessing-gfp.png> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/gfp/binary-bce/enlarged.png (PNG copy)> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/gfp/predictions.png>] (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/gfp/postprocessing.tex
+<bilder/gfp/binary-bce/gfp-bce-metrics.png, id=678, 2509.375pt x 479.7925pt>
 File: bilder/gfp/binary-bce/gfp-bce-metrics.png Graphic file (type png)
 <use bilder/gfp/binary-bce/gfp-bce-metrics.png>
 Package pdftex.def Info: bilder/gfp/binary-bce/gfp-bce-metrics.png  used on input line 3.
 (pdftex.def)             Requested size: 426.79134pt x 81.60023pt.
 ) (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/gfp/combination.tex
-<bilder/combined/combined.png, id=649, 1123.69812pt x 1498.59875pt>
+<bilder/combined/combined.png, id=679, 1123.69812pt x 1498.59875pt>
 File: bilder/combined/combined.png Graphic file (type png)
 <use bilder/combined/combined.png>
 Package pdftex.def Info: bilder/combined/combined.png  used on input line 3.
 (pdftex.def)             Requested size: 170.71393pt x 227.66132pt.
-)) [21 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/gfp/binary-bce/gfp-bce-metrics.png> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/combined/combined.png>] (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/model evaluation.tex (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/evaluation/downstrem metrics.tex
-<bilder/nuclei/metric/combined-metrics.png, id=660, 2710.125pt x 955.57pt>
+)) [22 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/gfp/binary-bce/gfp-bce-metrics.png> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/combined/combined.png>] (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/model evaluation.tex (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/evaluation/downstrem metrics.tex
+<bilder/nuclei/metric/combined-metrics.png, id=689, 2710.125pt x 955.57pt>
 File: bilder/nuclei/metric/combined-metrics.png Graphic file (type png)
 <use bilder/nuclei/metric/combined-metrics.png>
 Package pdftex.def Info: bilder/nuclei/metric/combined-metrics.png  used on input line 3.
 (pdftex.def)             Requested size: 426.79134pt x 150.4739pt.
-)) [22 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/nuclei/metric/combined-metrics.png (PNG copy)>] (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/stability.tex (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/stability/artificial corruptions.tex
-<bilder/corruptions.png, id=667, 1361.085pt x 776.9025pt>
+)) [23 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/nuclei/metric/combined-metrics.png (PNG copy)>] (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/stability.tex (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/stability/artificial corruptions.tex
+<bilder/corruptions.png, id=696, 1361.085pt x 776.9025pt>
 File: bilder/corruptions.png Graphic file (type png)
 <use bilder/corruptions.png>
 Package pdftex.def Info: bilder/corruptions.png  used on input line 29.
 (pdftex.def)             Requested size: 213.39566pt x 121.80562pt.
-<bilder/corruptions-loss.png, id=668, 503.7pt x 346.239pt>
+<bilder/corruptions-loss.png, id=697, 503.7pt x 346.239pt>
 File: bilder/corruptions-loss.png Graphic file (type png)
 <use bilder/corruptions-loss.png>
 Package pdftex.def Info: bilder/corruptions-loss.png  used on input line 36.
 (pdftex.def)             Requested size: 213.39566pt x 146.68735pt.
 ) (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/stability/real corruptions.tex
-<bilder/drift-detection/online-fixed-vs-not-fixed.jpg, id=669, 1284.8pt x 593.21625pt>
+<bilder/drift-detection/online-fixed-vs-not-fixed.jpg, id=698, 1284.8pt x 593.21625pt>
 File: bilder/drift-detection/online-fixed-vs-not-fixed.jpg Graphic file (type jpg)
 <use bilder/drift-detection/online-fixed-vs-not-fixed.jpg>
 Package pdftex.def Info: bilder/drift-detection/online-fixed-vs-not-fixed.jpg  used on input line 4.
 (pdftex.def)             Requested size: 213.39566pt x 98.52818pt.
- [23 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/corruptions.png> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/corruptions-loss.png>]) (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/stability/augmentations.tex
-<bilder/stability/augments-help.png, id=679, 1284.8pt x 920.43875pt>
+ [24 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/corruptions.png> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/corruptions-loss.png>]) (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/stability/augmentations.tex
+<bilder/stability/augments-help.png, id=708, 1284.8pt x 920.43875pt>
 File: bilder/stability/augments-help.png Graphic file (type png)
 <use bilder/stability/augments-help.png>
 Package pdftex.def Info: bilder/stability/augments-help.png  used on input line 3.
 (pdftex.def)             Requested size: 170.71393pt x 122.2876pt.
-)) [24 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/drift-detection/online-fixed-vs-not-fixed.jpg> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/stability/augments-help.png (PNG copy)>] (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/unet embeddings.tex (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/unet-embeddings/unet-embeddings.tex
-<bilder/unet-embeddings/umap-pca-embeddings.png, id=686, 2257.93562pt x 501.875pt>
+)) [25 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/drift-detection/online-fixed-vs-not-fixed.jpg> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/stability/augments-help.png (PNG copy)>] (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/unet embeddings.tex (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/unet-embeddings/unet-embeddings.tex
+<bilder/unet-embeddings/umap-pca-embeddings.png, id=715, 2257.93562pt x 501.875pt>
 File: bilder/unet-embeddings/umap-pca-embeddings.png Graphic file (type png)
 <use bilder/unet-embeddings/umap-pca-embeddings.png>
 Package pdftex.def Info: bilder/unet-embeddings/umap-pca-embeddings.png  used on input line 3.
 (pdftex.def)             Requested size: 426.79134pt x 94.85947pt.
 ) (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/autoencoder.tex
-<bilder/ae-embeddings/training.jpg, id=687, 1284.8pt x 882.29625pt>
+<bilder/ae-embeddings/training.jpg, id=716, 1284.8pt x 882.29625pt>
 File: bilder/ae-embeddings/training.jpg Graphic file (type jpg)
 <use bilder/ae-embeddings/training.jpg>
 Package pdftex.def Info: bilder/ae-embeddings/training.jpg  used on input line 3.
 (pdftex.def)             Requested size: 213.39566pt x 146.54192pt.
-<bilder/ae-embeddings/ae-samples.png, id=688, 1284.8pt x 963.6pt>
+<bilder/ae-embeddings/ae-samples.png, id=717, 1284.8pt x 963.6pt>
 File: bilder/ae-embeddings/ae-samples.png Graphic file (type png)
 <use bilder/ae-embeddings/ae-samples.png>
 Package pdftex.def Info: bilder/ae-embeddings/ae-samples.png  used on input line 10.
 (pdftex.def)             Requested size: 213.39566pt x 160.04578pt.
- [25 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/unet-embeddings/umap-pca-embeddings.png> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/ae-embeddings/training.jpg>]
-<bilder/ae-embeddings/ae-architecture.png, id=696, 1284.8pt x 822.07124pt>
+ [26 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/unet-embeddings/umap-pca-embeddings.png> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/ae-embeddings/training.jpg>]
+<bilder/ae-embeddings/ae-architecture.png, id=725, 1284.8pt x 822.07124pt>
 File: bilder/ae-embeddings/ae-architecture.png Graphic file (type png)
 <use bilder/ae-embeddings/ae-architecture.png>
 Package pdftex.def Info: bilder/ae-embeddings/ae-architecture.png  used on input line 17.
 (pdftex.def)             Requested size: 213.39566pt x 136.53905pt.
-<bilder/ae-embeddings/pca-umap-clusters.png, id=697, 1164.35pt x 389.455pt>
+<bilder/ae-embeddings/pca-umap-clusters.png, id=726, 1164.35pt x 389.455pt>
 File: bilder/ae-embeddings/pca-umap-clusters.png Graphic file (type png)
 <use bilder/ae-embeddings/pca-umap-clusters.png>
 Package pdftex.def Info: bilder/ae-embeddings/pca-umap-clusters.png  used on input line 24.
 (pdftex.def)             Requested size: 213.39566pt x 71.37653pt.
-<bilder/ae-embeddings/pacmap.png, id=698, 1284.8pt x 478.78876pt>
+<bilder/ae-embeddings/pacmap.png, id=727, 1284.8pt x 478.78876pt>
 File: bilder/ae-embeddings/pacmap.png Graphic file (type png)
 <use bilder/ae-embeddings/pacmap.png>
 Package pdftex.def Info: bilder/ae-embeddings/pacmap.png  used on input line 31.
 (pdftex.def)             Requested size: 213.39566pt x 79.52274pt.
-<bilder/ae-embeddings/brighter-darker.png, id=699, 1284.8pt x 963.6pt>
+<bilder/ae-embeddings/brighter-darker.png, id=728, 1284.8pt x 963.6pt>
 File: bilder/ae-embeddings/brighter-darker.png Graphic file (type png)
 <use bilder/ae-embeddings/brighter-darker.png>
 Package pdftex.def Info: bilder/ae-embeddings/brighter-darker.png  used on input line 38.
 (pdftex.def)             Requested size: 213.39566pt x 160.04578pt.
- [26 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/ae-embeddings/ae-samples.png> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/ae-embeddings/ae-architecture.png> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/ae-embeddings/pca-umap-clusters.png (PNG copy)>]) [27 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/ae-embeddings/pacmap.png (PNG copy)> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/ae-embeddings/brighter-darker.png (PNG copy)>] (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/unet-embeddings/unet-embeddings-clustering.tex
-<bilder/unet-embeddings/PacMAP.png, id=716, 1562.83875pt x 612.2875pt>
+ [27 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/ae-embeddings/ae-samples.png> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/ae-embeddings/ae-architecture.png> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/ae-embeddings/pca-umap-clusters.png (PNG copy)>]) [28 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/ae-embeddings/pacmap.png (PNG copy)> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/ae-embeddings/brighter-darker.png (PNG copy)>] (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/unet-embeddings/unet-embeddings-clustering.tex
+<bilder/unet-embeddings/PacMAP.png, id=746, 1562.83875pt x 612.2875pt>
 File: bilder/unet-embeddings/PacMAP.png Graphic file (type png)
 <use bilder/unet-embeddings/PacMAP.png>
 Package pdftex.def Info: bilder/unet-embeddings/PacMAP.png  used on input line 3.
 (pdftex.def)             Requested size: 426.79134pt x 167.20706pt.
-<bilder/unet-embeddings/db-levels.png, id=717, 1284.8pt x 963.6pt>
+<bilder/unet-embeddings/db-levels.png, id=747, 1284.8pt x 963.6pt>
 File: bilder/unet-embeddings/db-levels.png Graphic file (type png)
 <use bilder/unet-embeddings/db-levels.png>
 Package pdftex.def Info: bilder/unet-embeddings/db-levels.png  used on input line 10.
 (pdftex.def)             Requested size: 256.0774pt x 192.05493pt.
 ))
-(/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/drift detection.tex [28
+(/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/drift detection.tex [29
 
  </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/unet-embeddings/PacMAP.png> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/unet-embeddings/db-levels.png (PNG copy)>] (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/drift detection/mmd.tex
-<bilder/drift-detection/fn-rate.jpg, id=725, 1284.8pt x 882.29625pt>
+<bilder/drift-detection/fn-rate.jpg, id=755, 1284.8pt x 882.29625pt>
 File: bilder/drift-detection/fn-rate.jpg Graphic file (type jpg)
 <use bilder/drift-detection/fn-rate.jpg>
 Package pdftex.def Info: bilder/drift-detection/fn-rate.jpg  used on input line 3.
 (pdftex.def)             Requested size: 213.39566pt x 146.54192pt.
 ) (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/drift detection/online.tex
-<bilder/drift-detection/online.png, id=726, 966.61125pt x 604.2575pt>
+<bilder/drift-detection/online.png, id=756, 966.61125pt x 604.2575pt>
 File: bilder/drift-detection/online.png Graphic file (type png)
 <use bilder/drift-detection/online.png>
 Package pdftex.def Info: bilder/drift-detection/online.png  used on input line 3.
 (pdftex.def)             Requested size: 256.0774pt x 160.08138pt.
- [29 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/drift-detection/fn-rate.jpg> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/drift-detection/online.png>]
-<bilder/drift-detection/auc_roc comparison online.png, id=734, 702.625pt x 501.875pt>
+ [30 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/drift-detection/fn-rate.jpg> </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/drift-detection/online.png>]
+<bilder/drift-detection/auc_roc comparison online.png, id=764, 702.625pt x 501.875pt>
 File: bilder/drift-detection/auc_roc comparison online.png Graphic file (type png)
 <use bilder/drift-detection/auc_roc comparison online.png>
 Package pdftex.def Info: bilder/drift-detection/auc_roc comparison online.png  used on input line 58.
 (pdftex.def)             Requested size: 341.43436pt x 243.89153pt.
-)) [30 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/drift-detection/auc_roc comparison online.png>] (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/tools.tex) [31] (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/outlook.tex) (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/summary.tex [32])) [33]
+)) [31 </Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/drift-detection/auc_roc comparison online.png>] (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/tools.tex) [32] (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/outlook.tex) (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/summary.tex [33])) [34]
 
 LaTeX Warning: Empty bibliography on input line 101.
 
@@ -1324,40 +1324,40 @@ Underfull \hbox (badness 1292) in paragraph at lines 51--51
  [][] [][][]\T1/ppl/m/n/10.95 (a) Vanilla pre-processing with au-to-matic back-ground re-moval al-go- 
  []
 
-[34
+[35
 
 
 ])
 \tf@lof=\write7
 \openout7 = `ba.lof'.
 
- (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/ba.lot [35])
+ (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/ba.lot [36])
 \tf@lot=\write8
 \openout8 = `ba.lot'.
 
- [36] (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/ba.aux)
+ [37] (/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/ba.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `ba.out' has not changed.
-(rerunfilecheck)             Checksum: BA0656599C8F61F6F60CC585A6EF6B72;14717.
+(rerunfilecheck)             Checksum: B0DA0C0159A9D6F4C849DF2365A14596;14988.
 Package logreq Info: Writing requests to 'ba.run.xml'.
 \openout1 = `ba.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 23871 strings out of 478994
- 407632 string characters out of 5858184
- 1118463 words of memory out of 5000000
- 40536 multiletter control sequences out of 15000+600000
+ 23894 strings out of 478994
+ 408893 string characters out of 5858184
+ 1118489 words of memory out of 5000000
+ 40545 multiletter control sequences out of 15000+600000
  423347 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  91i,18n,120p,1216b,809s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on "/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/ba.pdf" (46 pages, 55358615 bytes).
+Output written on "/Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/ba.pdf" (47 pages, 55359052 bytes).
 PDF statistics:
- 896 PDF objects out of 1000 (max. 8388607)
- 736 compressed objects within 8 object streams
- 181 named destinations out of 1000 (max. 500000)
- 1029 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 926 PDF objects out of 1000 (max. 8388607)
+ 765 compressed objects within 8 object streams
+ 187 named destinations out of 1000 (max. 500000)
+ 1069 words of extra memory for PDF output out of 10000 (max. 10000000)
 

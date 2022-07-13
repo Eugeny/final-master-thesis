@@ -18,7 +18,21 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.2.1}Neural networks}{3}{subsubsection.2.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.2.2}Clustering}{4}{subsubsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.2}Dimensionality reduction methods}{4}{subsubsection.2.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\numberline {2.2.2.1}UMAP}{4}{paragraph.2.2.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\numberline {2.2.2.2}PCA}{4}{paragraph.2.2.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\numberline {2.2.2.3}PacMAP}{4}{paragraph.2.2.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.2.3}Clustering methods}{4}{subsubsection.2.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\numberline {2.2.3.1}DBSCAN}{4}{paragraph.2.2.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\numberline {2.2.3.2}HDBSCAN}{4}{paragraph.2.2.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\numberline {2.2.3.3}K-means}{4}{paragraph.2.2.3.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3}Imaging}{4}{subsection.2.3}%
 \defcounter {refsection}{0}\relax 
@@ -26,23 +40,25 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.3.2}Microscopy imaging}{4}{subsubsection.2.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {2.3.2.1}Crops combination technique}{4}{paragraph.2.3.2.1}%
+\contentsline {paragraph}{\numberline {2.3.2.1}Image acquisition peculiarity}{4}{paragraph.2.3.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Model training}{5}{section.3}%
+\contentsline {paragraph}{\numberline {2.3.2.2}Crops combination technique}{5}{paragraph.2.3.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1}Neural network architecture}{5}{subsection.3.1}%
+\contentsline {section}{\numberline {3}Model training}{6}{section.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1}Neural network architecture}{6}{subsection.3.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2}Loss functions}{6}{subsection.3.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.3}Available data}{6}{subsection.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4}Training costs estimation}{6}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.4}Training costs estimation}{7}{subsection.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5}Augmentations}{6}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.5}Augmentations}{7}{subsection.3.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.5.1}Smart augmentations for rotation and scaling}{6}{subsubsection.3.5.1}%
+\contentsline {subsubsection}{\numberline {3.5.1}Smart augmentations for rotation and scaling}{7}{subsubsection.3.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.6}Convergence}{6}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.6}Convergence}{7}{subsection.3.6}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.7}Model setup}{7}{subsection.3.7}%
 \defcounter {refsection}{0}\relax 
@@ -68,96 +84,90 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.4}Influence of scaling on predictions quality}{13}{subsection.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}ER}{14}{section.5}%
+\contentsline {section}{\numberline {5}ER}{15}{section.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1}Preprocessing}{14}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.1}Preprocessing}{15}{subsection.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2}Training and predictions}{14}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.2}Training and predictions}{15}{subsection.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3}Combination of nuclei and actin predictions}{15}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.3}Combination of nuclei and actin predictions}{16}{subsection.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4}Generalizability across phenotypes}{15}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.4}Generalizability across phenotypes}{16}{subsection.5.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Golgi}{16}{section.6}%
+\contentsline {section}{\numberline {6}Golgi}{17}{section.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1}Preprocessing}{16}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.1}Preprocessing}{17}{subsection.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.1.1}Background removal algorithms}{16}{subsubsection.6.1.1}%
+\contentsline {subsubsection}{\numberline {6.1.1}Background removal algorithms}{17}{subsubsection.6.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2}Training and predictions}{17}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.2}Training and predictions}{18}{subsection.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3}Alternative ways to improve predictions}{19}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.3}Alternative ways to improve predictions}{20}{subsection.6.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.3.1}Asymmetrical losses}{19}{subsubsection.6.3.1}%
+\contentsline {subsubsection}{\numberline {6.3.1}Asymmetrical losses}{20}{subsubsection.6.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.3.2}Use of gradient in loss}{19}{subsubsection.6.3.2}%
+\contentsline {subsubsection}{\numberline {6.3.2}Use of gradient in loss}{20}{subsubsection.6.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.3.3}Noise reduction methods}{19}{subsubsection.6.3.3}%
+\contentsline {subsubsection}{\numberline {6.3.3}Noise reduction methods}{20}{subsubsection.6.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}GFP prediction}{20}{section.7}%
+\contentsline {section}{\numberline {7}GFP prediction}{21}{section.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1}Preprocessing}{20}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.1}Preprocessing}{21}{subsection.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.2}Predictions}{20}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.2}Predictions}{21}{subsection.7.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.3}Downstream metrics}{21}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.3}Downstream metrics}{22}{subsection.7.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.4}Combination of GFP, nuclei and ER}{21}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.4}Combination of GFP, nuclei and ER}{22}{subsection.7.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8}Model Evaluation}{22}{section.8}%
+\contentsline {section}{\numberline {8}Model Evaluation}{23}{section.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.1}Metrics for downstream tasks}{22}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.1}Metrics for downstream tasks}{23}{subsection.8.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {8.2}Influence of different loss functions on metrics for downstream tasks}{22}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.2}Influence of different loss functions on metrics for downstream tasks}{23}{subsection.8.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {9}Stability study}{23}{section.9}%
+\contentsline {section}{\numberline {9}Stability study}{24}{section.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.1}Artificial corruptions}{23}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.1}Artificial corruptions}{24}{subsection.9.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.2}Real corruptions}{24}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.2}Real corruptions}{25}{subsection.9.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {9.2.1}Not fixed cells imaging as corrupted input}{24}{subsubsection.9.2.1}%
+\contentsline {subsubsection}{\numberline {9.2.1}Not fixed cells imaging as corrupted input}{25}{subsubsection.9.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {9.2.2}Real-world examples of corruptions}{24}{subsubsection.9.2.2}%
+\contentsline {subsubsection}{\numberline {9.2.2}Real-world examples of corruptions}{25}{subsubsection.9.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.3}Influence of corruptions on metrics for downstream tasks}{24}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.3}Influence of corruptions on metrics for downstream tasks}{25}{subsection.9.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {9.4}Improving predictions with additional corruption augmentations}{24}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.4}Improving predictions with additional corruption augmentations}{25}{subsection.9.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {10}UNET embeddings study}{25}{section.10}%
+\contentsline {section}{\numberline {10}UNET embeddings study}{26}{section.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.1}Dimensionality reduction and clustering methods}{25}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.1}Application of various dimentionality reduction methods}{26}{subsection.10.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {10.1.1}UMAP, t-SNE, PCA, PacMAP}{25}{subsubsection.10.1.1}%
+\contentsline {subsection}{\numberline {10.2}Autoencoder embeddings as an alternative}{26}{subsection.10.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {10.1.2}Clustering methods (HDBSCAN, DBSCAN, K-means)}{25}{subsubsection.10.1.2}%
+\contentsline {subsection}{\numberline {10.3}Clustering of PacMAP embeddings}{29}{subsection.10.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.2}Application of various dimentionality reduction methods}{25}{subsection.10.2}%
+\contentsline {subsubsection}{\numberline {10.3.1}Clustering on UNet embeddings}{29}{subsubsection.10.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.3}Autoencoder embeddings as an alternative}{25}{subsection.10.3}%
+\contentsline {section}{\numberline {11}Drift detection}{30}{section.11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {10.4}Clustering of PacMAP embeddings}{28}{subsection.10.4}%
+\contentsline {subsection}{\numberline {11.1}A need to detect drift}{30}{subsection.11.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {10.4.1}Clustering on UNet embeddings}{28}{subsubsection.10.4.1}%
+\contentsline {subsection}{\numberline {11.2}Maximum mean discrepancy for drift detection}{30}{subsection.11.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {11}Drift detection}{29}{section.11}%
+\contentsline {subsection}{\numberline {11.3}Online version of MMD algorithm}{30}{subsection.11.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.1}A need to detect drift}{29}{subsection.11.1}%
+\contentsline {section}{\numberline {12}Software Tools}{32}{section.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.2}Maximum mean discrepancy for drift detection}{29}{subsection.11.2}%
+\contentsline {subsection}{\numberline {12.1}Foundry. Palantir}{32}{subsection.12.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {11.3}Online version of MMD algorithm}{29}{subsection.11.3}%
+\contentsline {subsection}{\numberline {12.2}AWS}{32}{subsection.12.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {12}Software Tools}{31}{section.12}%
+\contentsline {subsection}{\numberline {12.3}Streamlit}{32}{subsection.12.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {12.1}Foundry. Palantir}{31}{subsection.12.1}%
+\contentsline {section}{\numberline {13}Summary}{34}{section.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {12.2}AWS}{31}{subsection.12.2}%
+\contentsline {section}{List of Figures}{35}{section.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {12.3}Streamlit}{31}{subsection.12.3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {13}Summary}{33}{section.13}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{List of Figures}{34}{section.13}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{List of Tables}{35}{section.13}%
+\contentsline {section}{List of Tables}{36}{section.13}%
