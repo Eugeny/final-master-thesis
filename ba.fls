@@ -1210,10 +1210,10 @@ INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/palatino/pplr8t.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/palatino/pplb8t.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/vf/adobe/palatino/pplb8t.vf
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/palatino/pplb8r.tfm
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/domain knwoledge.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/domain knwoledge.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/domain knwoledge.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/domain knwoledge.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/domain knowledge.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/domain knowledge.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/domain knowledge.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/domain knowledge.tex
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/domain knowledge/cld theory.tex
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/domain knowledge/cld theory.tex
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/domain knowledge/cld theory.tex
@@ -1266,10 +1266,14 @@ INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/crops_combination/prediction_border_34.png
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/crops_combination/prediction_border_34.png
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/crops_combination/prediction_border_34.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/model training.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/model training.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/model training.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/model training.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/implementation.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/implementation.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/implementation.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/implementation.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/implementation/model training.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/implementation/model training.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/implementation/model training.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/implementation/model training.tex
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/nn architecture.tex
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/nn architecture.tex
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/nn architecture.tex
@@ -1291,44 +1295,45 @@ INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/costs and times.tex
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/costs and times.tex
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/costs and times.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/augmentations.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/augmentations.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/augmentations.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/augmentations.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/convergence.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/convergence.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/convergence.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/convergence.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/wi.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/wi.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/wi.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/wi.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/model training/augmentations.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/model training/augmentations.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/model training/augmentations.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/model training/augmentations.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/model training/smart augmentations.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/model training/smart augmentations.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/model training/smart augmentations.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/model training/smart augmentations.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/model training/smart augmentations.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/model training/wi.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/model training/wi.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/model training/wi.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/model training/wi.tex
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/nuclei/wi-no-wi.png
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/nuclei/wi-no-wi.png
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/nuclei/wi-no-wi.png
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/nuclei/wi-no-wi.png
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/nuclei/wi-no-wi.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/regularization.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/regularization.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/regularization.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/regularization.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/model training/regularization.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/model training/regularization.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/model training/regularization.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/model training/regularization.tex
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/overfit.png
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/overfit.png
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/overfit.png
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/overfit.png
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/overfit.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/optimizers.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/optimizers.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/optimizers.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/optimizers.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/nuclei.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/nuclei.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/nuclei.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/nuclei.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/nuclei preprocessing.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/nuclei preprocessing.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/nuclei preprocessing.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/nuclei preprocessing.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/model training/optimizers.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/model training/optimizers.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/model training/optimizers.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/model training/optimizers.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/implementation/nuclei.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/implementation/nuclei.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/implementation/nuclei.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/implementation/nuclei.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/nuclei/preprocessing.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/nuclei/preprocessing.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/nuclei/preprocessing.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/nuclei/preprocessing.tex
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/lightning-conditions/lightning-1.png
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/lightning-conditions/lightning-1.png
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/lightning-conditions/lightning-1.png
@@ -1381,10 +1386,10 @@ INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/lightning-conditions/lightning-4.png
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/lightning-conditions/lightning-4.png
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/lightning-conditions/lightning-4.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/thresholding.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/thresholding.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/thresholding.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/thresholding.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/nuclei/thresholding.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/nuclei/thresholding.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/nuclei/thresholding.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/nuclei/thresholding.tex
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/difficult-lightning/gradient_local.png
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/difficult-lightning/gradient_local.png
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/difficult-lightning/gradient_local.png
@@ -1464,10 +1469,10 @@ INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/nuclei/problems.png
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/nuclei/problems.png
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/nuclei/problems.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/nuclei postprocessing.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/nuclei postprocessing.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/nuclei postprocessing.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/nuclei postprocessing.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/nuclei/postprocessing.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/nuclei/postprocessing.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/nuclei/postprocessing.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/nuclei/postprocessing.tex
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/close-located-cells/original.png
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/close-located-cells/original.png
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/close-located-cells/original.png
@@ -1550,14 +1555,14 @@ INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/nuclei/scaling influence.tex
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/nuclei/scaling influence.tex
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/nuclei/scaling influence.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/er.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/er.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/er.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/er.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/er preprocessing.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/er preprocessing.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/er preprocessing.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/er preprocessing.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/implementation/er.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/implementation/er.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/implementation/er.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/implementation/er.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/er/preprocessing.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/er/preprocessing.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/er/preprocessing.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/er/preprocessing.tex
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/palatino/pplri8t.tfm
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/ER/segmentation/pp_1.png
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/ER/segmentation/pp_1.png
@@ -1650,10 +1655,10 @@ INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/ER/segmentation/pp_7.png
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/ER/segmentation/pp_7.png
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/ER/segmentation/pp_7.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/actin/convergence.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/actin/convergence.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/actin/convergence.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/actin/convergence.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/er/convergence.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/er/convergence.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/er/convergence.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/er/convergence.tex
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/actin/overfit.jpg
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/actin/overfit.jpg
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/actin/overfit.jpg
@@ -1666,10 +1671,10 @@ INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/actin/no-overfit.jpg
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/vf/adobe/palatino/pplri8t.vf
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/palatino/pplri8r.tfm
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/er nuclei combined.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/er nuclei combined.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/er nuclei combined.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/er nuclei combined.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/er/nuclei combined.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/er/nuclei combined.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/er/nuclei combined.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/er/nuclei combined.tex
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/ER/gt.jpg
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/ER/gt.jpg
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/ER/gt.jpg
@@ -1721,10 +1726,10 @@ INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/ER/gt_nuclei.jpg
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/ER/gt_nuclei.jpg
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/ER/gt_nuclei.jpg
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/golgi.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/golgi.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/golgi.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/golgi.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/implementation/golgi.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/implementation/golgi.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/implementation/golgi.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/implementation/golgi.tex
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/golgi/golgi preprocessing.tex
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/golgi/golgi preprocessing.tex
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/golgi/golgi preprocessing.tex
@@ -1806,10 +1811,10 @@ INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/golgi/asymmetrical-predictions.png
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/golgi/asymmetrical-predictions.png
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/golgi/asymmetrical-predictions.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/GFP prediction.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/GFP prediction.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/GFP prediction.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/GFP prediction.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/implementation/GFP.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/implementation/GFP.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/implementation/GFP.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/implementation/GFP.tex
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/gfp/preprocessing.tex
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/gfp/preprocessing.tex
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/gfp/preprocessing.tex
@@ -1851,10 +1856,10 @@ INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/combined/combined.png
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/combined/combined.png
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/combined/combined.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/model evaluation.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/model evaluation.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/model evaluation.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/model evaluation.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/implementation/model evaluation.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/implementation/model evaluation.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/implementation/model evaluation.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/implementation/model evaluation.tex
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/evaluation/downstrem metrics.tex
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/evaluation/downstrem metrics.tex
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/evaluation/downstrem metrics.tex
@@ -1864,10 +1869,14 @@ INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/nuclei/metric/combined-metrics.png
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/nuclei/metric/combined-metrics.png
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/nuclei/metric/combined-metrics.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/stability.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/stability.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/stability.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/stability.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/stability study.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/stability study.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/stability study.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/stability study.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/stability study/stability.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/stability study/stability.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/stability study/stability.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/stability study/stability.tex
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/stability/artificial corruptions.tex
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/stability/artificial corruptions.tex
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/stability/artificial corruptions.tex
@@ -1900,10 +1909,10 @@ INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/stability/augments-help.png
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/stability/augments-help.png
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/stability/augments-help.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/unet embeddings.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/unet embeddings.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/unet embeddings.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/unet embeddings.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/stability study/unet embeddings.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/stability study/unet embeddings.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/stability study/unet embeddings.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/stability study/unet embeddings.tex
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/unet-embeddings/unet-embeddings.tex
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/unet-embeddings/unet-embeddings.tex
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/unet-embeddings/unet-embeddings.tex
@@ -1961,10 +1970,10 @@ INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/unet-embeddings/db-levels.png
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/unet-embeddings/db-levels.png
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/unet-embeddings/db-levels.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/drift detection.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/drift detection.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/drift detection.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/drift detection.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/stability study/drift detection.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/stability study/drift detection.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/stability study/drift detection.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/stability study/drift detection.tex
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/drift detection/mmd.tex
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/drift detection/mmd.tex
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/drift detection/mmd.tex
@@ -1988,18 +1997,18 @@ INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/drift-detection/auc_roc comparison online.png
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/drift-detection/auc_roc comparison online.png
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/drift-detection/auc_roc comparison online.png
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/tools.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/tools.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/tools.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/tools.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/outlook.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/outlook.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/outlook.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/outlook.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/summary.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/summary.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/summary.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/summary.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/tools.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/tools.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/tools.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/tools.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/outlook.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/outlook.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/outlook.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/outlook.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/summary.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/summary.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/summary.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/summary.tex
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/ba.lof
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/ba.lof
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/ba.lof
