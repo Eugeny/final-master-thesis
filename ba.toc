@@ -84,7 +84,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.2.4}Influence of scaling on predictions quality}{13}{subsubsection.3.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3}ER}{14}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.3}Endoplasmic Reticulum}{14}{subsection.3.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.3.1}Preprocessing}{14}{subsubsection.3.3.1}%
 \defcounter {refsection}{0}\relax 
@@ -112,13 +112,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.5}GFP}{20}{subsection.3.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {3.5.0.1}Preprocessing}{20}{paragraph.3.5.0.1}%
+\contentsline {subsubsection}{\numberline {3.5.1}Preprocessing}{20}{subsubsection.3.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {3.5.0.2}Predictions}{20}{paragraph.3.5.0.2}%
+\contentsline {subsubsection}{\numberline {3.5.2}Predictions}{20}{subsubsection.3.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {3.5.0.3}Downstream metrics}{21}{paragraph.3.5.0.3}%
+\contentsline {subsubsection}{\numberline {3.5.3}Downstream metrics}{21}{subsubsection.3.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {3.5.0.4}Combination of GFP, nuclei and ER}{21}{paragraph.3.5.0.4}%
+\contentsline {subsubsection}{\numberline {3.5.4}Combination of GFP, nuclei and ER}{21}{subsubsection.3.5.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.6}Model evaluation}{22}{subsection.3.6}%
 \defcounter {refsection}{0}\relax 

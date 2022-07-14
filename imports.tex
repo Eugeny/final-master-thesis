@@ -45,6 +45,7 @@
 %\usepackage{slashbox}
 \usepackage{diagbox}
 \usepackage{url}
+\usepackage{bm}
 \usepackage{adjustbox}
 \usepackage{xcolor}
 \usepackage{multicol}
@@ -65,7 +66,17 @@
 \usepackage{subcaption}
 \usepackage{listings}
 \usepackage{physics}
+\usepackage{xpatch}
+\usepackage{nomencl}
 \usepackage{array}
+\xpatchcmd{\thenomenclature}{%
+  \section*{\nomname}% Look for `\section*... etc.
+}{% Replace it by 'nothing'
+}{\typeout{Success}}{\typeout{Failure}}
+
+\makenomenclature
+\renewcommand{\nomname}{}
+
 \newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
 
 \titlespacing*{\section}{0pt}{5.5ex plus 1ex minus .2ex}{4.3ex plus .2ex}
