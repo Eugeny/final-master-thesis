@@ -47,3 +47,7 @@ Non specific binding is the problem for Golgi
 
 
 Use a bigger model to to get more details
+
+Nice phrases rely on the premise that 
+N. N. Boustany, S. A. Boppart, V. Backman, Microscopic imaging and spectroscopy with scattered light. Annu. Rev. Biomed. Eng. 12, 285–314 (2010).
+"Our work relies on the premise that label-free scattering-based microscopy captures rich structural information and can be effective to characterize cell morphological features":

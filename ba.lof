@@ -4,106 +4,106 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2}{\ignorespaces Way in which photos of the well-plate were taken\relax }}{5}{figure.caption.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3}{\ignorespaces No overlap\relax }}{5}{figure.caption.3}%
+\contentsline {figure}{\numberline {3}{\ignorespaces No overlap\relax }}{6}{figure.caption.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4}{\ignorespaces 30 pixels overlap\relax }}{5}{figure.caption.3}%
+\contentsline {figure}{\numberline {4}{\ignorespaces 30 pixels overlap\relax }}{6}{figure.caption.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5}{\ignorespaces Unet\relax }}{6}{figure.caption.4}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Unet\relax }}{7}{figure.caption.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6}{\ignorespaces Using original image for rotation and scaling augmentations\relax }}{7}{figure.caption.6}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Using original image for rotation and scaling augmentations\relax }}{8}{figure.caption.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7}{\ignorespaces Nuclei training without and with custom weight initialization\relax }}{7}{figure.caption.7}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Nuclei training without and with custom weight initialization\relax }}{8}{figure.caption.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8}{\ignorespaces Overfitting\relax }}{8}{figure.caption.8}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Overfitting\relax }}{9}{figure.caption.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {9}{\ignorespaces Different lightning conditions\relax }}{9}{figure.caption.9}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Different lightning conditions\relax }}{10}{figure.caption.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {11}{\ignorespaces Local vs. Global thresholding (normal conditions)\relax }}{9}{figure.caption.11}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Local vs. Global thresholding (normal conditions)\relax }}{10}{figure.caption.11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {10}{\ignorespaces Local vs. Global thresholding\relax }}{10}{figure.caption.10}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Local vs. Global thresholding\relax }}{11}{figure.caption.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {12}{\ignorespaces Having more data makes training more stable\relax }}{10}{figure.caption.12}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Having more data makes training more stable\relax }}{11}{figure.caption.12}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {13}{\ignorespaces With regularization and augmentations PCC\relax }}{11}{figure.caption.13}%
+\contentsline {figure}{\numberline {13}{\ignorespaces With regularization and augmentations PCC\relax }}{12}{figure.caption.13}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {14}{\ignorespaces No regularization but augmentations\relax }}{11}{figure.caption.14}%
+\contentsline {figure}{\numberline {14}{\ignorespaces No regularization but augmentations\relax }}{12}{figure.caption.14}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {15}{\ignorespaces Difefrent models predictions and scores comparison\relax }}{11}{figure.caption.15}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Difefrent models predictions and scores comparison\relax }}{12}{figure.caption.15}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {16}{\ignorespaces Problems in predictions\relax }}{12}{figure.caption.16}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Problems in predictions\relax }}{13}{figure.caption.16}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {17}{\ignorespaces Closely located cells\relax }}{12}{figure.caption.17}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Closely located cells\relax }}{13}{figure.caption.17}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {18}{\ignorespaces Fluorescence segmentation\relax }}{13}{figure.caption.18}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Fluorescence segmentation\relax }}{14}{figure.caption.18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {19}{\ignorespaces ER prediction\relax }}{14}{figure.caption.20}%
+\contentsline {figure}{\numberline {19}{\ignorespaces ER prediction\relax }}{15}{figure.caption.20}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {20}{\ignorespaces Overfit\relax }}{14}{figure.caption.21}%
+\contentsline {figure}{\numberline {20}{\ignorespaces Overfit\relax }}{15}{figure.caption.21}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {21}{\ignorespaces No overfit with augmentations\relax }}{15}{figure.caption.22}%
+\contentsline {figure}{\numberline {21}{\ignorespaces No overfit with augmentations\relax }}{16}{figure.caption.22}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {22}{\ignorespaces ER prediction\relax }}{15}{figure.caption.23}%
+\contentsline {figure}{\numberline {22}{\ignorespaces ER prediction\relax }}{16}{figure.caption.23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {23}{\ignorespaces Golgi enhancement\relax }}{16}{figure.caption.24}%
+\contentsline {figure}{\numberline {23}{\ignorespaces Golgi enhancement\relax }}{17}{figure.caption.24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {24}{\ignorespaces Structuring Element\relax }}{16}{figure.caption.25}%
+\contentsline {figure}{\numberline {24}{\ignorespaces Structuring Element\relax }}{17}{figure.caption.25}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {25}{\ignorespaces Rolling Ball\relax }}{17}{figure.caption.26}%
+\contentsline {figure}{\numberline {25}{\ignorespaces Rolling Ball\relax }}{18}{figure.caption.26}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {26}{\ignorespaces (a) Vanilla pre-processing with automatic background removal algorithm only; (b) Additional clipping of lower intensities after vanilla pre-processing; (c) masked or subfigure (a); (d) mask of subfigure (b)\relax }}{17}{figure.caption.27}%
+\contentsline {figure}{\numberline {26}{\ignorespaces (a) Vanilla pre-processing with automatic background removal algorithm only; (b) Additional clipping of lower intensities after vanilla pre-processing; (c) masked or subfigure (a); (d) mask of subfigure (b)\relax }}{18}{figure.caption.27}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {27}{\ignorespaces Straightforward training doesn't work\relax }}{17}{figure.caption.28}%
+\contentsline {figure}{\numberline {27}{\ignorespaces Straightforward training doesn't work\relax }}{18}{figure.caption.28}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {28}{\ignorespaces Training on original data\relax }}{18}{figure.caption.29}%
+\contentsline {figure}{\numberline {28}{\ignorespaces Training on original data\relax }}{19}{figure.caption.29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {29}{\ignorespaces Full size predictions\relax }}{18}{figure.caption.30}%
+\contentsline {figure}{\numberline {29}{\ignorespaces Full size predictions\relax }}{19}{figure.caption.30}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {30}{\ignorespaces Training on the enhanced data\relax }}{18}{figure.caption.31}%
+\contentsline {figure}{\numberline {30}{\ignorespaces Training on the enhanced data\relax }}{19}{figure.caption.31}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {31}{\ignorespaces Asymmetrical training\relax }}{19}{figure.caption.32}%
+\contentsline {figure}{\numberline {31}{\ignorespaces Asymmetrical training\relax }}{20}{figure.caption.32}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {32}{\ignorespaces Asymmetrical training predictions\relax }}{19}{figure.caption.33}%
+\contentsline {figure}{\numberline {32}{\ignorespaces Asymmetrical training predictions\relax }}{20}{figure.caption.33}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {33}{\ignorespaces Converting GFP to a binary mask\relax }}{20}{figure.caption.34}%
+\contentsline {figure}{\numberline {33}{\ignorespaces Converting GFP to a binary mask\relax }}{21}{figure.caption.34}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {34}{\ignorespaces Training with BCE loss\relax }}{20}{figure.caption.35}%
+\contentsline {figure}{\numberline {34}{\ignorespaces Training with BCE loss\relax }}{21}{figure.caption.35}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {35}{\ignorespaces Training with Pearson correlation loss\relax }}{20}{figure.caption.36}%
+\contentsline {figure}{\numberline {35}{\ignorespaces Training with Pearson correlation loss\relax }}{21}{figure.caption.36}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {36}{\ignorespaces Downstream metrics\relax }}{21}{figure.caption.38}%
+\contentsline {figure}{\numberline {36}{\ignorespaces Downstream metrics\relax }}{22}{figure.caption.38}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {37}{\ignorespaces GFP, Nuclei and ER combined\relax }}{21}{figure.caption.39}%
+\contentsline {figure}{\numberline {37}{\ignorespaces GFP, Nuclei and ER combined\relax }}{22}{figure.caption.39}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {38}{\ignorespaces Metrics for downstream tasks on nuclei\relax }}{22}{figure.caption.40}%
+\contentsline {figure}{\numberline {38}{\ignorespaces Metrics for downstream tasks on nuclei\relax }}{23}{figure.caption.40}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {39}{\ignorespaces Influence of artificial corruptions on the predictions\relax }}{23}{figure.caption.43}%
+\contentsline {figure}{\numberline {39}{\ignorespaces Influence of artificial corruptions on the predictions\relax }}{24}{figure.caption.43}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {40}{\ignorespaces Change of Pearson correlation loss for artificial corruptions\relax }}{23}{figure.caption.44}%
+\contentsline {figure}{\numberline {40}{\ignorespaces Change of Pearson correlation loss for artificial corruptions\relax }}{24}{figure.caption.44}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {41}{\ignorespaces Online drift detection of not fixated cells\relax }}{24}{figure.caption.45}%
+\contentsline {figure}{\numberline {41}{\ignorespaces Online drift detection of not fixated cells\relax }}{25}{figure.caption.45}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {42}{\ignorespaces Using corruptions as augmentations improves predictions\relax }}{24}{figure.caption.46}%
+\contentsline {figure}{\numberline {42}{\ignorespaces Using corruptions as augmentations improves predictions\relax }}{25}{figure.caption.46}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {43}{\ignorespaces (a) PCA, (b) UMAP, (c) combination of PCA and UMAP with 10 and (d) 50 components\relax }}{25}{figure.caption.47}%
+\contentsline {figure}{\numberline {43}{\ignorespaces (a) PCA, (b) UMAP, (c) combination of PCA and UMAP with 10 and (d) 50 components\relax }}{26}{figure.caption.47}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {44}{\ignorespaces Autoencoders training convergence\relax }}{25}{figure.caption.48}%
+\contentsline {figure}{\numberline {44}{\ignorespaces Autoencoders training convergence\relax }}{26}{figure.caption.48}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {45}{\ignorespaces Samples drawn from the trained autoencoder\relax }}{26}{figure.caption.49}%
+\contentsline {figure}{\numberline {45}{\ignorespaces Samples drawn from the trained autoencoder\relax }}{27}{figure.caption.49}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {46}{\ignorespaces Architectures of two autoencoders\relax }}{26}{figure.caption.50}%
+\contentsline {figure}{\numberline {46}{\ignorespaces Architectures of two autoencoders\relax }}{27}{figure.caption.50}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {47}{\ignorespaces Autoencoder embeddings after applying PCA with 10 components and UMAP afterwards. Earlier epoch VS later epoch\relax }}{26}{figure.caption.51}%
+\contentsline {figure}{\numberline {47}{\ignorespaces Autoencoder embeddings after applying PCA with 10 components and UMAP afterwards. Earlier epoch VS later epoch\relax }}{27}{figure.caption.51}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {48}{\ignorespaces PacMAP does not provide information on the coruption\relax }}{27}{figure.caption.52}%
+\contentsline {figure}{\numberline {48}{\ignorespaces PacMAP does not provide information on the coruption\relax }}{28}{figure.caption.52}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {49}{\ignorespaces What do two UMAP clusters represent\relax }}{27}{figure.caption.53}%
+\contentsline {figure}{\numberline {49}{\ignorespaces What do two UMAP clusters represent\relax }}{28}{figure.caption.53}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {50}{\ignorespaces Clustering of UNet embeddings after PacMAP\relax }}{28}{figure.caption.54}%
+\contentsline {figure}{\numberline {50}{\ignorespaces Clustering of UNet embeddings after PacMAP\relax }}{29}{figure.caption.54}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {51}{\ignorespaces Clustering of UNet embeddings after PacMAP for different severities levels\relax }}{28}{figure.caption.55}%
+\contentsline {figure}{\numberline {51}{\ignorespaces Clustering of UNet embeddings after PacMAP for different severities levels\relax }}{29}{figure.caption.55}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {52}{\ignorespaces False negatives rate for drift detection on artificial corruptions\relax }}{29}{figure.caption.56}%
+\contentsline {figure}{\numberline {52}{\ignorespaces False negatives rate for drift detection on artificial corruptions\relax }}{30}{figure.caption.56}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {53}{\ignorespaces Expected runtime (ERT) for corrupted and in-distribution data\relax }}{29}{figure.caption.57}%
+\contentsline {figure}{\numberline {53}{\ignorespaces Expected runtime (ERT) for corrupted and in-distribution data\relax }}{30}{figure.caption.57}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {54}{\ignorespaces AUC ROC scores for various defocus corruptions severities\relax }}{30}{figure.caption.61}%
+\contentsline {figure}{\numberline {54}{\ignorespaces AUC ROC scores for various defocus corruptions severities\relax }}{31}{figure.caption.61}%
