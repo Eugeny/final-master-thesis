@@ -1,0 +1,4 @@
+\nomenclatureentry{a$p_{data}$@[{$p_{data}$}]\begingroup Data generating distribution\nomeqref {0}|nompageref}{2}
+\nomenclatureentry{a$\bm{X}_{train}$@[{$\bm{X}_{train}$}]\begingroup A set of training examples\nomeqref {0}|nompageref}{2}
+\nomenclatureentry{a$\bm{x^{(i)}}$@[{$\bm{x^{(i)}}$}]\begingroup The i-th input image (sample) from a dataset\nomeqref {0}|nompageref}{2}
+\nomenclatureentry{a$\bm{y^{(i)}}$@[{$\bm{y^{(i)}}$}]\begingroup The target image associated with the i-th input sample from a dataset\nomeqref {0}|nompageref}{2}
