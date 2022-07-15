@@ -37,3 +37,13 @@ Straightforward blur detection with Laplacian https://pyimagesearch.com/2015/09/
 Violin plots of ERTs
 
 nuclei troubles in predictions, add gournd truth and predict labels
+
+CONCLUSIONS
+using several scalings from in silico paper might help, but use the normal downstream metrics from Cohen paper
+
+Use combined unet of several fluorescence outputs
+
+Non specific binding is the problem for Golgi
+
+
+Use a bigger model to to get more details
