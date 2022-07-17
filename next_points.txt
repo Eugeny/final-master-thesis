@@ -40,6 +40,7 @@ nuclei troubles in predictions, add gournd truth and predict labels
 
 CONCLUSIONS
 using several scalings from in silico paper might help, but use the normal downstream metrics from Cohen paper
+CSI for for ood detection
 
 Use combined unet of several fluorescence outputs
 
