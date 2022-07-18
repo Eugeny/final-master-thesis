@@ -1107,6 +1107,28 @@ INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/ntgclass/a4.sty
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/ntgclass/a4.sty
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/ntgclass/a4.sty
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/microtype/microtype.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/microtype/microtype.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/microtype/microtype.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/microtype/microtype.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/microtype/microtype.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/microtype/microtype.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/microtype/microtype.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/microtype/microtype.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/microtype/microtype.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/microtype/microtype.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/microtype/microtype.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/microtype/microtype.cfg
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/microtype/microtype.cfg
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/microtype/microtype.cfg
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/microtype/microtype.cfg
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/microtype/microtype.cfg
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/microtype/microtype.cfg
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/ba.aux
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/ba.aux
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/ba.aux
@@ -1204,6 +1226,10 @@ INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/ba.bbl
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/ba.bbl
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/ba.bbl
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/ba.bbl
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/microtype/mt-ppl.cfg
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/microtype/mt-ppl.cfg
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/microtype/mt-ppl.cfg
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/microtype/mt-ppl.cfg
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/titelmakros.tex
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/titelmakros.tex
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/titelmakros.tex
@@ -1224,6 +1250,10 @@ INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/palatino/pplb8t.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/palatino/pplb8t.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/palatino/pplb8t.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
@@ -1249,6 +1279,10 @@ INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/microtype/mt-msa.cfg
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/microtype/mt-msa.cfg
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/microtype/mt-msa.cfg
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/microtype/mt-msa.cfg
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -1256,6 +1290,10 @@ INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/microtype/mt-msb.cfg
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/microtype/mt-msb.cfg
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/microtype/mt-msb.cfg
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/microtype/mt-msb.cfg
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/jknapltx/ursfs.fd
@@ -1352,12 +1390,14 @@ INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/ts1ppl.fd
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/ts1ppl.fd
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/ts1ppl.fd
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/palatino/pplr8c.tfm
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/domain knowledge/neural networks.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/domain knowledge/neural networks.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/domain knowledge/neural networks.tex
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/domain knowledge/neural networks.tex
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/vf/adobe/palatino/pplr8c.vf
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/mathpazo/fplmr.tfm
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/domain knowledge/neural networks.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/domain knowledge/neural networks.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/domain knowledge/neural networks.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/domain knowledge/neural networks.tex
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/palatino/pplr8t.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/palatino/pplr8t.tfm
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/dropout.png
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/dropout.png
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/dropout.png
@@ -2152,11 +2192,18 @@ INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/ba.out
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/ba.run.xml
 OUTPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/ba.run.xml
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb

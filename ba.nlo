@@ -2,3 +2,5 @@
 \nomenclatureentry{a$\bm{X}_{train}$@[{$\bm{X}_{train}$}]\begingroup A set of training examples\nomeqref {0}|nompageref}{2}
 \nomenclatureentry{a$\bm{x^{(i)}}$@[{$\bm{x^{(i)}}$}]\begingroup The i-th input image (sample) from a dataset\nomeqref {0}|nompageref}{2}
 \nomenclatureentry{a$\bm{y^{(i)}}$@[{$\bm{y^{(i)}}$}]\begingroup The target image associated with the i-th input sample from a dataset\nomeqref {0}|nompageref}{2}
+\nomenclatureentry{a$A_{i, j}$@[{$A_{i, j}$}]\begingroup An element on the i-th row and j-th column of a matrix $A$\nomeqref {0}|nompageref}{2}
+\nomenclatureentry{a$\mathbb{R}$@[{$\mathbb{R}$}]\begingroup A set of real numbers\nomeqref {0}|nompageref}{2}
