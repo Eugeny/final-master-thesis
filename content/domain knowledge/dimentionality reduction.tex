@@ -1,3 +1,32 @@
+This reseach additionally provides the study of the embeddings of a trained UNet and an Autoencoder in Chapter [TODO cite chapter]. In order to understand the visualizations better all dimensionality reduction methods that were used here are listed and explained in this subsection.
+
+\begin{definition}[Embedding]
+    An embedding in this context is an output tensor from the encoder part of the UNet or from an encoder part of an Autoencoder.
+\end{definition}
+
+The encoder output of the UNet is a tensor of size $16 \times 16 \times 256$ and after its flattening it turns into a vector of size $655536$. The smallest autoencoder embedding was of size 200 [TODO check] which is also high-dimensional. One of the tasks of this research if to determine wethere there are any interesting patterns or grouping based of various criteria hidden within the bottleneck embeddings, and wether they could be useful for further research. Yet in order for humans to comprehend the embeddings we need to maps them either to 2D or 3D vectors and that is where dimensionaluty reduction algorithms are essential.
+
 \paragraph{UMAP}
+Dimension reduction algorithms mostly form two main categories: ones are stronger preserving the pairwise
+distance globally - meaning try to preserve the structure amongst all the data samples; others prefer to save local distances. For example PCA [cite Hotelling] are assigned to the first caterogy, while t-SNE [cite Ulyanov] and Isomap are assinged to a latter one.
+
+Uniform Manifold Approximation and Projection (UMAP) was build in a way to preserve both and it is a competitor of t-SNE approach, however is much faster and provides a transformation that can be used on the new data. UMAP is a graph-based algorithm and uses a k-nearest graph as a foundation. As any graph-based algorithm, its structure also includes two main steps: 
+
+%[TODO need a synonym instead of ambient == surround]
+\begin{itemize}
+    \item Graph construction procedure. During this stage a weighted k-neighbour graph will be constructed from the data. Specific transformation are applied on its edges to surround local distance. And the strong asymmetry common to k-neighbour graphs will be reduced.
+    \item Graph layout building. In this stage one needs first to define an objective function that can preserve desired graph characteristics and then find a low dimensional representation of the graph that will minimize the objective.
+\end{itemize}
+
+
+There are 3 axioms about the data that were assumed in order to derive the algorithm:
+
+\begin{itemize}
+    \item There exists a manifold on which the data would be uniformly distributed.
+    \item The underlying manifold of interest is locally connected.
+    \item Preserving the topological structure of this manifold is the primary goal.
+\end{itemize}
+
+
 \paragraph{PCA}
 \paragraph{PacMAP}
