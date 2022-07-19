@@ -1,10 +1,10 @@
 \begin{definition}[Image dataset]
 	An image dataset in current thesis constists of input DIC images $X$ and target fluroescence images $Y$. Together pairs from each form a dataset:
 	\begin{equation}
-		D = (X, Y)
+		D = (X, Y) = \{(x^{(1)}, y^{(1)}), \dots, (x^{(N)}, y^{(N)})\}
 	\end{equation}
 
-	where $X = (x^{(i)}, \dots, x^{(N)})$ and $Y = (y^{(i)}, \dots, y^{(N)})$. Both $x^{(i)}$ and $y^{(i)} \in \mathbb{R}^{n \times n}$ are single images. Generally input data has a shape of $(N, C, H, W)$, in this particular case $C = 1$.
+	where both $x^{(i)}$ and $y^{(i)} \in \mathbb{R}^{n \times n}$ are single images. Generally input data has a shape of $(N, C, H, W)$, in this work $C = 1$.
 \end{definition}
 
 
@@ -20,6 +20,7 @@
 	\begin{equation}
 		J(\theta) = \mathbb{E}_{(x, y)\sim p_{data}} L(y, M(x, \Theta))
 	\end{equation}
+	where $p_{data}$ is an empirical distribution of the training set.
 \end{definition}
 
 \begin{definition}[Binary-cross entropy loss]
@@ -51,16 +52,57 @@
 	This loss if spreadly used in cell biology for comparison of co-localization between the proteins. PCC is also popular in computer vision and is used there for determining image similarity in terms of spatial-intensity [cite Cohen].
 \end{definition}
 
-\begin{definition}[Optimizer]
-	Optimizer is a function that takes a model $M(X, \Theta)$ and a loss function $L(Y, Y^\prime)$ and returns a function an update the model parameters $\Theta$. The update is performed in such a way that the loss function $L$ will be minimized. 
+\begin{definition}[Optimization]
+	Optimizer is a process of updating the parameters $\Theta$ of the model $M(X, \Theta)$ such that the loss function $L(Y, M(X, \Theta))$ is minimized.
 \end{definition}
 
-Since there is no closed form solution for the update, the optimizer is usually implemented iteratively, for example as a gradient descent algorithm.
+Via maximum likelihood estimation one has that:
+\begin{equation}
+	\Theta_{ML} = \argmax\limits_{\Theta} \sum_{i=1}^{m} \log{p_{\text{model}}(x^{(i)}, y^{(i)}, \Theta)}
+\end{equation}
 
-\begin{definition}[Vanilla gradient descent]
+After maximizing the sum and taking a gradient one gets:
+\begin{equation}
+	\nabla_{\Theta} J(\Theta) = \mathbb{E}_{x, y \sim p_{data}} \nabla_{\Theta} \log{p_{\text{model}}(x, y, \Theta)}
+\end{equation}
+
+The exact gradient then on a discetized data-generting distribution is:
+\begin{equation}
+	g = \nabla_{\Theta} J^*(\Theta) = \sum_{x} \sum_{y}{p_{\text{data}}(x, y) \nabla_{\Theta} L(y, M(x, \Theta))}
+\end{equation}
+
+Here one can obtain an unbiased estimator of a true gradient on a minibatch of i.i.d. samples $\{x^{(i)}, ..., x^{(m)}\}$	
+
+\begin{equation}
+	\hat{g} = \frac{1}{m} \nabla_\Theta \sum_{i} L(y^{(i)}, M(x^{(i)}, \Theta))
+\end{equation}
+
+\begin{definition}[Stohastic gradient descent]
+	Stohastic gradient descent is an optimization algorithm where the parameters $\Theta$ are iteratively updated every mini-batch of data by the following rule:
 	\begin{equation}
-		\Theta_{k+1} = \Theta_k - \eta \nabla L(Y, Y^\prime)
+		\Theta_{k+1} = \Theta_k - \alpha \frac{1}{m} \nabla_\Theta \sum_{i} L(y^{(i)}, M(x^{(i)}, \Theta))
 	\end{equation}
+	where $\alpha$ is a tuneable parameter called \textit {learning rate}.
+\end{definition}
+
+\begin{definition}[Adadelta optimizer]
+	Adadelta optimizer is a more sophisticated optimization technique, that follows the following algorithm for the parameters update:
+	\begin{algorithm}
+		\caption{Adadelta optimization}\label{alg:adadelta}
+		\item 1. $E[g]^2_0 = 0$ and $E[\Delta \Theta^2]_0 = 0$
+		In order to update the parameters compute:
+		\item 2. Compute gradient: $\hat{g}_t$
+		\item 3. Accumulate gradient: $E[g]^2_t = \rho E[g]^2_{t - 1} + (1 - \rho)g_t^2$
+		\item 4. Compute update: $\Delta \Theta_t = \frac{\text{RMS}[\Delta \Theta]_{t-1}}{\text{RMS}[g]_t} \hat{g_t}$
+		\item 5. Accumulate updates: $E[\Delta \Theta^2]_t = \rho E[\Delta \Theta^2]_{t-1} + (1 - \rho) \Delta \Theta^2_t$
+		\item 6. Apply update: $\Theta_{t+1} = \Theta_t + \Delta \Theta_t$ \\
+		RMS here is the root mean square. [cite Zeiler 2012]
+	\end{algorithm}
+	Stohastic gradient descent is an optimization algorithm where the parameters $\Theta$ are iteratively updated every mini-batch of data by the following rule:
+	\begin{equation}
+		\Theta_{k+1} = \Theta_k - \alpha \frac{1}{m} \nabla_\Theta \sum_{i} L(y^{(i)}, M(x^{(i)}, \Theta))
+	\end{equation}
+	where $\alpha$ is a tuneable parameter called \textit {learning rate}.
 \end{definition}
 
 \begin{definition}[Feedforward fully-connected layer]
@@ -119,6 +161,17 @@ Since adding two linear functions together would produce a linear function, it i
 	[cite Ioffe and Szegedy, 2015]
 \end{definition}
 
+\begin{definition}[Dropout layer]
+	Dropout is a technique that randomly sets some weights (units) to zero [cite Srivastava, Hinton 2014]. It leads to the training of several smaller networks that share the parameters. If a mask vector $\mu$ specifies which units are included in training, then dropout's objective to be minimized becomes: $\mathbb{E}_\mu J(\Theta, \mu)$. Visually dropout is presented in the Figure \ref{fig:dropout}.
+\end{definition}
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=0.5\linewidth]{bilder/dropout.png}
+		\caption{Dropout}\label{fig:dropout}
+	\end{center}
+\end{figure}
+
 \begin{definition}[Activation function]
 	An activation function is an element-wise non-linear function $f(\cdot)$. Some examples with are:
 	\begin{align}             
@@ -131,7 +184,7 @@ Since adding two linear functions together would produce a linear function, it i
 		\end{align}
 \end{definition}
 
-In models in this work mostly ELU activations have been used, as they provide a better signal flow between the layers by not cutting off the negative values completely.
+Models in this work mostly use ELU activations as ELU provides a better signal flow between the layers by not cutting off the negative values completely.
 
 \begin{definition}[UNet]
 	UNet is fully convolutional neural network wiht U-shaped encoder-decoder network architecture. [cite Ronneberger].
@@ -147,14 +200,5 @@ number of feature channels, followed by a concatenation with a corresponding out
 \end{definition}
 
 \begin{definition}[Overfitting]
-    "Hypothesis overfits the training samples if some other hypothesis that fits the training samples less well actually performs better over the entire distribution of instances" (cite p67 Mitchell Machine Learning 1997).
+    "Hypothesis overfits the training samples if some other hypothesis that fits the training samples less well actually performs better over the entire distribution of instances" (cite p67 Mitchell Machine Learning 1997). They way to avoid overfitting that happened to the models in Sections [TODO cite sections] are discussed in Section [cite regularization section].
 \end{definition}
-
-Autoencoder, embedding, optimizers, regularization, descriptions of how each layer works.
-
-\begin{figure}[htb]
-	\begin{center}
-		\includegraphics[width=0.8\linewidth]{bilder/dropout.png}
-		\caption{Dropout}\label{fig:dropout}
-	\end{center}
-\end{figure}
