@@ -4,48 +4,42 @@
 		D = (X, Y) = \{(x^{(1)}, y^{(1)}), \dots, (x^{(N)}, y^{(N)})\}
 	\end{equation}
 
-	where both $x^{(i)}$ and $y^{(i)} \in \mathbb{R}^{n \times n}$ are single images. Generally input data has a shape of $(N, C, H, W)$, in this work $C = 1$.
+	where both $x^{(i)}$ and $y^{(i)} \in \mathbb{R}^{W \times H}$ are single images, $N$ is the size of the dataset. Generally input data has a shape of $(N, C, H, W)$, in this work $C = 1$.
 \end{definition}
 
-
 \begin{definition}[Model]
-	A model is a function with learnable parameters $\Theta = (\theta_1, ..., \theta_N)$ where $\theta_i \in \mathbb{R}$ for $i \in {0, ..., N}$, here $N$ is the number of them, which approximates the mapping of initial data $X$ to target data $Y$.
+	A model is a function with learnable parameters $\theta = (\theta_1, ..., \theta_K)$ where $\theta_i \in \mathbb{R}$ for $i \in {0, ..., K}$ which approximates the mapping of initial data $X$ to target data $Y$.
 	\begin{equation}
-		M(X,\Theta) = Y^\prime \approx Y 
+		M(X,\theta) = Y^\prime \approx Y 
 	\end{equation}
 \end{definition}
 
 \begin{definition}[Loss function]
-	Loss function is a function $L(Y, M(X, \Theta))$ of model's parameters $\Theta$, that for ground truth data $Y$ from the dataset and the predicted data from the model $M(X, \Theta)$ outputs a scalar value. This value is a measure of the difference between the two. Usually loss function can be written as an average over the training set:
+	Loss function is a function $L(y, M(x, \theta))$ of model's parameters $\theta$, that for $(x^{(i)}, y^{(i)}) \in D$ outputs a scalar value measuring the difference between ground truth $y$ and prediction $M(x, \theta)$. Usually loss function can be written as an average over the training set:
 	\begin{equation}
-		J(\theta) = \mathbb{E}_{(x, y)\sim p_{data}} L(y, M(x, \Theta))
+		J(\theta) = \mathbb{E}_{(x, y)\sim p_{data}} L(y, M(x, \theta))
 	\end{equation}
-	where $p_{data}$ is an empirical distribution of the training set.
+	where $p_{data}$ denotes an empirical distribution of the training data.
 \end{definition}
 
 \begin{definition}[Binary-cross entropy loss]
-	Let $y \in \mathbb{R^N}$ be the ground truth image and $y^\prime \in \mathbb{R^N}$ be the predicted data. The binary-cross entropy loss is defined as:
+	Let $y \in \mathbb{R}^{W \times H}$ be a ground truth image and $y^\prime \in \mathbb{R}^{W \times H}$ be a prediction. Binary-cross entropy loss is defined as:
 	\begin{equation}
-		L(y, y^\prime) = - \frac{1}{N}\sum_{i=1}^{N} y_i \cdot \log(y_i^\prime) +  (1 - y_i) \cdot \log(1 - y_i^\prime) 
-	\end{equation}
-
-	In case of image data when $y \in \mathbb{R^{N \times N}}$ and $y^\prime \in \mathbb{R^{N \times N}}$, the binary-cross entropy loss is defined as:
-	\begin{equation}
-		L(y, y^\prime) = - \frac{1}{N^2}\sum_{i=1}^{N} \sum_{j=1}^{N} y_{i,j} \cdot \log(y_{i, j}^\prime) +  (1 - y_{i, j}) \cdot \log(1 - y_{i, j}^\prime) 
+		L(y, y^\prime) = - \frac{1}{N^2}\sum_{i=1}^{H} \sum_{j=1}^{W} y_{i,j} \cdot \log(y_{i, j}^\prime) +  (1 - y_{i, j}) \cdot \log(1 - y_{i, j}^\prime) 
 	\end{equation}
 \end{definition}
 
 \begin{definition}[MSE (mean squared error) loss]
-	Let $y \in \mathbb{R^{N \times N}}$ be the ground truth and $y^\prime \in \mathbb{R^{N \times N}}$ be the predicted data. The MSE loss is defined as:
+	Let $y \in \mathbb{R}^{W \times H}$ be the ground truth and $y^\prime \in \mathbb{R}^{W \times H}$ be the predicted images. The MSE loss is defined as:
 	\begin{equation}
-		L(y, y^\prime) = \sum_{i=1}^{N} \sum_{j=1}^{N} (y_{i, j} - y_{i, j}^\prime)^2
+		L(y, y^\prime) = \sum_{i=1}^{H} \sum_{j=1}^{W} (y_{i, j} - y_{i, j}^\prime)^2
 	\end{equation}
 \end{definition}
 
 \begin{definition}[PCC (Pearson correlation coefficient) loss]
-	Let $y \in \mathbb{R^{N \times N}}$ be the flattened ground truth and $y^\prime \in \mathbb{R^{N \times N}}$ be the flattened predicted data. The PCC loss is defined as:
+	Let $y \in \mathbb{R}^{WH}$ be a flattened ground truth and $y^\prime \in \mathbb{R}^{WH}$ be a flattened predicted image. The PCC loss is defined as:
 	\begin{equation}
-		Loss_{PCC} = \frac{\sum_{i=1}^{N^2}{(y_i - \bar{y})(y_i^\prime - \bar{y}^\prime)}}{\sqrt{\sum_{i=1}^{N}{(y_i - \bar{y})^2(y_i^\prime - \bar{y}^\prime)^2}}}   
+		L(y, y^\prime) = \frac{\sum_{i=1}^{{WH}}{(y_i - \bar{y})(y_i^\prime - \bar{y}^\prime)}}{\sqrt{\sum_{i=1}^{{WH}^2}{(y_i - \bar{y})^2(y_i^\prime - \bar{y}^\prime)^2}}}   
 	\end{equation}
 	where $\bar{y}$, $\bar{y}^\prime$ are means of the ground truth and predicted images respectively.
 	
@@ -53,34 +47,34 @@
 \end{definition}
 
 \begin{definition}[Optimization]
-	Optimizer is a process of updating the parameters $\Theta$ of the model $M(X, \Theta)$ such that the loss function $L(Y, M(X, \Theta))$ is minimized.
+	Optimizer is a process of updating the parameters $\theta$ of the model $M(X, \theta)$ such that the loss function $L(Y, M(X, \theta))$ is minimized.
 \end{definition}
 
 Via maximum likelihood estimation one has that:
 \begin{equation}
-	\Theta_{ML} = \argmax\limits_{\Theta} \sum_{i=1}^{m} \log{p_{\text{model}}(x^{(i)}, y^{(i)}, \Theta)}
+	\theta_{ML} = \argmax\limits_{\theta} \sum_{i=1}^{m} \log{p_{\text{model}}(x^{(i)}, y^{(i)}, \theta)}
 \end{equation}
 
 After maximizing the sum and taking a gradient one gets:
 \begin{equation}
-	\nabla_{\Theta} J(\Theta) = \mathbb{E}_{x, y \sim p_{data}} \nabla_{\Theta} \log{p_{\text{model}}(x, y, \Theta)}
+	\nabla_{\theta} J(\theta) = \mathbb{E}_{x, y \sim p_{data}} \nabla_{\theta} \log{p_{\text{model}}(x, y, \theta)}
 \end{equation}
 
 The exact gradient then on a discetized data-generting distribution is:
 \begin{equation}
-	g = \nabla_{\Theta} J^*(\Theta) = \sum_{x} \sum_{y}{p_{\text{data}}(x, y) \nabla_{\Theta} L(y, M(x, \Theta))}
+	g = \nabla_{\theta} J^*(\theta) = \sum_{x} \sum_{y}{p_{\text{data}}(x, y) \nabla_{\theta} L(y, M(x, \theta))}
 \end{equation}
 
 Here one can obtain an unbiased estimator of a true gradient on a minibatch of i.i.d. samples $\{x^{(i)}, ..., x^{(m)}\}$	
 
 \begin{equation}
-	\hat{g} = \frac{1}{m} \nabla_\Theta \sum_{i} L(y^{(i)}, M(x^{(i)}, \Theta))
+	\hat{g} = \frac{1}{m} \nabla_\theta \sum_{i} L(y^{(i)}, M(x^{(i)}, \theta))
 \end{equation}
 
 \begin{definition}[Stohastic gradient descent]
-	Stohastic gradient descent is an optimization algorithm where the parameters $\Theta$ are iteratively updated every mini-batch of data by the following rule:
+	Stohastic gradient descent is an optimization algorithm where the parameters $\theta$ are iteratively updated every mini-batch of data by the following rule:
 	\begin{equation}
-		\Theta_{k+1} = \Theta_k - \alpha \frac{1}{m} \nabla_\Theta \sum_{i} L(y^{(i)}, M(x^{(i)}, \Theta))
+		\theta_{k+1} = \theta_k - \alpha \frac{1}{m} \nabla_\theta \sum_{i} L(y^{(i)}, M(x^{(i)}, \theta))
 	\end{equation}
 	where $\alpha$ is a tuneable parameter called \textit {learning rate}.
 \end{definition}
@@ -89,18 +83,18 @@ Here one can obtain an unbiased estimator of a true gradient on a minibatch of i
 	Adadelta optimizer is a more sophisticated optimization technique, that follows the following algorithm for the parameters update:
 	\begin{algorithm}
 		\caption{Adadelta optimization}\label{alg:adadelta}
-		\item 1. $E[g]^2_0 = 0$ and $E[\Delta \Theta^2]_0 = 0$
+		\item 1. $E[g]^2_0 = 0$ and $E[\Delta \theta^2]_0 = 0$
 		In order to update the parameters compute:
 		\item 2. Compute gradient: $\hat{g}_t$
 		\item 3. Accumulate gradient: $E[g]^2_t = \rho E[g]^2_{t - 1} + (1 - \rho)g_t^2$
-		\item 4. Compute update: $\Delta \Theta_t = \frac{\text{RMS}[\Delta \Theta]_{t-1}}{\text{RMS}[g]_t} \hat{g_t}$
-		\item 5. Accumulate updates: $E[\Delta \Theta^2]_t = \rho E[\Delta \Theta^2]_{t-1} + (1 - \rho) \Delta \Theta^2_t$
-		\item 6. Apply update: $\Theta_{t+1} = \Theta_t + \Delta \Theta_t$ \\
+		\item 4. Compute update: $\Delta \theta_t = \frac{\text{RMS}[\Delta \theta]_{t-1}}{\text{RMS}[g]_t} \hat{g_t}$
+		\item 5. Accumulate updates: $E[\Delta \theta^2]_t = \rho E[\Delta \theta^2]_{t-1} + (1 - \rho) \Delta \theta^2_t$
+		\item 6. Apply update: $\theta_{t+1} = \theta_t + \Delta \theta_t$ \\
 		RMS here is the root mean square. [cite Zeiler 2012]
 	\end{algorithm}
-	Stohastic gradient descent is an optimization algorithm where the parameters $\Theta$ are iteratively updated every mini-batch of data by the following rule:
+	Stohastic gradient descent is an optimization algorithm where the parameters $\theta$ are iteratively updated every mini-batch of data by the following rule:
 	\begin{equation}
-		\Theta_{k+1} = \Theta_k - \alpha \frac{1}{m} \nabla_\Theta \sum_{i} L(y^{(i)}, M(x^{(i)}, \Theta))
+		\theta_{k+1} = \theta_k - \alpha \frac{1}{m} \nabla_\theta \sum_{i} L(y^{(i)}, M(x^{(i)}, \theta))
 	\end{equation}
 	where $\alpha$ is a tuneable parameter called \textit {learning rate}.
 \end{definition}
@@ -162,7 +156,7 @@ Since adding two linear functions together would produce a linear function, it i
 \end{definition}
 
 \begin{definition}[Dropout layer]
-	Dropout is a technique that randomly sets some weights (units) to zero [cite Srivastava, Hinton 2014]. It leads to the training of several smaller networks that share the parameters. If a mask vector $\mu$ specifies which units are included in training, then dropout's objective to be minimized becomes: $\mathbb{E}_\mu J(\Theta, \mu)$. Visually dropout is presented in the Figure \ref{fig:dropout}.
+	Dropout is a technique that randomly sets some weights (units) to zero [cite Srivastava, Hinton 2014]. It leads to the training of several smaller networks that share the parameters. If a mask vector $\mu$ specifies which units are included in training, then dropout's objective to be minimized becomes: $\mathbb{E}_\mu J(\theta, \mu)$. Visually dropout is presented in the Figure \ref{fig:dropout}.
 \end{definition}
 
 \begin{figure}[H]
