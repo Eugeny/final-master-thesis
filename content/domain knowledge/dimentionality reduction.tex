@@ -18,15 +18,30 @@ Uniform Manifold Approximation and Projection (UMAP) was build in a way to prese
     \item Graph layout building. In this stage one needs first to define an objective function that can preserve desired graph characteristics and then find a low dimensional representation of the graph that will minimize the objective.
 \end{itemize}
 
+%https://pair-code.github.io/understanding-umap/
+In short, UMAP optimizes a low-dimensional graph from the high-dimensional one to be structurally very similar to each other. The algorithm has to important hyperparameters, which should be chosen carefully: \textit{n\_neightbors} and \textit{min\_dist}. The first one balances the local versus the global structure of the graphs, the higher the values the more finer details will be lost. The latter one controls how densly points will be located to one another. Higher values of this parameter results in a loosier structure that preserves a broader topoly of the data. 
 
-There are 3 axioms about the data that were assumed in order to derive the algorithm:
-
-\begin{itemize}
-    \item There exists a manifold on which the data would be uniformly distributed.
-    \item The underlying manifold of interest is locally connected.
-    \item Preserving the topological structure of this manifold is the primary goal.
-\end{itemize}
-
+\paragraph{PacMAP}
+Pairwise Controlled Manifold Approximation (PacMAP) is another dimensionality reduction method that is able to preserve both local and global data structure in a lower dimension space. Unlike other methods that regulate the stronger preservance of global structure by using more neightbors, PaCMAP uses mid-near pairs, to first capture global structure and then refine local structure, which both preserve global and local structure. It introduces a the following parameters: neighbor pairs (pair\_neighbors), mid-near pair (pair\_MN), and further pairs (pair\_FP). [cite Yingfan] The neighbor pairs parameter is used during the building of the k-Nearest Neighbor graph. It is recommended to use the value around 10 for datasets with size smaller than 10000 [cite their repo]. The mid-near pair ratio parameter is the ratio of the number of mid-near pairs to the number of neighbors, whereas further pairs ratio is the the ratio of the number of further pairs to the number of neighbors. Configuring these parameters allow the user to achieve the desired ration between preserving local and global structure. Such method also works faster than UMAP, which allows to try out more hyperparameter options.
 
 \paragraph{PCA}
-\paragraph{PacMAP}
+Principal component analysis (PCA) is an algorithm for linear dimensionality reduction [cite Pearson 1901].  PCA maximizes the variance in data's low-dimensional representation in order to keep as much information
+as possible. Essentially PCA gives projections $\tilde{x^{(i)}}$ for input samples $x^{(i)}$ that would be very similar to them, however have a much smaller dimensionality. Eigenvectors of the data covariance matrix are the directions of the most variance within the data, and the eignevalues correspoding to them are the amount of variance hidden in each dimension. Therefore by projecting the data using the eigenvectors with the largest eingenvalues one will preserve the most varience of the data possible [cite MML-book].
+
+The steps of PCA algorithm are the following:
+\begin{itemize}
+    \item Subtract mean $\mu_d$. To center the input data is not a nessesary step, but it is recommended to do so to avoid the numerical problems.
+    \item Standartize the data. Calculate the standard deviation $\sigma_d$ and standartize the data to have unit variance for every dimension. 
+    \item Do an eigendecomposition of the data covariance matrix. For that one first must compute the coveriance matrix itself, since the covariance matrix is symmetric from the spectral theorem one can always find an orthonomal basis of eigenvectors. 
+    \item Project the data. For that first standartize the point $x^* \in \mathbb{R}$ using $\mu_d$ and $\sigma_d$:
+        \begin{equation}
+            x^*_d  \leftarrow \frac{x^*_d - \mu_d}{\sigma_d}
+        \end{equation}
+        where $d = 1, ..., D$ and $x^*_d$ is a $d$-th component of vector $x^* \in \mathbb{R}^D$
+    Get the projection as 
+    \begin{equation}
+        \tilde{x^*} = BB^T x^*
+    \end{equation}
+    with coordinates $z^* = B^Tx^*$. Here $B$ is a matrix of eigenvectors associated with the biggest eigenvalues of a covariance matrix.
+\end{itemize}
+[cite MML-book]
