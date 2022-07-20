@@ -1,11 +1,15 @@
-        
-\paragraph{Image acquisition peculiarity} 
+\paragraph{Image acquisition peculiarities} 
+    Cells used in this research are growing in 96-well plates. A plate or a microplate in biology is a flat plat with multiple tubes ("wells"). The microscope used in the experiments takes photos of the well plate in random locations. The reason for that hides in the settings for focuing in microscope. To get a reasonably good photo without blur it has to focus on a specific location of the plate, the choice of the location however happens automatically, therefore the location of the focus is random (see Figure \ref{fig:random-dic}). 
+    
+    Unfortunately it might be problematic in the following sense: photos takes in such manner do not gurantee that the focus will land in distinct spots all the time. Meaning that some cells present in one of the photos might appear in the other ones. Since the photos have a high-resolution they are first splitted into crops of size $256 \times 256$ each. It might happen that same cells might appear in several crops. That is why after split of the image data between train, test and validation sets it might be that the same set of cells will once land in the train set and another time in the validation set, which will lead to a not completely fair and representative validaiton loss during training.
+    
+    In order to overcome this problem a much more expensive equipment is needed. Since in our case it doesn't bring too huge problems expect for the fact that validation metrics might be lower than they should have been, there was no need to purchase a more expensive equipment.   
+    
     \begin{figure}[htb]
         \begin{center}
-            \includegraphics[width=0.5\linewidth]{bilder/dic-random.png}
+            \includegraphics[width=0.3\linewidth]{bilder/dic-random.png}
             \caption{Way in which photos of the well-plate were taken}\label{fig:random-dic}
         \end{center}
     \end{figure}    
-    Which difficulties it may cause (validation loss is lower than train loss)
 \paragraph{Crops combination technique}
     \input{content/domain knowledge/crops combination.tex}

@@ -15,5 +15,12 @@
     \end{minipage}
 \end{figure}
 
+Due to the restricted amount of memory on GPU deep learning models cannot have a high-resolution image as its input within current research. Yet this is also not obligatory: as the image contains dozens of cells within it, its processing can be limited to a crop of a smaller size. After the models have predicted fluorescence signal for each of the crops, output fluorescence images can be combined together to form a high-resolution image. In this thesis the architecture of the model assumes an input of size $(256, 256)$ or more specifically $(None, 1, 256, 256)$, where the first dimension is responsible for the batch size and the second one states that the input is a 1-channel image. 
+
+There are several ways of how one can split the image, the easiest approach would be to use a sliding window. With the step size of $s$ and the window size of $w$ the sliding window is defined as: 
+
+When step size $s$ is equal to window size $w$, there is no overlap between the windows. One very important insight from prediction results if that the model is less accurate on the borders of the image, rather than of cropping itself. Images are cropped consequently and most the times there are cells on the borders of the crops that get sliced and it might be impossible the make a good prediction for them just due to the lack of the information. Therefore the step size has to be smaller than the window size, so that the windows are overlapping and for each prediction we use only the image center and are allowed to ingore predictions on the border. 
+
+Such approach would help to reduce the effect of the grid visible on the image composed of many small crops, which one can see in the Figure \ref{fig:crops_combination_0} to almost non-visible borders as in the Figure \ref{fig:crops_combination_34}. This would of course take longer time in predictions, however as the speed is less crucial in comparison to the accuracy of the predictions.
 
 Improve this plot by showing the visible border explicitly, example of how it can influence a further segmentation perhaps?
