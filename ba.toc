@@ -40,7 +40,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{\numberline {2.3.2.1}Image acquisition peculiarities}{15}{paragraph.2.3.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{\numberline {2.3.2.2}Crops combination technique}{16}{paragraph.2.3.2.2}%
+\contentsline {paragraph}{\numberline {2.3.2.2}Crops combination technique}{15}{paragraph.2.3.2.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3}Implementation and experiments}{18}{section.3}%
 \defcounter {refsection}{0}\relax 

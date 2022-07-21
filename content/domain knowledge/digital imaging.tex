@@ -1,0 +1,17 @@
+Digitally an image is represented as an array of size $(H, W, C)$ where $H$ is the height, $W$ is the width $C$ is the number of channels of the image. In this work $C = 1$ and $W = H$. A digitanlly represented image $A$ then is the matrix:
+
+\begin{equation}
+    A = \left[
+            \begin{array}{ccc}
+                a_{0,0} & \cdots & a_{0,W-1} \\
+                \vdots & \ddots & \vdots \\
+                a_{H, 0} & \cdots & a_{H-1, W-1}
+            \end{array}
+        \right]
+\end{equation}
+where $a_{i, j} \in \mathbb{R}$. Both DIC and fluorescence images were provided in tag image file format (TIFF) format. For the processing convenience purpose all images were normalized to be in the range of $[0, 1]$:
+
+\begin{equation}
+    a^{\text{norm}}_{i,j} = \frac{a_{i, j} - \min(A)}{\max(A) - \min(A)}
+\end{equation}
+for $ \forall i \in \{0, ..., W - 1\}$ and $ \forall j \in \{0, ..., H - 1\}$

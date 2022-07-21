@@ -116,7 +116,7 @@
 
 \ifthenelse{\boolean{\biber}}{
   % only needed for biber
-  \usepackage[style=authoryear,natbib=true,backend=biber,mincitenames=1,maxcitenames=2,maxbibnames=99,uniquelist=false,dashed=false]{biblatex}
+  \usepackage[style=authoryear,natbib=true,backend=biber,mincitenames=1,maxcitenames=1,maxbibnames=99,uniquelist=false,dashed=false,autocite=footnote]{biblatex}
 
   % https://tex.stackexchange.com/a/334703/8850
   \AtEveryBibitem{%
@@ -189,10 +189,24 @@
 \addtolength{\oddsidemargin}{-1in}
 \addtolength{\evensidemargin}{-1in}
 
-\ifthenelse{\boolean{\biber}}{\addbibresource{references.bib}}{}
+\ifthenelse{\boolean{\biber}}{
+  \addbibresource{references.bib}
+}{}
 
 %\makeindex
 
-\usepackage[activate={true,nocompatibility},final,tracking=true,kerning=true,spacing=true,factor=1100,stretch=10,shrink=10]{microtype}
+\usepackage[activate={true,nocompatibility},final,tracking=true,kerning=true,spacing=true,factor=1100,stretch=10,shrink=10,spacing=nonfrench]{microtype}
 
 \hbadness=2000
+
+\DeclareCiteCommand{\supercite}[\mkbibsuperscript]
+  {\iffieldundef{prenote}
+     {}
+     {\BibliographyWarning{Ignoring prenote argument}}%
+   \iffieldundef{postnote}
+     {}
+     {\BibliographyWarning{Ignoring postnote argument}}}
+  {\usebibmacro{citeindex}%
+   \bibopenbracket\usebibmacro{cite}\bibclosebracket}
+  {\supercitedelim}
+  {}
