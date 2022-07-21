@@ -1,1 +1,45 @@
-Table with the estimation of costs and times for AWS
+For training purposes in this research cloud computing services were used, or more specifically - Amazon Web Services (AWS). These remotely located servers provide an possibility to train your models on a variety of graphic cards paying for minute rate. In order to keep the costs unter the control it was important to estimate the time needed for training in advance to choose the most efficient GPU possible.
+
+Cost estimation is additionally important for the model inference as well during the production. Although for production purposes the lambda functions from AWS can used, then are triggered only when the inference request arrives and are turned off automatically shortly after.
+
+For both training an inference purposes two GPU models were tested g3-4xlarge which is an NVIDIA Tesla M60 and p3-2xlarge which is a NVIDIA Tesla V100. The datasets on which the experiments were performed on were a nuclei training and validation dataset. The resulting costs are presented in the Tables \ref{table:costs-training}, \ref{table:costs-inference}.
+
+\begin{table}[H]
+    \centering
+    \caption{Costs estimations of AWS use for training models}
+        \begin{adjustbox}{width=0.7\textwidth}
+            \begin{tabular}{|c||c|c|c|c|}\hline
+                &Runtime (1 epoch)
+                &Dataset size
+                &Costs per minute
+                &Cost per epoch
+                \\\hline\hline
+                g3.4xlarge & $6.5 mins$ & $18,432$ & $0.07125\$$ & $0.3$\\\hline
+                p3.2xlarge & $400$ & $18,432$ & $0.1911\$$ &$0.18$\\\hline
+            \end{tabular}
+        \end{adjustbox}
+    \label{table:costs-training}
+\end{table}
+
+%g3 391, 261, 260
+%p3 170, 57, 56
+
+
+\begin{table}[H]
+    \centering
+    \caption{Costs estimations of AWS use for inference purposes}
+        \begin{adjustbox}{width=0.7\textwidth}
+            \begin{tabular}{|c||c|c|c|c|}\hline
+                &Runtime
+                &Dataset size
+                &Costs per minute
+                &Cost of inference
+                \\\hline\hline
+                g3.4xlarge & $?\text{mins}$ & $2,048$ & $0.07125$ & $? \$$\\\hline
+                p3.2xlarge & $?\text{mins}$ &  $2,048$ & $0.1911$ &$? \$$\\\hline
+            \end{tabular}
+        \end{adjustbox}
+    \label{table:costs-inference}
+\end{table}
+
+As a conclusion even though a p3 instance seems to be much more expensive, it is also much more efficient and the costs estimated to training times are lower. That is why all the training experiments in this research were conducted on an NVIDIA Tesla V100 GPU.

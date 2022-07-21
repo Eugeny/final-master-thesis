@@ -2,16 +2,20 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {table}{\numberline {1}{\ignorespaces Available data for each fo the organelles\relax }}{20}{table.caption.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {2}{\ignorespaces Pearson correlation coefficients for downstream tasks for different scaling factors\relax }}{27}{table.caption.21}%
+\contentsline {table}{\numberline {2}{\ignorespaces Costs estimations of AWS use for training models\relax }}{21}{table.caption.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {3}{\ignorespaces Correlation coefficients for downstream tasks\relax }}{35}{table.caption.39}%
+\contentsline {table}{\numberline {3}{\ignorespaces Costs estimations of AWS use for inference purposes\relax }}{21}{table.caption.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {4}{\ignorespaces Correlation coefficients for downstream tasks on nuclei\relax }}{36}{table.caption.43}%
+\contentsline {table}{\numberline {4}{\ignorespaces Pearson correlation coefficients for downstream tasks for different scaling factors\relax }}{27}{table.caption.23}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5}{\ignorespaces Hyperparameterization for different artificial corruption severities\relax }}{37}{table.caption.44}%
+\contentsline {table}{\numberline {5}{\ignorespaces Correlation coefficients for downstream tasks\relax }}{35}{table.caption.41}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {6}{\ignorespaces Test window size influence on separability\relax }}{43}{table.caption.60}%
+\contentsline {table}{\numberline {6}{\ignorespaces Correlation coefficients for downstream tasks on nuclei\relax }}{36}{table.caption.45}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {7}{\ignorespaces ERT influence on separability\relax }}{44}{table.caption.61}%
+\contentsline {table}{\numberline {7}{\ignorespaces Hyperparameterization for different artificial corruption severities\relax }}{37}{table.caption.46}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {8}{\ignorespaces Severity of corruptions on separability\relax }}{44}{table.caption.62}%
+\contentsline {table}{\numberline {8}{\ignorespaces Test window size influence on separability\relax }}{43}{table.caption.62}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {9}{\ignorespaces ERT influence on separability\relax }}{44}{table.caption.63}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {10}{\ignorespaces Severity of corruptions on separability\relax }}{44}{table.caption.64}%
