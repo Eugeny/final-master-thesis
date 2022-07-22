@@ -1,10 +1,10 @@
 [0] Config.pm:311> INFO - This is Biber 2.16
 [0] Config.pm:314> INFO - Logfile is 'ba.blg'
-[182] biber-darwin:340> INFO - === Fri Jul 22, 2022, 21:16:24
-[222] Biber.pm:415> INFO - Reading 'ba.bcf'
-[441] Biber.pm:952> INFO - Found 2 citekeys in bib section 0
-[469] Biber.pm:4340> INFO - Processing section 0
-[489] Biber.pm:4531> INFO - Looking for bibtex format file 'references.bib' for section 0
-[524] bibtex.pm:1689> INFO - LaTeX decoding ...
+[153] biber-darwin:340> INFO - === Fri Jul 22, 2022, 23:05:34
+[187] Biber.pm:415> INFO - Reading 'ba.bcf'
+[414] Biber.pm:952> INFO - Found 2 citekeys in bib section 0
+[438] Biber.pm:4340> INFO - Processing section 0
+[460] Biber.pm:4531> INFO - Looking for bibtex format file 'references.bib' for section 0
+[522] bibtex.pm:1689> INFO - LaTeX decoding ...
 [541] bibtex.pm:1494> INFO - Found BibTeX data source 'references.bib'
-[593] Utils.pm:395> WARN - legacy month field 'July' in entry 'IWNLP' is not an integer - this will probably not sort properly.
+[596] Utils.pm:395> WARN - legacy month field 'July' in entry 'IWNLP' is not an integer - this will probably not sort properly.
