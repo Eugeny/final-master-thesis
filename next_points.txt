@@ -54,3 +54,5 @@ N. N. Boustany, S. A. Boppart, V. Backman, Microscopic imaging and spectroscopy 
 "Our work relies on the premise that label-free scattering-based microscopy captures rich structural information and can be effective to characterize cell morphological features":
 
 Embeddings can be used as the input to the stability predictor (Gianni's presentation).
+
+add adam optim definition
