@@ -1700,15 +1700,11 @@ INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/domain knowledge/cld theory.tex
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/domain knowledge/cld theory.tex
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/domain knowledge/cld theory.tex
-INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/palatino/pplr8t.tfm
-INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/palatino/pplb8t.tfm
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/CLD.png
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/CLD.png
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/CLD.png
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/CLD.png
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/CLD.png
-INPUT /usr/local/texlive/2021/texmf-dist/fonts/vf/adobe/palatino/pplb8t.vf
-INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/palatino/pplb8r.tfm
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/domain knowledge/cld in merck.tex
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/domain knowledge/cld in merck.tex
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/domain knowledge/cld in merck.tex
@@ -1724,6 +1720,7 @@ INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/domain knowledge/neural networks.tex
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/domain knowledge/neural networks.tex
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/domain knowledge/neural networks.tex
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/palatino/pplr8t.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/palatino/pplr8t.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/vf/adobe/palatino/pplr8t.vf
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm
