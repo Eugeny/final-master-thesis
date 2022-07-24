@@ -1,17 +1,17 @@
 \subsection{Nuclei}
+    A nucleus (plural nuclei), as related to genomics, is the membrane-enclosed organelle within a cell that contains the chromosomes. The nucleus is one of the easiest organelle to detect within the cell as it is usually located in the middle and occupies quite a big area of the cell. Nucleus contains all of the cell's chromosomes, which in their turn encode the genetic material, therefore nucleus is a very important organelle (\cite{genomegov}). In order to stain it, DAPI was added to the cells. This is a fluorescent stain that binds strongly with some regions in DNA. Analysis of cell's nucleus can provide many valuable insights, for example the radius of living cells is on average bigger then in dead ones (\cite{Christiansen_2018}). With fluorescence labeling one can derive useful features for determining whether the well plate should or should not be selected during the selection step in CLD process.
     %cite Christiansen 2018]  proves only success on nuclei for DIC
-    \subsubsection{Preprocessing}
+    \subsubsection{Preprocessing}\label{section:nuclei-preprocessing}
         \input{content/nuclei/preprocessing.tex}
-        \paragraph{Thresholding algorithms}
-        \input{content/nuclei/thresholding.tex}
     \subsubsection{Training and predictions}
         \paragraph{Convergence}
-              Has the model converged or not. Will more data help?
               \input{content/nuclei/convergence.tex}
         \paragraph{Predictions quality}
               Blurry, boundaries, not enough of details and possible improvements
               \input{content/nuclei/quality.tex}
     \subsubsection{Postprocessing for nuclei segmentation}
         \input{content/nuclei/postprocessing.tex}
+        \paragraph{Thresholding algorithms}
+        \input{content/nuclei/thresholding.tex}
     \subsubsection{Influence of scaling on predictions quality}
         \input{content/nuclei/scaling influence.tex}

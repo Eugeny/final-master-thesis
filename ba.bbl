@@ -16,5 +16,217 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{Christiansen_2018}{article}{}
+      \name{author}{18}{}{%
+        {{un=0,uniquepart=base,hash=fec0b9c788216e82316608d778c7ec04}{%
+           family={Christiansen},
+           familyi={C\bibinitperiod},
+           given={Eric\bibnamedelima M.},
+           giveni={E\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=27e09ca07544464be07e47ba8a2ae892}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Samuel\bibnamedelima J.},
+           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6b73545c14ad68a78f5f21ba70200cd8}{%
+           family={Ando},
+           familyi={A\bibinitperiod},
+           given={D.\bibnamedelimi Michael},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=14de883db25c8ce1d3850fc8b30b4157}{%
+           family={Javaherian},
+           familyi={J\bibinitperiod},
+           given={Ashkan},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c3bcc7c5b45ea80022a326027d2d3729}{%
+           family={Skibinski},
+           familyi={S\bibinitperiod},
+           given={Gaia},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6b4721d3e7b6a7df304c9f4ec3021421}{%
+           family={Lipnick},
+           familyi={L\bibinitperiod},
+           given={Scott},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f4fb4b4603fda86d62da4ac3926ef8ca}{%
+           family={Mount},
+           familyi={M\bibinitperiod},
+           given={Elliot},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c11fe2f7f860083ce92afb2966c81a57}{%
+           family={O'Neil},
+           familyi={O\bibinitperiod},
+           given={Alison},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2dd958959d1fead2d3ef9bc10ccc3b37}{%
+           family={Shah},
+           familyi={S\bibinitperiod},
+           given={Kevan},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=faae5b59771517f08451a72006be1d63}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Alicia\bibnamedelima K.},
+           giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2c9d39f4dc3b88cce45a086b1644c87f}{%
+           family={Goyal},
+           familyi={G\bibinitperiod},
+           given={Piyush},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=749d4fb83777d7b74c0ee8de5a510f41}{%
+           family={Fedus},
+           familyi={F\bibinitperiod},
+           given={William},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8b2130158b306313b26c160d391687d8}{%
+           family={Poplin},
+           familyi={P\bibinitperiod},
+           given={Ryan},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5243abb0865221bf8daee169b621b075}{%
+           family={Esteva},
+           familyi={E\bibinitperiod},
+           given={Andre},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fcf5dbeba4d74aca8f24841de5d92d77}{%
+           family={Berndl},
+           familyi={B\bibinitperiod},
+           given={Marc},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3c04f39d383a57890621e519c4481bf2}{%
+           family={Rubin},
+           familyi={R\bibinitperiod},
+           given={Lee\bibnamedelima L.},
+           giveni={L\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=863383fd24e83eff57a68dc09a7d4fce}{%
+           family={Nelson},
+           familyi={N\bibinitperiod},
+           given={Philip},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0d45944782a1daf122aed28884985c22}{%
+           family={Finkbeiner},
+           familyi={F\bibinitperiod},
+           given={Steven},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier {BV}}%
+      }
+      \strng{namehash}{fba0d3163bd25b175f6ae1752838226c}
+      \strng{fullhash}{1d02e84a74782e150cbf01c79da24e61}
+      \strng{bibnamehash}{1d02e84a74782e150cbf01c79da24e61}
+      \strng{authorbibnamehash}{1d02e84a74782e150cbf01c79da24e61}
+      \strng{authornamehash}{fba0d3163bd25b175f6ae1752838226c}
+      \strng{authorfullhash}{1d02e84a74782e150cbf01c79da24e61}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Cell}
+      \field{month}{4}
+      \field{number}{3}
+      \field{title}{In Silico Labeling: Predicting Fluorescent Labels in Unlabeled Images}
+      \field{volume}{173}
+      \field{year}{2018}
+      \field{pages}{792\bibrangedash 803.e19}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1016/j.cell.2018.03.040
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1016%2Fj.cell.2018.03.040
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1016%2Fj.cell.2018.03.040
+      \endverb
+    \endentry
+    \entry{Lachance_2020}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=09de57b97a40ace6dd0b43f597dfbb5b}{%
+           family={Lachance},
+           familyi={L\bibinitperiod},
+           given={Julienne},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=df979160164df1e319129d5fded10535}{%
+           family={Cohen},
+           familyi={C\bibinitperiod},
+           given={Daniel\bibnamedelima J.},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Public Library of Science}%
+      }
+      \strng{namehash}{740be69d3a438e6bbdfbdc17f3794c34}
+      \strng{fullhash}{f01ada9fc20e6f626307c5517c5899a9}
+      \strng{bibnamehash}{f01ada9fc20e6f626307c5517c5899a9}
+      \strng{authorbibnamehash}{f01ada9fc20e6f626307c5517c5899a9}
+      \strng{authornamehash}{740be69d3a438e6bbdfbdc17f3794c34}
+      \strng{authorfullhash}{f01ada9fc20e6f626307c5517c5899a9}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Fluorescence reconstruction microscopy (FRM) describes a class of techniques where transmitted light images are passed into a convolutional neural network that then outputs predicted epifluorescence images. This approach enables many benefits including reduced phototoxicity, freeing up of fluorescence channels, simplified sample preparation, and the ability to re-process legacy data for new insights. However, FRM can be complex to implement, and current FRM benchmarks are abstractions that are difficult to relate to how valuable or trustworthy a reconstruction is. Here, we relate the conventional benchmarks and demonstrations to practical and familiar cell biology analyses to demonstrate that FRM should be judged in context. We further demonstrate that it performs remarkably well even with lower-magnification microscopy data, as are often collected in screening and high content imaging. Specifically, we present promising results for nuclei, cell-cell junctions, and fine feature reconstruction; provide data-driven experimental design guidelines; and provide researcher-friendly code, complete sample data, and a researcher manual to enable more widespread adoption of FRM.}
+      \field{journaltitle}{PLOS Computational Biology}
+      \field{month}{12}
+      \field{number}{12}
+      \field{title}{Practical fluorescence reconstruction microscopy for large samples and low-magnification imaging}
+      \field{volume}{16}
+      \field{year}{2020}
+      \field{pages}{1\bibrangedash 24}
+      \range{pages}{24}
+      \verb{doi}
+      \verb 10.1371/journal.pcbi.1008443
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1371/journal.pcbi.1008443
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1371/journal.pcbi.1008443
+      \endverb
+    \endentry
+    \entry{genomegov}{misc}{}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{labeldatesource}{nodate}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Genome.gov}
+      \field{title}{Nucleus}
+      \verb{urlraw}
+      \verb https://www.genome.gov/genetics-glossary/Nucleus
+      \endverb
+      \verb{url}
+      \verb https://www.genome.gov/genetics-glossary/Nucleus
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 

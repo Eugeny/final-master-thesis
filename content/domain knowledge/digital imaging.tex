@@ -1,4 +1,4 @@
-Digitally an image is represented as an array of size $(H, W, C)$ where $H$ is the height, $W$ is the width $C$ is the number of channels of the image. In this work $C = 1$ and $W = H$. A digitanlly represented image $A$ then is the matrix:
+Digitally an image is represented as an array of size $(H, W, C)$ where $H$ is the height, $W$ is the width and $C$ is the number of channels of the image. In this work, $C = 1$ and $W = H$. A digital image $A$ can be represented represented with the matrix:
 
 \begin{equation}
     A = \left[
@@ -9,7 +9,7 @@ Digitally an image is represented as an array of size $(H, W, C)$ where $H$ is t
             \end{array}
         \right]
 \end{equation}
-where $a_{i, j} \in \mathbb{R}$. Both DIC and fluorescence images were provided in tag image file format (TIFF) format. For the processing convenience purpose all images were normalized to be in the range of $[0, 1]$:
+where $a_{i, j} \in \mathbb{R}$. Both DIC and fluorescence images were provided in tag image file format (TIFF). For the processing convenience purpose all images were normalized to be in the range of $[0, 1]$:
 
 \begin{equation}
     a^{\text{norm}}_{i,j} = \frac{a_{i, j} - \min(A)}{\max(A) - \min(A)}

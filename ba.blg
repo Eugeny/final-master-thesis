@@ -1,9 +1,15 @@
 [0] Config.pm:311> INFO - This is Biber 2.16
-[0] Config.pm:314> INFO - Logfile is 'ba.blg'
-[113] biber-darwin:340> INFO - === Sat Jul 23, 2022, 10:15:53
-[131] Biber.pm:415> INFO - Reading 'ba.bcf'
-[257] Biber.pm:952> INFO - Found 0 citekeys in bib section 0
-[268] Utils.pm:395> WARN - The file 'ba.bcf' does not contain any citations!
-[301] bbl.pm:654> INFO - Writing 'ba.bbl' with encoding 'UTF-8'
-[301] bbl.pm:757> INFO - Output to ba.bbl
-[301] Biber.pm:128> INFO - WARNINGS: 1
+[1] Config.pm:314> INFO - Logfile is 'ba.blg'
+[218] biber-darwin:340> INFO - === Sun Jul 24, 2022, 14:31:30
+[270] Biber.pm:415> INFO - Reading 'ba.bcf'
+[593] Biber.pm:952> INFO - Found 3 citekeys in bib section 0
+[635] Biber.pm:4340> INFO - Processing section 0
+[684] Biber.pm:4531> INFO - Looking for bibtex format file 'references.bib' for section 0
+[693] bibtex.pm:1689> INFO - LaTeX decoding ...
+[869] bibtex.pm:1494> INFO - Found BibTeX data source 'references.bib'
+[1029] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1030] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1030] Biber.pm:4168> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[1030] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
+[1055] bbl.pm:654> INFO - Writing 'ba.bbl' with encoding 'UTF-8'
+[1066] bbl.pm:757> INFO - Output to ba.bbl
