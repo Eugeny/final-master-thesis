@@ -123,6 +123,6 @@ Such threshold search is then applied to all of the subregions of the image with
       \label{table:threshold-timing}
   \end{table}
   
-Of course local thresholding approach has a longer runtime time (see Table \ref{table:threshold-timing}). Therefore when the inference speed is crutial one can still use \textit{global minimum thresholding}. It does performs visually a bit worse that a local threshold (especially for the extreme corrupted cases), however for the normal conditions the performance is quite similar ot the local thresholding (Figure \ref{fig:thresholding-bad-conditions}c).
+Of course local thresholding approach has a longer runtime time (see Table \ref{table:threshold-timing}). Therefore when the inference speed is crutial one can still use \textit{global minimum thresholding}. It does performs visually a bit worse that a local threshold (especially for the extreme corrupted cases), however for the normal conditions the performance is quite similar ot the local thresholding (Figure \ref{fig:thresholding-bad-conditions}c). One should also keep in mind, that after the model is trained due to its generalization ability the gradient in intensities or overexposure will not be present anymore, as it is related to the image acquisition technique and does not depend on the DIC image itself.
 
 
