@@ -1,5 +1,7 @@
 
-The most extreme corruptions mentioned in section \ref{section:nuclei-preprocessing} were removed, yet some of the images that are corrupted not that severely (meaning they still have all the visible features needed for learning) were left in the dataset in order to not critically reduce the amount of data. The examples of these images are shown in Figure \ref{fig:lightning_conditions}.
+To properly evaluate practical downstream metrics described in section \ref{section:model-evaluation} on model predictions, one need to be able to segment nuclei from fluorescence (as well as from predictions) first. By segmentation here the creation of mask is understood. It should constist of $0$s and $1$s, with $1$ assigned to pixels that are part of nucleus and $0$ otherwise. Altough this might be a straight-forward task for our eyes, it is not that easy to select separate nuclei via post-processing. There are several edge cases where the nuclei are difficult to segment.
+
+Even though the most extreme corruptions mentioned in section \ref{section:nuclei-preprocessing} were filtered out, some of the images that are corrupted not that severely (meaning they still have all the visible features needed for learning) are still present in the dataset. This allow to not reduce the amount of data  significantly. The examples of difficult for segmentation cases are shown in Figure \ref{fig:lightning_conditions}.
 \begin{figure}[H]
     \centering
     \setkeys{Gin}{width=\linewidth}

@@ -6,16 +6,16 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {table}{\numberline {3}{\ignorespaces Costs estimations of AWS use for inference purposes\relax }}{21}{table.caption.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {4}{\ignorespaces Pearson correlation coefficients for downstream tasks for different scaling factors\relax }}{33}{table.caption.25}%
+\contentsline {table}{\numberline {4}{\ignorespaces Pearson correlation coefficients for downstream tasks for different scaling factors\relax }}{34}{table.caption.25}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5}{\ignorespaces Correlation coefficients for downstream tasks\relax }}{41}{table.caption.43}%
+\contentsline {table}{\numberline {5}{\ignorespaces Correlation coefficients for downstream tasks\relax }}{42}{table.caption.43}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {6}{\ignorespaces Correlation coefficients for downstream tasks on nuclei\relax }}{42}{table.caption.47}%
+\contentsline {table}{\numberline {6}{\ignorespaces Correlation coefficients for downstream tasks on nuclei\relax }}{43}{table.caption.47}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {7}{\ignorespaces Hyperparameterization for different artificial corruption severities\relax }}{43}{table.caption.48}%
+\contentsline {table}{\numberline {7}{\ignorespaces Hyperparameterization for different artificial corruption severities\relax }}{44}{table.caption.48}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {8}{\ignorespaces Test window size influence on separability\relax }}{49}{table.caption.64}%
+\contentsline {table}{\numberline {8}{\ignorespaces Test window size influence on separability\relax }}{50}{table.caption.64}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {9}{\ignorespaces ERT influence on separability\relax }}{50}{table.caption.65}%
+\contentsline {table}{\numberline {9}{\ignorespaces ERT influence on separability\relax }}{51}{table.caption.65}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {10}{\ignorespaces Severity of corruptions on separability\relax }}{50}{table.caption.66}%
+\contentsline {table}{\numberline {10}{\ignorespaces Severity of corruptions on separability\relax }}{51}{table.caption.66}%
