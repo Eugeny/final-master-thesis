@@ -1,4 +1,4 @@
-Examples of predictions quality with different scales.
+Additionally the quality of the model have been checked for different scales of the input. It was interesting to know whether or not the quaility of predictions differ based on the size of the cell within the crop. For that two additional datasets were prepared: one, where the images were first scaled up by a factor of $1.3$ and another one, where they were scaled down by a factor of $0.7$. Afterwards the image swere cropped as usual into $256 \times 256$ crops. Predictions quality were measured based on the downstream metrics described in Section \ref{section:model-evaluation} and results are presented in Table \ref{table:nuclei-scaling-influence}.
 
 \begin{table}[H]
     \centering
@@ -8,9 +8,12 @@ Examples of predictions quality with different scales.
                 &1.3 scale&0.7 scale&Train (1.0 scale + augments) \newline Predict (1.3 scale)&Train (1.3 scale) \newline Predict (1.0 scale)&Train (1.3 scale) \newline Predict (0.7 scale)
                 \\\hline\hline
                 Number of nuclei&0.987&0.995&0.975&0.971&?\\\hline
-                Total intensity&0.902&.88&0.861&0.856&?\\\hline
+                Total intensity&0.902&0.88&0.861&0.856&?\\\hline
                 Mean intensity&0.922&0.906&0.88&0.872&?\\\hline
                 Area&0.991&0.992&0.961&0.952&?\\\hline
             \end{tabular}
         \end{adjustbox}
+    \label{table:nuclei-scaling-influence}
 \end{table}
+
+As a result, the bigger the cell is within the image, the better its intensity can be predicted (both total and mean). However the number of nuclei and their area, are mostly not affected by the size of the cell. Also training on the bigger cells and predicting on usual ones as well as vice versa, doesn't change the accuracy as long as the difference is not significant. However when the difference becomes bigger (training on the enlarged cells and predicting on the smaller ones), the accuracy of the model decreases. By the accuracy for all these value PCC is assumed. 

@@ -19,6 +19,20 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global}
+    \entry{local_thresholding}{misc}{}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labeldatesource}{nodate}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Adaptive Thresholding - skimage v0.12.3 docs}
+      \field{title}{Adaptive thresholding¶}
+      \verb{urlraw}
+      \verb http://man.hubwiz.com/docset/Scikit-image.docset/Contents/Resources/Documents/auto_examples/segmentation/plot_threshold_adaptive.html
+      \endverb
+      \verb{url}
+      \verb http://man.hubwiz.com/docset/Scikit-image.docset/Contents/Resources/Documents/auto_examples/segmentation/plot_threshold_adaptive.html
+      \endverb
+    \endentry
     \entry{Christiansen_2018}{article}{}
       \name{author}{18}{}{%
         {{un=0,uniquepart=base,hash=fec0b9c788216e82316608d778c7ec04}{%
@@ -163,6 +177,43 @@
       \verb https://doi.org/10.1016%2Fj.cell.2018.03.040
       \endverb
     \endentry
+    \entry{digital_image_book}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=07713b8c79fe78ffaf9ab728a5f3ce88}{%
+           family={Gonzalez},
+           familyi={G\bibinitperiod},
+           given={Rafael\bibnamedelima C.},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f7e4f4ce32d8e1ac04f7ee5eefcabe8f}{%
+           family={Woods},
+           familyi={W\bibinitperiod},
+           given={Richard\bibnamedelima E.},
+           giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {USA}%
+      }
+      \list{publisher}{1}{%
+        {Prentice-Hall, Inc.}%
+      }
+      \strng{namehash}{b2d3f574078f3bec786a6f4bed9913c2}
+      \strng{fullhash}{629c2754a63b62c1f205866b8ab085f9}
+      \strng{bibnamehash}{629c2754a63b62c1f205866b8ab085f9}
+      \strng{authorbibnamehash}{629c2754a63b62c1f205866b8ab085f9}
+      \strng{authornamehash}{b2d3f574078f3bec786a6f4bed9913c2}
+      \strng{authorfullhash}{629c2754a63b62c1f205866b8ab085f9}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{013168728X}
+      \field{title}{Digital Image Processing (3rd Edition)}
+      \field{year}{2006}
+    \endentry
     \entry{Lachance_2020}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=09de57b97a40ace6dd0b43f597dfbb5b}{%
@@ -224,6 +275,59 @@
       \endverb
       \verb{url}
       \verb https://www.genome.gov/genetics-glossary/Nucleus
+      \endverb
+    \endentry
+    \entry{global_thresh}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=ae8557e86a4b37c09b409501da60ecf2}{%
+           family={{Prewitt}},
+           familyi={P\bibinitperiod},
+           given={Judith\bibnamedelima M.\bibnamedelimi S.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5d637691c01e822a246fa70555af4572}{%
+           family={{Mendelsohn}},
+           familyi={M\bibinitperiod},
+           given={Mortimer\bibnamedelima L.},
+           giveni={M\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{5d3d2e569e819ce4330e7e335e4c8f23}
+      \strng{fullhash}{25bee995204b8fcff7f45f86b8386d14}
+      \strng{bibnamehash}{25bee995204b8fcff7f45f86b8386d14}
+      \strng{authorbibnamehash}{25bee995204b8fcff7f45f86b8386d14}
+      \strng{authornamehash}{5d3d2e569e819ce4330e7e335e4c8f23}
+      \strng{authorfullhash}{25bee995204b8fcff7f45f86b8386d14}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Annals of the New York Academy of Sciences}
+      \field{month}{1}
+      \field{number}{3}
+      \field{title}{{The Analysis of Cell Images}}
+      \field{volume}{128}
+      \field{year}{1965}
+      \field{pages}{1035\bibrangedash 1053}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1111/j.1749-6632.1965.tb11715.x
+      \endverb
+    \endentry
+    \entry{thresholding_skimage}{misc}{}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labeldatesource}{nodate}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Thresholding - skimage v0.19.2 docs}
+      \field{title}{Thresholding¶}
+      \verb{urlraw}
+      \verb https://scikit-image.org/docs/stable/auto_examples/applications/plot_thresholding.html
+      \endverb
+      \verb{url}
+      \verb https://scikit-image.org/docs/stable/auto_examples/applications/plot_thresholding.html
       \endverb
     \endentry
   \enddatalist

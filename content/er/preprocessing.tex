@@ -1,7 +1,7 @@
 
 
 \begin{algorithm}
-    \caption{Fluorescence segmentation}\label{alg:global-thresholding}
+    \caption{Fluorescence segmentation}
     \begin{algorithmic}
     \item 1. Normalize image
     \item 2. Apply global \textit{threshold\_mean} to receive initial mask.
@@ -11,6 +11,7 @@
     \item 6. Morphological opening from OpenCV and Gaussian blur.
     \item 7. Run \textit{findContours} from OpenCV in order to obtain separate regions and filter out too small regions.
     \end{algorithmic}
+    \label{alg:er-global-thresholding}
 \end{algorithm}    
 
 Segmentation steps are also illustrated in Figure \begin{figure}[H]
