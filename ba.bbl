@@ -177,6 +177,23 @@
       \verb https://doi.org/10.1016%2Fj.cell.2018.03.040
       \endverb
     \endentry
+    \entry{er}{misc}{}
+      \list{publisher}{1}{%
+        {National Human Genome Research Institute}%
+      }
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labeldatesource}{nodate}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Genome.gov}
+      \field{title}{Endoplasmic Reticulum (smooth)}
+      \verb{urlraw}
+      \verb https://www.genome.gov/genetics-glossary/Endoplasmic-Reticulum-Smooth
+      \endverb
+      \verb{url}
+      \verb https://www.genome.gov/genetics-glossary/Endoplasmic-Reticulum-Smooth
+      \endverb
+    \endentry
     \entry{digital_image_book}{book}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=07713b8c79fe78ffaf9ab728a5f3ce88}{%
@@ -213,6 +230,38 @@
       \field{isbn}{013168728X}
       \field{title}{Digital Image Processing (3rd Edition)}
       \field{year}{2006}
+    \endentry
+    \entry{er_2}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b7a0cb24f1a213d6a365ef1ba67a7e6d}{%
+           family={Kara},
+           familyi={K\bibinitperiod},
+           given={Rogers},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Encyclopedia Britannica, inc.}%
+      }
+      \strng{namehash}{b7a0cb24f1a213d6a365ef1ba67a7e6d}
+      \strng{fullhash}{b7a0cb24f1a213d6a365ef1ba67a7e6d}
+      \strng{bibnamehash}{b7a0cb24f1a213d6a365ef1ba67a7e6d}
+      \strng{authorbibnamehash}{b7a0cb24f1a213d6a365ef1ba67a7e6d}
+      \strng{authornamehash}{b7a0cb24f1a213d6a365ef1ba67a7e6d}
+      \strng{authorfullhash}{b7a0cb24f1a213d6a365ef1ba67a7e6d}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labeldatesource}{nodate}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Encyclopedia Britannica}
+      \field{title}{Endoplasmic Reticulum}
+      \verb{urlraw}
+      \verb https://www.britannica.com/science/endoplasmic-reticulum
+      \endverb
+      \verb{url}
+      \verb https://www.britannica.com/science/endoplasmic-reticulum
+      \endverb
     \endentry
     \entry{Lachance_2020}{article}{}
       \name{author}{2}{}{%

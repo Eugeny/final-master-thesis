@@ -1,15 +1,15 @@
 [0] Config.pm:311> INFO - This is Biber 2.16
 [1] Config.pm:314> INFO - Logfile is 'ba.blg'
-[257] biber-darwin:340> INFO - === Sun Jul 24, 2022, 20:11:24
-[320] Biber.pm:415> INFO - Reading 'ba.bcf'
-[593] Biber.pm:952> INFO - Found 7 citekeys in bib section 0
-[627] Biber.pm:4340> INFO - Processing section 0
-[653] Biber.pm:4531> INFO - Looking for bibtex format file 'references.bib' for section 0
-[660] bibtex.pm:1689> INFO - LaTeX decoding ...
-[958] bibtex.pm:1494> INFO - Found BibTeX data source 'references.bib'
-[1213] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1213] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1213] Biber.pm:4168> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
-[1213] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
-[1255] bbl.pm:654> INFO - Writing 'ba.bbl' with encoding 'UTF-8'
-[1275] bbl.pm:757> INFO - Output to ba.bbl
+[92] biber-darwin:340> INFO - === Mon Jul 25, 2022, 16:17:54
+[112] Biber.pm:415> INFO - Reading 'ba.bcf'
+[221] Biber.pm:952> INFO - Found 9 citekeys in bib section 0
+[238] Biber.pm:4340> INFO - Processing section 0
+[251] Biber.pm:4531> INFO - Looking for bibtex format file 'references.bib' for section 0
+[254] bibtex.pm:1689> INFO - LaTeX decoding ...
+[337] bibtex.pm:1494> INFO - Found BibTeX data source 'references.bib'
+[480] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[480] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[480] Biber.pm:4168> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[480] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
+[500] bbl.pm:654> INFO - Writing 'ba.bbl' with encoding 'UTF-8'
+[509] bbl.pm:757> INFO - Output to ba.bbl
