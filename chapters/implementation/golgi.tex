@@ -12,4 +12,15 @@
         \paragraph{Asymmetrical losses}
             \input{content/golgi/asymmetrical training.tex}
         \paragraph{Use of gradient in loss}
+            One of the insights from the predictions not only on this data, but for the other organelles as wel is that there is not enough of detail inside the predicted fluorescence. The texture and the gradient seem to be missing and predictions are very smooth. Although this is not very crucial for other organelles, Golgi apparatus stain on the other hand has a very granular structure and consists from the small dots (see ground truth image in Figure \ref{fig:golgi-no-reg-pcc-predictions}). In order to introduce the granularity we suggest to try to introduce the gradient of an image into the loss function. 
+
+            TODO cite stuff explain more
         \paragraph{Noise reduction methods}
+            \cite{Cheng_2021} puts a special attention on the significant importance of a good signal-to-noise ratio for quality Golgi fluorescence predictions. This paper uses an advanced denoising algorithm called \textit{noise2void} (\cite{noise2void}). 
+
+            Explain algorithm.
+
+            This might be a useful approach for denoising Golgi imaging as well instead of the use of enhancement and rolling ball approached. It is highly advisable to try this method in future research.
+
+    \subsection{Conclusions}
+        \input{content/golgi/conclusions.tex}
