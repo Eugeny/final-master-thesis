@@ -57,5 +57,5 @@ Embeddings can be used as the input to the stability predictor (Gianni's present
 
 add adam optim definition
 
-
+make the first loss for golgi worse
 change er no overfit with strong regularization plot
