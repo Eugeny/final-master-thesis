@@ -80,7 +80,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.2.4}Influence of scaling on predictions quality}{37}{subsubsection.3.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.2.5}Conclusions}{38}{subsubsection.3.2.5}%
+\contentsline {subsubsection}{\numberline {3.2.5}Conclusions}{37}{subsubsection.3.2.5}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.3}Endoplasmic Reticulum}{39}{subsection.3.3}%
 \defcounter {refsection}{0}\relax 
@@ -88,9 +88,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.3.2}Combination of nuclei and actin predictions}{40}{subsubsection.3.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.3.3}Postprocessing for ER segmentation}{41}{subsubsection.3.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.3}Postprocessing for ER segmentation}{40}{subsubsection.3.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.3.4}Conclusions}{42}{subsubsection.3.3.4}%
+\contentsline {subsubsection}{\numberline {3.3.4}Conclusions}{41}{subsubsection.3.3.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {3.3.5}Generalizability across phenotypes}{42}{subsubsection.3.3.5}%
 \defcounter {refsection}{0}\relax 
@@ -172,8 +172,6 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {7}Summary}{60}{section.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{References}{61}{section.7}%
+\contentsline {section}{List of Figures}{61}{section.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{List of Figures}{62}{section.7}%
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{List of Tables}{64}{section.7}%
+\contentsline {section}{List of Tables}{61}{section.7}%

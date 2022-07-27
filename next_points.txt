@@ -56,3 +56,6 @@ N. N. Boustany, S. A. Boppart, V. Backman, Microscopic imaging and spectroscopy 
 Embeddings can be used as the input to the stability predictor (Gianni's presentation).
 
 add adam optim definition
+
+
+change er no overfit with strong regularization plot

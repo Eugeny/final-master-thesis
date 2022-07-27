@@ -1514,18 +1514,8 @@ INPUT /usr/local/texlive/2021/texmf-dist/tex/generic/gettitlestring/gettitlestri
 INPUT /usr/local/texlive/2021/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 INPUT /usr/local/texlive/2021/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/ba.out
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/ba.out
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/ba.out
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/ba.out
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/ba.out
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/ba.out
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/ba.out
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/ba.out
-OUTPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/ba.pdf
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/ba.out
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/ba.out
 OUTPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/ba.out
+OUTPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/ba.pdf
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/biblatex/lbx/english.lbx
@@ -1544,12 +1534,6 @@ INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/l3kernel/expl3.sty
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 OUTPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/ba.bcf
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/ba.bbl
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/ba.bbl
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/ba.bbl
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/ba.bbl
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/ba.bbl
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/ba.bbl
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/microtype/mt-ppl.cfg
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/microtype/mt-ppl.cfg
 INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/microtype/mt-ppl.cfg
@@ -1649,15 +1633,10 @@ INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/zusamme
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/zusammenfassung.tex
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/zusammenfassung.tex
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/zusammenfassung.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/ba.toc
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/ba.toc
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/ba.toc
+OUTPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/ba.toc
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/palatino/pplro8t.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/vf/adobe/palatino/pplro8t.vf
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/palatino/pplro8r.tfm
-INPUT /usr/local/texlive/2021/texmf-dist/fonts/vf/adobe/palatino/pplb8t.vf
-INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/palatino/pplb8r.tfm
-OUTPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/ba.toc
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/einleitung.tex
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/einleitung.tex
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/einleitung.tex
@@ -1705,6 +1684,8 @@ INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/CLD.png
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/CLD.png
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/CLD.png
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/vf/adobe/palatino/pplb8t.vf
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/palatino/pplb8r.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/palatino/pplr8t.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/palatino/pplr8t.tfm
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/domain knowledge/cld in merck.tex
@@ -2005,14 +1986,11 @@ INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/nuclei/thresholding.tex
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/nuclei/thresholding.tex
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/nuclei/thresholding.tex
-INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/palatino/pplri8c.tfm
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/difficult-lightning/local-vs-global.png
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/difficult-lightning/local-vs-global.png
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/difficult-lightning/local-vs-global.png
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/difficult-lightning/local-vs-global.png
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/difficult-lightning/local-vs-global.png
-INPUT /usr/local/texlive/2021/texmf-dist/fonts/vf/adobe/palatino/pplri8c.vf
-INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/mathpazo/fplmri.tfm
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/courier/pcrr8t.tfm
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/Gonzalez.png
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/Gonzalez.png
@@ -2037,16 +2015,11 @@ INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/er/convergence.tex
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/er/convergence.tex
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/er/convergence.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/actin/overfit.jpg
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/actin/overfit.jpg
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/actin/overfit.jpg
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/actin/overfit.jpg
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/actin/overfit.jpg
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/actin/no-overfit.jpg
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/actin/no-overfit.jpg
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/actin/no-overfit.jpg
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/actin/no-overfit.jpg
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/actin/no-overfit.jpg
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/ER/segmentation/reg-not-reg.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/ER/segmentation/reg-not-reg.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/ER/segmentation/reg-not-reg.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/ER/segmentation/reg-not-reg.png
+INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/bilder/ER/segmentation/reg-not-reg.png
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/er/nuclei combined.tex
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/er/nuclei combined.tex
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/content/er/nuclei combined.tex
@@ -2403,13 +2376,7 @@ INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapter
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/summary.tex
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/summary.tex
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/chapters/summary.tex
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/ba.lof
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/ba.lof
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/ba.lof
 OUTPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/ba.lof
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/ba.lot
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/ba.lot
-INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/ba.lot
 OUTPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/ba.lot
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/ba.aux
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/ba.out
@@ -2417,13 +2384,10 @@ INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/ba.out
 INPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/ba.run.xml
 OUTPUT /Users/anniepank/Dropbox/Master/HHU/semester 4/thesis/Final Thesis/ba.run.xml
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc
-INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
-INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb
-INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
