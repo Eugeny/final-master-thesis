@@ -1,10 +1,4 @@
-\begin{figure}[H]
-	\begin{center}
-		\includegraphics[width=0.8\linewidth]{bilder/gfp/binary-bce/enlarged.png}
-		\caption{Training with BCE loss}\label{fig:gfp-bce-predictions}
-	\end{center}
-\end{figure}
-
+Figure \ref{fig:gfp-pcc-predictions} presents the result of training with PCC loss on intensity images. The model convergence and visual comparison between ground truth and predictions is displayed. One can see that some of the cells are present in predictions, but are missing in ground truth images. These are dead cells that do not express GFP anymore, however the cell body is still present in DIC. Additional observation is that the boundary is generally blurry than in ground truth fluorescence, which is typical for all previous organelles as well. However all cells are clearly visible and can be separated using additional image postprocessing pipelines.
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=0.6\linewidth]{bilder/gfp/predictions.png}
@@ -12,18 +6,13 @@
 	\end{center}
 \end{figure}
 
-\begin{table}[H]
-    \centering
-    \caption{Correlation coefficients for downstream tasks}
-        \begin{adjustbox}{width=0.4\textwidth}
-            \begin{tabular}{|c|c|c|}\hline
-                Binary training&Pearson&Spearman
-                \\\hline\hline
-                Number of ER&0.67&0.64\\\hline
-                Area&0.82&0.75\\\hline\hline
-                Continuos training&Pearson&Spearman\\\hline
-				Number of ER&0.57&0.55\\\hline
-                Area&0.26&0.64\\\hline
-            \end{tabular}
-        \end{adjustbox}
-\end{table}
+In Figure \ref{fig:gfp-bce-predictions} one can find results of training on the binarized image dataset. Model does converge and predictions are successfull as well. Without the intensities it might be more difficult to visually separate the cells from the mask, rather then in the image with intensity values. The predicted masks are not binarized yet and contain continuous values from $[0, 1]$ interval. One can see how the model generalizes in the following observation: preprocessed ground truth image still has not very strict boundaries in its masking even after local thresholding binarization. After zooming in one can see that some cell's boundaries were oversegmented. This happens due to the different intensity values for different cells. However, this is not a an issue as the model is still able to generalize well and predicts the middle part of the cell confidently, then smoothly reduces the confidence on the cell boundary. After thresholding such predictions one can choose such a threshold that will get just enough of the cell boundary needed. In our case the value was chosen to be $0.8$.
+
+An interesting detail here are dead cells mentioned above. They are present in DIC, but do not express GFP. One can see a clear example of such cells selected with green circles in Figure \ref{fig:gfp-bce-predictions}. The model generalizes in a way that it continues to segment all of the cells regardless of their state. This is an expected behavior as the amount of dead cells in the dataset is pretty low and ocasional mistakes do not push the model strongly enough to be able to learn the features that separate dead from alive cells. We proceed with the existing model to futher evaluation, however it might be useful for further research to address this issue. For example, \cite{Christiansen_2018} mentions the ability of their model to detect dead cells from alive by staning the dead ones and then traning the model to differentiate between them. 
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=0.8\linewidth]{bilder/gfp/binary-bce/enlarged.png}
+		\caption{Training with BCE loss}\label{fig:gfp-bce-predictions}
+	\end{center}
+\end{figure}
