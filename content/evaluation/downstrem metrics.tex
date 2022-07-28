@@ -1,21 +1,14 @@
-\begin{figure}[H]
-	\begin{center}
-		\includegraphics[width=\linewidth]{bilder/nuclei/metric/combined-metrics.png}
-		\caption{Metrics for downstream tasks on nuclei}\label{fig:nuclei-downstream-metrics}
-	\end{center}
-\end{figure}
 
-\begin{table}[H]
-    \centering
-    \caption{Correlation coefficients for downstream tasks on nuclei}
-        \begin{adjustbox}{width=0.4\textwidth}
-            \begin{tabular}{|c|c|c|}\hline
-                &Pearson&Spearman
-                \\\hline\hline
-                Number of nuclei&0.995&0.994\\\hline
-                Total intensity&0.902&.911\\\hline
-                Mean intensity&0.907&0.904\\\hline
-                Area&0.992&0.990\\\hline
-            \end{tabular}
-        \end{adjustbox}
-\end{table}
+As \cite{Lachance_2020} notices evaluation of models predicting flureoscence signal in terms of the PCC or MSE loss is not quite an objective approach. Even when one model might have a smaller loss, it doesn't nessecarily will perform better than another model. Practically there are other every-day metrics that have more value to the end-user rather than some abstract performance measurements typically used in computer vision. Therefore here the evaluation of the model is additionally checked in terms of the following metrics:
+\begin{itemize}
+    \item Number of nuclei / ER / Golgi / cells
+    \item Area of nucleus / ER / Golgi / cell
+    \item Total intensity of nuclei / ER / Golgi
+    \item Mean intensity of nuclei / ER / Golgi
+\end{itemize}
+
+These quantities can be compareed with each other in a much more understandable way. On the contrary, when one recieves a precision value $P$ (let it be PCC loss in this example) from the model performance evaluation there is no way to appreciate how good this model is. Usually one can easily raise the value of $P$ by simply training on more data or using a better resolution microscopy, but all of this increases the amount of lab work and expenses.
+
+Highly practical metrics mentioned above would be calculated for each image in the test set and for corresponding ground truth images. This would give us two distributions: one is a distribution of predicted values and another --- of ground truth values. Ideally these two should be the same distribution. Here they will be compared visually with violin plots (simply checking the form and range of the two), scatter plots and quantitevely by correlation coefficients, or more specifically, with the help of Spearman rank coefficient and and Pearson correlation coefficient.
+
+In each subsection dedicated to each organelle these metrics are presented under the according "Downstream metrics" section.
