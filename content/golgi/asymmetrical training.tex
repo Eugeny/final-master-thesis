@@ -1,4 +1,4 @@
-The earliest learnings from the experiments have shown presented that the severe class imbalance is present and the model tends to predict mostly pure background. In order to overcome this one can use an asymmetrical loss during training. Similarily to a weighted loss for a classification problem wihth class imbalance, a weigted loss for segmentation task can be introduced. In this case different pixels of the prediction will recieve a different weight based on some criteria. Yet the use of weights cannot be easily defined for a Pearson correlation coefficients, it is possible to apply it to MSE loss function as the coefficients there can be added directly in front of the squared difference between pixels. 
+The earliest learnings from the experiments have shown that the severe class imbalance is present and the model tends to predict mostly pure background --- black images. In order to overcome this one can use an asymmetrical loss during training. Similarily to a weighted loss for a classification problem with class imbalance issue present, a weigted loss for segmentation task can be introduced. In this case different pixels from the prediction will recieve a different weight based on some criteria. Yet the use of weights cannot be easily defined for a Pearson correlation coefficients, it is possible to use them with MSE loss, because weights coefficients there can be added directly in front of the squared difference between pixels. 
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=0.5\linewidth]{bilder/golgi/asymmetrical-training.jpg}
@@ -6,32 +6,26 @@ The earliest learnings from the experiments have shown presented that the severe
 	\end{center}
 \end{figure}
 
-In Figure \ref{fig:golgi-asymmetrical-training} are presented training learning curves from three asymmetrical approaches: 
-\begin{figure}[H]
-	\begin{center}
-		\includegraphics[width=\linewidth]{bilder/golgi/asymmetrical-predictions.png}
-		\caption{Results of advanced versions of MSE training}\label{fig:golgi-asymmetrical-predictions}
-	\end{center}
-\end{figure} 
+In Figure \ref{fig:golgi-asymmetrical-training} training learning curves from three asymmetrical approaches are presented.
 
-Asymmetry 1 is aimed to punish an underprediction: when a models pixel prediction is lower than a true one the loss will be higher.
-\begin{lstlisting}
-	residual = prediction - ground_truth
-	loss = torch.where(residual > 0, residual ** 2, 2 * (residual) ** 2)
-	loss = torch.mean(loss)
-  \end{lstlisting}
-
-Asymmetry 2 is a reverse of Asymmetry 1 and is aimed to punish an overprediction: when a models pixel prediction is higher than a true one the loss will be higher.
+Asymmetry 2 is aimed to punish the errors on bright pixels more: when a models pixel prediction is higher than a true one the loss will be higher. Yet this loss also encourages the model to underpredict and results in completely black images even though it has the lowest loss.
   \begin{lstlisting}
 	  residual = prediction - ground_truth
 	  loss = torch.where(residual < 0, residual ** 2, 2 * (residual) ** 2)
 	  loss = torch.mean(loss)
 	\end{lstlisting}
 
-Asymmetry 3 is a stronger version of Asymmetry 1 and is aimed to punish an underprediction $10$ times stronger.
+Asymmetry 1 is aimed to do the opposite and punish an underprediction: when a model's pixel prediction is lower than a true one the loss will be higher. This resulted in a slightly brighter images
+\begin{lstlisting}
+	residual = prediction - ground_truth
+	loss = torch.where(residual > 0, residual ** 2, 2 * (residual) ** 2)
+	loss = torch.mean(loss)
+  \end{lstlisting}
+
+Asymmetry 3 is a stronger version of Asymmetry 1 and it results in 
 	\begin{lstlisting}
 		residual = prediction - ground_truth
-		loss = torch.where(residual > 0, residual ** 2, 10 * (residual) ** 2)
+		loss = torch.where(residual > 0, residual ** 3, 20 * (residual) ** 2)
 		loss = torch.mean(loss)
 	  \end{lstlisting}
 
@@ -39,7 +33,7 @@ All of the approaches above do not bring a big change in the performance and a m
 
 There were other interesting approaches in asymmetrical losses tested that are depicted in Figure \ref{fig:golgi-asymmetrical-training}
 
-1. Adjusting overall brightness. Leads the an absence of bright spots in the prediction and an absence of brightness gradients.
+1. Adjusting overall brightness. Leads the an absence of bright spots and brightness gradients in the prediction. The illumination of the cell becomes same across all the cells.
 \begin{lstlisting}
 	loss = loss +  prediction.sum() / ground_truth.sum()
   \end{lstlisting}
@@ -49,25 +43,34 @@ There were other interesting approaches in asymmetrical losses tested that are d
 	loss = loss + ground_truth.sum() / prediction.sum()
 \end{lstlisting}
 
-3. Combining asymmetry from multiplication with prediction with overall brightness
+3. Multiplying loss with prediction wiill result in black images again, however multiplying with the ground truth gives a bit more interesting result. However the model is pushed to predictin average gray color scross the whole image mostly.
 
 \begin{lstlisting}
 	loss = MSE(ground_truth, prediction)
-	loss = torch.mul(loss, prediction.abs()) + ground_truth.sum() / prediction.sum()
+	loss = torch.mul(loss, ground_truth)
 \end{lstlisting}
 
-4.
+4. Multiplying loss with 1 - ground\_truth also results in completely black images as such loss puts more weights on the correct prediction of the background.
 \begin{lstlisting}
 	loss = MSE(ground_truth, prediction)
-	loss = torch.mul(loss, (1 - ground_truth).abs()) + ground_truth.sum() / prediction.sum()
+	loss = torch.mul(loss, 1 - ground_truth)
 \end{lstlisting}
 
-5.
+5. This improves the asymmetry approach 3, however now the highlighted regions simply include mostly the whole cell.
 \begin{lstlisting}
 	loss = MSE(ground_truth, prediction)
-	loss = torch.mul(loss, ground_truth.abs()) + ground_truth.sum() / prediction.sum()
+	loss = torch.mul(loss, ground_truth) + ground_truth.sum() / prediction.sum()
 \end{lstlisting}
 
-6. Usual MSE
+6. Usual MSE.
 
-7. Usual PCC
+7. Usual PCC.
+
+From the experiments it was clear that the best approach remain to be PCC, pure MSE or MSE with the adjustment of overall brightness.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=\linewidth]{bilder/golgi/asymmetrical-predictions.png}
+		\caption{Results of advanced versions of MSE training}\label{fig:golgi-asymmetrical-predictions}
+	\end{center}
+\end{figure} 
