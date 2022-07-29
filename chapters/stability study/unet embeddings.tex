@@ -1,9 +1,11 @@
 \subsection{UNET embeddings study}
+    Similarly to studying autoencoder embeddings that represent a high-dimentional input in lower dimentional space, one can study UNet embeddings. However, one should keep in mind that the dimention of embeddings in UNet case is not smaller than the input and often is larger (see the UNet architecture in Figure \ref{fig:unet}). The goal of the UNet in contrast to an autoencoder is not to compress the input, but to extract useful features that are helpful for high-resolution segmentation. UNet embeddings do not contain rich full image semantics in them as embeddings of an autoencoder do. UNet compresses the spatial dimention of the input but it also gradually increases the number of filters which can capture of information need for segmentation. As it has been proven in section \ref{section:nuclei-predictions} having more filters only helps to get better predictions, therefore there is no need for a UNet to have low-dimentional embeddings. Nevertheless, it is still interesting to see if the embeddings do contain any interesting information about the input that one could use. There were two hypothesis in question: the first one is whether embeddings of a trained UNet form any kind of clusters based on cells phenotype. And a second one is whether embeddings of corrupted images can be clustered together further away from not corrupted ones. If the latter hypothesis would hold, one could alarm the end-user about the outliers in the dataset based on their distance from both of the clusters. 
     \subsubsection{Application of various dimentionality reduction methods}
-        \input{content/unet-embeddings/unet-embeddings.tex }
+        \input{content/unet-embeddings/unet-embeddings.tex}
     \subsubsection{Autoencoder embeddings as an alternative}
         \input{content/autoencoder.tex}
     \clearpage
     \subsubsection{Clustering of PacMAP embeddings}
         \paragraph{Clustering on UNet embeddings}
+        \label{section:clustering-on-unet-embeddings}
         \input{content/unet-embeddings/unet-embeddings-clustering.tex}
