@@ -1,4 +1,7 @@
 \subsection{Stability study}
+    For practical reasons it is important to not evaluate the models on the high quality data only, but also to know how the predictions will degrade when the input data quality decreases. Having a model for fluorescence \textit{in silico} labeling that can additionally alarm when the predictions should not be relied upon is very useful in practice. Although the DIC microscopy is a relatively easy technique, there are still setting up procedures taking place that can be prone to errors. Additionally, as the models are not easily generalizable across phenotypes and between fixed and not fixed cells, an alarming system that is able to catch these situations would be useful to save time and costs of lab work. In order to measure the stability or robustness of the models towards data degeneration they were evaluated on the corrupted or "bad" input DIC images. There are two sources of "bad" images that can be used for such estimations. One is the real corrupted images made in the laboratory. Corruptions in this cade may come from different sources: for example, bubble of oil that landed on the microscope lenses, low density of the cell on the image, over- or underexposure during image acquisition. Another source of image corruptions would be images with artificial or pseudocorruptions created manually. 
+    
+    %This chapter first provides a description of artificial corruptions used to evaluate previously trained models on. Afterwards the real examples of corruptions acquired from the lab are 
     \subsubsection{Artificial corruptions}
         \input{content/stability/artificial corruptions.tex}
     \subsubsection{Real corruptions}
@@ -6,4 +9,5 @@
     \subsubsection{Influence of corruptions on metrics for downstream tasks}
         Calculate how metrics worsen when the evaluation stays the same, but the input is corrupted.
     \subsubsection{Improving predictions with additional corruption augmentations}
+        \label{section:augments-againts-corruptions}
         \input{content/stability/augmentations.tex}

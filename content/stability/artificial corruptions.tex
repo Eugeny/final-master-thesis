@@ -1,4 +1,33 @@
-Description of artificial corruptions.
+
+In this subsection results from evaluating models on 3 types of artificial image corruption are presented, namely: defocus blur imitating the defocus of the microscope lenses, changes in brightness and changes in contrast. Every corruption  has different effects on the prediction of the model based on its severity level. Therefore it is important to evaluate the error-rate (in this case a loss function) for the predictions for different severity levels of each of corruption types presented. It is also important to perform a visual evaluation of model's predictions on corrupted data. Each corruption $c$ will have different severity levels $s$, $-5 \leq s \leq 5$ ($0 \leq s \leq 5$ for defocus blur corruption), where $0$ corresponds to original image without corruption. It is important to keep in mind that although severity levels were chosen to be as much comparable between each other as possible, they still might have differences in their strength. For example, contrast has much stronger effect on predictions than brightness changes. Three types of artificial image corruption are presented below.
+
+\subsubsection{Defocus Blur}
+Defocus blur corruption imitates the effect of defocus on the microscope. The blur is applied to the image by convolving it with a special defocus kernel. There are two tunable parameters for this corruption type: first one is the readius of the circle in the kernel $r$, and the second one is the blur strength parameter $s$. Examples of the kernel with radius $r$ is shown in the Figure \ref{fig:defocus-blur-kernel}. Such kernel is then simply applied to an image via $cv2.filter2D$ function.
+
+\begin{figure}[htb]
+	\begin{center}
+		\includegraphics[width=0.2\linewidth]{bilder/stability/defocus-blur-kernel.png}
+		\caption{Defocus blur kernel}\label{fig:defocus-blur-kernel}
+	\end{center}
+\end{figure}
+
+\subsubsection{Brightness}
+Different brightness levels are also an important image corruption to test on. Different brightness levels appear often in the dataset during image accquisition. In oder to change the brightness, an image from the RGB format was translated into HSV format, which stands for hue, saturation and value. This is also one of popular formats to represent an image. To make an image brighter or darker, one can simply add or subtract a parameter $s$ in a value channel for each of the pixels correspondingly. This parameter is often called bias. The bigger absolute value of this change the stronger a corruption will be.
+
+\begin{equation}
+    \hat{x}_{i, j} = x_{i, j} + s
+\end{equation}
+
+\subsubsection{Contrast}
+In contrast to adding a constant value pixelwise to an image in order to change a contrast level one can perform a multiplication of an image with another constant $s$. This parameter is often called gain.
+
+\begin{equation}
+    \hat{x}_{i, j} = s * x_{i, j}
+\end{equation}
+
+For both contrast and brightness changes one can use $cv2.convertScaleAbs()$ from OpenCV library. This method directly accepts gain and bias parameters and clips the image to stay within the allowed values range.
+
+The values of hyperparameters use in corruptions (kernel radius, gain and bias) are streched across the range of severity levels and presented in Table \ref{table:corruption-hyperparameters}.
 \begin{table}[H]
     \centering
     \caption{Hyperparameterization for different artificial corruption severities}
@@ -22,8 +51,10 @@ Description of artificial corruptions.
                 Brightness (bias) &-150&-135&-120&-90&-50&0&50&90&120&135&150\\\hline
             \end{tabular}
         \end{adjustbox}
+    \label{table:corruption-hyperparameters}
 \end{table}
 
+Severity level of $-5$ for contrast represents an highly contrastive image, while $5$ is a very low contrast image. For brightness corruption levels of $-5$ and $5$ correspond to images with very low and high brightness respectively. And defocus blur corruption has only 5 levels of severity from original image (level $0$) to the image with a stronger blur (level $5$).
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=0.5\linewidth]{bilder/corruptions.png}
@@ -31,9 +62,12 @@ Description of artificial corruptions.
 	\end{center}
 \end{figure}
 
+One can observe input image change for each of the corruptions along with the change of prediction of nuclei model on these crops. One can clearly notice that model's predictions are quite stable towards different brightness levels and contrast. However, the predictions on the crops are very sensible towards defocus blur corruption: corruptions of levels $1-4$ are almost indistinctable from the original image, yet the model predictions degrade quite soon. This can be explained by fact that training dataset contains quite diverse data in terms of contrast and brightness levels and, as the result, the model is more stable towards these changes. Using defocus blur as an augmentation will help to solve this problem. This will be described in more detail in Section \ref{section:augments-againts-corruptions}.
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=0.5\linewidth]{bilder/corruptions-loss.png}
-		\caption{Change of Pearson correlation loss for artificial corruptions}\label{fig:corruptions-loss}
+		\caption{Change of PCC loss for artificial corruptions}\label{fig:corruptions-loss}
 	\end{center}
 \end{figure}
+
+Additionally, a change in PCC loss is presented in Figure \ref{fig:corruptions-loss}. This is a plot of PCC loss for different artificial corruptions. The loss is increased for stronger severity levels. We can see that in positive direction with defocus blur corruption the model degerates more quickly and that contrast corruptions change prdictions more sever in the negative one.
