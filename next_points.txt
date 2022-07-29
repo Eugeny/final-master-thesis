@@ -61,3 +61,5 @@ make the first loss for golgi worse
 change er no overfit with strong regularization plot
 
 Influence of different loss functions on metrics for downstream tasks
+
+real corruptions use a better model
