@@ -66,3 +66,5 @@ real corruptions use a better model
 Unet embeddings redo the coloring of the first splot, it seems like phx and chozn are separable there.
 
 add that drift detection does not detect drift when the model has augmentations
+
+add f1-score to the definitions.
