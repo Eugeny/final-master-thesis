@@ -68,3 +68,5 @@ Unet embeddings redo the coloring of the first splot, it seems like phx and choz
 add that drift detection does not detect drift when the model has augmentations
 
 add f1-score to the definitions.
+
+Drift detection ROC AUC for constrast? (more lines, more interesting)
