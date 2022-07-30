@@ -57,7 +57,7 @@ The values of hyperparameters used in corruptions (kernel radius, gain and bias)
 Severity level of $-5$ for contrast represents an highly contrastive image, while $5$ is a very low contrast image. For brightness corruption levels of $-5$ and $5$ correspond to images with very low and high brightness respectively. And defocus blur corruption has only 5 levels of severity from original image (level $0$) to the image with a stronger blur (level $5$).
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=0.5\linewidth]{bilder/corruptions.png}
+		\includegraphics[width=0.8\linewidth]{bilder/corruptions.png}
 		\caption{Influence of artificial corruptions on the predictions}
         \label{fig:artificial-corruptions}
 	\end{center}
@@ -66,7 +66,7 @@ Severity level of $-5$ for contrast represents an highly contrastive image, whil
 One can observe input image change for each of the corruptions along with the change of prediction of nuclei model in Figure \ref{fig:artificial-corruptions}. One can clearly notice that model's predictions are quite stable towards different brightness levels and contrast. However, the predictions on the crops are very sensible towards defocus blur corruption: DIC images with defocus blur levels $1-4$ are almost indistinctable from the original image, yet the model predictions degrade quite soon. This can be explained by fact that training dataset contains quite diverse data in terms of contrast and brightness levels and, as the result, the model is more stable towards these changes. Using defocus blur as an augmentation will help to solve this problem. This will be described in more detail in Section \ref{section:augments-againts-corruptions}.
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=0.5\linewidth]{bilder/corruptions-loss.png}
+		\includegraphics[width=0.8\linewidth]{bilder/corruptions-loss.png}
 		\caption{Change of PCC loss for artificial corruptions}\label{fig:corruptions-loss}
 	\end{center}
 \end{figure}

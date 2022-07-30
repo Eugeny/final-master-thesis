@@ -14,11 +14,11 @@ Default weight initialization of Conv2D layers in Python claims to use the initi
 			Un&iform(-bound, bound)
 		\end{align}
 
-However the naming is quite confusing and therefore two experiments have been conducted: first the model predicting nuclei target was trained with the default weight initialization provided by PyTorch and then the initialization was switched to a true He initialization. 
+However the naming is quite confusing and therefore two experiments have been conducted: first the model predicting nuclei target was trained with the default weight initialization provided by PyTorch and then the initialization was switched to a true He initialization.
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=0.8\linewidth]{bilder/nuclei/wi-no-wi.png}
+		\includegraphics[width=\linewidth]{bilder/nuclei/wi-no-wi.png}
 		\caption{Nuclei training without (left) and with (right) custom weight initialization}\label{fig:wi}
 	\end{center}
 \end{figure}

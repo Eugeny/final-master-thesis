@@ -1,7 +1,7 @@
 Applying the usual model architecture with PCC loss too train the model to predict fluorescence signal from DIC imaging for Golgi did not bring a good results. Model seems to converge (see Figure \ref{fig:golgi-no-reg-pcc}), however there is no learning happening.
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=0.5\linewidth]{bilder/golgi/pcc-no-reg.jpg}
+		\includegraphics[width=0.8\linewidth]{bilder/golgi/pcc-no-reg.jpg}
 		\caption{Straightforward training doesn't work}\label{fig:golgi-no-reg-pcc}
 	\end{center}
 \end{figure}
@@ -14,7 +14,7 @@ This was also depicted in visual predictions where the predicted fluroescence mo
 	\end{center}
 \end{figure}
 
-While in Figure \ref{fig:golgi-no-reg-pcc-predictions} only the results of predictions for one crop are presented, it would be interesting to see how the image with combines crops would look like. This is presented in Figure \ref{fig:golgi-no-reg-pcc-predictions-full}. One can notice an interesting pattern there: essentially the model is predicting some signal across the whole cell with a brighter regions in some of them. Yet these regions do not have a correct location wrt to Golgi. Also it is important to keep in mind, that the image of the right in this Figure is a normalized one and a true image is almost fully black. 
+While in Figure \ref{fig:golgi-no-reg-pcc-predictions} only the results of predictions for one crop are presented, it would be interesting to see how the image with combines crops would look like. This is presented in Figure \ref{fig:golgi-no-reg-pcc-predictions-full}. One can notice an interesting pattern there: essentially the model is predicting some signal across the whole cell with a brighter regions in some of them. Yet these regions do not have a correct location wrt to Golgi. Also it is important to keep in mind, that the image of the right in this Figure is a normalized one and a true image is almost fully black.
 \begin{figure}[htb]
 	\begin{center}
 		\includegraphics[width=0.8\linewidth]{bilder/golgi/full-img.png}
@@ -22,7 +22,7 @@ While in Figure \ref{fig:golgi-no-reg-pcc-predictions} only the results of predi
 	\end{center}
 \end{figure}
 
-This experiment brought a hypothesis that the background removal algorithm might have reduces the signal-to-noise ratio and remove some important fluroescence signal along the way. Therefore an alternative approach of a background removal had been tried, where only enhancing via clipping described above has been applied directly on fluprescence imaging (without using a rolling ball algorithm). This produces images that still have much more non-specific fluorescence background (see Figure \ref{fig:golgi-enhanced-predictions} (second image)), yet this preprocessing alternates the initial image to a much lower extent. 
+This experiment brought a hypothesis that the background removal algorithm might have reduces the signal-to-noise ratio and remove some important fluroescence signal along the way. Therefore an alternative approach of a background removal had been tried, where only enhancing via clipping described above has been applied directly on fluprescence imaging (without using a rolling ball algorithm). This produces images that still have much more non-specific fluorescence background (see Figure \ref{fig:golgi-enhanced-predictions} (second image)), yet this preprocessing alternates the initial image to a much lower extent.
 
 \begin{figure}[htb]
 	\begin{center}

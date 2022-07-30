@@ -10,7 +10,7 @@ Since UNet embeddings seem to not exhibit any exceptional results in their embed
 An autoencoder with embeddings of bigger size was able to achieve a lower loss as well as samples reconstructed from it were of a better quality (see Figure \ref{fig:ae-samples}). Clearly samples reconstruction will not be high resolution as there are no skip-connections in this architecture. However, this is also not needed, the only interest here would be to see whether autoencoder embeddings provide any insights on the data.
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=0.5\linewidth]{bilder/ae-embeddings/ae-samples.png}
+		\includegraphics[width=0.8\linewidth]{bilder/ae-embeddings/ae-samples.png}
 		\caption{Samples drawn from the trained autoencoder}
 		\label{fig:ae-samples}
 	\end{center}
@@ -35,7 +35,7 @@ However these two clusters are base neither on cell phenotype nor on input corru
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=0.5\linewidth]{bilder/ae-embeddings/brighter-darker.png}
+		\includegraphics[width=0.8\linewidth]{bilder/ae-embeddings/brighter-darker.png}
 		\caption{What do two UMAP clusters represent}
 		\label{fig:ae-brighter-darker}
 	\end{center}

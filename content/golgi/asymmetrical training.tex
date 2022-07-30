@@ -1,7 +1,7 @@
-The earliest learnings from the experiments have shown that the severe class imbalance is present and the model tends to predict mostly pure background --- black images. In order to overcome this one can use an asymmetrical loss during training. Similarily to a weighted loss for a classification problem with class imbalance issue present, a weigted loss for segmentation task can be introduced. In this case different pixels from the prediction will recieve a different weight based on some criteria. Yet the use of weights cannot be easily defined for a Pearson correlation coefficients, it is possible to use them with MSE loss, because weights coefficients there can be added directly in front of the squared difference between pixels. 
+The earliest learnings from the experiments have shown that the severe class imbalance is present and the model tends to predict mostly pure background --- black images. In order to overcome this one can use an asymmetrical loss during training. Similarily to a weighted loss for a classification problem with class imbalance issue present, a weigted loss for segmentation task can be introduced. In this case different pixels from the prediction will recieve a different weight based on some criteria. Yet the use of weights cannot be easily defined for a Pearson correlation coefficients, it is possible to use them with MSE loss, because weights coefficients there can be added directly in front of the squared difference between pixels.
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=0.5\linewidth]{bilder/golgi/asymmetrical-training.jpg}
+		\includegraphics[width=0.8\linewidth]{bilder/golgi/asymmetrical-training.jpg}
 		\caption{Punishing over and under predictions with asymmetrical MSE loss}\label{fig:golgi-asymmetrical-training}
 	\end{center}
 \end{figure}
@@ -22,14 +22,14 @@ Asymmetry 1 is aimed to do the opposite and punish an underprediction: when a mo
 	loss = torch.mean(loss)
   \end{lstlisting}
 
-Asymmetry 3 is a stronger version of Asymmetry 1 and it results in 
+Asymmetry 3 is a stronger version of Asymmetry 1 and it results in
 	\begin{lstlisting}
 		residual = prediction - ground_truth
 		loss = torch.where(residual > 0, residual ** 3, 20 * (residual) ** 2)
 		loss = torch.mean(loss)
 	  \end{lstlisting}
 
-All of the approaches above do not bring a big change in the performance and a mostly black image remained to be an output. Interestingly, punishing underprediction has essentially backfired, as loss then supports an overprediction. Because setting the weights of one class to be smaller is the same as setting the weights of the other class to be larger, and here as a result the model is more likely to overpredict. That is why the second asymmetry has a better loss, even though the logic behind it is not that obvious at first. 
+All of the approaches above do not bring a big change in the performance and a mostly black image remained to be an output. Interestingly, punishing underprediction has essentially backfired, as loss then supports an overprediction. Because setting the weights of one class to be smaller is the same as setting the weights of the other class to be larger, and here as a result the model is more likely to overpredict. That is why the second asymmetry has a better loss, even though the logic behind it is not that obvious at first.
 
 There were other interesting approaches in asymmetrical losses tested that are depicted in Figure \ref{fig:golgi-asymmetrical-training}
 
@@ -73,4 +73,4 @@ From the experiments it was clear that the best approach remain to be PCC, pure 
 		\includegraphics[width=\linewidth]{bilder/golgi/asymmetrical-predictions.png}
 		\caption{Results of advanced versions of MSE training}\label{fig:golgi-asymmetrical-predictions}
 	\end{center}
-\end{figure} 
+\end{figure}

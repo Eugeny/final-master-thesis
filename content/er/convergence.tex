@@ -1,8 +1,8 @@
 During the training with PCC loss the model has successfully converged already after 35 epochs, however a clear overfit was encountered (see Figure \ref{fig:er-overfit} (left)) with the best PCC loss before the overfit being $0.0713$. Overfitting happens due to the lack of data, as for ER case there were much fewer samples than for nuclei for example (see Table \ref{table:data}). Even though one could use early-stopping approach and simply choose an earlier epoch before overfit, the better approach would be to use regularization methods described in section \ref{section:regularization}. Additional regularization in terms of data augmentations was introduced. The new learning curve is shown in Figure \ref{fig:er-overfit} (middle). Overfit happens now much later (after $120$ epochs) and PCC loss improves to $0.0701$. Introducing a stronger regularization with the use of weight decay in adadelta optimizer and dropout layers with a dropout rate of $0.1$ (see Figure \ref{fig:er-overfit} (right)) reduces the overfit completely, however at the same time increases the loss to $0.099$.
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=\linewidth]{bilder/ER/segmentation/reg-not-reg.png}
-		\caption{Default model (left), slightly regularized model(middle), strongly regularized model (right)}\label{fig:er-overfit}
+		\includegraphics[width=0.6\linewidth]{bilder/ER/segmentation/reg-not-reg.png}
+		\caption{Default model (top), slightly regularized model(middle), strongly regularized model (bottom)}\label{fig:er-overfit}
 	\end{center}
 \end{figure}
 
