@@ -64,3 +64,5 @@ Influence of different loss functions on metrics for downstream tasks
 
 real corruptions use a better model
 Unet embeddings redo the coloring of the first splot, it seems like phx and chozn are separable there.
+
+add that drift detection does not detect drift when the model has augmentations
