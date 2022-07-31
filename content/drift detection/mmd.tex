@@ -1,4 +1,4 @@
-Let's assume that $\mathcal{F} := \left\{f \;\middle| \;{\lVert f \rVert}_{\mathscr{H}} \leq 1\right\}$, it means that if supremum in Definition \ref{eq:ipm} is taken over functions in the unit ball in RKHS, then mean embedding metric is called \textit{maximum mean discrepancy} (MMD). 
+Let's assume that $\mathcal{F} := \left\{f \;\middle| \;{\lVert f \rVert}_{\mathscr{H}} \leq 1\right\}$, this means that if supremum in Definition \ref{eq:ipm} is taken over functions in the unit ball in RKHS, then mean embedding metric is called \textit{maximum mean discrepancy} (MMD). 
 
 \begin{definition}[IPM]
     Maximum mean discrepancy is defined as a distance between two mean embeddings of distributions:
@@ -13,7 +13,7 @@ Let's assume that $\mathcal{F} := \left\{f \;\middle| \;{\lVert f \rVert}_{\math
 
 From \ref{eq:mmd}: if $\mathscr{H}$ is characteristic, then $\textrm{MMD}[\mathscr{H}, \mathds{P}, \mathds{Q}] = 0$ if and only if $\mathds{P} = \mathds{Q}$.
 
-Similarily to kernel mean embedding estimation,  through samples drawn from a distribution a biased empricial estimator of MMD can be obtained. Assume that there are two sets of samples $X=\{x^{(1)}, ..., x^{(n)}\}$ and $Y=\{y^{(1)}, ..., y^{(m)}\}$ drawn from two distributions $\mathds{P}$ and $\mathds{Q}$ corrspondingly. Then the biased estimate of MMD can be calculated as follows:
+Similarly to kernel mean embedding estimation,  through samples drawn from a distribution a biased empirical estimator of MMD can be obtained. Assume that there are two sets of samples $X=\{x^{(1)}, ..., x^{(n)}\}$ and $Y=\{y^{(1)}, ..., y^{(m)}\}$ drawn from two distributions $\mathds{P}$ and $\mathds{Q}$ corrspondingly, then the biased estimate of MMD can be calculated as follows:
 
 \begin{equation}
     \widehat{\textrm{MMD}}_b^2 [\mathscr{H}, X, Y] := \sup_{ {\lVert f \rVert}_{\mathscr{H}} \leq 1} \left\{ \frac{1}{n} \sum^n_{i=1}{f(x^{(i)})} - \frac{1}{m} \sum^m_{j=1}{f(y^{(j)})} \right\} 
@@ -24,9 +24,9 @@ By replacing $\frac{1}{n}\sum^n_{i=1}{f(x^{(i)})}$ with the empirical estimators
 \begin{equation}
     \widehat{\textrm{MMD}}_b^2 [\mathscr{H}, X, Y] = {\lVert \widehat{\mu}_{\mathds{P}} - \widehat{\mu}_{\mathds{Q}} \rVert }_{\mathscr{H}}^2
 \end{equation}
-If an unbiased estimator of MMD through the kernel function $k$ is needed then one could use the following estimator from Corollary 2.3 in \cite{Borgwardt}.
+If an unbiased estimator of MMD through the kernel function $k$ is needed then one could use the following estimator from Corollary 2.3 in \cite{Borgwardt_2006}.
 
-The most common application of MMD in statistics is a two-sample testing. Particularily, in testing the null hypothesis $H_0:{\lVert \widehat{\mu}_{\mathds{P}} - \widehat{\mu}_{\mathds{Q}} \rVert }_{\mathscr{H}}=0$ that two samples come from the same distribution against an alternative hypothesis $H_1:{\lVert \widehat{\mu}_{\mathds{P}} - \widehat{\mu}_{\mathds{Q}} \rVert }_{\mathscr{H}}\neq0$. But one has to be cautios here, even when both samples came from the same distribution it still might be that the MMD will be not zero due to the fact that this is an etimate and not a precise value and we have a finite number of smaples for this estimate.
+The most common application of MMD in statistics is two-sample testing. Particularly in testing the null hypothesis $H_0:{\lVert \widehat{\mu}_{\mathds{P}} - \widehat{\mu}_{\mathds{Q}} \rVert }_{\mathscr{H}}=0$ that two samples come from the same distribution against an alternative hypothesis $H_1:{\lVert \widehat{\mu}_{\mathds{P}} - \widehat{\mu}_{\mathds{Q}} \rVert }_{\mathscr{H}}\neq0$. But one has to be cautious here, even when both samples came from the same distribution it still might be that the MMD will not be zero due to the fact that that this is an estimate and not a precise value and we have a finite number of samples for this estimate.
 
 \begin{align}
     \begin{split}

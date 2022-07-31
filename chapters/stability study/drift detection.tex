@@ -1,5 +1,5 @@
 \subsection{Drift detection}
-    Assume that during training labeled data comes from a distribution $p$, meaning $\{(x^{(1)}, y^{(1)}), ..., (x^{(n)}, y^{(n)})\} \sim p$ and during deployment unlabeled data comes from a distribution $q$, meaning $\{x^{(1)}\prime, ..., x^{(1)}\prime\} \sim q$. The goal of the drift detection is to determine if $q(x\prime)$ is the same data distribution as $p(x)$. Or, putting it more formally, determine which hypothesis holds: null-hypothesis $H_0$ or and alternative hypothesis $H_A$, where $H_0:p(x) = q(x)$ and $H_A:p(x) \neq q(x)$.
+    Assume that during training labeled data comes from a distribution $p$, meaning $\{(x^{(1)}, y^{(1)}), ..., (x^{(n)}, y^{(n)})\} \sim p$ and during deployment unlabeled data comes from a distribution $q$, meaning $\{x^{(1)}\prime, ..., x^{(1)}\prime\} \sim q$. The goal of the drift detection is to determine if $q(x\prime)$ is the same data distribution as $p(x)$. Or, putting it more formally, determine which hypothesis holds: null-hypothesis $H_0$ and an alternative hypothesis $H_A$, where $H_0:p(x) = q(x)$ and $H_A:p(x) \neq q(x)$.
 
     Having samples from both distributions or representation of these samples in lower dimension, one can then choose a statistical hypothesis test to compare these distributions (\cite{Muandet_2017}).
     \subsubsection{Drift detection vs. outliers detection}
@@ -13,13 +13,13 @@
     \subsubsection{Online drift detection experiments}
             \input{content/drift detection/online.tex}
             \paragraph{Not fixed cells imaging as corrupted input}
-                In section \ref{section:gfp} the difference between fixed and not fixed cells was mentioned. Visual analysis of model's predictions for not fixed cells after training it on fixed ones has shown that the model was not able to generalize well on them. That is why it would be important to alarm the end-user to not rely on predictions when such situation occurs. In this case an online drift detector trained using not corrupted data used for ER training first and tested on not fixed ER cells. The results of this test are shown in Figure \ref{fig:online-drift-not-fixed}.
+                In section \ref{section:gfp} the difference between fixed and not fixed cells was mentioned. Visual analysis of model's predictions for not fixed cells after training it on fixed ones has shown that the model was not able to generalize well on them. This is the reason why it would be important to alarm the end user to not rely on predictions when such a situation occurs. In this case an online drift detector trained using not corrupted data used for ER training first and tested on not fixed ER cells. The results of this test are shown in Figure \ref{fig:online-drift-not-fixed}.
                 \begin{figure}[H]
                     \begin{center}
                         \includegraphics[width=0.5\linewidth]{bilder/drift-detection/online-fixed-vs-not-fixed.jpg}
                         \caption{Online drift detection of not fixated cells}\label{fig:online-drift-not-fixed}
                     \end{center}
                 \end{figure}
-                The ERTs for corrupted data (left) are lower from ERT for true input. ROC-AUC score for the separability is $0.91$ and the best threshold is $6$. However not corrupted data (fixed cells) mostly have ert of $7$, whereas corrupted data (not fixed cells) have an ert of $4$. Both classes have ERTs that are very close to the threshold, but are able to separate the classes well enough.
+                The ERTs for corrupted data (left) are lower from ERT for true input. The ROC-AUC score for the separability is $0.91$ and the best threshold is $6$. However, not corrupted data (fixed cells) mostly have an ERT of $7$, whereas corrupted data (not fixed cells) have an ERT of $4$. Both classes have ERTs that are very close to the threshold, but are able to separate the classes well enough.
 
                 TODO add metrics

@@ -1,17 +1,17 @@
-For training purposes in this research cloud computing services were used, or more specifically - Amazon Web Services (AWS). These remotely located servers provide an possibility to train your models on a variety of graphic cards paying for a minute rate. In order to keep the costs unter the control it was important to estimate the time needed for training in advance to choose the most efficient GPU possible.
+For training purposes in this research cloud computing services were used, or more specifically - Amazon Web Services (AWS). These remotely located servers provide a possibility to train your models on a variety of graphics cards while paying a minute rate. In order to keep costs under control it was important to estimate the time needed for training in advance to choose the most efficient graphics processing unit (GPU) possible.
 
-Cost estimation is additionally important for the model inference as well during the production. Although for production purposes the lambda functions from AWS can used. They can be triggered only when the inference request arrives and ca be turned off automatically shortly after.
+Cost estimation is additionally important for the model inference as well as during production. Although for production purposes the lambda functions from AWS can used. They can be triggered only when the inference request arrives and can be turned off automatically shortly after.
 
-For both training an inference purposes two GPU models were tested g3-4xlarge (NVIDIA Tesla M60) and p3-2xlarge (NVIDIA Tesla V100). The datasets on which the experiments were performed are the full cell target training and validation dataset. The resulting costs are presented in the Tables \ref{table:costs-training}, \ref{table:costs-inference}.
+For both training and inference purposes two GPU models were tested g3-4xlarge (NVIDIA Tesla M60) and p3-2xlarge (NVIDIA Tesla V100). The datasets on which the experiments were performed are the full cell target training and validation datasets. The resulting costs are presented in the Tables \ref{table:costs-training}, \ref{table:costs-inference}.
 
 \begin{table}[H]
     \centering
-    \caption{Costs estimations of AWS use for training models}
+    \caption{Cost estimation of AWS use for training models}
         \begin{adjustbox}{width=0.7\textwidth}
             \begin{tabular}{|c||c|c|c|c|}\hline
                 &Runtime (1 epoch)
                 &Dataset size
-                &Costs per minute
+                &Cost per minute
                 &Cost per epoch
                 \\\hline\hline
                 g3.4xlarge & $6.5 \text{min}$ & $18,432$ & $0.07125\$$ & $0.3$\\\hline
@@ -27,12 +27,12 @@ For both training an inference purposes two GPU models were tested g3-4xlarge (N
 
 \begin{table}[H]
     \centering
-    \caption{Costs estimations of AWS use for inference purposes}
+    \caption{Cost estimation of AWS use for inference purposes}
         \begin{adjustbox}{width=0.7\textwidth}
             \begin{tabular}{|c||c|c|c|c|}\hline
                 &Runtime
                 &Dataset size
-                &Costs per minute
+                &Cost per minute
                 &Cost of inference
                 \\\hline\hline
                 g3.4xlarge & $?\text{mins}$ & $2,048$ & $0.07125$ & $? \$$\\\hline
@@ -42,4 +42,4 @@ For both training an inference purposes two GPU models were tested g3-4xlarge (N
     \label{table:costs-inference}
 \end{table}
 
-In conclusion even though a p3 instance seems to be much more expensive, it is also much more efficient and the costs estimated to training times are significantly lower. That is why all the training experiments in this research were conducted on an NVIDIA Tesla V100 GPU.
+In conclusion, even though a p3 instance seems to be much more expensive, it is also much more efficient and the cost estimated for training times are significantly lower. That is why all the training experiments in this research were conducted on an NVIDIA Tesla V100 GPU.

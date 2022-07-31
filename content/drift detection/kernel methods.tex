@@ -1,10 +1,10 @@
-The test used in this work for determinig wether two distributions are the same or not is one of the multivariate kernel two-sample tests and called Maximum Mean Discrepancy or shotly MMD. The idea behid any two-sample testing is to choose two random samples, where each was taken from one of the two different distributions and afterwards to decide wether the difference in them is statistically significant. 
+The test used in this work for determinig whether two distributions are the same or not is one of the multivariate kernel two-sample tests and called maximum mean discrepancy or shotly MMD. The idea behid any two-sample testing is to choose two random samples, where each was taken from one of the two different distributions and afterwards to decide whether the difference in them is statistically significant. 
 
 MMD is a kernel-based method that can distinguish between two distributions based on their kernel mean embeddings  in a reproducing kernel Hilbert space (RKHS) (\cite{Rabanser_2018}).
 
-The idea behind a Hilbert space embedding distribution (or a kernel mean embedding) is to map a distribution into a point in a reproducing Hilbert space. After this step, one is allowed to use all powerful kernel methods for probability measures, resulting in methods like kernel two-sample testing. One of the widely known kernel methods if a support vector machines (SVM).
+The idea behind a Hilbert space embedding distribution (or a kernel mean embedding) is to map a distribution into a point in a reproducing Hilbert space. After this step, one is allowed to use all powerful kernel methods for probability measures, resulting in methods like kernel two-sample testing. One of the widely known kernel methods is a support vector machines (SVM).
 
-To understand why kernel mean embeddings are so successful one has to first understand what a kernel function is. With the help of kernel functions an inner product of elements $x, y \in \mathcal{X}$ in some high-dimensional feature space can be calculated. If kernel function is positive definite, then there always exists a dot product space $\mathscr{H}$ along with a function that maps a space $\mathcal{X}$ into space $\mathscr{H}$: $\phi : \mathcal{X} \rightarrow \mathscr{H}$ such that $k(x, y) = {\langle\phi(x), \phi(y)\rangle}_{\mathscr{H}}$ and most importantly there is no need for explicit computation of $\phi$ (\cite{Smola_2002}). Therefore if there exists an algorithm that can be expressed through dot product of $\langle x, y \rangle$ then kernel function can be applied to this dot product and this is called a \textit{kernel trick} (\cite{Smola_2002}).
+To understand why kernel mean embeddings are so successful one has to first understand what a kernel function is. With the help of kernel functions an inner product of elements $x, y \in \mathcal{X}$ in some high-dimensional feature space can be calculated. If the kernel function is positive definite, then there always exists a dot product space $\mathscr{H}$ along with a function that maps a space $\mathcal{X}$ into space $\mathscr{H}$: $\phi : \mathcal{X} \rightarrow \mathscr{H}$ such that $k(x, y) = {\langle\phi(x), \phi(y)\rangle}_{\mathscr{H}}$ and most importantly there is no need for explicit computation of $\phi$ (\cite{Smola_2002}). Therefore if there exists an algorithm that can be expressed through dot product of $\langle x, y \rangle$ then the kernel function can be applied to this dot product and this is called a \textit{kernel trick} (\cite{Smola_2002}).
 
 Now, kernel mean embedding actually extends the above mentioned feature map $\phi$ to the space of probability distributions. In this space each probability distribution will be mapped to a mean function defined as follows:
 
@@ -12,9 +12,9 @@ Now, kernel mean embedding actually extends the above mentioned feature map $\ph
     \phi(\mathds{P}) = \mu_{\mathds{P}} := \int_{\mathcal{X}}k(x, \cdot)d\mathds{P}(x)
 \end{equation}
 
-Here $k(x, \cdot)$ is a positive definite symmetric kernel function. Main goal here is to map a distribution $\mathds{P}$ to an point in the feature space $\mathscr{H}$ and this feature space is exactly an RKHS that corresponds to a kernel $k$. Such a mapping might be useful because it captures all information about the initial distribution $\mathds{P}$. This mapping $\mathds{P} \rightarrow \mu_\mathds{P}$ is injective. This means that $||\mu_\mathds{P} - \mu_\mathds{Q}||_{\mathscr{H}} = 0$ if and only if $\mathds{P} = \mathds{Q}$. Here it means that $\mathds{P}$ and $\mathds{Q}$ is the same distribution. Additionally since the mapping is injective, it is possible to use such characterization of a distribution to be used in two-sample homogenneity tests, which is exactly what is needed here. 
+Here $k(x, \cdot)$ is a positive definite symmetric kernel function. The main goal here is to map a distribution $\mathds{P}$ to a point in the feature space $\mathscr{H}$ and this feature space is exactly an RKHS that corresponds to a kernel $k$. Such a mapping might be useful because it captures all information about the initial distribution $\mathds{P}$. This mapping $\mathds{P} \rightarrow \mu_\mathds{P}$ is injective. This means that $||\mu_\mathds{P} - \mu_\mathds{Q}||_{\mathscr{H}} = 0$ if and only if $\mathds{P} = \mathds{Q}$. Here it means that $\mathds{P}$ and $\mathds{Q}$ is the same distribution. Additionally, since the mapping is injective, it is possible to use such characterization of a distribution to be used in two-sample homogeneity tests, which is exactly what is needed here. 
 
-To estimate a kernel mean embedding is much easier than to estimate a distribution itself. This approach is successfully used in data-generating processes, it also improves some statistical inference methods like two-sample testing. Such approach is also useful when instead of data points in testing and training datasets there are probability distributions. 
+To estimate a kernel mean embedding is much easier than to estimate a distribution itself. This approach is successfully used in data-generating processes, it also improves some statistical inference methods like two-sample testing. Such an approach is also useful when instead of data points in testing and training dataset, there are probability distributions. 
 
 Inner product $\langle x, y \rangle$ can be viewed as a similarity measure between $x$ and $y$. This inner product includes a class of linear functions and this class is too restrictive for many applications, however there is a simple possible extension to add non-linearities to it with the mapping: \begin{equation}
     \phi: \mathcal{X} \rightarrow \mathcal{F}
@@ -27,21 +27,20 @@ Here $\mathcal{F}$ is high-dimensional feature space and it is possible to evalu
 
 \begin{equation}
     k(x, y) := {\langle\phi(x), \phi(y)\rangle}_{\mathcal{F}}
-\end{equation} with  ${\langle \cdot, \cdot \rangle}_{\mathcal{F}}$ denoting an inner product in of $\mathcal{F}$.
+\end{equation} with  ${\langle \cdot, \cdot \rangle}_{\mathcal{F}}$ an inner product of $\mathcal{F}$.
 
-Now $ k(x, y)$ is already a non-linear similarity measure between $x$ and $y$. In order to get a non-linear version of the algorithms that use dot product simply sustitute $\langle x, y\rangle$ with $ {\langle\phi(x), \phi(y)\rangle}_{\mathcal{F}}$. 
+Now $ k(x, y)$ is already a non-linear similarity measure between $x$ and $y$. In order to get a non-linear version of the algorithms that use dot product simply substitute $\langle x, y\rangle$ with $ {\langle\phi(x), \phi(y)\rangle}_{\mathcal{F}}$. 
 
 Let's define the following mapping that represents in $\mathcal{X}$ any probability measure $\mathds{P}$ and denote it as $\mu_{\mathds{P}}$. This mapping is called a kernel mean embedding.
 
-\begin{definition}[Kernel mean embedding]
-    cite Berlinet and Thomas Agnan 2004
+\begin{definition}[Kernel mean embedding (\cite{Berlinet_2004})]
     The kernel mean embedding of probability measure in $M^1_+(\mathcal{X})$ into RKHS $\mathscr{H}$ endowed with a reproducing kernel $k: \mathscr{H} \times \mathscr{H} \rightarrow \mathds{R}$ is defined by a mapping 
     \begin{equation}
         \mu : M^1_+(\mathcal{X}) \rightarrow \mathscr{H}, \mathds{P} \rightarrow \int k(x, \cdot)d\mathds{P}(x)
     \end{equation}
 \end{definition}
 
-However, usually there is no access to the distribution $\mathds{P}$ and that is why one cannot directly compute $\mu_{\mathds{P}}$. Fortuntel, there are samples that can be drawn from this distribution and with their use one can make a good approximation of $\hat{\mu}_{\mathds{P}}$ of a true kernel mean embedding $\mu_{\mathds{P}}$. One of such approximations could be the following unbiased estimate:
+However, usually there is no access to the distribution $\mathds{P}$ and that is why one cannot directly compute $\mu_{\mathds{P}}$. Fortunately, there are samples that can be drawn from this distribution and with their use one can make a good approximation of $\hat{\mu}_{\mathds{P}}$ of a true kernel mean embedding $\mu_{\mathds{P}}$. One such approximation could be the following unbiased estimate:
 \begin{equation}
     \hat{\mu}_{\mathds{P}} := \frac{1}{n} \sum_{i=1}^n k(x_i, \cdot)
 \end{equation}
