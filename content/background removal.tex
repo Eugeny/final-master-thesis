@@ -1,4 +1,4 @@
-Rolling ball algorithm was introduced by \cite{Sternberg_1983} and is still widely used for processing medical and biological data. The idea of this algorithm is based on morphological opening of the image. 
+The rolling ball algorithm was introduced by \cite{Sternberg_1983} and is still widely used for processing medical and biological data. The idea of this algorithm is based on morphological opening of the image. 
 
 \begin{definition}[Morphological opening]
 	Morphological opening is an operation in image processing, when an image is first eroded and then dilated using the same structuring element. 
@@ -6,15 +6,15 @@ Rolling ball algorithm was introduced by \cite{Sternberg_1983} and is still wide
 
 Morphological opening is helpful for removing noisy elements, thin lines, while preserving bigger objects in the image (\cite{morph_open}).
 
-A structuring elements is an analogue of a kernel in image processing. It is a matrix of zeros and ones (true and false), where ones represent the elements that will be used to perform the morphological operation and others will be ignored (see an example in Figure \ref{fig:rolling-ball} (left)). Such a structuring element is applied across the whole input image producing a new image based on the rules of a morphological operation it performs.  
+A structuring element is an analog of a kernel in image processing. It is a matrix of zeros and ones (true and false), where ones represent the elements that will be used to perform the morphological operation and others will be ignored (see an example in Figure \ref{fig:rolling-ball} [left]). Such a structuring element is applied across the whole input image producing a new image based on the rules of a morphological operation it performs.  
 
-For example, morphological dilation takes a new value of the pixel as the maximum value of its neighbours within the structing element. Therefore after this operation lines will be thicker and in general objects will appear bigger.
+For example, morphological dilation takes a new value of the pixel as the maximum value of its neighbors within the structuring element. Therefore, after this operation, the lines will be thicker and in general objects will appear bigger.
 
-Whereas morphological erosion makes the pixel value as the minimum value of its neighbours within the structuring element. After this operation the floating pixels will be removed and all object become smaller and thinner.
+Whereas morphological erosion turns the pixel value into the minimum value of its neighbors within the structuring element. After this operation the floating pixels will be removed and all objects become smaller and thinner.
 
-\cite{Sternberg_1983} has extrapolated the operation of morphological opening from 2D into 3D space. He defines a new interpretaion of a 2D image in 3D world called umbra. Umbra can be described as a 3D plane, where the height of ech point is determined by its intesity value.
+\cite{Sternberg_1983} has extrapolated the operation of morphological opening from 2D into 3D space. He defines a new interpretation of a 2D image in a 3D world called umbra. Umbra can be described as a 3D plane, where the height of each point is determined by its intesity value.
 
-The structuring element for morphological opening of an umbra has to be then also a 3D object --- in this case a ball. Morphological opening of an umbra is a union of translations of the 3D structuring element that can be entirely contained inside it (see Figure \ref{fig:rolling-ball}). One can image the ball freely moving inside the volume constrained by the upper surface of an umbra. The opening then consists of all the pixels then can be reaches by the ball. The radius of the ball is a hyper-parameter which has to be tuned.
+The structuring element for morphological opening of an umbra has to be then also a 3D object --- in this case a ball. Morphological opening of an umbra is a union of translations of the 3D structuring element that can be entirely contained inside it (see Figure \ref{fig:rolling-ball}). One can imagine the ball freely moving inside the volume constrained by the upper surface of an umbra. The opening then consists of all the pixels that can be reached by the ball. The radius of the ball is a hyper-parameter which has to be tuned.
 
 \begin{figure}[H]
     \centering
@@ -25,7 +25,7 @@ The structuring element for morphological opening of an umbra has to be then als
     \label{fig:rolling-ball}
 \end{figure}
 
-Subtracting the background with rolling ball algorithm unfortunately is still not enough to get a reasonably clean signal of Golgi Apparatus from fluorescence imaging, as a lot of background noise will still be present there. In Figure \ref{subfig:vanilla-mask}a one can see an fluorescence image preprocessed with a rolling ball algorithm. Let's turn it into a binary image that you can in Figure \ref{subfig:vanilla-mask}b. 
+Subtracting the background with the rolling ball algorithm unfortunately is still not enough to get a reasonably clean signal of Golgi apparatus from fluorescence imaging, as a lot of background noise will still be present there. In Figure \ref{subfig:vanilla} one can see a fluorescence image preprocessed with a rolling ball algorithm. Let's turn it into a binary image that can be seen in Figure \ref{subfig:vanilla-mask}. 
 \begin{figure}[htb]
 	\centering
 	\begin{subfigure}[b]{0.22\textwidth}
@@ -55,10 +55,10 @@ Subtracting the background with rolling ball algorithm unfortunately is still no
 		\caption{}
 		\label{subfig:clipping-mask}
 	\end{subfigure}
-	   \caption{(a) Vanilla pre-processing with automatic background removal algorithm only; (b) masked or subfigure (a); (c) Additional clipping of lower intensities after vanilla pre-processing; (d) mask of subfigure (c)}
+	   \caption{(a) Vanilla preprocessing with automatic background removal algorithm only; (b) masked or subfigure (a); (c) Additional clipping of lower intensities after vanilla pre-processing; (d) mask of subfigure (c)}
 	   \label{fig:pre-processing-golgi}
 \end{figure}
-It clearly still contains a lot of background noise of low intensity and which was not visible for an eye. In order to get rid of it one could clip lower intensities of the image via the following approach:
+It clearly still contains a lot of background noise of low intensity which was not visible for an eye. In order to get rid of it one could clip lower intensities of the image via the following approach:
 \begin{lstlisting}
 	import numpy as np
 		
@@ -69,4 +69,4 @@ It clearly still contains a lot of background noise of low intensity and which w
 		return image
 \end{lstlisting}
 
-The result of the clipped image and its mask are illustated in the Figure \ref{subfig:clipping}, \ref{subfig:clipping-mask} correspondingly. It contains almost no background noise now. Such additional clipping might improve the results slightly.
+The result of the clipped image and its mask are illustated in Figure \ref{subfig:clipping}, \ref{subfig:clipping-mask} correspondingly. It contains almost no background noise now. Such additional clipping might improve the results slightly.

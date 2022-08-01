@@ -38,7 +38,7 @@ One clear downside of this approach though is that images which histograms have 
 
 Unfortunately this method did not perfom well even for the images that have an equal amount of foreground and background. And the reason for that is a mentioned above non-uniform illumination within the images. For visual comparison of global thresholding applied to difficult images see Figure \ref{fig:thresholding-bad-conditions}a, b, c Global. \ref{fig:thresholding-bad-conditions}c is an image with equal brightness level, however even there some mistakes do appear.
 
-However there is another better approach that performs well in such conditions: \textbf{local thresholding}. For nuclei segmentation exactly this algorithm was chosen. It is implemented in \textit{skimage.filters} and can be used in the following way:
+However, there is another better approach that performs well in such conditions: \textbf{local thresholding}. For nuclei segmentation exactly this algorithm was chosen. It is implemented in \textit{skimage.filters} and can be used in the following way:
 
 \begin{lstlisting}
   skimage.filters.local_threshold(img, block_size=7, method='gaussian', offset=0)
