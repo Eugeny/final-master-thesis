@@ -6,7 +6,7 @@ There are two possible reactions after the drift is detected: alert the user tha
 
 The goal of outlier detection is to decide on the single instances whether or not it is different from training data or unusual in one way or another. Outliers might appear in both training and predictions datasets.
 
-Data drift and outlier detection can co-exist. It might be that the input has drifted, but there are no outliers, it might be that there are a lot of outliers, but the data was not drifted. (\cite{samuylova_2021}).
+Data drift and outlier detection can co-exist. It might be that the input has drifted, but there are no outliers, it might be that there are a lot of outliers, but the data was not drifted (\cite{samuylova_2021}).
 
 The key observation here is that the drift detector should be robust to outliers. The system should not send an alert as soon as it sees a suspicious sample due to the fact that outliers might be present in the original data distribution as well. But the alert should happen when there are many such samples. To compare original training data distribution with the new one from inputs different statistical tests like Kolmogorov-Smirnov, Chi-squared and others can used.
 

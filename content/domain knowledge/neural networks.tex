@@ -94,7 +94,7 @@ Here one can obtain an unbiased estimator of a true gradient on a mini-batch of 
 		\item 4. Compute update: $\Delta \theta_t = \frac{\text{RMS}[\Delta \theta]_{t-1}}{\text{RMS}[g]_t} \hat{g_t}$
 		\item 5. Accumulate updates: $E[\Delta \theta^2]_t = \rho E[\Delta \theta^2]_{t-1} + (1 - \rho) \Delta \theta^2_t$
 		\item 6. Apply update: $\theta_{t+1} = \theta_t + \Delta \theta_t$ \\
-		RMS here is the root mean square. [cite Zeiler 2012]
+		RMS here is the root mean square (\cite{Zeiler_2012}).
 	\end{algorithm}
 \end{definition}
 
@@ -117,7 +117,7 @@ This is one of the simplest layers in a feedforward neural networks and input an
 
 Since essentially one of the main tasks of this research is to create a deep learning model that is able to predict a fluorescence image from a DIC image, the problem statement could be narrowed down to the following: predict an intensity high-resolution image from another intensity high-resolution image based on the features of the object morphology in it. Such problem is very common in the field of image analysis and one of the popular deep learning tools for solving such problems is convolutional neural network (CNN) or more specifically a UNet.
 
-CNNs are able to capture nonlinear relationships over large areas of images, they greatly improve performance for image recognition tasks in comparison to classical machine learning methods [TODO cite Oukomol]. The word "convolutional" suggests that the convolution operation should be used in at least one of the layers there.  
+CNNs are able to capture nonlinear relationships over large areas of images, they greatly improve performance for image recognition tasks in comparison to classical machine learning methods (\cite{Ounkomol_2018}). The word "convolutional" suggests that the convolution operation should be used in at least one of the layers there.  
 
 \begin{definition}[Convolutional layer]
 	A convolutional layer is a trainable function with parametrized kernel $K \in \mathbb{R}^{F \times F \times C}$ and bias $b \in \mathbb{R}$ that is usually denoted via the operator $(\cdot * \cdot)$. By transforming an input $x \in \mathbb{R}^{W, H, C}$ it produces an output $S$
@@ -131,7 +131,7 @@ CNNs are able to capture nonlinear relationships over large areas of images, the
 		\end{equation}
 \end{definition}
 
-Convolutional layer like a fully connected layer can be viewed a linear transformation as well. However, there are three main advantages that leverage convolutional layers for image processing in comparison to fully connected layers: sparse interactions, parameter sharing and equivariant representations. Image is a very redundant way of representing the semantic meaning hidden within it. Having a value of one pixel, the probability that the neighboring one will be of the same color is very high. Sparsity of interactions can be described by an example: usually a high-resolution image might have millions of pixels, however it is possible to detect smaller and very important features like contrast changes, edges, and shapes using a kernel consisting of only a few hundred pixels. By applying kernels (or filters) on the image locally, one will infer many of these features across the whole image. Such an approach reduces the memory needed for parameter storing and improves its statistical eﬃciency [cite DL-book]. Parameter sharing refers to the fact that instead of learning a separate set of parameters for every location within the image, will be learned only one set of parameters will be learned and applied across all image locations. Lastly, equivariance here means that convolution operation is equivarient to the shifts in the image.
+Convolutional layer like a fully connected layer can be viewed a linear transformation as well. However, there are three main advantages that leverage convolutional layers for image processing in comparison to fully connected layers: sparse interactions, parameter sharing and equivariant representations. Image is a very redundant way of representing the semantic meaning hidden within it. Having a value of one pixel, the probability that the neighboring one will be of the same color is very high. Sparsity of interactions can be described by an example: usually a high-resolution image might have millions of pixels, however it is possible to detect smaller and very important features like contrast changes, edges, and shapes using a kernel consisting of only a few hundred pixels. By applying kernels (or filters) on the image locally, one will infer many of these features across the whole image. Such an approach reduces the memory needed for parameter storing and improves its statistical eﬃciency \cite{Goodfellow_2016}. Parameter sharing refers to the fact that instead of learning a separate set of parameters for every location within the image, will be learned only one set of parameters will be learned and applied across all image locations. Lastly, equivariance here means that convolution operation is equivarient to the shifts in the image.
 
 \begin{definition}[Stride]
 	During the computation of convolution, the kernel starts sliding at the upper left corner of the input tensor, covering all locations while heading to the right and down. The step with which the window slides is called \textit{stride}. 
@@ -142,7 +142,7 @@ Convolutional layer like a fully connected layer can be viewed a linear transfor
 \end{definition}
 
 \begin{definition}[Max-pooling layer]
-	Maximum pooling operation reports the maximum output within a rectangular neighborhood [cite DL-book].
+	Maximum pooling operation reports the maximum output within a rectangular neighborhood (\cite{Goodfellow_2016}).
 \end{definition}
 
 
@@ -157,12 +157,11 @@ Since adding two linear functions together would produce a linear function, it i
 		& \mu_B = \frac{1}{m} \sum_i^m x^{(i)} \\
 		\end{split}
 	\end{equation}
-	where $\gamma$ and $\beta$ are learnable parameters, $\mu_B$ and $\sigma^2_B$ are the mean and standard deviation of the batch.
-	[cite Ioffe and Szegedy, 2015]
+	where $\gamma$ and $\beta$ are learnable parameters, $\mu_B$ and $\sigma^2_B$ are the mean and standard deviation of the batch (\cite{Ioffe_2015}).
 \end{definition}
 
 \begin{definition}[Dropout layer]
-	Dropout is a technique that randomly sets some weights (units) to zero [cite Srivastava, Hinton 2014]. It leads to the training of several smaller networks that share the parameters. If a mask vector $\mu$ specifies which units are included in training, then dropout's objective to be minimized becomes: $\mathbb{E}_\mu J(\theta, \mu)$. Visually dropout is presented in the Figure \ref{fig:dropout}.
+	Dropout is a technique that randomly sets some weights (units) to zero \cite{Srivastava_2014}. It leads to the training of several smaller networks that share the parameters. If a mask vector $\mu$ specifies which units are included in training, then dropout's objective to be minimized becomes: $\mathbb{E}_\mu J(\theta, \mu)$. Visually dropout is presented in the Figure \ref{fig:dropout}.
 \end{definition}
 
 %TODO add figure reference!
@@ -188,18 +187,17 @@ Since adding two linear functions together would produce a linear function, it i
 The models in this project mostly use ELU activations as ELU provides a better signal flow between the layers by not cutting off the negative values completely.
 
 \begin{definition}[UNet]
-	UNet is fully convolutional neural network with U-shaped encoder-decoder network architecture. [cite Ronneberger].
+	UNet is fully convolutional neural network with U-shaped encoder-decoder network architecture (\cite{Ronneberger_2015}).
 \end{definition}
 
 The encoder is a common CNN, consisting of the repeated
 block of two $3 \times 3$ convolutions, followed by
-an activation function, and a $2 \times 2$ max-pooling operation with stride 2. At each ecnoder step  the number of feature channels doubles. The decoder is also a CNN, consisting of repeated blocks of transposed convolution, that halves the
-number of feature channels, followed by a concatenation with a corresponding output from an encoder, and two $3 \times 3$ convolutions, followed by a ReLU. The last decoder layer is a $1 \times 1$ convolution to map the tensor to the number of output image channels needed. Skip-connections is a very important part of UNet as they allow to the flow of high-resolution features from the encoder to the decoder that in turn allows to restore a corresponding high-resolution image.
+an activation function, and a $2 \times 2$ max-pooling operation with stride 2. At each ecnoder step  the number of feature channels doubles. The decoder is also a CNN, consisting of repeated blocks of transposed convolution, that halves the number of feature channels, followed by a concatenation with a corresponding output from an encoder, and two $3 \times 3$ convolutions, followed by a ReLU. The last decoder layer is a $1 \times 1$ convolution to map the tensor to the number of output image channels needed. Skip-connections is a very important part of UNet as they allow to the flow of high-resolution features from the encoder to the decoder that in turn allows to restore a corresponding high-resolution image.
 
 \begin{definition}[Autoencoder]
 	Autoencoder is an unsupervised learning technique in neural networks for the representation learning purposes. Autoencoder consists of an encoder that compresses data into a lower dimensional representation and a decoder that restores the original input from the encoded representation.
 \end{definition}
 
 \begin{definition}[Overfitting]
-    "[A] Hypothesis overfits the training samples if some other hypothesis that fits the training samples less well actually performs better over the entire distribution of instances" (cite p67 Mitchell Machine Learning 1997). The way to avoid overfitting that happened to the models in Sections [TODO cite sections] are discussed in Section [cite regularization section].
+    "[A] Hypothesis overfits the training samples if some other hypothesis that fits the training samples less well actually performs better over the entire distribution of instances" (\cite{mitchell_1997}). The way to avoid overfitting that happened to the models in Section \ref{section:er} are discussed in Section \ref{section:regularization}.
 \end{definition}

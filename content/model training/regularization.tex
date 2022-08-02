@@ -4,22 +4,22 @@ Regularization is mostly used to prevent a deep learning model to overfitting on
 \begin{itemize}
 	\item Early-stopping
 
-	Overfitting can be detected via visualizing train and validation losses. Training behaviour at first will be the usual one, meaning that both train and validation losses are gradually decreasing, however at some point the train loss continues to decrease, whereas the validation loss suddenly starts to increase (see Figure \ref{fig:er-overfit}). Since the model has not seen any of the data from the validation set, it means that it loses its ability to generalize on unseen data, while improving its perfomance on the seen data (train set). This does not happen during earlier epochs. Assuming that the model learns a complex decision surface while training, the weights of the model will be quite small and random with the correct weight initialization and therefore the best decision surface during the early epochs would be a smooth one. But during the later ones the difference in values of the weights grows and they become dissimilar which also means that the decision surface becomes more complex and the model is now able to fit not only the training data itself, but also its noise [cite p111 Mitchell Machine Learning 1997]. And that is why stopping before the model becomes too complex, meaning to stop before the overfitting point, mitigates this problem.
+	Overfitting can be detected via visualizing train and validation losses. Training behaviour at first will be the usual one, meaning that both train and validation losses are gradually decreasing, however at some point the train loss continues to decrease, whereas the validation loss suddenly starts to increase (see Figure \ref{fig:er-overfit}). Since the model has not seen any of the data from the validation set, it means that it loses its ability to generalize on unseen data, while improving its perfomance on the seen data (train set). This does not happen during earlier epochs. Assuming that the model learns a complex decision surface while training, the weights of the model will be quite small and random with the correct weight initialization and therefore the best decision surface during the early epochs would be a smooth one. But during the later ones the difference in values of the weights grows and they become dissimilar which also means that the decision surface becomes more complex and the model is now able to fit not only the training data itself, but also its noise (\cite{mitchell_1997} p.111). And that is why stopping before the model becomes too complex, meaning to stop before the overfitting point, mitigates this problem.
 
 	\item \emph{L1}- \emph{L2}-regularization
 
-	The complexity of the deep model grows with the number of features it uses, sometimes the model may pay attention to the features that are not important to the outcome, or even considers noise to be a feature. To prevent this one should decrease the weights associated with useless features, however one cannot know ahead of time which of them should be ignored, therefore one may limit them all [cite Ying 2019]. In order to do that, a penalty term is added to the loss function:
+	The complexity of the deep model grows with the number of features it uses, sometimes the model may pay attention to the features that are not important to the outcome, or even considers noise to be a feature. To prevent this one should decrease the weights associated with useless features, however one cannot know ahead of time which of them should be ignored, therefore one may limit them all (\cite{Ying_2019}). In order to do that, a penalty term is added to the loss function:
 
 	\begin{equation}
 	\tilde{L}(Y, M(X, \theta)) = L(Y, M(X, \theta)) + \lambda R(\theta)
 	\end{equation}
 
-	for some $\lambda > 0$. This is called a \emph{soft-constraint} optimization. When $R(\theta)$ is of the form $R(\theta) = ||\theta||^2_2 = \sqrt{\sum\limits_i \theta_i^2}$ this is called \emph{L2}-regularization. When it is of form $R(\theta) = ||\theta||_1 = \sum\limits_i |\theta_i|$ this is called \emph{L1}-regularization. \emph{L2}-regularization used in combination with backpropagation is equivalent to weight decay. Weight decay is defined by [cite Hanson and Pratt 1988] as follows:
+	for some $\lambda > 0$. This is called a \emph{soft-constraint} optimization. When $R(\theta)$ is of the form $R(\theta) = ||\theta||^2_2 = \sqrt{\sum\limits_i \theta_i^2}$ this is called \emph{L2}-regularization. When it is of form $R(\theta) = ||\theta||_1 = \sum\limits_i |\theta_i|$ this is called \emph{L1}-regularization. \emph{L2}-regularization used in combination with backpropagation is equivalent to weight decay. Weight decay is defined by \cite{Hanson_1988} as follows:
 	\begin{equation}
 		\theta_{t+1} = (1 - \lambda)\theta_t - \alpha \frac{\partial L}{\partial \theta_t}
 	\end{equation}
 
-	where $\alpha$ is a learning rate. Weight decay successfully has more effect on the weights along which the gradient change is smaller [cite DL-book p229]. \emph{L1}-regularization induces sparsity of the weights by assigning some of them to zero, this could also be considered as a feature selection approach.
+	where $\alpha$ is a learning rate. Weight decay successfully has more effect on the weights along which the gradient change is smaller \cite{Goodfellow_2016}. \emph{L1}-regularization induces sparsity of the weights by assigning some of them to zero, this could also be considered as a feature selection approach.
 
 	\item Regularization layers
 
@@ -27,9 +27,9 @@ Regularization is mostly used to prevent a deep learning model to overfitting on
 
 	\item Network reduction
 
-	Since learning a too complex and noise-fitting decision surface might be a frequent cause of an overfit, another way to mitigate this would to be reduce the space of the possible decision surfaces and therefore make the surface simpler so that it cannot fit into the noise from the data. By changing the number of adaptive parameters in the network, the complexity can be varied [cite Page 332 Bishop book].
+	Since learning a too complex and noise-fitting decision surface might be a frequent cause of an overfit, another way to mitigate this would to be reduce the space of the possible decision surfaces and therefore make the surface simpler so that it cannot fit into the noise from the data. By changing the number of adaptive parameters in the network, the complexity can be varied (\cite{Bishop_2006} p.332).
 
 	\item Expansion of the training data
 
-	For a successful training a model needs to have a sufficient amount of quality samples. An expanded dataset can improve the quality of the predictions [cite Ying 2019], however only when the model has already performed well on the initial dataset. If the model was performing badly initially, adding more data will not solve the problem. Here having $27,264$ crops of data the model was trained on $5,376$ crops only (2 96-well plates) to find the best structure and regularization first, afterwards the model was retrained using more data and the PCC loss improves from $0.77$, to $0.93$.
+	For a successful training a model needs to have a sufficient amount of quality samples. An expanded dataset can improve the quality of the predictions \cite{Ying_2019}, however only when the model has already performed well on the initial dataset. If the model was performing badly initially, adding more data will not solve the problem. Here having $27,264$ crops of data the model was trained on $5,376$ crops only (two 96-well plates) to find the best structure and regularization first, afterwards the model was retrained using more data and the PCC loss improves from $0.77$, to $0.93$.
 \end{itemize}
