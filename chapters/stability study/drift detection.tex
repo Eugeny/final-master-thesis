@@ -12,14 +12,14 @@
         \input{content/drift detection/dd.tex}
     \subsubsection{Online drift detection experiments}
             \input{content/drift detection/online.tex}
-            \paragraph{Not fixed cells imaging as corrupted input}
+            \paragraph{Impact of cell fixation}
                 In section \ref{section:gfp} the difference between fixed and not fixed cells was mentioned. Visual analysis of model's predictions for not fixed cells after training it on fixed ones has shown that the model was not able to generalize well on them. This is the reason why it would be important to alarm the end user to not rely on predictions when such a situation occurs. In this case an online drift detector trained using not corrupted data used for ER training first and tested on not fixed ER cells. The results of this test are shown in Figure \ref{fig:online-drift-not-fixed}.
-                \begin{figure}[H]
+                \begin{figure}[htb]
                     \begin{center}
-                        \includegraphics[width=0.5\linewidth]{bilder/drift-detection/online-fixed-vs-not-fixed.jpg}
+                        \includegraphics[width=0.5\linewidth]{bilder/drift-detection/online-fixed-vs-not-fixed.png}
                         \caption{Online drift detection of not fixated cells}\label{fig:online-drift-not-fixed}
                     \end{center}
                 \end{figure}
                 The ERTs for corrupted data (left) are lower from ERT for true input. The ROC-AUC score for the separability is $0.91$ and the best threshold is $6$. However, not corrupted data (fixed cells) mostly have an ERT of $7$, whereas corrupted data (not fixed cells) have an ERT of $4$. Both classes have ERTs that are very close to the threshold, but are able to separate the classes well enough.
 
-                TODO add metrics
+                Application of a usual drift detection algorithm with the use of ER model the false positive rate on not corrupted (fixed) cells was $0.075$. Whereas all fixed cells were recognized as drift.  

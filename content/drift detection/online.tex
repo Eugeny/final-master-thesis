@@ -3,7 +3,7 @@ MMD algorithm in \textit{alibi-detect} library has an online version, which also
 It is usually recommened to reduce the dimensionality of the data before feeding it into the algorithm. But in this case the performance was exceptional even for high-dimensional embeddings of the UNET model. Nevertheless, there are also options on how to reduce the dimensionality of the data from the authors of the framework.
 
 This algorithm was trained on the same uncorrupted training data sent through the embeddings of a nucleus UNet. Yet, test crops are fed into a detector in a consecutive way --- in case of no corruptions present it is not enough to feed only several crops from one image, as the algorithm requires more data to be fed into the detector until it makes a decision. For example, ERT of not corrupted inputs can be even up to $180$ crops until a detector alerts a false positive detection. On the contrary for corrupted inputs drift detector needs normally $\leq 6$ crops (see Figure \ref{fig:online-ert})
-\begin{figure}[H]
+\begin{figure}[htb]
 	\begin{center}
 		\includegraphics[width=0.6\linewidth]{bilder/drift-detection/online.png}
 		\caption{Expected runtime (ERT) for corrupted and in-distribution data}\label{fig:online-ert}
@@ -37,7 +37,7 @@ Having such a detector one measures ERTs for not corrupted inputs, then for corr
 
 Additionally, research has been performed on the influence of the hyperparameters to an online MMD drift detector, specifically: test window size, specified ERT. The results are presented in Tables \ref{tab:test-window-size-influence}, \ref{tab:ert-influence}. Test window size influences how fast and how sensitive the reaction of an algorithm should be and the ideal value in this case would be $10$ crops, during this time a threshold will be established. In case of ERT as a hyperparameter as long as it is big enough the score does not change very much.
 
-\begin{table}[H]
+\begin{table}[htb]
     \centering
     \caption{Test window size influence on separability}
         \begin{adjustbox}{width=0.6\textwidth}

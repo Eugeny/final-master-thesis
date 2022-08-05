@@ -29,7 +29,7 @@ In contrast to adding a constant value pixelwise to an image in order to change 
 For both contrast and brightness changes one can use $cv2.convertScaleAbs()$ from the OpenCV library. This method directly accepts gain and bias parameters and clips the image to stay within the allowed range of values.
 
 The values of hyperparameters used in corruptions (kernel radius, gain and bias) are stretched across the range of severity levels and presented in Table \ref{table:corruption-hyperparameters}.
-\begin{table}[H]
+\begin{table}[htb]
     \centering
     \caption{Hyperparameterization for different artificial corruption severities}
         \begin{adjustbox}{width=1\textwidth}
@@ -65,7 +65,7 @@ Severity level of $-5$ for contrast represents a highly contrastive image, while
 \end{figure}
 
 One can observe the input image change for each of the corruptions along with the change of prediction of nuclei model in Figure \ref{fig:artificial-corruptions}. It can be clearly seen that the model's predictions are quite stable towards different brightness levels and contrast. However, the predictions on the crops are very sensible towards defocus blur corruption: DIC images with defocus blur levels $1-4$ are almost indistinguishable from the original image, yet the model's predictions degrade quite fast. This can be explained by the fact that the training dataset contains quite diverse data in terms of contrast and brightness levels and, as a result, the model is more stable towards these changes. Using defocus blur as an augmentation will help to solve this problem. This will be described in more detail in Section \ref{section:augments-againts-corruptions}.
-\begin{figure}[H]
+\begin{figure}[htb]
 	\begin{center}
 		\includegraphics[width=0.5\linewidth]{bilder/corruptions-loss.png}
 		\caption{Change of PCC loss for artificial corruptions}\label{fig:corruptions-loss}
