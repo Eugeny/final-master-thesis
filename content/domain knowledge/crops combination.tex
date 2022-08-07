@@ -8,10 +8,11 @@ Accepted areas from each of the crops have to follow each other without any spac
 \end{equation}
 When step size $s$ is equal to window size $w$, there is no overlap between the windows.
 
-\begin{figure}[H]
+\begin{figure}[htb]
 	\begin{center}
-		\includegraphics[width=0.3\linewidth]{bilder/sliding-window.png}
-		\caption{Sliding window approach for fluorescence prediction}\label{fig:sliding-window}
+		\includegraphics[width=0.5\linewidth]{bilder/sliding-window.png}
+		\caption[Sliding window approach for fluorescence prediction]%
+		{Sliding window approach for fluorescence prediction. Instead of predicting each crop from the image subsequently overlapping crops are used with only the center area being accepted. The size of the not accepted area is defined by a \textit{border size} value. Having a fixed \textit{window size} (defined by a neural network input), the \textit{step size} is defined dynamically.}\label{fig:sliding-window}
 	\end{center}
 \end{figure}
 The reason why the full prediction is not accepted to form the output lies in the following: trained models are less accurate on the borders of the crops rather than in the center. Most of the times there are cells on the borders of the crops that were sliced and therefore it might be impossible to make a good prediction for them just due to the lack of input information. Therefore, the step size has to be smaller than the window size, so that the windows are overlapping and for each prediction we use only the image center and are allowed to ignore predictions on the border (see the comparison between different border sizes in Figure \ref{fig:crops-combination}). Such an approach helps to reduce the effect of grid visibility on the image composed of many small crops. This can be seen in the left part of Figure 5 as opposed to the non-visible borders in the same Figure on the right. This would of course take more time to created the predictions, however, the speed is less crucial in comparison to the accuracy of the predictions.
@@ -19,6 +20,7 @@ The reason why the full prediction is not accepted to form the output lies in th
 \begin{figure}[htb]
 	\begin{center}
 		\includegraphics[width=\linewidth]{bilder/crops_combination/crops-combination.png}
-		\caption{Difference of overlap between predictions on the resulting image}\label{fig:crops-combination}
+		\caption[Difference of overlap between predictions on the resulting image]%
+		{Difference of overlap between predictions on the resulting image. Since predictions tend to give better results in center of the crops, combination of overlapping prediction (right, with not accepted border of size $36$ pixels) results in a visually better overall image rather then combination of predictions without any overlaps (left, the whole crop is accepted). Crops intersections are highlighted in green: strongly visible on the left, and almost invisible on the right.}\label{fig:crops-combination}
 	\end{center}
 \end{figure}

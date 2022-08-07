@@ -1,4 +1,4 @@
-\subsection{Model training}
+\subsection{Setup procedures}
     \subsubsection{Neural network architecture}
         \input{content/nn architecture.tex}
     \subsubsection{Available data}
@@ -10,12 +10,15 @@
         \input{content/model training/augmentations.tex}
     \subsubsection{Model setup}
         \paragraph{Weight initialization}
-        In order to achieve best predictions results it is very important to pre-setup a model correctly. Since the architecture used here is very similar to the one used in LaChance paper, the setup configuration is similar as well.  
-        \input{content/model training/wi.tex}
+            In order to achieve best predictions results it is very important to pre-setup a model correctly. Since the architecture used here is very similar to the one used in LaChance paper, the setup configuration is similar as well.  
+            \input{content/model training/wi.tex}
         \paragraph{Regularization}
-        \label{section:regularization}
-        \input{content/model training/regularization.tex}
+            \label{section:regularization}
+            \input{content/model training/regularization.tex}
         \paragraph{Optimizers}
-        \input{content/model training/optimizers.tex}
+            \input{content/model training/optimizers.tex}
     \subsubsection{Model evaluation: metrics for downstream tasks}
-        \input{chapters/implementation/model evaluation.tex}
+        \label{section:model-evaluation}
+        \input{content/evaluation/downstrem metrics.tex}
+    \subsubsection{Crops combination technique}\label{par:crops-combination}
+        \input{content/domain knowledge/crops combination.tex}

@@ -45,7 +45,7 @@
 	\end{align}
 	where $\bar{y}$, $\bar{y}^\prime$ are means of the ground truth and predicted images respectively.
 	
-	There are two important values here, first Pearson correlation coefficient (PCC further) and PCC loss. PCC in a measure of similiraity between two matrices in this case, with values between $-1$ and $1$, with $1$ being a positive correlation. On the contrary PCC loss is a measure of dissimilarity between two matrices, with values between $0$ and $1$, with $0$ meaning that matrices are the same.
+	There is an important distinction to be made here: firstly, Pearson correlation coefficient (PCC further) in a measure of similarity between two data sequences (matrices in this case), with values between $-1$ and $1$, with $1$ being a positive correlation, secondly, PCC loss is a measure of dissimilarity between two matrices, with values between $0$ and $1$, with $0$ meaning that matrices are the same.
 
 	This loss is widely used in cell biology for comparison of co-localization between the proteins. PCC is also popular in computer vision where it is utilized for the determination of image similarity in terms of spatial-intensity (\cite{Lachance_2020}).
 \end{definition}
@@ -75,8 +75,8 @@ Here one can obtain an unbiased estimator of a true gradient on a mini-batch of 
 	\hat{g} = \frac{1}{m} \nabla_\theta \sum_{i} L(y^{(i)}, M(x^{(i)}, \theta))
 \end{equation}
 
-\begin{definition}[Stohastic gradient descent]
-	Stohastic gradient descent is an optimization algorithm where the parameters $\theta$ are iteratively updated every mini-batch of data by the following rule:
+\begin{definition}[Stochastic gradient descent]
+	Stochastic gradient descent is an optimization algorithm where the parameters $\theta$ are iteratively updated every mini-batch of data by the following rule:
 	\begin{equation}
 		\theta_{k+1} = \theta_k - \alpha \frac{1}{m} \nabla_\theta \sum_{i} L(y^{(i)}, M(x^{(i)}, \theta))
 	\end{equation}
@@ -84,7 +84,7 @@ Here one can obtain an unbiased estimator of a true gradient on a mini-batch of 
 \end{definition}
 
 \begin{definition}[Adadelta optimizer]
-	An Adadelta optimizer is a more sophisticated optimization technique, that follows the subsequent algorithm for the parameter update:
+	An Adadelta optimizer is a more sophisticated optimization technique, that follows algorithm \ref{alg:adadelta} for the parameter update.
 	\begin{algorithm}
 		\caption{Adadelta optimization}\label{alg:adadelta}
 		\item 1. $E[g]^2_0 = 0$ and $E[\Delta \theta^2]_0 = 0$
@@ -96,14 +96,6 @@ Here one can obtain an unbiased estimator of a true gradient on a mini-batch of 
 		\item 6. Apply update: $\theta_{t+1} = \theta_t + \Delta \theta_t$ \\
 		RMS here is the root mean square (\cite{Zeiler_2012}).
 	\end{algorithm}
-\end{definition}
-
-\begin{definition}[Stohastic gradient descent (SGD) optimizer]
-	Stohastic gradient descent is an optimization algorithm where the parameters $\theta$ are iteratively updated every mini-batch of data by the following rule:
-	\begin{equation}
-		\theta_{k+1} = \theta_k - \alpha \frac{1}{m} \nabla_\theta \sum_{i} L(y^{(i)}, M(x^{(i)}, \theta))
-	\end{equation}
-	where $\alpha$ is a tuneable parameter called \textit {learning rate}.
 \end{definition}
 
 \begin{definition}[Feedforward fully connected layer]
@@ -131,7 +123,7 @@ CNNs are able to capture nonlinear relationships over large areas of images, the
 		\end{equation}
 \end{definition}
 
-Convolutional layer like a fully connected layer can be viewed a linear transformation as well. However, there are three main advantages that leverage convolutional layers for image processing in comparison to fully connected layers: sparse interactions, parameter sharing and equivariant representations. Image is a very redundant way of representing the semantic meaning hidden within it. Having a value of one pixel, the probability that the neighboring one will be of the same color is very high. Sparsity of interactions can be described by an example: usually a high-resolution image might have millions of pixels, however it is possible to detect smaller and very important features like contrast changes, edges, and shapes using a kernel consisting of only a few hundred pixels. By applying kernels (or filters) on the image locally, one will infer many of these features across the whole image. Such an approach reduces the memory needed for parameter storing and improves its statistical eﬃciency (\cite{Goodfellow_2016}). Parameter sharing refers to the fact that instead of learning a separate set of parameters for every location within the image, will be learned only one set of parameters will be learned and applied across all image locations. Lastly, equivariance here means that convolution operation is equivarient to the shifts in the image.
+Convolutional layer like a fully connected layer can be viewed a linear transformation as well. However, there are three main advantages that leverage convolutional layers for image processing in comparison to fully connected layers: sparse interactions, parameter sharing and equivariant representations. An image is a very redundant way of representing the semantic meaning hidden within it. Having a value of one pixel, the probability that the neighboring one will be of the same color is very high. Sparsity of interactions can be described by an example: usually a high-resolution image might have millions of pixels, however it is possible to detect smaller and very important features like contrast changes, edges, and shapes using a kernel consisting of only a few hundred pixels. By applying kernels (or filters) on the image locally, one will infer many of these features across the whole image. Such an approach reduces the memory needed for parameter storing and improves its statistical eﬃciency (\cite{Goodfellow_2016}). Parameter sharing refers to the fact that instead of learning a separate set of parameters for every location within the image, only one set of parameters will be learned and applied across all image locations. Lastly, equivariance here means that convolution operation is equivarient to the shifts in the image.
 
 \begin{definition}[Stride]
 	During the computation of convolution, the kernel starts sliding at the upper left corner of the input tensor, covering all locations while heading to the right and down. The step with which the window slides is called \textit{stride}. 
@@ -141,12 +133,22 @@ Convolutional layer like a fully connected layer can be viewed a linear transfor
 	When convolution is applied several points on the perimeter of the input tensor will be lost and the ouput tensor will have smaller spatial dimension than the input one. One can fix this by adding a few more pixels outside the perimeter, to preserve the dimension of the output to be same as input. The amount of pixels added is called \textit{padding}. 
 \end{definition}
 
+Visual examples of what stride and padding represent are shown in Figure \ref{fig:stride}.
+\begin{figure}[htb]
+	\begin{center}
+		\includegraphics[width=0.6\linewidth]{bilder/stride_padding.png}
+		\caption[Stride and padding example]%
+		{Stride and padding example. Taken from \cite{stride}.}
+		\label{fig:stride}
+	\end{center}
+\end{figure}
+
 \begin{definition}[Max-pooling layer]
 	Maximum pooling operation reports the maximum output within a rectangular neighborhood (\cite{Goodfellow_2016}).
 \end{definition}
 
 
-Since adding two linear functions together would produce a linear function, it is important to use activation functions (or non-linearities) after each convolutional or linear layer like RELU, ELU, Tahn, Sigmoids and so forth. In CNNs they are also often combined with max-pooling layers and dropouts to escape overfitting. 
+Since adding two linear functions together would produce a linear function, it is important to use activation functions after each convolutional or linear layer like RELU, ELU, Tahn, Sigmoid or any other non-linearities. Since any combination of linear functions can be represented with another linear function, having consecutive linear layers without non-linear function in the network is equivalent to having just one linear layer. Non-linearities  In CNNs they are also often combined with max-pooling layers and dropouts to escape overfitting. 
 
 \begin{definition}[Batch normalization layer]
 	Let's denote $B = \{x^{(i)}, ..., x^{(m)}\}$ to be a mini-batch of data. Then batch normalizing transform applied to this input data would be:
@@ -168,7 +170,8 @@ Since adding two linear functions together would produce a linear function, it i
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=0.5\linewidth]{bilder/dropout.png}
-		\caption{Dropout}
+		\caption[Dropout]%
+		{Dropout. Taken from \cite{Srivastava_2014}}
 		\label{fig:dropout}
 	\end{center}
 \end{figure}
@@ -188,17 +191,17 @@ Since adding two linear functions together would produce a linear function, it i
 The models in this project mostly use ELU activations as ELU provides a better signal flow between the layers by not cutting off the negative values completely.
 
 \begin{definition}[UNet]
-	UNet is fully convolutional neural network with U-shaped encoder-decoder network architecture (\cite{Ronneberger_2015}).
+	UNet is fully convolutional neural network with U-shaped encoder-decoder network architecture (\cite{Ronneberger_2015}). Example of the UNet architecture can be found in Figure \ref{fig:unet}.
 \end{definition}
 
 The encoder is a common CNN, consisting of the repeated
 block of two $3 \times 3$ convolutions, followed by
-an activation function, and a $2 \times 2$ max-pooling operation with stride 2. At each ecnoder step  the number of feature channels doubles. The decoder is also a CNN, consisting of repeated blocks of transposed convolution, that halves the number of feature channels, followed by a concatenation with a corresponding output from an encoder, and two $3 \times 3$ convolutions, followed by a ReLU. The last decoder layer is a $1 \times 1$ convolution to map the tensor to the number of output image channels needed. Skip-connections is a very important part of UNet as they allow to the flow of high-resolution features from the encoder to the decoder that in turn allows to restore a corresponding high-resolution image.
+an activation function, and a $2 \times 2$ max-pooling operation with stride 2. At each encoder step  the number of feature channels doubles. The decoder is also a CNN, consisting of repeated blocks of transposed convolution, that halves the number of feature channels, followed by a concatenation with a corresponding output from an encoder, and two $3 \times 3$ convolutions, followed by a ReLU. The last decoder layer is a $1 \times 1$ convolution to map the tensor to the number of output image channels needed. Skip-connections is a very important part of UNet as they allow to the flow of high-resolution features from the encoder to the decoder that in turn allows to restore a corresponding high-resolution image.
 
 \begin{definition}[Autoencoder]
 	Autoencoder is an unsupervised learning technique in neural networks for the representation learning purposes. Autoencoder consists of an encoder that compresses data into a lower dimensional representation and a decoder that restores the original input from the encoded representation.
 \end{definition}
 
 \begin{definition}[Overfitting]
-    "[A] Hypothesis overfits the training samples if some other hypothesis that fits the training samples less well actually performs better over the entire distribution of instances" (\cite{mitchell_1997}). The way to avoid overfitting that happened to the models in Section \ref{section:er} are discussed in Section \ref{section:regularization}.
+	Overfitting is a phenomenon in which a hypothesis that fits training samples well will perform worse over the entire distribution on data rather than another hypothesis that fits the distribution of the training samples less well (\cite{mitchell_1997}). The way to avoid overfitting that happened to the models in Section \ref{section:er} are discussed in Section \ref{section:regularization}.
 \end{definition}
