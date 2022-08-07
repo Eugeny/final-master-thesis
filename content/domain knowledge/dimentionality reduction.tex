@@ -1,4 +1,4 @@
-This reseach also provides a study of the embeddings of a trained UNet and an autoencoder in Chapter \ref{section:unet-embeddings-study}. In order to better understand the visualizations, all dimensionality reduction methods that were used are listed and explained in this subsection.
+This research also provides a study of the embeddings of a trained UNet and an autoencoder in Chapter \ref{section:unet-embeddings-study}. In order to better understand the visualizations, all dimensionality reduction methods that were used are listed and explained in this subsection.
 
 \begin{definition}[Embedding]
     An embedding in this context is an output tensor from the encoder part of the UNet or from an encoder part of an autoencoder.
@@ -12,7 +12,7 @@ distance globally --- meaning they are trying to preserve the structure among al
 \paragraph{PCA}
 Principal component analysis (PCA) is an algorithm for linear dimensionality reduction (\cite{Pearson_1901}).  PCA maximizes the variance in data's low-dimensional representation in order to keep as much information as possible. Essentially, PCA gives projections $\tilde{x^{(i)}}$ for input samples $x^{(i)}$ that would be very similar to them, however have a much smaller dimensionality. Eigenvectors of the data covariance matrix are the directions of the most variance within the data, and the eigenvalues correspoding to them are the amount of variance hidden in each dimension. That is why by projecting the data using the eigenvectors with the largest eigenvalues, one will preserve the most varience of the data possible (\cite{mml_book}).
 
-The steps of PCA algorithm are the following:
+The steps of PCA algorithm are the following (\cite{mml_book}):
 \begin{itemize}
     \item Subtract mean $\mu_d$. Centering the input data is not a necessary step, but it is recommended to do so to avoid numerical problems.
     \item Standardize the data. Calculate the standard deviation $\sigma_d$ and standardize the data to have unit variance for every dimension. 
@@ -27,7 +27,7 @@ The steps of PCA algorithm are the following:
         \tilde{x^*} = BB^T x^*
     \end{equation}
     with coordinates $z^* = B^Tx^*$. Here $B$ is a matrix of eigenvectors associated with the biggest eigenvalues of a covariance matrix.
-\end{itemize}\cite{mml_book})
+\end{itemize}
 
 \paragraph{Uniform Manifold Approximation and Projection (UMAP)}
 UMAP (cite \ref{McInnes_2020}) was built in a way to preserve both and it is a competitor of the t-SNE approach. However, it is much faster and provides a transformation that can be used on the new data. UMAP is a graph-based algorithm and uses a k-nearest graph as its foundation. As with any graph-based algorithm, its structure also includes two main steps: 

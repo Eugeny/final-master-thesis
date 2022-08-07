@@ -18,7 +18,7 @@ The imaging data always comes in pairs (DIC + fluorescence imaging) and has the 
         .2 {$\cdots$}.
   }
 
-Here a $\text{dataset}\{0, \ldots, N\}$ is one 96-well plane. There are only several datasets for each of the organelles and each of them contains 100 images of random locations within this plate. Each dataset includes two subfolders --- namely, a DIC and a fluorescence subfolder. The name of the latter one corresponds to the name of the fluorescent binding molecule as they are different for each target within the cell. Almost all plates contain pairs of images from one fluorescent staining target only. Each filename within the subfolder includes its index number between $\{1, \ldots, 100\}$ and the phenotype of the cell. "Cellular phenotype is the conglomerate of multiple cellular processes involving gene and protein expression that result in the elaboration of a cell's particular morphology and function" \cite{Sul_2009}. There are only three different phenotypes present across the datasets: CHOZN, PHX and H19. The latter, however is present only for a full cell target.
+Here a $\text{dataset}\{0, \ldots, N\}$ is one 96-well plate. There are only several datasets for each of the organelles and each of them contains 100 images of random locations within this plate. Each dataset includes two subfolders --- namely, a DIC and a fluorescence subfolder. The name of the latter one corresponds to the name of the fluorescent binding molecule as they are different for each target within the cell. Almost all plates contain pairs of images from one fluorescent staining target only. Each filename within the subfolder includes its index number between $\{1, \ldots, 100\}$ and the phenotype of the cell. "Cellular phenotype is the conglomerate of multiple cellular processes involving gene and protein expression that result in the elaboration of a cell's particular morphology and function" \cite{Sul_2009}. There are only three different phenotypes present across the datasets: CHOZN, PHX and H19. The latter, however is present only for a full cell target.
 
 \begin{table}[H]
     \centering
@@ -34,7 +34,6 @@ Here a $\text{dataset}\{0, \ldots, N\}$ is one 96-well plane. There are only sev
                 Actin &$400$ & $18,432$ & $2,048$ &$5,120$\\\hline
                 Golgi & $761$ & $23,036$ & $2,336$ & $6,347$\\\hline
                 H19 & $400$ & $18,432$ & $2,048$ & $5,120$ \\\hline
-                Nucleolei &?&?&?&?\\\hline
             \end{tabular}
         \end{adjustbox}
     \label{table:data}

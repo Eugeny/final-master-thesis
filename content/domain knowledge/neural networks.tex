@@ -15,7 +15,7 @@
 \end{definition}
 
 \begin{definition}[Loss function]
-	A loss function is a function $L(y, M(x, \theta))$ of model's parameters $\theta$, that for $(x^{(i)}, y^{(i)}) \in D$ outputs a scalar value measuring the difference between ground truth $y$ and prediction $M(x, \theta)$. A loss function can normally be defined as an average over the training set:
+	A loss function is a function $L(y, M(x, \theta))$ of model's parameters $\theta$, that for $(x^{(i)}, y^{(i)}) \in D$ outputs a scalar value measuring the difference between ground truth $y$ and prediction $M(x, \theta)$. A training objective is then defined as an average over the loss of each training sample:
 	\begin{equation}
 		J(\theta) = \mathbb{E}_{(x, y)\sim p_{data}} L(y, M(x, \theta))
 	\end{equation}
@@ -47,7 +47,7 @@
 	
 	There is an important distinction to be made here: firstly, Pearson correlation coefficient (PCC further) in a measure of similarity between two data sequences (matrices in this case), with values between $-1$ and $1$, with $1$ being a positive correlation, secondly, PCC loss is a measure of dissimilarity between two matrices, with values between $0$ and $1$, with $0$ meaning that matrices are the same.
 
-	This loss is widely used in cell biology for comparison of co-localization between the proteins. PCC is also popular in computer vision where it is utilized for the determination of image similarity in terms of spatial-intensity (\cite{Lachance_2020}).
+	This loss is widely used in cell biology for comparison of co-localization between the proteins (\cite{Lachance_2020}). PCC is also popular in computer vision where it is utilized for the determination of image similarity in terms of spatial-intensity (\cite{Lachance_2020}).
 \end{definition}
 
 \begin{definition}[Optimization]
@@ -64,7 +64,7 @@ After maximizing the sum and taking a gradient one gets:
 	\nabla_{\theta} J(\theta) = \mathbb{E}_{x, y \sim p_{data}} \nabla_{\theta} \log{p_{\text{model}}(x, y, \theta)}
 \end{equation}
 
-The exact gradient on a discetized data-generating distribution is then:
+The exact gradient on a discretized data-generating distribution is then:
 \begin{equation}
 	g = \nabla_{\theta} J^*(\theta) = \sum_{x} \sum_{y}{p_{\text{data}}(x, y) \nabla_{\theta} L(y, M(x, \theta))}
 \end{equation}
@@ -88,7 +88,7 @@ Here one can obtain an unbiased estimator of a true gradient on a mini-batch of 
 	\begin{algorithm}
 		\caption{Adadelta optimization}\label{alg:adadelta}
 		\item 1. $E[g]^2_0 = 0$ and $E[\Delta \theta^2]_0 = 0$
-		In order to update the parameters compute:
+		In order to update the parameters one needs to:
 		\item 2. Compute gradient: $\hat{g}_t$
 		\item 3. Accumulate gradient: $E[g]^2_t = \rho E[g]^2_{t - 1} + (1 - \rho)g_t^2$
 		\item 4. Compute update: $\Delta \theta_t = \frac{\text{RMS}[\Delta \theta]_{t-1}}{\text{RMS}[g]_t} \hat{g_t}$
@@ -98,6 +98,10 @@ Here one can obtain an unbiased estimator of a true gradient on a mini-batch of 
 	\end{algorithm}
 \end{definition}
 
+\begin{definition}[Overfitting]
+	Overfitting is a phenomenon in which a hypothesis that fits training samples well will perform worse over the entire distribution on data rather than another hypothesis that fits the distribution of the training samples less well (\cite{mitchell_1997}). The way to avoid overfitting that happened to the models in Section \ref{section:er} are discussed in Section \ref{section:regularization}.
+\end{definition}
+
 \begin{definition}[Feedforward fully connected layer]
 	A feedforward fully connected layer is a trainable function with parameters $W \in \mathbb{R}^{N \times M}$ (weights) and $b \in \mathbb{R}^{M}$ (biases) that, in this case, maps a vector $x \in \mathbb{R}^{N}$ to an output $a \in \mathbb{R}^{M}$ via the following transformation:
 		\begin{equation}
@@ -105,14 +109,14 @@ Here one can obtain an unbiased estimator of a true gradient on a mini-batch of 
 		\end{equation}
 \end{definition}
 
-This is one of the simplest layers in a feedforward neural networks and input and output in it as mentioned above are vectors. However, in this study inputs and outputs are images, that are represented in memory as square matrices $x^{(i)}, y^{(i)} \in \mathbb{R}^{W \times H}$. One could simply flatten the image into a vector and use it as an input to a fully connected feedforward neural network. Nevertheless this would be a suboptimal approach. 
+This is one of the simplest layers in a feedforward neural networks and input and output in it as mentioned above are vectors. However, in this study inputs and outputs are images, that are represented in memory as square matrices $x^{(i)}, y^{(i)} \in \mathbb{R}^{N \times N}$. One could simply flatten the image into a vector and use it as an input to a fully connected feedforward neural network. Nevertheless this would be a suboptimal approach. 
 
 Since essentially one of the main tasks of this research is to create a deep learning model that is able to predict a fluorescence image from a DIC image, the problem statement could be narrowed down to the following: predict an intensity high-resolution image from another intensity high-resolution image based on the features of the object morphology in it. Such problem is very common in the field of image analysis and one of the popular deep learning tools for solving such problems is convolutional neural network (CNN) or more specifically a UNet.
 
 CNNs are able to capture nonlinear relationships over large areas of images, they greatly improve performance for image recognition tasks in comparison to classical machine learning methods (\cite{Ounkomol_2018}). The word "convolutional" suggests that the convolution operation should be used in at least one of the layers there.  
 
 \begin{definition}[Convolutional layer]
-	A convolutional layer is a trainable function with parametrized kernel $K \in \mathbb{R}^{F \times F \times C}$ and bias $b \in \mathbb{R}$ that is usually denoted via the operator $(\cdot * \cdot)$. By transforming an input $x \in \mathbb{R}^{W, H, C}$ it produces an output $S$
+	A convolutional layer is a trainable function with parametrized kernel $K \in \mathbb{R}^{F \times F \times C}$ and bias $b \in \mathbb{R}$ that is usually denoted via the operator $(\cdot * \cdot)$. By transforming an input $x \in \mathbb{R}^{W \times H \times C}$ it produces an output $S$
 	\begin{equation}
 		S = K * x + b
 	\end{equation}
@@ -147,8 +151,19 @@ Visual examples of what stride and padding represent are shown in Figure \ref{fi
 	Maximum pooling operation reports the maximum output within a rectangular neighborhood (\cite{Goodfellow_2016}).
 \end{definition}
 
+\begin{definition}[Activation function]
+	An activation function is an element-wise non-linear function $f(\cdot)$. Some examples are:
+	\begin{align}             
+		f(x) = \frac{1}{1 + e^{-x}} &&\text{Sigmoid} \\      
+		f(x) = max(0, x) &&\text{Rectified linear unit (ReLU)}\\
+		f(x) = \begin{cases}
+				x, \hspace*{1cm} \textrm{if } x > 0 \\
+				\alpha * (e^{x} - 1), \textrm{if }  x \leq 0
+		  	\end{cases}\ &&\text{ELU}
+		\end{align}
+\end{definition}
 
-Since adding two linear functions together would produce a linear function, it is important to use activation functions after each convolutional or linear layer like RELU, ELU, Tahn, Sigmoid or any other non-linearities. Since any combination of linear functions can be represented with another linear function, having consecutive linear layers without non-linear function in the network is equivalent to having just one linear layer. Non-linearities  In CNNs they are also often combined with max-pooling layers and dropouts to escape overfitting. 
+It is important to use activation functions after each convolutional or linear layer like RELU, ELU, Tahn, Sigmoid or any other non-linearities. Because any combination of linear functions can be represented with another linear function, having consecutive linear layers without non-linear function in the network is equivalent to having just one linear layer. Non-linearities  In CNNs they are also often combined with max-pooling layers and dropouts to escape overfitting. 
 
 \begin{definition}[Batch normalization layer]
 	Let's denote $B = \{x^{(i)}, ..., x^{(m)}\}$ to be a mini-batch of data. Then batch normalizing transform applied to this input data would be:
@@ -163,7 +178,7 @@ Since adding two linear functions together would produce a linear function, it i
 \end{definition}
 
 \begin{definition}[Dropout layer]
-	Dropout is a technique that randomly sets some weights (units) to zero \cite{Srivastava_2014}. It leads to the training of several smaller networks that share the parameters. If a mask vector $\mu$ specifies which units are included in training, then dropout's objective to be minimized becomes: $\mathbb{E}_\mu J(\theta, \mu)$. Visually dropout is presented in the Figure \ref{fig:dropout}.
+	Dropout is a technique that randomly sets some weights (units) to zero (\cite{Srivastava_2014}). It leads to the training of several smaller networks that share the parameters. If a mask vector $\mu$ specifies which units are included in training, then dropout's objective to be minimized becomes: $\mathbb{E}_\mu J(\theta, \mu)$. Visually dropout is presented in the Figure \ref{fig:dropout}.
 \end{definition}
 
 %TODO add figure reference!
@@ -175,18 +190,6 @@ Since adding two linear functions together would produce a linear function, it i
 		\label{fig:dropout}
 	\end{center}
 \end{figure}
-
-\begin{definition}[Activation function]
-	An activation function is an element-wise non-linear function $f(\cdot)$. Some examples are:
-	\begin{align}             
-		f(x) = \frac{1}{1 + e^{-x}} &&\text{Sigmoid} \\      
-		f(x) = max(0, x) &&\text{Rectified linear unit (ReLU)}\\
-		f(x) = \begin{cases}
-				x, \hspace*{1cm} \textrm{if } x > 0 \\
-				\alpha * (e^{x} - 1), \textrm{if }  x \leq 0
-		  	\end{cases}\ &&\text{ELU}
-		\end{align}
-\end{definition}
 
 The models in this project mostly use ELU activations as ELU provides a better signal flow between the layers by not cutting off the negative values completely.
 
@@ -200,8 +203,4 @@ an activation function, and a $2 \times 2$ max-pooling operation with stride 2. 
 
 \begin{definition}[Autoencoder]
 	Autoencoder is an unsupervised learning technique in neural networks for the representation learning purposes. Autoencoder consists of an encoder that compresses data into a lower dimensional representation and a decoder that restores the original input from the encoded representation.
-\end{definition}
-
-\begin{definition}[Overfitting]
-	Overfitting is a phenomenon in which a hypothesis that fits training samples well will perform worse over the entire distribution on data rather than another hypothesis that fits the distribution of the training samples less well (\cite{mitchell_1997}). The way to avoid overfitting that happened to the models in Section \ref{section:er} are discussed in Section \ref{section:regularization}.
 \end{definition}
