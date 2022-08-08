@@ -14,7 +14,7 @@
 
 As the nuclei dataset is one of the biggest ones (see Table \ref{table:data}), the experiments would first be performed on the subset of the data, and only once the training pipeline and good results were established, the training would be done using the full dataset. Figure \ref{fig:wi} (right) represents the training of nuclei using only two 96-well plates with MSE loss. The training is very unstable in the begining, but one can clearly see that the model successfully converges afterwards. Our hypothesis behind the instability was the clear lack of training data, which was proven by further training using the full data and as a result achieving a more stable PCC loss (see Figure \ref{fig:full-dataset-pcc}).
 
-\begin{figure}[H]
+\begin{figure}[htb]
 	\begin{center}
 		\includegraphics[width=0.5\linewidth]{bilder/nuclei/full-dataset.png}
 		\caption{Having more data makes training more stable}\label{fig:full-dataset-pcc}
@@ -43,7 +43,8 @@ In the next experiment the model has additionally been regularized by adding dro
 \begin{figure}[htb]
 	\begin{center}
 		\includegraphics[width=0.6\linewidth]{bilder/nuclei/comparison-chzn-phx.png}
-		\caption{Difefrent models predictions and scores comparison}\label{fig:nuclei-comparison-predictions}
+		\caption[Comparison of different models predictions and scores]%
+		{Comparison of different models predictions and scores. PCC loss is representative of predictions quality, whereas MSE loss is not. Increasing model's size significantly improves the results.}\label{fig:nuclei-comparison-predictions}
 	\end{center}
 \end{figure}
 

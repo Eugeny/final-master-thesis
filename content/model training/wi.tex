@@ -7,19 +7,20 @@ Research of \cite{He_2015} also notices the problems with Xavier initialization 
 	N(0, \sqrt{\frac{2}{\text{fan\_in}}})
 \end{equation}
 
-Default weight initialization of Conv2D layers in Python claims to use the initialization method of \cite{He_2015}, by calling it Kaiming uniform initialization, however after careful study of the PyTorch source code one realizes rather fast that the initialization approach used has nothing to do with the He initialization at all. Even the samples are drawn from the uniform distribution, although the paper clearly states that a normal distribution should be used. The definition of Kaiming uniform is provided below:
-		\begin{align}
-			std &= \sqrt{\frac{2}{fan\_in}} \\
-			bou&nd = \sqrt{3 * std} \\
-			Un&iform(-bound, bound)
-		\end{align}
+Default weight initialization of Conv2D layers in Python claims to uses the following initialization method the initialization method (\cite{He_2015}):
+\begin{align}
+	std &= \sqrt{\frac{2}{fan\_in}} \\
+	bou&nd = \sqrt{3 * std} \\
+	Un&iform(-bound, bound)
+\end{align}
 
-However, the naming is quite confusing and therefore two experiments have been conducted: first, the model predicting nuclei target was trained with the default weight initialization provided by PyTorch and then the initialization was switched to a true He initialization.
+Altough in the study of \cite{He_2015} it is called Kaiming normal initialization it is not exactly it. However, the naming is quite confusing and therefore two experiments have been conducted: first, the model predicting nuclei target was trained with the default weight initialization provided by PyTorch and then the initialization was switched to a true He initialization.
 
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=0.8\linewidth]{bilder/nuclei/wi-no-wi.png}
-		\caption{Nuclei training without (left) and with (right) custom weight initialization}\label{fig:wi}
+		\caption[Nuclei training without (left) and with (right) custom weight initialization]%
+		{Nuclei training without (left) and with (right) custom weight initialization. The stagnation during first few epochs on the left signalizes about the wrong initialization of model's weights. As a result the left model also converges to a higher value.}\label{fig:wi}
 	\end{center}
 \end{figure}
 

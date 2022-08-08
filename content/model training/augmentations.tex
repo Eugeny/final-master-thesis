@@ -17,8 +17,8 @@ Since augmentations are applied on crops directly during training there is a pos
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=0.7\linewidth]{bilder/model training/smart augmentations.png}
-		\caption{Using original image for rotation and scaling augmentations}\label{fig:smart-augments}
+		\caption{Improving augmentation by using original image for rotation and scaling}\label{fig:smart-augments}
 	\end{center}
 \end{figure}
 
-Applying augmentations in combination with other regularization techniques has proven to be helpful against overfitting for the nuclei and ER training. Therefore it is recommended to use it in further research as well.
+Applying augmentations in combination with other regularization techniques has proven to be helpful for nuclei predictions and against overfitting for ER training (see Figure \ref{fig:nuclei-comparison-predictions}, see Figure \ref{fig:er-overfit}). Therefore it is recommended to use it in further research as well.

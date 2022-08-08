@@ -15,7 +15,8 @@ Even though the most extreme corruptions mentioned in section \ref{section:nucle
             \includegraphics{bilder/lightning-conditions/lightning-3.png} &
             \includegraphics{bilder/lightning-conditions/lightning-4.png}
         \end{tabularx}
-    \caption{Different lighting conditions}
+    \caption[Different lighting conditions]%
+    {Different lighting conditions no dot permit a successful use of a global thresholding for the foreground segmentation.}
     \label{fig:lightning_conditions}
 \end{figure}
 
@@ -28,7 +29,8 @@ Another challenge for segmentation bring nuclei that are very close to each othe
     \subfloat[Original fluorescence]{{\includegraphics[width=0.2\linewidth]{bilder/close-located-cells/original.png} }}
     \qquad
     \subfloat[Segmentation (violet mask)]{{\includegraphics[width=0.2\linewidth]{bilder/close-located-cells/segmented.png} }}
-    \caption{Closely located and dividing cells}
+    \caption[Closely located (red) and dividing (green) cells]%
+    {Closely located (red) and dividing (green) cells represent a challenge for a foreground segmentation as they are recognized as one cell.}
     \label{fig:closely-located-cells}
 \end{figure}
 
@@ -57,7 +59,8 @@ Here, the cells that are not yet fully divided are highlighted with green circle
             \includegraphics{bilder/segmentation/nuclei-mask/filled_holes.png} &
             \includegraphics{bilder/segmentation/nuclei-mask/mask.png}
         \end{tabularx}
-    \caption{Fluorescence segmentation}
+    \caption[Fluorescence segmentation]%
+    {Fluorescence segmentation. Artifacts of local thresholding algorithm visible in the second image can be successfully filtered out based on their shape.}
     \label{fig:segmentation-nuclei-steps}
 \end{figure}
 

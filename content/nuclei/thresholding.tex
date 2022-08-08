@@ -32,7 +32,8 @@ One clear downside of this approach though is that images which histograms have 
 \begin{figure}[htb]
 	\begin{center}
 		\includegraphics[width=0.6\linewidth]{bilder/difficult-lightning/local-vs-global.png}
-		\caption{Local vs. global thresholding}\label{fig:thresholding-bad-conditions}
+		\caption[Local vs. global thresholding]%
+        {Local vs. global thresholding. A compasion of the results of two approaches for three lightning situations: (a) --- gradient in image illumination; (b) --- overexposure of one cell resulting in underexposure of all other celss; (c) --- normal conditions.}\label{fig:thresholding-bad-conditions}
 	\end{center}
 \end{figure}
 
@@ -59,7 +60,8 @@ By assuming Gauassian model for both $p_1(z)$ and $p_2(z)$, one gets a Gaussian 
 \begin{figure}[htb]
 	\begin{center}
 		\includegraphics[width=0.8\linewidth]{bilder/Gonzalez.png}
-		\caption{Histogram as a probability density function (\cite{digital_image_book})}\label{fig:gmm}
+		\caption[Histogram as a probability density function]%
+        {Histogram as a probability density function. Taken from \cite{digital_image_book}}\label{fig:gmm}
 	\end{center}
 \end{figure}
 
@@ -119,7 +121,7 @@ Such threshold search is then applied to all of the subregions of the image with
        0.3 sec & 17 sec  \\ 
        \hline
       \end{tabular}
-      \caption{Threshold timing}
+      \caption{Threshold runtime}
       \label{table:threshold-timing}
   \end{table}
   

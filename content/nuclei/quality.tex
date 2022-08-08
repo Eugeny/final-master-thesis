@@ -9,10 +9,10 @@ All of these problems are quite similar and can be summarized under the statemen
 
 Indeed, increasing the number of filters in each convolutional layer by a factor of $4$ (switching from from $16$ to $64$ in the first one) the model was able to capture more details. Predictions became better both visually (see Figure \ref{fig:better-nuclei}) and based on both metrics (PCC and MSE losses, see Figure \ref{fig:nuclei-comparison-predictions}).
 
-\begin{figure}[H]
+\begin{figure}[htb]
 	\begin{center}
 		\includegraphics[width=0.8\linewidth]{bilder/nuclei/problems.png}
-		\caption{Problems in predictions}\label{fig:nuclei-troubles}
+		\caption{Typical challenges in predictions for nuclei in this study}\label{fig:nuclei-troubles}
 	\end{center}
 \end{figure}
 
@@ -23,6 +23,6 @@ The problem of the higher intensities can also be addressed by a more careful da
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=0.6\linewidth]{bilder/nuclei/bigger-model.png}
-		\caption{Predictions improvement: (a) ground truth fluorescence; (b) bigger model with four times more filters in convolutional layers; (c) standard architecture}\label{fig:better-nuclei}
+		\caption{Predictions improvement: (a) ground truth fluorescence; (b) bigger model with four times more filters in convolutional layers; (c) standard architecture.}\label{fig:better-nuclei}
 	\end{center}
 \end{figure}

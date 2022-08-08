@@ -1,4 +1,4 @@
-There were four targets studied in this research: nuclei, endoplasmic reticulum, Golgi apparatus and a full cell target. The initial three targets provide many insights on the state of cells based on their quaintity, size and the intensity of fluorescence signal that they can produce by binding with the protein, the latter is useful in general for locating cells and calculating their area. There are of course other possible targets that could be used during the selection step of CLD, but the goal of this particular study was to provide the proof of concept on whether the network could potentially substitute manual fluorescence staining in general. The hypothesis on which we rely here is that if the model can successfully predict the fluorescence signal from some of the targets, then this research could be extended to other cell organelles as well.
+There were four targets studied in this research: nuclei, endoplasmic reticulum, Golgi apparatus and a full cell target. The initial three targets provide many insights on the state of cells based on their quantity, size and the intensity of fluorescence signal that they can produce by binding with the protein, the latter is useful in general for locating cells and calculating their area. There are of course other possible targets that could be used during the selection step of CLD, but the goal of this particular study was to provide the proof of concept on whether the network could potentially substitute manual fluorescence staining in general. The hypothesis on which we rely here is that if the model can successfully predict the fluorescence signal from some of the targets, then this research could be extended to other cell organelles as well.
 
 The imaging data always comes in pairs (DIC + fluorescence imaging) and has the following structure:
 
@@ -22,21 +22,18 @@ Here a $\text{dataset}\{0, \ldots, N\}$ is one 96-well plate. There are only sev
 
 \begin{table}[H]
     \centering
-    \caption{Available data for each fo the organelles}
-        \begin{adjustbox}{width=0.7\textwidth}
-            \begin{tabular}{|c||c|c|c|c|}\hline
-                &Total images
-                &Training crops
-                &Validation crops
-                &Test crops
-                \\\hline\hline
-                Nuclei & $595$ & $27,264$ & $3,008$ & $7,616$\\\hline
-                Actin &$400$ & $18,432$ & $2,048$ &$5,120$\\\hline
-                Golgi & $761$ & $23,036$ & $2,336$ & $6,347$\\\hline
-                H19 & $400$ & $18,432$ & $2,048$ & $5,120$ \\\hline
-            \end{tabular}
-        \end{adjustbox}
+    \setkeys{Gin}{width=\linewidth}
+    \centering
+        \begin{tabularx}{\textwidth}{|Y|YYYY|}
+            \hline
+            & Total images & Training crops & Validation crops & Test crops \\\hline
+            Nuclei & $595$ & $27,264$ & $3,008$ & $7,616$ \\\hline
+            Actin &$400$ & $18,432$ & $2,048$ &$5,120$\\\hline
+            Golgi & $761$ & $23,036$ & $2,336$ & $6,347$\\\hline
+            H19 & $400$ & $18,432$ & $2,048$ & $5,120$ \\\hline
+        \end{tabularx}
+    \caption{Available data for each of the organelles}
     \label{table:data}
 \end{table}
 
-For training, all images are cropped into smaller crops of size $256 \times 256$ and split between training, test and validation sets with crops from one image being present only in a single set. However, it is still possible that the cells themselves might be mixed up between the sets. This is because of the randomness of the microscopy focusing system (see subsection \ref{par:crops-combination}). The summary of the total number of crops in each set is presened in Table \ref{table:data}.
+For training, all images are cropped into smaller crops of size $256 \times 256$ and split between training, test and validation sets ($70\%$, $20\%$, $10\%$ accordingly) with crops from one image being present only in a single set. However, it is still possible that the cells themselves might be mixed up between the sets. This is because of the randomness of the microscopy focusing system (see subsection \ref{par:crops-combination}). The summary of the total number of crops in each set is presened in Table \ref{table:data}.
