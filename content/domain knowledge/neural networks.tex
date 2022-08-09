@@ -22,6 +22,37 @@
 	where $p_{data}$ denotes an empirical distribution of the training data.
 \end{definition}
 
+\begin{definition}[Weight initialization]
+	Weight initialization is a process of setting the initial values of the parameters of a model to some random values.
+\end{definition}
+
+Weight initialization plays a crucial role in model training. Even on the simplest model wrongly initialized weights (for example all constant or too large or too small) can lead to very slow convergence or prevent the model from converging at all (\cite{Kumar_2017}).
+
+In the following samples \textit{fan\_in} denotes the maximum number of input signal units to a given layer and \textit{fan\_out} is the maximum number of output signal units from it.
+
+\begin{definition}[Xavier initialization]
+	Xavier initialization, which is usually a default choice in many neural networks, works well for the most part for fully connected layers with tanh as activation function. There is also a study providing some insights into why Xavier initialization may not be the optimal choice for ReLU activations (\cite{Kumar_2017}). Xavier initialization draws samples from a uniform distribution:
+	\begin{equation}
+		Uniform \left(-\frac{1}{\sqrt{fan\_in}}, \frac{1}{\sqrt{fan\_in}}\right)
+	\end{equation}
+\end{definition}
+
+\begin{definition}[He initialization]
+	He initialization is another initialization method proposed by \cite{He_2015} as it was noticed that Xavier initialization is not an optimal choice for the networks that include ReLU activations. The authors suggest a new robust method that enables training of even extremely deep or wide network architectures with ReLU activations. He initialization draws samples from a truncated normal distribution:
+	\begin{equation}
+		N(0, \sqrt{\frac{2}{\text{fan\_in}}})
+	\end{equation}
+\end{definition}
+
+Default weight initialization of Conv2D layers in Python suggests to use the following initialization method (\cite{He_2015}):
+\begin{align}
+	std &= \sqrt{\frac{2}{fan\_in}} \\
+	bou&nd = \sqrt{3 * std} \\
+	Un&iform\left(-bound, bound\right)
+\end{align}
+
+Although in the study of \cite{He_2015} it is called Kaiming normal initialization, it is a slightly different method.
+
 \begin{definition}[Binary-cross entropy loss]
 	Let $y \in \mathbb{R}^{W \times H}$ be a ground truth image and $y^\prime \in \mathbb{R}^{W \times H}$ be a prediction. Binary-cross entropy loss is defined as:
 	\begin{equation}

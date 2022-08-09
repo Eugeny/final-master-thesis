@@ -1,11 +1,11 @@
 \subsection{Nuclei}
-    A nucleus (plural nuclei), as related to genomics, is the membrane-enclosed organelle within a cell that contains the chromosomes. The nucleus is one of the easiest organelles to detect within the cell as it is usually located in the middle and occupies quite a large area of the cell (see Figure \ref{fig:cell}). The nucleus contains all of the cell's chromosomes, which in turn encode the genetic material, therefore the nucleus is an essential organelle (\cite{genomegov}). In order to stain it, DAPI was added to the cells. This is a fluorescent stain that binds strongly with some regions in DNA. Analysis of cell's nucleus can provide many valuable insights, for example the radius of living cells is on average bigger than in the dead ones (\cite{Christiansen_2018}). With fluorescence labeling one can derive some useful features used for determining whether the well plate should or should not be selected during the selection step in the CLD process.
+    A nucleus (plural nuclei), as related to genomics, is the membrane-enclosed organelle within a cell that contains the chromosomes. The nucleus is one of the easiest organelles to detect within the cell as it is usually located in the middle and occupies a large area of the cell (\cite{Pathak_2021}, see Figure \ref{fig:cell}). The nucleus contains all of the cell's chromosomes, which in turn encode the genetic material, therefore the nucleus is an essential organelle (\cite{genomegov}). In order to stain it, DAPI was added to the cells. This is a fluorescent stain that binds strongly with some regions in DNA. DNA is strongly concentrated and near-uniformly distributed in the nucleus, hence DAPI staining identifies the nucleus (\cite{Betty_1991}). Analysis of cell's nucleus can provide many valuable insights, for example the radius of living cells is on average bigger than in the dead ones (\cite{Christiansen_2018}). With fluorescence labeling one can derive some useful features used for determining whether the well plate should or should not be selected during the selection step in the CLD process.
     %cite Christiansen 2018]  proves only success on nuclei for DIC
     \begin{figure}[htb]
         \begin{center}
             \includegraphics[width=0.4\linewidth]{bilder/cell structure.png}
             \caption[Cell structure]%
-            {Cell structure. Taken from \cite{cell}}\label{fig:cell}
+            {Cell structure. Among all organelles presented in this Figure only nucleus, endoplasmic reticulum and golgi apparatus were used and prediction targets. However, this research is easility extendable to other organelles as well. Taken from \cite{cell}}\label{fig:cell}
         \end{center}
     \end{figure}
     \subsubsection{Preprocessing}\label{section:nuclei-preprocessing}
@@ -13,14 +13,14 @@
     \subsubsection{Training and predictions}
         \paragraph{Convergence}
               \input{content/nuclei/convergence.tex}
-        \paragraph{Predictions quality}
+        \paragraph{Prediction quality}
             \label{section:nuclei-predictions}
               \input{content/nuclei/quality.tex}
     \subsubsection{Postprocessing for nuclei segmentation}
         \input{content/nuclei/postprocessing.tex}
         \paragraph{Thresholding algorithms}
         \input{content/nuclei/thresholding.tex}
-    \subsubsection{Downstream metrics}
+    \subsubsection{Biological metrics}
         \input{content/nuclei/downstream metrics.tex}
     \subsubsection{Influence of scaling on predictions quality}
         \input{content/nuclei/scaling influence.tex}

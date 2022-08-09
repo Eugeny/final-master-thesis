@@ -12,7 +12,7 @@
 %	\end{center}
 %\end{figure}
 
-As the nuclei dataset is one of the biggest ones (see Table \ref{table:data}), the experiments would first be performed on the subset of the data, and only once the training pipeline and good results were established, the training would be done using the full dataset. Figure \ref{fig:wi} (right) represents the training of nuclei using only two 96-well plates with MSE loss. The training is very unstable in the begining, but one can clearly see that the model successfully converges afterwards. Our hypothesis behind the instability was the clear lack of training data, which was proven by further training using the full data and as a result achieving a more stable PCC loss (see Figure \ref{fig:full-dataset-pcc}).
+As the nuclei dataset is one of the biggest ones (see Table \ref{table:data}), the experiments were first performed on the subset of the data, and only once the training pipeline was established, the training was performed using the full dataset. Figure \ref{fig:wi} (right) represents the training of nuclei using only two $96$-well plates with MSE loss. The training is very unstable in the begining, but one can clearly see that the model successfully converges afterwards. Our hypothesis behind the instability was the clear lack of training data, which was proven by further training using the full data and as a result achieving a more stable PCC loss (see Figure \ref{fig:full-dataset-pcc}).
 
 \begin{figure}[htb]
 	\begin{center}
@@ -21,7 +21,7 @@ As the nuclei dataset is one of the biggest ones (see Table \ref{table:data}), t
 	\end{center}
 \end{figure}
 
-As mentioned in definition \ref{def:pcc-loss} for correct understanding of the following plots, one should be careful with differentiating PCC loss from PCC itself. PCC loss converts PCC to be between $0$ and $1$, with $0$ being an optimal value.
+As mentioned in Definition \ref{def:pcc-loss} for correct understanding of the following plots, one should be careful with differentiating PCC loss from PCC itself. PCC loss converts PCC to be between $0$ and $1$, with $0$ being an optimal value.
 
 Seeing that the model significantly stabilizes with the use of more data and that the prediction results become much more similar to the ground truth (see Figure \ref{fig:nuclei-comparison-predictions} \textit{small dataset} vs. \textit{full dataset}), it was decided to try the use of augmentations in order to enlarge the dataset even more. In this case the augmentations were not used in order to regularize or stabilize training (by providing more difficult, for instance, blurred samples), but to simply have more data. Training and validation PCC losses from the training with the use of augmented data are presented in Figure \ref{fig:no-reg-augmented}. The augmentations used here are horizontal and vertical flips, rotations and crops (described in detail in section \ref{section:augmentations}).
 \begin{figure}[H]
@@ -32,7 +32,7 @@ Seeing that the model significantly stabilizes with the use of more data and tha
 \end{figure}
 Validation PCC loss has slightly increased to $0.0381$ in comparison to the previous value of $0.0365$. However, the validation set on which this loss was estimated also includes augmentations mentioned above and therefore presents a slightly more difficult task than the original validation set. True improvement is confirmed by measuring the loss of the models on the same dataset, where PCC loss has improved from $0.0365$ to $0.0322$ (or PCC from $0.92$ to $0.93$).
 
-In the next experiment the model has additionally been regularized by adding dropout layers and using a weight decay of $0.0001$ (see Figure \ref{fig:full-dataset-pcc-regularized}). This did not bring a better result, but has only made it more difficult for the model to capture the needed feature to reproduce the fine details within the nuclei. However, this brought up a new hypothesis, namely that the model might simply have not enough of capacity to capture enough of the details. In order to confirm this a bigger model has to be trained.
+In the next experiment the model has additionally been regularized by adding dropout layers and using a weight decay of $0.0001$ (see Figure \ref{fig:full-dataset-pcc-regularized}). This did not bring a better result, but has only made it more difficult for the model to capture the needed feature to reproduce the fine details within the nuclei. However, this brought up a new hypothesis, namely that the model might simply have not enough of capacity to capture enough of the details. In order to confirm this a bigger model (with more filters in each layer) has to be trained.
 \begin{figure}[htb]
 	\begin{center}
 		\includegraphics[width=0.5\linewidth]{bilder/nuclei/full-dataset-regularized.png}
@@ -42,7 +42,7 @@ In the next experiment the model has additionally been regularized by adding dro
 
 \begin{figure}[htb]
 	\begin{center}
-		\includegraphics[width=0.6\linewidth]{bilder/nuclei/comparison-chzn-phx.png}
+		\includegraphics[width=0.75\linewidth]{bilder/nuclei/comparison-chzn-phx.png}
 		\caption[Comparison of different models predictions and scores]%
 		{Comparison of different models predictions and scores. PCC loss is representative of predictions quality, whereas MSE loss is not. Increasing model's size significantly improves the results.}\label{fig:nuclei-comparison-predictions}
 	\end{center}

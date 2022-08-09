@@ -4,7 +4,7 @@
     
     Nevertheless, in order to get training data for all other targets (nuclei, ER, Golgi apparatus) the staining procedure is unavoidable. And staining requires the cells first to be fixed. That brings up the limitation of current \textit{in silico} labeling research --- cells have to be fixated in any case. DIC imaging of living and fixed cells looks very different and models trained on fixed cells do not generalize to not fixed ones well. Luckily, fixing cells is not a cumbersome lab procedure and is far easier than staining the cells, which is avoided with the help of \textit{in silico} fluorescence labeling. After successful training of the model on living GFP expressing cells, we found out that other models cannot perform that well on living cells. Therefore, the cells were fixed in order to look alike with previously acquired data and the experiments were repeated. Nevertheless, we recommend to look into the possibilities of transfer learning from fixed to living cells. The results of training on the fixated cells are presented below. 
     
-    For this experiment another cell phenotype was chosen --- H19. Training the model to predict GFP fluorescence essentially allows to predict the area of the whole cell, which is used in further downstream analysis. There is no need to capture the intensities as they do not bring any useful features for the selection step in CLD. However, they might help for algorithms like watershed to find separate cells in order to count them. Yet the task can be simplified too to predicting a binary mask of GFP signal too. Binarized images are well-suited for cell area predictions. Although one has to find a corresponding image preprocessing pipeline in order to convert training intesity fluorescence imaging into masks first. Both training variations are provided in this chapter --- with and without prediction of the intensities. 
+    For this experiment another cell phenotype was chosen --- H19. Training the model to predict GFP fluorescence essentially allows to predict the area of the whole cell, which is used in further biological analysis. There is no need to capture the intensities as they do not bring any useful features for the selection step in CLD. However, they might help for algorithms like watershed to find separate cells in order to count them. Yet the task can be simplified too to predicting a binary mask of GFP signal too. Binarized images are well-suited for cell area predictions. Although one has to find a corresponding image preprocessing pipeline in order to convert training intesity fluorescence imaging into masks first. Both training variations are provided in this chapter --- with and without prediction of the intensities. 
     \begin{figure}[H]
         \begin{center}
             \includegraphics[width=0.5\linewidth]{bilder/gfp/fixed-not-fixed.png}
@@ -15,7 +15,7 @@
         \input{content/gfp/preprocessing.tex}
     \subsubsection{Predictions}
         \input{content/gfp/predictions.tex}
-    \subsubsection{Downstream metrics}
+    \subsubsection{Biological metrics}
         \input{content/gfp/postprocessing.tex}
     \subsubsection{Combination of GFP, nuclei and ER}
         \input{content/gfp/combination.tex}

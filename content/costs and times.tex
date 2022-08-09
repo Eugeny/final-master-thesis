@@ -4,25 +4,29 @@ Cost estimation is additionally important for the model inference as well as dur
 
 For both training and inference purposes two GPU models were tested g3-4xlarge (NVIDIA Tesla M60) and p3-2xlarge (NVIDIA Tesla V100). The datasets on which the experiments were performed are the full cell target training and validation datasets. The resulting costs are presented in the Tables \ref{table:costs-training}, \ref{table:costs-inference}.
 
-\begin{table}[H]
-    \centering
-    \setkeys{Gin}{width=\linewidth}
-    \centering
-        \begin{tabularx}{\linewidth}{|Y|cYcc|}
-            \hline
-            &Runtime (1 epoch)
-            &Dataset size
-            &Cost per minute
-            &Cost per epoch
-            \\\hline\hline
-            g3.4xlarge & $6.5 \text{min}$ & $18,432$ & $0.07125\$$ & $0.3$\\\hline
-            p3.2xlarge & $57 \text{sec}$ & $18,432$ & $0.1911\$$ &$0.18$\\\hline
-        \end{tabularx}
-        \caption[Cost estimation of AWS use for training models]%
-        {Cost estimation of AWS use for training models. Prices were retrieved on 01.06.2022}
-        \label{costs-training}
-\end{table}
-
+\begingroup
+    \begin{table}[H]
+        \small
+        \centering
+        \setkeys{Gin}{width=\linewidth}
+        \centering
+            \begin{tabularx}{\linewidth}{|Y|ccYcc|}
+                \hline
+                &Model
+                &Runtime (1 epoch)
+                &Dataset size
+                &Cost per minute
+                &Cost per epoch
+                \\\hline\hline
+                g3.4xlarge & usual& $6.5 \text{min}$ & $18,432$ & $0.07125\$$ & $0.3\$$\\\hline
+                p3.2xlarge & usual& $57 \text{sec}$ & $18,432$ & $0.1911\$$ &$0.18\$$\\\hline
+                p3.2xlarge & bigger& $?$ & $?$ & $?\$$ &$?\$$\\\hline
+            \end{tabularx}
+            \caption[Cost estimation of AWS use for training models]%
+            {Cost estimation of AWS use for training models. Prices were retrieved on 01.06.2022}
+            \label{table:costs-training}
+    \end{table}
+\endgroup
 
 %g3 391, 261, 260
 %p3 170, 57, 56
@@ -43,7 +47,7 @@ For both training and inference purposes two GPU models were tested g3-4xlarge (
         \end{tabularx}
         \caption[Cost estimation of AWS use for inference purposes]%
         {Cost estimation of AWS use for inference purposes. Prices were retrieved on 01.06.2022}
-        \label{costs-inference}
+        \label{table:costs-inference}
 \end{table}
 
 In conclusion, even though a p3 instance seems to be much more expensive, it is also much more efficient and the cost estimated for training times are significantly lower. That is why all the training experiments in this research were conducted on an NVIDIA Tesla V100 GPU.

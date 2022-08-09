@@ -1,1 +1,23 @@
-\section{First}\label{appendix:first}
+\section{Appendix}\label{appendix:first}
+\subsection{Folder structure}
+The imaging data always comes in pairs (DIC + fluorescence imaging) and has the following structure:
+
+\dirtree{%
+    .1 dataset0.
+        .2 DIC.
+            .3 {\{CHOZN, PHX, H19\}\_XY001.tif}.
+            .3 {$\cdots$}.
+            .3 {\{CHOZN, PHX, H19\}\_XY100.tif}.
+        .2 \{DAPI\_nuclei, FITC, FITC\_er, CY5\_golgi\}.
+            .3 {\{CHOZN, PHX, H19\}\_XY001.tif}.
+            .3 {$\cdots$}.
+            .3 {\{CHOZN, PHX, H19\}\_XY100.tif}.
+    .1 {$\cdots$}.
+    .1 datasetN.
+        .2 {$\cdots$}.
+  }
+
+Here a $\text{dataset}\{0, \ldots, N\}$ is one 96-well plate. Each dataset includes two subfolders --- namely, a DIC and a fluorescence subfolder. The name of the latter one corresponds to the name of the fluorescent binding molecule as they are different for each target within the cell. Each filename within the subfolder includes its index number between $\{1, \ldots, 100\}$ and the phenotype of the cell.
+
+\subsection{Training costs estimation}
+\input{content/costs and times.tex}

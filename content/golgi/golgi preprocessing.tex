@@ -10,7 +10,7 @@ One can see an example of what Golgi fluorescence staining looks like in Figure 
 Having such a non-specific fluorescence background has two challenges for training:
 \begin{itemize}
     \item The relative area of the background fluorescence is bigger than the area of Golgi themselves. Therefore quite a big part of the loss during training will be dedicated to teaching the model to restore this background fluorescence instead of the Golgi itself.
-    \item It introduces difficulties during the postprocessing of the predictions. As well as for nuclei, the mask of the predicted Golgi apparatus is needed for further evaluation of the downstream metrics. Using the same algorithm for postprocessing segmentation that was used for nuclei, the mask of the Golgi Apparatus will consider the background noise to be relevant, although this is an unwanted behavior.
+    \item It introduces difficulties during the postprocessing of the predictions. As well as for nuclei, the mask of the predicted Golgi apparatus is needed for further evaluation of the biological metrics. Using the same algorithm for postprocessing segmentation that was used for nuclei, the mask of the Golgi Apparatus will consider the background noise to be relevant, although this is an unwanted behavior.
 \end{itemize}
 
 In the left part of Figure \ref{fig:golgi-enhancement} one can see the original ground truth image and on the right side we can see the images after the background was subtracted. One of the great background subtraction algorithms is the rolling ball algorithm which is described below.

@@ -1,5 +1,4 @@
-
-To properly evaluate the practical downstream metrics described in section \ref{section:model-evaluation} on model predictions, one must be able to segment nuclei from fluorescence (as well as from predictions) first. Segmentation in this context refers to the creation of a mask. It should consist of $0$s and $1$s,  with a one being assigned to every pixel that is a part of the nucleus, while all the other ones are assigned with a zero. Although this might be a straightforward task for our eyes, it is not that easy to select separate nuclei via postprocessing. There are several edge cases where the nuclei are difficult to segment.
+To properly evaluate the practical biological metrics described in section \ref{section:model-evaluation} on model predictions, one must be able to segment nuclei from fluorescence (as well as from predictions) first. Segmentation in this context refers to the creation of a mask. It should consist of $0$s and $1$s,  with a one being assigned to every pixel that is a part of the nucleus, while all the other ones are assigned with a zero. Although this might be a straightforward task for our eyes, it is not that easy to select separate nuclei via postprocessing. There are several edge cases where the nuclei are difficult to segment.
 
 Even though the most extreme corruptions mentioned in section \ref{section:nuclei-preprocessing} were filtered out, some of the images that are corrupted not as severely (meaning they still have all the visible features needed for learning) are still present in the dataset, hence avoiding significant reduction of the amount of data.
 \begin{figure}[H]
@@ -16,7 +15,7 @@ Even though the most extreme corruptions mentioned in section \ref{section:nucle
             \includegraphics{bilder/lightning-conditions/lightning-4.png}
         \end{tabularx}
     \caption[Different lighting conditions]%
-    {Different lighting conditions no dot permit a successful use of a global thresholding for the foreground segmentation.}
+    {Different challenges in lightning and cells density that do not permit a successful use of a global thresholding for the foreground segmentation.}
     \label{fig:lightning_conditions}
 \end{figure}
 
@@ -24,7 +23,7 @@ Examples of cases difficult for segmentation are presented in Figure \ref{fig:li
 
 Another challenge for segmentation bring nuclei that are very close to each other. This might happen sometimes because some of the cells are currently in the process of division. Also, when some have already fully divided, they might still be located close to one another. The example of such situations is presented in Figure \ref{fig:closely-located-cells}.
 
-\begin{figure}[H]
+\begin{figure}[htb]
     \centering
     \subfloat[Original fluorescence]{{\includegraphics[width=0.2\linewidth]{bilder/close-located-cells/original.png} }}
     \qquad

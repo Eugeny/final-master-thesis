@@ -1,24 +1,8 @@
 There were four targets studied in this research: nuclei, endoplasmic reticulum, Golgi apparatus and a full cell target. The initial three targets provide many insights on the state of cells based on their quantity, size and the intensity of fluorescence signal that they can produce by binding with the protein, the latter is useful in general for locating cells and calculating their area. There are of course other possible targets that could be used during the selection step of CLD, but the goal of this particular study was to provide the proof of concept on whether the network could potentially substitute manual fluorescence staining in general. The hypothesis on which we rely here is that if the model can successfully predict the fluorescence signal from some of the targets, then this research could be extended to other cell organelles as well.
 
-The imaging data always comes in pairs (DIC + fluorescence imaging) and has the following structure:
+The imaging data always comes in pairs (DIC + fluorescence imaging) and it splitted into several \textit{datasets}, where each dataset corresponds to one $96$-well plate. There are only several datasets for each of the organelles and each of them contains $100$ images of random locations within this plate. Almost all plates contain pairs of images from one fluorescent staining target only. More details about the used folder structure can be found in Appendix \ref{appendix:first}.
 
-
-\dirtree{%
-    .1 dataset0.
-        .2 DIC.
-            .3 {\{CHOZN, PHX, H19\}\_XY001.tif}.
-            .3 {$\cdots$}.
-            .3 {\{CHOZN, PHX, H19\}\_XY100.tif}.
-        .2 \{DAPI\_nuclei, FITC, FITC\_er, CY5\_golgi\}.
-            .3 {\{CHOZN, PHX, H19\}\_XY001.tif}.
-            .3 {$\cdots$}.
-            .3 {\{CHOZN, PHX, H19\}\_XY100.tif}.
-    .1 {$\cdots$}.
-    .1 datasetN.
-        .2 {$\cdots$}.
-  }
-
-Here a $\text{dataset}\{0, \ldots, N\}$ is one 96-well plate. There are only several datasets for each of the organelles and each of them contains 100 images of random locations within this plate. Each dataset includes two subfolders --- namely, a DIC and a fluorescence subfolder. The name of the latter one corresponds to the name of the fluorescent binding molecule as they are different for each target within the cell. Almost all plates contain pairs of images from one fluorescent staining target only. Each filename within the subfolder includes its index number between $\{1, \ldots, 100\}$ and the phenotype of the cell. "Cellular phenotype is the conglomerate of multiple cellular processes involving gene and protein expression that result in the elaboration of a cell's particular morphology and function" \cite{Sul_2009}. There are only three different phenotypes present across the datasets: CHOZN, PHX and H19. The latter, however is present only for a full cell target.
+There were three different phenotypes present across the datasets: CHOZN, PHX and H19. The latter, however is present only for a full cell target. "Cellular phenotype is the conglomerate of multiple cellular processes involving gene and protein expression that result in the elaboration of a cell's particular morphology and function" \cite{Sul_2009}.
 
 \begin{table}[H]
     \centering
@@ -36,4 +20,4 @@ Here a $\text{dataset}\{0, \ldots, N\}$ is one 96-well plate. There are only sev
     \label{table:data}
 \end{table}
 
-For training, all images are cropped into smaller crops of size $256 \times 256$ and split between training, test and validation sets ($70\%$, $20\%$, $10\%$ accordingly) with crops from one image being present only in a single set. However, it is still possible that the cells themselves might be mixed up between the sets. This is because of the randomness of the microscopy focusing system (see subsection \ref{par:crops-combination}). The summary of the total number of crops in each set is presened in Table \ref{table:data}.
+For training, all images with original size of $2136 \times 2136$ are cropped into smaller crops of size $256 \times 256$ and split between training, test and validation sets ($70\%$, $20\%$, $10\%$ accordingly) with crops from one image being present only in a single set. However, it is still possible that the cells themselves might be mixed up between the sets. This is because of the randomness of the microscopy focusing system (see subsection \ref{par:crops-combination}). The summary of the total number of crops in each set is presened in Table \ref{table:data}.
