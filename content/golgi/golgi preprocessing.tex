@@ -2,8 +2,9 @@ One can see an example of what Golgi fluorescence staining looks like in Figure 
 
 \begin{figure}[htb]
 	\begin{center}
-		\includegraphics[width=0.5\linewidth]{bilder/enhancement.jpg}
-		\caption{Golgi enhancement: left --- original signal, right --- enhanced image}\label{fig:golgi-enhancement}
+		\includegraphics[width=0.5\linewidth]{bilder/enhancement.png}
+		\caption[Golgi preprocessing]%
+		{Golgi preprocessing: (a) --- original signal, (b) --- image with background removed (using rolling ball algorithm)}\label{fig:golgi-enhancement}
 	\end{center}
 \end{figure}
 
@@ -13,6 +14,6 @@ Having such a non-specific fluorescence background has two challenges for traini
     \item It introduces difficulties during the postprocessing of the predictions. As well as for nuclei, the mask of the predicted Golgi apparatus is needed for further evaluation of the biological metrics. Using the same algorithm for postprocessing segmentation that was used for nuclei, the mask of the Golgi Apparatus will consider the background noise to be relevant, although this is an unwanted behavior.
 \end{itemize}
 
-In the left part of Figure \ref{fig:golgi-enhancement} one can see the original ground truth image and on the right side we can see the images after the background was subtracted. One of the great background subtraction algorithms is the rolling ball algorithm which is described below.
+In the left part of Figure \ref{fig:golgi-enhancement} one can see the original ground truth image and on the right side we can see the image after the background was subtracted. The algorithm used here is the rolling ball algorithm and it is described below.
 
 Additionally, all of the crops used for training were filtered base on the amount of background they contain. Without filtering the crops that contain a lot of background, a big portion of a dataset would consist of black crops only, which creates very strong class imbalance.

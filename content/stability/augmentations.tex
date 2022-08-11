@@ -15,12 +15,12 @@ Using artificial corruptions in training augmentations positively influences the
 	\end{center}
 \end{figure}
 
-\subsubsection{Influence of corruptions on metrics for biological tasks}
+\subsubsection{Influence of corruptions on metrics for practical biological evaluation}
 Additionally, since for artificial corruptions the ground truth data from staining is present, the difference in biological metrics for models with and without augmentations was measured (see Table \ref{table:nuclei-corruptions-downstream-metrics-coefficients}), more specifically Spearman rank correlarion coefficients were compared. The calculation of biological metrics remained the same except for the thresholding algorithm that was switched to a global one due to the time limit. This results in the wrong segmentation of some of the ground ground truth images due to the illumination inconsistences Therefore Spearman rank correlation coefficient is more repesentative here since it is more stable towards the outliers. The rest of the postprocessing procedure has remained the same apart from the application of artificial corruptions on the input data.
 
 \begin{table}[htb]
     \centering
-    \caption{Correlation coefficients for biological tasks on nuclei}
+    \caption{Correlation coefficients for practical biological evaluation on nuclei}
         \begin{adjustbox}{width=0.7\linewidth}
             \begin{tabular}{|c|c|c|c|c|}\hline
                 Contrast level&Number of nuclei&Total intensity&Mean intensity&Area\\\hline\hline

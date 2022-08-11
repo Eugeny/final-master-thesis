@@ -35,12 +35,12 @@ Another challenge for segmentation bring nuclei that are very close to each othe
 
 Here, the cells that are not yet fully divided are highlighted with green circles and the ones that are fully divided, but located too close to one another, are highlighted with red circles. You can see that the segmentation algorithm (see Algorithm \ref{algorithm:nuclei-segmentation}) recognises both such cases as one nucleus. This algorithm is described below and its steps are visualized in Figure \ref{fig:segmentation-nuclei-steps}.
 \begin{algorithm}
-    \caption{Fluorescence segmentation}
+    \caption{Fluorescence segmentation of nuclei}
     \begin{algorithmic}
     \item 1. Normalize image.
     \item 2. Apply local thresholding and get a threshold $T$ or a set of local thresholds \{$T_i$\} and create an initial mask: $1$ if $x_i > T$ or $0$ otherwise.
     \item 3. Apply \textit{fill\_holes} transformation to the initial mask in order to get rid of unneeded details within the nuclei.
-    \item 4. Run \textit{findContours} from opencv in order to obtain separate regions and filter them based on the following criteria: filter out regions that are too big (measure the biggest possible nuclei manually), regions that are too small (measured manually as well), regions that have a shape that is not similar to convex circular type of nuclei. The last filter is done by checking the ratio of the area of the region to the area of the convex hull of the region.
+    \item 4. Run \textit{findContours} from opencv in order to obtain separate regions and filter them based on the following criteria: filter out regions that are too big (measure the biggest possible nuclei manually), regions that are too small (measured manually as well), regions that have a shape that is not similar to convex circular type of nuclei. The last filter is done by checking the ratio of the area of the region to the area of the convex hull of the region (for more details regarding \textit{findContours} implementation refer too \cite{Suzuki_1985}).
     \end{algorithmic}
     \label{algorithm:nuclei-segmentation}
 \end{algorithm}
@@ -63,4 +63,4 @@ Here, the cells that are not yet fully divided are highlighted with green circle
     \label{fig:segmentation-nuclei-steps}
 \end{figure}
 
-A more detailed description of step 2 of the algorithm (thresholding) as well as the general theory behind it is provided in the next subsection.
+A more detailed description of the reasoning why local thresholding approach was chosen is provided in the following subsection.

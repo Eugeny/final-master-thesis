@@ -1,8 +1,8 @@
-Additionally the quality of the model has been checked for different scales of the input. It was interesting to know whether or not the quality of predictions differ based on the size of the cell within the crop. For this, two additional datasets were prepared: one, where the images were first scaled up by a factor of $1.3$ and another one, where they were scaled down by a factor of $0.7$. Afterwards the images were cropped as usual into $256 \times 256$ crops. Prediction quality was measured based on the biological metrics described in Section \ref{section:model-evaluation} and the results are presented in Table \ref{table:nuclei-scaling-influence}.
+Additionally the quality of the model has been checked for different scales of the input. It was interesting to know whether or not the quality of predictions differs based on the size of the cell within the crop. For this, two additional datasets were prepared: one, where the images were first scaled up by a factor of $1.3$ and another one, where they were scaled down by a factor of $0.7$. Afterwards the images were cropped as usual into $256 \times 256$ crops. Prediction quality was measured based on the biological metrics described in Section \ref{section:model-evaluation} and the results are presented in Table \ref{table:nuclei-scaling-influence}.
 
 \begin{table}[H]
     \centering
-    \caption{Pearson correlation coefficients for biological tasks for different scaling factors}
+    \caption{Pearson correlation coefficients for practical biological evaluation for different scaling factors}
         \begin{adjustbox}{width=\textwidth}
             \begin{tabular}{|M{35mm}|M{35mm}|M{35mm}|M{35mm}|M{35mm}|M{35mm}|M{35mm}|}\hline
                 &1.3 scale&0.7 scale&Train (1.0 scale + augments) \newline Predict (1.3 scale)&Train (1.3 scale) \newline Predict (1.0 scale)&Train (1.3 scale) \newline Predict (0.7 scale)
@@ -16,4 +16,4 @@ Additionally the quality of the model has been checked for different scales of t
     \label{table:nuclei-scaling-influence}
 \end{table}
 
-As a result, the bigger the cell is within the image, the better its intensity can be predicted (both total and mean). However, the number of nuclei and their area, are mostly not affected by the size of the cell. Also training on the bigger cells and predicting on the usual ones as well as vice versa, does not change the accuracy as long as the difference is not significant. However when the difference becomes bigger (training on the enlarged cells and predicting on the smaller ones), the accuracy of the model decreases. The accuracy for all these valuesis defined as PCC.
+As one can see from Table \ref{table:nuclei-scaling-influence}, the bigger the cell is within the image, the better its total and mean intensity can be predicted (see the first column). However, the number of nuclei and their area, are mostly not affected by the size of the cell. Also training on the bigger cells and predicting on the usual ones as well as vice versa, does not change the accuracy as long as the difference is not significant. However when the difference becomes bigger (training on the enlarged cells and predicting on the smaller ones), the accuracy of the model decreases. The model performance for all these values was defined as PCC.

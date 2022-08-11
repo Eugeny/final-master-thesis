@@ -26,7 +26,7 @@ The structuring element for morphological opening of an umbra has to be then als
     \label{fig:rolling-ball}
 \end{figure}
 
-Subtracting the background with the rolling ball algorithm unfortunately is still not enough to get a reasonably clean signal of Golgi apparatus from fluorescence imaging, as a lot of background noise will still be present there. In Figure \ref{subfig:vanilla} one can see a fluorescence image preprocessed with a rolling ball algorithm. Let's turn it into a binary image that can be seen in Figure \ref{subfig:vanilla-mask}. 
+Subtracting the background with the rolling ball algorithm unfortunately is still not enough to get a reasonably clean signal of Golgi apparatus from fluorescence imaging, as a lot of background noise will still be present there. In Figure \ref{subfig:vanilla} one can see a fluorescence image preprocessed with a rolling ball algorithm. After turning it into a binary image that can be seen in Figure \ref{subfig:vanilla-mask}, it becomes clear that the images still contains a lot of background low-intensity noise, which was not visible for an eye.
 \begin{figure}[htb]
 	\centering
 	\begin{subfigure}[b]{0.22\textwidth}
@@ -56,10 +56,10 @@ Subtracting the background with the rolling ball algorithm unfortunately is stil
 		\caption{}
 		\label{subfig:clipping-mask}
 	\end{subfigure}
-	   \caption{(a) Vanilla preprocessing with automatic background removal algorithm only; (b) masked or subfigure (a); (c) Additional clipping of lower intensities after vanilla pre-processing; (d) mask of subfigure (c)}
+	   \caption{(a) Basic preprocessing with automatic background removal algorithm only; (b) binary masked of subfigure (a); (c) Additional clipping of lower intensities after vanilla pre-processing; (d) binary mask of subfigure (c)}
 	   \label{fig:pre-processing-golgi}
 \end{figure}
-It clearly still contains a lot of background noise of low intensity which was not visible for an eye. In order to get rid of it one could clip lower intensities of the image via the following approach:
+In order to get rid of it one could clip lower intensities of the image via the following approach:
 \begin{lstlisting}
 	import numpy as np
 		

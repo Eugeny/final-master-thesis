@@ -1,28 +1,35 @@
-The process of ER fluorescence segmentation is somewhat different in comparison to nuclei segmentation. This fluorescence staining has a stronger "shining" around the ER itself and therefore any method for background removal would be helpful to reduce it. One such method based on the rolling ball algorithm is described in more detail in section \ref{par:background-removal}.
+The process of ER fluorescence segmentation is somewhat different in comparison to nuclei segmentation. This fluorescence staining has a stronger "shining" around the ER itself (see Figure \ref{fig:shine-er}) and therefore any method for background removal would be helpful to reduce it. One such method based on the rolling ball algorithm is described in more detail in section \ref{par:background-removal}. However, since the prediction results were of a good quality without any special preprocssing, rolling ball algorithm was not applied. Its application would potentially help to separate ERs for individual cells, which is not necessary for our evaluation pipeline.
 
-Initially it was established that a local thresholding approach for segmentation would be necessary here as well, as the images also have a non-uniform illumitation. However, one downside of a local thresholding algorithm is the appearance of the artifacts briefly mentioned in the previous section and presented in Figure \ref{fig:artifacts-er}. Even though the background in fluorescence imaging appears to be completely black, it still contains some slight signal (non-zero values), that are boosted by a local threshold and becomes an unwanted artifact. 
+\begin{figure}[htb]
+	\begin{center}
+		\includegraphics[width=0.2\linewidth]{bilder/ER/shine.png}
+		\caption{"Shine" surrounding the ER that makes closely located ERs not easily separable.}\label{fig:shine-er}
+	\end{center}
+\end{figure}
+
+Due to the non-uniform illumitation a local thresholding approach for segmentation would be necessary here as well. However, one downside of a local thresholding algorithm is the appearance of the artifacts briefly mentioned in the previous section and presented in Figure \ref{fig:artifacts-er}. Even though the background in fluorescence imaging appears to be completely black, it still contains some slight signal (non-zero values), that are boosted by a local threshold and becomes an unwanted artifact. 
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=\linewidth]{bilder/ER/artifacts.png}
 		\caption{Artifacts from local thresholding algorithm}\label{fig:artifacts-er}
 	\end{center}
 \end{figure}
-Such falsely recognized regions appeared in the nuclei as well. There they were easily filtered out based on the shape criteria. All nuclei are almost round and convex objects, whereas background artifacts are prolonged, non-convex objects. Unfortunately, such filtration cannot be applied to ER imaging as very often ER from one cell is located very close to the ER from another cell, and together they may form a long non-convex object, that now cannot be filtered out this easily. This is why it is very important to remove the background noise here first before applying a local threshold.
+Such falsely recognized regions appeared in the nuclei as well. There they could be easily filtered out based on the shape criteria. All nuclei are almost round and convex objects, whereas background artifacts are prolonged, non-convex objects. Unfortunately, such filtration cannot be applied to ER imaging as very often ER from one cell is located very close to the ER from another cell, and together they may form a long non-convex object, that now cannot be filtered out this easily. This is why it is very important to remove the background noise here first before applying a local threshold.
 
-In order to do that one can first apply a rough "over-predictive" global thresholding that will cover a true signal fully, including the "shine" around the ER, but will ignore the background noise. In the role of "over-predictive" a global mean thresholding algorithm can be used (see Figure \ref{fig:er-segmentation-steps}.2). The mask created with the mean thresholding approach is used to zero out all the pixels that are not covered by it. And after that the local thresholding can be successfully applied with the \textit{block\_size} of $181$ (Figure \ref{fig:er-segmentation-steps}.4). The algorithm then fills in all the holes in the middle of ER that might have appeared during the thresholding. Morphological opening (see Section \ref{def:morphological-opening}) and Gaussian blur with the squared kernel $3 \times 3$ are applied. Connected components are detected afterwards and filtered based on the limit of the area they occupy. This mostly filters out very small components from the mask which might have been produced by the left out background noise. The whole algorithm overview is described below:
+In order to do that one can first apply a rough "over-predictive" global thresholding that will cover a true signal fully, including the "shine" around the ER, but will ignore the background noise. In the role of "over-predictive" a global mean thresholding algorithm can be used (see Figure \ref{fig:er-segmentation-steps}.2). The mask created with the mean thresholding approach is used to zero out all the pixels that are not covered by it. And after that the local thresholding can be successfully applied with the \textit{block\_size} of $181$ (Figure \ref{fig:er-segmentation-steps}.4). The algorithm then fills in all the holes in the middle of ER that might have appeared during the thresholding. Morphological opening (see Definition \ref{def:morphological-opening}) and Gaussian blur with the squared kernel $3 \times 3$ are applied. Connected components are detected afterwards and filtered based on the limit of the area they occupy. This mostly filters out very small components from the mask which might have been produced by the left out background noise. The whole algorithm overview is described below:
 
 Segmentation steps are described in Algorithm \ref{alg:er-segmentation-steps} and also illustrated in Figure \ref{fig:er-segmentation-steps}.
 
-\begin{algorithm}
-    \caption{Fluorescence segmentation}
+\begin{algorithm}[htb]
+    \caption{Fluorescence segmentation of ER}
     \begin{algorithmic}
     \item 1. Normalize image
     \item 2. Apply global \textit{threshold\_mean} to receive initial mask
     \item 3. Zero out pixels outside the mask
     \item 4. Apply local thresholding
     \item 5. Apply \textit{fill\_holes} transformation
-    \item 6. Morphological opening from OpenCV and Gaussian blur
-    \item 7. Run \textit{findContours} from OpenCV in order to obtain separate regions and filter out regions that are too small
+    \item 6. Morphological opening from OpenCV and Gaussian blur (see Definition \ref{def:morphological-opening})
+    \item 7. Run \textit{findContours} from OpenCV in order to obtain separate regions and filter out regions that are too small (for more details regarding \textit{findContours} implementation refer too \cite{Suzuki_1985})
     \end{algorithmic}
     \label{alg:er-segmentation-steps}
 \end{algorithm}    
@@ -30,6 +37,7 @@ Segmentation steps are described in Algorithm \ref{alg:er-segmentation-steps} an
 \begin{figure}[htb]
     \begin{center}
         \includegraphics[width=\linewidth]{bilder/ER/segmentation/segmentation.png}
-        \caption{Segmentation steps in ER postprocessing procedure}\label{fig:er-segmentation-steps}
+        \caption[Segmentation steps in ER postprocessing procedure]%
+        {Segmentation steps in ER postprocessing procedure. Steps description: 1 --- image normalization, 2 --- global mean thresholding, 3 --- zeroing out background, 4 --- local thresholding, 5 --- filling holes, 6 --- morphological opening, 7 --- filtering out too small regions. See how the "shining" effect visible in the step $2$ disappears on the step $7$.}\label{fig:er-segmentation-steps}
     \end{center}
 \end{figure}
