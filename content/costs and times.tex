@@ -20,7 +20,7 @@ For both training and inference purposes two GPU models were tested g3-4xlarge (
                 \\\hline\hline
                 g3.4xlarge & usual& $6.5 \text{min}$ & $18,432$ & $0.07125\$$ & $0.3\$$\\\hline
                 p3.2xlarge & usual& $57 \text{sec}$ & $18,432$ & $0.1911\$$ &$0.18\$$\\\hline
-                p3.2xlarge & bigger& $?$ & $?$ & $?\$$ &$?\$$\\\hline
+                p3.2xlarge & bigger& $4.7 \text{min}$ & $18,432$ & $0.1911\$$ &$1.47\$$\\\hline
             \end{tabularx}
             \caption[Cost estimation of AWS use for training models]%
             {Cost estimation of AWS use for training models. Prices were retrieved on 01.06.2022}
@@ -35,15 +35,17 @@ For both training and inference purposes two GPU models were tested g3-4xlarge (
     \centering
     \setkeys{Gin}{width=\linewidth}
     \centering
-        \begin{tabularx}{\linewidth}{|Y|cYcc|}
+        \begin{tabularx}{\linewidth}{|Y|ccYcc|}
             \hline
+            &Model
             &Runtime
             &Dataset size
             &Cost per minute
             &Cost of inference
             \\\hline\hline
-            g3.4xlarge & $?\text{mins}$ & $2,048$ & $0.07125$ & $? \$$\\\hline
-            p3.2xlarge & $?\text{mins}$ &  $2,048$ & $0.1911$ &$? \$$\\\hline
+            g3.4xlarge & usual & $42\text{sec}$ & $7,616$ & $0.0713$ & $0.050 \$$\\\hline
+            p3.2xlarge & usual & $13\text{sec}$ &  $7,616$ & $0.1911$ &$0.040 \$$\\\hline
+            p3.2xlarge & bigger & $39\text{sec}$ &  $7,616$ & $0.1911$ &$0.124 \$$\\\hline
         \end{tabularx}
         \caption[Cost estimation of AWS use for inference purposes]%
         {Cost estimation of AWS use for inference purposes. Prices were retrieved on 01.06.2022}

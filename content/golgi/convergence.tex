@@ -6,7 +6,7 @@ Applying the usual model architecture with PCC loss to train the model to predic
 	\end{center}
 \end{figure}
 
-This was also depicted in visual predictions where the predicted fluorescence mostly contains dark pixels only (see Figure \ref{fig:golgi-no-reg-pcc-predictions}). Although it seems that some pattern is hidden behind the dark pixels, visualizing it simply shows that the model picks up on the cell outline itself and does not provide any useful information on the location of Golgi. One can see this by normalizing the predicted dark image to the range $[0,1]$ (Figure \ref{fig:golgi-no-reg-pcc-predictions}).
+This was also depicted in visual predictions where the predicted fluorescence mostly contains dark pixels only (see Figure \ref{fig:golgi-no-reg-pcc-predictions} prediction). Although it seems that some pattern is hidden behind the dark pixels, visualizing it simply shows that the model picks up on the cell outline itself and does not provide any useful information on the location of Golgi. One can see this by normalizing the predicted dark image to the range $[0,1]$ (Figure \ref{fig:golgi-no-reg-pcc-predictions} normalized).
 \begin{figure}[htb]
 	\begin{center}
 		\includegraphics[width=0.8\linewidth]{bilder/golgi/too-dark.png}
@@ -14,7 +14,7 @@ This was also depicted in visual predictions where the predicted fluorescence mo
 	\end{center}
 \end{figure}
 
-While in Figure \ref{fig:golgi-no-reg-pcc-predictions} only the results of predictions for one crop are presented, it would be interesting to see what the image with combined crops would look like. This is presented in Figure \ref{fig:golgi-no-reg-pcc-predictions-full}. An interesting pattern can be seen here: essentially the model is predicting some signal across the whole cell with a brighter region in some of them. Yet these regions do not have a correct location with respect to Golgi. Also, it is important to keep in mind that the image to the right in this Figure is a normalized one and a true image is almost fully black. 
+While in Figure \ref{fig:golgi-no-reg-pcc-predictions} only the results of predictions for one crop are presented, it would be interesting to see what the image with combined crops would look like. This is presented in Figure \ref{fig:golgi-no-reg-pcc-predictions-full}. An interesting pattern can be seen here: essentially the model is predicting some signal across the whole cell with a brighter region in some of them. Yet these regions do not have a correct location with respect to Golgi. Also, it is important to keep in mind that the image to the right in Figure \ref{fig:golgi-no-reg-pcc-predictions-full} is a normalized one and a true image is almost fully black. 
 \begin{figure}[htb]
 	\begin{center}
 		\includegraphics[width=0.8\linewidth]{bilder/golgi/full-img.png}
@@ -22,12 +22,12 @@ While in Figure \ref{fig:golgi-no-reg-pcc-predictions} only the results of predi
 	\end{center}
 \end{figure}
 
-This experiment created the hypothesis that the background removal algorithm might have reduced the signal-to-noise ratio and removes some important fluorescence signal along the way. Therefore an alternative approach of background removal had been tried, where only enhancing via clipping described above has been applied directly on fluorescence imaging (without using a rolling ball algorithm). This produces images that still have much more non-specific fluorescence background (see Figure \ref{fig:golgi-enhanced-predictions} [second image]), yet this preprocessing alternates the initial image to a much lower extent. 
+This experiment created the hypothesis that the background removal algorithm might have reduced the signal-to-noise ratio and removes some important fluorescence signal along the way. Therefore an alternative approach of background removal had been tried, where only enhancing via clipping described above has been applied directly on fluorescence imaging (without using a rolling ball algorithm). This produces images that still have much more non-specific fluorescence background (see Figure \ref{fig:golgi-enhanced-predictions}b), yet this preprocessing alters the initial image to a much lower extent. 
 
 \begin{figure}[htb]
 	\begin{center}
 		\includegraphics[width=\linewidth]{bilder/golgi/enhanced-crop.png}
-		\caption{Training on the enhanced data}\label{fig:golgi-enhanced-predictions}
+		\caption{Training on the enhanced data only (without rolling ball algorithm)}\label{fig:golgi-enhanced-predictions}
 	\end{center}
 \end{figure}
 In this case predictions are not completely black anymore, however their quality is still very low. Images used in these training experiments were effectively coming from different staining procedures, using different antibodies, fixation processes and microscopy settings. This raised the idea of training the model on few selective datasets only that were created with the first staining approach in mind. The preprocessing was chosen as in the previous example --- with the use of enhancement and without rolling ball algorithm as it has shown the best results.
@@ -39,4 +39,4 @@ In this case predictions are not completely black anymore, however their quality
 	\end{center}
 \end{figure}
 
-The predictions from this experiment can be found in Figure \ref{fig:12-13}. Due to the stricter filtering and the use of much less data there were much smaller crops which were used for training. In this case only $4251$ crops were used for training and $406$ for validation purposes, which directly led to overfitting after $70$ epochs. However, the predictions did improve visually and the loss dropped to $0.19$. Nevertheless the losses from these two experiments should not be compared directly as they were evaluated on two different validation sets. The improvement of the results indicated the careful choice of data samples taken from the same staining approach with the same settings, which do not require a severe preprocessing and already have a high signal-to-noise ratio. This might help the predictions significantly. There is a potential here for an improved regularization of the model trained on the small subset of data. Yet it is clear that the acquisition of a better fluorescence staining is much more crucial here.
+The predictions from this experiment can be found in Figure \ref{fig:12-13}. Due to the stricter filtering and the use of much less data there were much smaller crops which were used for training. In this case only $4251$ crops were used for training and $406$ for validation purposes, which directly led to overfitting after $70$ epochs. However, the predictions did improve visually and the loss dropped to $0.19$. Nevertheless the losses from these two experiments should not be compared directly as they were evaluated on two different validation sets. The improvement of the results indicated the careful choice of data samples taken from the same staining approach with the same settings, which do not require a severe preprocessing and already have a high signal-to-noise ratio. This might help the predictions significantly. There is a potential here for an improved regularization of the model trained on the small subset of data. Yet it is clear that the acquisition of a better fluorescence staining is crucial here.

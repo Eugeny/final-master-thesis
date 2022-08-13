@@ -59,15 +59,4 @@ Subtracting the background with the rolling ball algorithm unfortunately is stil
 	   \caption{(a) Basic preprocessing with automatic background removal algorithm only; (b) binary masked of subfigure (a); (c) Additional clipping of lower intensities after vanilla pre-processing; (d) binary mask of subfigure (c)}
 	   \label{fig:pre-processing-golgi}
 \end{figure}
-In order to get rid of it one could clip lower intensities of the image via the following approach:
-\begin{lstlisting}
-	import numpy as np
-		
-	def clip(image):
-		minval = np.percentile(image, 90)
-		image = np.clip(image, minval, image.max())
-		image = (image - image.min()) / (image.max() - image.min())
-		return image
-\end{lstlisting}
-
-The result of the clipped image and its mask are illustated in Figure \ref{subfig:clipping}, \ref{subfig:clipping-mask} correspondingly. It contains almost no background noise now. Such additional clipping might improve the results slightly.
+In order to get rid of it one could clip lower intensities of the image via image enhancement. In order to do that one can simply clip all the intensities below $90$-th percentile of the image and normalize it afterwards. The result of the clipped image and its mask are illustated in Figure \ref{subfig:clipping}, \ref{subfig:clipping-mask} correspondingly. It contains almost no background noise now. Such additional clipping has improved the results slightly.
