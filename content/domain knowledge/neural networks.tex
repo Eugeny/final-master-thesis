@@ -17,7 +17,7 @@
 \begin{definition}[Loss function]
 	A loss function is a function $L(y, M(x, \theta))$ of model's parameters $\theta$, that for $(x^{(i)}, y^{(i)}) \in D$ outputs a scalar value measuring the difference between ground truth $y$ and prediction $M(x, \theta)$. A training objective is then defined as an average over the loss of each training sample:
 	\begin{equation}
-		J(\theta) = \mathbb{E}_{(x, y)\sim p_{data}} L(y, M(x, \theta))
+		J(\theta) = \mathbb{E}_{(x, y)\sim D} \left[L(y, M(x, \theta))\right]
 	\end{equation}
 	where $p_{data}$ denotes an empirical distribution of the training data.
 \end{definition}
@@ -40,7 +40,7 @@ In the following samples \textit{fan\_in} denotes the maximum number of input si
 \begin{definition}[He initialization]
 	He initialization is another initialization method proposed by \cite{He_2015} as it was noticed that Xavier initialization is not an optimal choice for the networks that include ReLU activations. The authors suggest a new robust method that enables training of even extremely deep or wide network architectures with ReLU activations. He initialization draws samples from a truncated normal distribution:
 	\begin{equation}
-		N(0, \sqrt{\frac{2}{\text{fan\_in}}})
+		{\cal N}(0, \frac{2}{\text{fan\_in}})
 	\end{equation}
 \end{definition}
 
@@ -71,7 +71,7 @@ Although in the study of \cite{He_2015} it is called Kaiming normal initializati
 	\label{def:pcc-loss}
 	Let $y \in \mathbb{R}^{WH}$ be a flattened ground truth and $y^\prime \in \mathbb{R}^{WH}$ be a flattened predicted image. The PCC loss is defined as:
 	\begin{align}
-		PCC(y, y^\prime) &= \frac{\sum_{i=1}^{{WH}}{(y_i - \bar{y})(y_i^\prime - \bar{y}^\prime)}}{\sqrt{\sum_{i=1}^{{WH}^2}{(y_i - \bar{y})^2(y_i^\prime - \bar{y}^\prime)^2}}}  \\
+		PCC(y, y^\prime) &= \frac{\sum\limits_{i=1}^{{W\times H}}{(y_i - \bar{y})(y_i^\prime - \bar{y}^\prime)}}{\sqrt{\sum\limits_{i=1}^{W\times H}{(y_i - \bar{y})^2\sum\limits_{i=1}^{W\times H}(y_i^\prime - \bar{y}^\prime)^2}}}  \\
 		L(y, y^\prime) &= \frac{1 - PCC(y, y^\prime)}{2}
 	\end{align}
 	where $\bar{y}$, $\bar{y}^\prime$ are means of the ground truth and predicted images respectively.
@@ -92,7 +92,7 @@ With a maximum likelihood esimation, we get:
 
 After maximizing the sum and taking a gradient one gets:
 \begin{equation}
-	\nabla_{\theta} J(\theta) = \mathbb{E}_{x, y \sim p_{data}} \nabla_{\theta} \log{p_{\text{model}}(x, y, \theta)}
+	\nabla_{\theta} J(\theta) = \mathbb{E}_{x, y \sim p_{data}} \left[\nabla_{\theta} \log{p_{\text{model}}(x, y, \theta)}\right]
 \end{equation}
 
 The exact gradient on a discretized data-generating distribution is then:
@@ -162,7 +162,7 @@ Since essentially one of the main tasks of this research is to create a deep lea
 CNNs are able to capture nonlinear relationships over large areas of images, they greatly improve performance for image recognition tasks in comparison to classical machine learning methods (\cite{Ounkomol_2018}). The word "convolutional" suggests that the convolution operation should be used in at least one of the layers there.  
 
 \begin{definition}[Convolutional layer]
-	A convolutional layer is a trainable function with parametrized kernel $K \in \mathbb{R}^{F \times F \times C}$ and bias $b \in \mathbb{R}$ that is usually denoted via the operator $(\cdot * \cdot)$. By transforming an input $x \in \mathbb{R}^{W \times H \times C}$ it produces an output $S$
+	A convolutional layer is a trainable function with parametrized kernel $K \in \mathbb{R}^{F \times G \times C}$ and bias $b \in \mathbb{R}$ that is usually denoted via the operator $(\cdot * \cdot)$. By transforming an input $x \in \mathbb{R}^{W \times H \times C}$ it produces an output $S$
 	\begin{equation}
 		S = K * x + b
 	\end{equation}
@@ -224,7 +224,7 @@ It is important to use activation functions after each convolutional or linear l
 \end{definition}
 
 \begin{definition}[Dropout layer]
-	Dropout is a technique that randomly sets some weights (units) to zero (\cite{Srivastava_2014}). It leads to the training of several smaller networks that share the parameters. If a mask vector $\mu$ specifies which units are included in training, then dropout's objective to be minimized becomes: $\mathbb{E}_\mu J(\theta, \mu)$. Visually dropout is presented in the Figure \ref{fig:dropout}.
+	Dropout is a technique that randomly sets some weights (units) to zero (\cite{Srivastava_2014}). It leads to the training of several smaller networks that share the parameters. If a mask vector $\mu$ specifies which units are included in training, then dropout's objective to be minimized becomes: $\mathbb{E}_\mu \left[J(\theta, \mu)\right]$. Visually dropout is presented in the Figure \ref{fig:dropout}.
 \end{definition}
 
 %TODO add figure reference!
