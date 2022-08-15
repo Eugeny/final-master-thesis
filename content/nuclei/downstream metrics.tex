@@ -6,7 +6,7 @@ For each metric two plots are presented here: violin plot for visual comparison 
 
 \begin{figure}[htb]
 	\begin{center}
-		\includegraphics[width=0.8\linewidth]{bilder/nuclei/metric/combined-metrics-2.png}
+		\includegraphics[width=0.8\linewidth]{bilder/nuclei/metric/combined-metrics.png}
 		\caption{Metrics for practical biological evaluation on nuclei. Total and mean intensities}\label{fig:nuclei-downstream-metrics-1}
 	\end{center}
 \end{figure}
@@ -28,10 +28,21 @@ In general, based on these plots it was concluded that predictions are strongly 
                 &Pearson&Spearman
                 \\\hline\hline
                 Number of nuclei&0.982&0.984\\\hline
-                Total intensity&0.867&0.859\\\hline
-                Mean intensity&0.882&0.874\\\hline
+                Total intensity&0.861&0.855\\\hline
+                Mean intensity&0.877&0.873\\\hline
                 Area&0.971&0.976\\\hline
             \end{tabular}
         \label{table:nuclei-downstream-metrics-coefficients}
         \end{adjustbox}
 \end{table}
+
+Clear improvement in intensity capturing capabilities of a bigger model (see Figure \ref{fig:better-nuclei}) was also captured in terms of the biological metrics. Pearson correlation coefficient for total itensity measurements between predictions and ground truth images has improved from $0.861$ to $0.882$ and for mean intensity from $0.877$ to $0.881$. The fact that predictions became less bright was also depicted in Figure \ref{fig:nuclei-bigger-smaller-total-intensity}, where the average of the total intensity values became lower
+
+
+\begin{figure}[htb]
+	\begin{center}
+		\includegraphics[width=0.4\linewidth]{bilder/nuclei/metric/bigger-smaller-comparison.png}
+		\caption[Total intensity: comparison of usual model and a model of a bigger size]%
+        {Total intensity: comparison of usual model and a model of a bigger size. With the increased model size nuclei intensities are captured more precisely}\label{fig:nuclei-bigger-smaller-total-intensity}
+	\end{center}
+\end{figure}
