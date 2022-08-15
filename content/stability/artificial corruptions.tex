@@ -3,7 +3,7 @@ In this subsection results from evaluating models on three types of artificial i
 
 \subsubsection{Defocus Blur}
 \label{section:defocus-blur}
-Defocus blur corruption imitates the effect of defocus on the microscope. The blur is applied to the image by convolving it with a special defocus kernel. There are two tunable parameters for this corruption type: the first one is the radius of the circle in the kernel $r$, and the second one is the blur strength parameter $s$. An example of the kernel with radius $r$ is shown in the Figure \ref{fig:defocus-blur-kernel}. This kernel is then simply applied to an image via $cv2.filter2D$ function.
+Defocus blur corruption imitates the effect of defocus on the microscope. The blur is applied to the image by convolving it with a special defocus kernel. There are two tunable parameters for this corruption type: the first one is the radius of the circle in the kernel $r$, and the second one is the blur strength parameter $s$. An example of the kernel with radius $r$ is shown in the Figure \ref{fig:defocus-blur-kernel}.
 
 \begin{figure}[htb]
 	\begin{center}
@@ -55,11 +55,12 @@ The values of hyperparameters used in corruptions (kernel radius, gain and bias)
     \label{table:corruption-hyperparameters}
 \end{table}
 
-Severity level of $-5$ for contrast represents a highly contrastive image, while $5$ is a very low contrast image. For brightness corruption levels of $-5$ and $5$ correspond to images with very low and high brightness respectively. And defocus blur corruption has only 5 levels of severity (both parameters were varied at the same time), ranging from the original image (level $0$) to the image with a stronger blur (level $5$).
+Severity level of $-5$ for contrast represents a highly contrastive image, while $5$ is a very low contrast image. For brightness corruption levels of $-5$ and $5$ correspond to images with very low and high brightness respectively. And defocus blur corruption has only 5 levels of severity (both strength and kernel radius were varied at the same time), ranging from the original image (level $0$) to the image with a stronger blur (level $5$).
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=0.5\linewidth]{bilder/corruptions.png}
-		\caption{Influence of artificial corruptions on the predictions}
+		\includegraphics[width=0.7\linewidth]{bilder/corruptions.png}
+		\caption[Influence of artificial corruptions on the predictions]%
+        {Influence of artificial corruptions on the predictions. Three artificial corruption types along with their influence on predictions are presented here. There are $5$ different severity levels for every corruption (towards positive and negative direction), and severity level $0$ represents an original image.}
         \label{fig:artificial-corruptions}
 	\end{center}
 \end{figure}
@@ -72,4 +73,4 @@ One can observe the input image change for each of the corruptions along with th
 	\end{center}
 \end{figure}
 
-Additionally, a change in PCC loss is presented in Figure \ref{fig:corruptions-loss}. This is a plot of PCC loss for different artificial corruptions. Loss increases for stronger severity levels. We can see that in a positive direction with defocus blur corruption the model degerates more quicker and that contrast corruptions change predictions more severely in the negative one.
+Additionally, a change in PCC loss is presented in Figure \ref{fig:corruptions-loss}. This is a plot of PCC loss for different artificial corruptions. Loss increases for stronger severity levels. It can be seen that in a positive direction with defocus blur corruption the model degerates more quicker and that contrast corruptions change predictions more severely in the negative one.

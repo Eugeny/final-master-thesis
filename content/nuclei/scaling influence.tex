@@ -1,19 +1,38 @@
 Additionally the quality of the model has been checked for different scales of the input. It was interesting to know whether or not the quality of predictions differs based on the size of the cell within the crop. For this, two additional datasets were prepared: one, where the images were first scaled up by a factor of $1.3$ and another one, where they were scaled down by a factor of $0.7$. Afterwards the images were cropped as usual into $256 \times 256$ crops. Prediction quality was measured based on the biological metrics described in Section \ref{section:model-evaluation} and the results are presented in Table \ref{table:nuclei-scaling-influence}.
 
 \begin{table}[H]
+    \large
     \centering
     \caption{Pearson correlation coefficients for practical biological evaluation for different scaling factors}
         \begin{adjustbox}{width=\textwidth}
-            \begin{tabular}{|M{35mm}|M{35mm}|M{35mm}|M{35mm}|M{35mm}|M{35mm}|M{35mm}|}\hline
-                &1.3 scale&0.7 scale&Train (1.0 scale + augments) \newline Predict (1.3 scale)&Train (1.3 scale) \newline Predict (1.0 scale)&Train (1.3 scale) \newline Predict (0.7 scale)
+            \begin{tabular}{|M{35mm}|M{10mm}M{10mm}M{40mm}M{40mm}M{40mm}|}\hline
+                &1.3 scale&0.7 scale& Train \newline (1.0 scale + \newline augments) \newline  Predict (1.3 scale) & Train (1.3 scale) \newline  Predict (1.0 scale)&Train (1.3 scale) \newline  Predict (0.7 scale)
                 \\\hline\hline
-                Number of nuclei&0.987&0.995&0.975&0.971&?\\\hline
-                Total intensity&0.902&0.88&0.861&0.856&?\\\hline
-                Mean intensity&0.922&0.906&0.88&0.872&?\\\hline
-                Area&0.991&0.992&0.961&0.952&?\\\hline
+                Nuclei number&0.987&0.995&0.975&0.971&-0.659\\\hline
+                Total intensity&0.902&0.88&0.861&0.856&-0.212\\\hline
+                Mean intensity&0.922&0.906&0.88&0.872&0.077\\\hline
+                Area&0.991&0.992&0.961&0.952&-0.69\\\hline
             \end{tabular}
         \end{adjustbox}
     \label{table:nuclei-scaling-influence}
 \end{table}
 
-As one can see from Table \ref{table:nuclei-scaling-influence}, the bigger the cell is within the image, the better its total and mean intensity can be predicted (see the first column). However, the number of nuclei and their area, are mostly not affected by the size of the cell. Also training on the bigger cells and predicting on the usual ones as well as vice versa, does not change the accuracy as long as the difference is not significant. However when the difference becomes bigger (training on the enlarged cells and predicting on the smaller ones), the accuracy of the model decreases. The model performance for all these values was defined as PCC.
+%\begin{table}[H]
+%    \centering
+%    \setkeys{Gin}{width=\linewidth}
+%   \centering
+%        \begin{tabularx}{\linewidth}{|c|YYYYY|}
+%            \hline
+%            &1.3 scale&0.7 scale& Train (1.0 scale + augments)  Predict (1.3 scale) & Train (1.3 scale) Predict (1.0 scale)&Train (1.3 scale)  Predict (0.7 scale)
+%            \\\hline\hline
+%            Nuclei number&0.987&0.995&0.975&0.971&-0.659\\\hline
+%        \end{tabularx}
+%        \caption[Cost estimation of AWS use for inference purposes]%
+%        {Cost estimation of AWS use for inference purposes. Prices were retrieved on 01.06.2022}
+%        \label{table:costs-inference}
+%\end{table}
+
+
+%1.3 trained and tested on 0.7 r squared: -309 -2529 -6484 -6.21
+
+As one can see from Table \ref{table:nuclei-scaling-influence}, the bigger the cell is within the image, the better its total and mean intensity can be predicted (see the first column). However, the number of nuclei and their area, are mostly not affected by the size of the cell. Also training on the bigger cells and predicting on the usual ones as well as vice versa, does not change the accuracy as long as the difference is not significant. Nevertheless, when the difference becomes bigger (training on the enlarged cells and predicting on the smaller ones), the quality of the model decreases quite fast. The model trained on images with $1.3$ scale gives unacceptable predictions for images scaled down with coefficient $0.7$. The model performance for all these values was defined as PCC.
