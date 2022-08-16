@@ -7,14 +7,25 @@ Since the UNet embeddings are the most promising for clustering based on input c
 	\end{center}
 \end{figure}
 
-PaCMAP allows a more flexible hyperparameter tuning in order to preserve local and global relations from high-dimensional data and as a result a better clustering can be found. As usual PaCMAP was trained using "good" training data only, meaning no corruptions were introduced. And only when the transformation from high-dimensional into a lower-dimensional space was found, corrupted crops were projected using this transformation. Figure \ref{fig:unet-clustering} presents results of training PaCMAP with four different hyperparametrization settings. There are three hyperparameters that were changed here: \textit{MN\_ratio}, \textit{FP\_ratio} and \textit{n\_neighbors}. A detailed explanation of their influence was also given in section \ref{section:pacmap}. From left to right in Figure \ref{fig:unet-clustering}:
+PaCMAP allows a more flexible hyperparameter tuning in order to preserve local and global relations from high-dimensional data and as a result a better clustering can be found. As usual PaCMAP was trained using "good" training data only, meaning no corruptions were introduced. And only when the transformation from high-dimensional into a lower-dimensional space was found, corrupted crops were projected using this transformation. Figure \ref{fig:unet-clustering} presents results of training PaCMAP with four different hyperparametrization settings. There are three hyperparameters that were changed here: \textit{MN\_ratio}, \textit{FP\_ratio} and \textit{n\_neighbors}. A detailed explanation of their influence was also given in Section \ref{section:pacmap}. From left to right in Figure \ref{fig:unet-clustering} the hyperparameters were taken from Table \ref{table:pacmap-hyperparametrization}:
 
-\begin{itemize}
-	\item \textit{MN\_ratio}=0.5, \textit{FP\_ratio}=0.1, \textit{n\_neighbors}=10
-	\item \textit{MN\_ratio}=0.1, \textit{FP\_ratio}=0.1, \textit{n\_neighbors}=10
-	\item \textit{MN\_ratio}=0.5, \textit{FP\_ratio}=0.5, \textit{n\_neighbors}=2
-	\item \textit{MN\_ratio}=0.1, \textit{FP\_ratio}=0.5, \textit{n\_neighbors}=10
-\end{itemize}
+\begin{table}
+	\centering
+	\begin{tabularx}{\linewidth}{|ccc|}
+		\hline
+		\textit{MN\_ratio}
+		&\textit{FP\_ratio}
+		&\textit{n\_neighbors}
+		\\\hline\hline
+		$0.5$ & $0.1$ & $10$ \\\hline
+		$0.1$ & $0.1$ & $10$\\\hline
+		$0.5$ & $0.5$ & $2$\\\hline
+		$0.1$ & $0.5$ & $10$\\\hline
+	\end{tabularx}
+	\caption[PaCMAP hyperparameters]%
+	{PaCMAP hyperparameters}
+	\label{table:pacmap-hyperparametrization}
+\end{table}
 
 In this case a cluster of green dots represents the projected UNet embeddings of images corrupted with defocus blur with severity level $4$, which is already a strong corruption and leads to unacceptable predictions of the model, that did not have defocus blur augmentations. However, these points are still strongly mixed with non-corrupted ones. In order to check how separable they are unsupervised clustering DBSCAN algorithm was used. Results of this clustering are shown in Figure \ref{fig:unet-clustering-sev-levels}. The density based clustering approach utilized here was described in more details in section \ref{section:dbscan}. 
 

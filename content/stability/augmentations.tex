@@ -23,7 +23,6 @@ Additionally, since for artificial corruptions the ground truth data from staini
 \begin{table}[htb]
     \centering
     \caption{Correlation coefficients for practical biological evaluation on nuclei}
-        \begin{adjustbox}{width=0.7\linewidth}
             \begin{tabular}{|c|c|c|c|c|}\hline
                 Contrast level&Number of nuclei&Total intensity&Mean intensity&Area\\\hline\hline
                 +1&0.934&0.825&0.826&0.898\\\hline
@@ -39,7 +38,6 @@ Additionally, since for artificial corruptions the ground truth data from staini
                 +5&-0.072&-0.233&-0.231&0.07\\\hline
             \end{tabular}
         \label{table:nuclei-corruptions-downstream-metrics-coefficients}
-        \end{adjustbox}
 \end{table} 
 
 One can observe from the table above that the metrics degrade quite fast starting from the severity level $3$. Which aligns well with the visual evaluation of corruptions in Figure \ref{fig:artificial-corruptions} where level $3$ of contrast and defocus blur corruptions affect the intensities and level $4$ affects the whole nuclei outline. Biological metrics confirm that the most affected metrics are the total and mean intensities, whereas the number of organelles seems to be the most stable metric until the very last severity level where the predictions turn almost completely black. Although these metrics are much more representative than PCC or MSE loss they also they their own downsides. For example, severity level $4$ produces not reliable predictions, however correlation coefficient of mean intensity is not completely low --- $0.67$. Therefore it is important to assess predictions quality visually and keep in mind that biological metrics should be ideally quite high.

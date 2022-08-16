@@ -1,4 +1,4 @@
-Since UNet embeddings seem do not seem to exhibit any exceptional results in terms of clustering, it was decided to train a vanilla autoencoder directly on image crops. Since the autoencoder's embeddings contain dense semantic information of the input they might provide more insights for clustering the priorly mentioned hypotheses. Figure \ref{fig:ae-training} presents the architecture of two convolutional autoencoders used for these experiments. One compresses $256 \times 256$ input crops into embeddings vector of size $3528$ and another one compresses them into a vector of a smaller size of $200$. Both autoencoders were trained using MSE loss. The results of their convergence are presented in Figure \ref{fig:ae-training} on the right.
+Since UNet embeddings do not seem to exhibit any exceptional results in terms of clustering, it was decided to train an autoencoder directly on DIC image crops. Since the autoencoder's embeddings contain dense semantic information of the input they might provide more insights for clustering the previously mentioned hypotheses. Figure \ref{fig:ae-training} presents the architecture of two convolutional autoencoders used for these experiments. One compresses $256 \times 256$ input crops into embeddings vector of size $3528$ and another one compresses them into a vector of a smaller size of $200$. Both autoencoders were trained using MSE loss. The results of their convergence are presented in Figure \ref{fig:ae-training} on the right.
 
 \begin{figure}[H]
 	\begin{center}
@@ -8,10 +8,10 @@ Since UNet embeddings seem do not seem to exhibit any exceptional results in ter
 \end{figure}
 
 An autoencoder with embeddings of bigger size was able to achieve a lower loss as well and the samples reconstructed from it were of higher quality (see Figure \ref{fig:ae-samples}). Clearly reconstruction of the samples will not have a high resolution as there are no skip-connections in this architecture. However, this is also not needed, the main goal here is to find out whether autoencoder embeddings provide any insights on the data.
-\begin{figure}[H]
+\begin{figure}[htb]
 	\begin{center}
 		\includegraphics[width=0.5\linewidth]{bilder/ae-embeddings/ae-samples.png}
-		\caption{Samples drawn from trained autoencoders}
+		\caption{Samples drawn from trained autoencoders. (a) --- an autoencoder with a smaller bottleneck layer, (b) --- an autoencoder with a bigger bottleneck layer}
 		\label{fig:ae-samples}
 	\end{center}
 \end{figure}
@@ -20,12 +20,12 @@ Since an autoencoder with bigger embedding size seems to be able to reconstruct 
 
 \begin{figure}[htb]
 	\begin{center}
-		\includegraphics[width=0.8\linewidth]{bilder/ae-embeddings/pca-umap-clusters.png}
-		\caption{Autoencoder embeddings after applying PCA with 10 components and UMAP afterwards. Earlier epoch vs.  later epoch.}\label{fig:ae-pca-umap-clustered}
+		\includegraphics[width=0.5\linewidth]{bilder/ae-embeddings/pca-umap-clusters.png}
+		\caption{Autoencoder embeddings after applying PCA and UMAP afterwards}\label{fig:ae-pca-umap-clustered}
 	\end{center}
 \end{figure}
 
-However, these two clusters are based neither on cell phenotypes nor on input corruption. All points of both phenotype as well as corruptions seem to be equally spread between two clusters. By looking at the images corresponding to each of the clusters it soon becomes apparent that the main difference between them is their brightness level. To prove this theory distributions of average image intensity of images in both clusters are presented in Figure \ref{fig:ae-brighter-darker}. In the violin plots we can see that the distribution of the crops on the left has a much lower brightness level than the distribution of the crops on the right.
+However, these two clusters are based neither on cell phenotypes nor on input corruption. All points of both phenotype as well as corruptions seem to be equally spread between two clusters. By looking at the images corresponding to each of the clusters it soon becomes apparent that the main difference between them is their brightness level.  To prove this theory distributions of average image intensity of images in both clusters are presented in Figure \ref{fig:ae-brighter-darker}. In the violin plots we can see that the distribution of the crops on the left has a much lower brightness level than the distribution of the crops on the right. However, it is hard to account for why the brightness were different, it might happed due to many different reasons, for example, the images might have been taken on different days when the microscopy lighting conditions might have been different.
 %\begin{figure}[htb]
 %	\begin{center}
 %		\includegraphics[width=0.5\linewidth]{bilder/ae-embeddings/pacmap.png}
@@ -33,7 +33,7 @@ However, these two clusters are based neither on cell phenotypes nor on input co
 %	\end{center}
 %\end{figure}
 
-\begin{figure}[H]
+\begin{figure}[htb]
 	\begin{center}
 		\includegraphics[width=0.5\linewidth]{bilder/ae-embeddings/brighter-darker.png}
 		\caption{Different in brightness in the clusters formed by an autoencoder embeddings in a two-dimensional space}

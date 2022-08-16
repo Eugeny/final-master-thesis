@@ -12,5 +12,32 @@
         \label{section:augments-againts-corruptions}
         \input{content/stability/augmentations.tex}
     \subsubsection{Generalizability across phenotypes}
-        TODO train the model on one phenotype and predict on the other, compare predictions (visually?)
-        postprocessing with metrics then?
+        \label{section:generalizability-across-phenotypes}
+        In order to evaluate how well a UNet model is able to generalize across different cell phenotypes the model was first trained on one cell phenotype only and then evaluated on the other cell phenotype. For this experiment CHOZN phenotype was chosen for model training with nuclei fluorescence target, whereas predictions evaluation was performed on PHX phenotype. The predictions were compared with the predictions of the model trained previously on both phenotypes. Comparison was performed both visually and via PCC for the biological metrics. The results in terms of the metrics clearly show the superiority of the model trained on both phenotypes, especially in terms of intensity predictions, where the PCC for the model trained on both phenotypes are almost $3\%$ better. The postprocessing procedures for both models remained the same.
+
+        \begin{table}[H]
+            \centering
+                \begin{tabularx}{\linewidth}{|Y|YY|}
+                    \hline
+                    & CHOZN and PHX & CHOZN \\\hline\hline
+                    Number of ER & 0.985 & 0.985 \\\hline
+                    Total intensity& 0.716 & 0.680\\\hline
+                    Mean intensity & 0.732 & 0.708\\\hline
+                    Area & 0.986 & 0.960 \\\hline
+                \end{tabularx}
+                \caption[Generalizability across phenotypes for nuclei predictions]%
+                {Generalizability across phenotypes for nuclei predictions. Comparison between the model trained on both phenotypes (CHOZN and PHX) and the model trained on CHOZN cells only in terms of bilogical metrics}
+                \label{table:phenotype-generalizability}
+        \end{table}
+        
+        From these results one can notice the general drop in performance on PHX phenotype even for the model that has had PHX cells in training (total intensity PCC for the whole dataset from Table \ref{table:nuclei-downstream-metrics-coefficients} was $0.861$ in comparsion to current $0.716$). The reason for that is generally lower number of PHX samples in nuclei training dataset ($\sim 30\%$).
+
+        Nevertheless, the visual evaluation of the predictions shows little to no difference between predictive models with model trained on both phenotypes giving slightly more details inside the nuclei (see Figure \ref{fig:generalizability}). From this comparsion it was concluded that the model is able to generalize from CHOZN to PHX phentype, however in general PHX phenotype seems to be slightly more challenging for predictions than CHOZN. 
+
+        \begin{figure}[htb]
+            \begin{center}
+                \includegraphics[width=\linewidth]{bilder/stability/generalizability-phenotypes/only-chozn.png}
+                \caption[Visual evaluation of the UNet generalization capabilities]%
+                {Visual evaluation of the UNet generalization capabilities. (a) --- ground truth fluorescence of nuclei target of PHX cells, (b) --- prediction of the model trained on both CHOZN and PHX cells, (c) --- prediction of the model trained on PHX cells only}\label{fig:generalizability}
+            \end{center}
+        \end{figure}
