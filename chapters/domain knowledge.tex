@@ -10,7 +10,7 @@ There are two very interesting for this research recent studies by \cite{Cheng_2
     
 All of the studies mentioned above, as well as this work rely on the premise that the input imaging type (here DIC) contains enough information to predict the fluorescence signal from it. This is a reasonable assumption because DIC, as well as bright-field and phase contrast imaging, are very often used for determining cell morphology (\cite{Kasprowicz_2017}).
 
-This chapter provides a brief overview of the biological background needed to understand the process of cell line development and the role of fluorescent \textit{in silico} labeling of DIC cell images within. It also covers the fundamentals of deep and machine learning techniques used here including clustering and dimensionality reduction approaches. At the end of the chapter, a brief summary of the microscopy image acquisition process used in the research is given.
+This chapter provides a brief overview of the biological background needed to understand the process of cell line development and the role of fluorescent \textit{in silico} labeling of DIC cell images within. It also covers the fundamentals of deep and machine learning techniques used here including clustering and dimensionality reduction approaches, as well as the basics behind drift detection algorithms. At the end of the chapter, a brief summary of the microscopy image acquisition process used in the research is given.
 
     \subsection{Biology}
         \subsubsection{Cell line development process}
@@ -24,6 +24,14 @@ This chapter provides a brief overview of the biological background needed to un
             \input{content/domain knowledge/dimentionality reduction.tex}
         \subsubsection{Clustering}
             \input{content/domain knowledge/clustering.tex}
+    \subsection{Drift detection basics}
+        Assume that during training labeled data comes from a distribution $p$, meaning $\{(x^{(1)}, y^{(1)}), ..., (x^{(n)}, y^{(n)})\} \sim p$ and during deployment unlabeled data comes from a distribution $q$, meaning $\{x^{(1)}\prime, ..., x^{(1)}\prime\} \sim q$. The goal of the drift detection is to determine if $q(x\prime)$ is the same data distribution as $p(x)$. Or, putting it more formally, determine which hypothesis holds: null-hypothesis $H_0$ and an alternative hypothesis $H_A$, where $H_0:p(x) = q(x)$ and $H_A:p(x) \neq q(x)$.
+        Having samples from both distributions or representation of these samples in lower dimension, one can then choose a statistical hypothesis test to compare these distributions (\cite{Muandet_2017}).
+        %\subsubsection{Drift detection vs. outliers detection}
+        \subsubsection{Kernel methods and two-sample testing}
+            \input{content/drift detection/kernel methods.tex}
+        \subsubsection{Maximum mean discrepancy for drift detection}
+            \input{content/drift detection/mmd.tex}
     \subsection{Imaging}
         \subsubsection{Digital imaging}
             \input{content/domain knowledge/digital imaging.tex}

@@ -6,7 +6,7 @@ The UNet embedding has a size of $16 \times 16 \times 256$ and can be flattened 
 	\caption{(a) PCA, (b) UMAP, (c) combination of PCA and UMAP with 10 and (d) 50 components}\label{fig:umap-pca-embeddings}
 \end{figure}
 
-In this case a two-dimensional representation was chosen. With the help of PCA, UMAP and their combination embeddings were projected into a 2D space. In Figure \ref{fig:umap-pca-embeddings} we can see the clouds of dots, where each dot represents a projected UNet embedding of a crop. Both research questions are addressed here: clustering based on phenotypes (CHOZN or PHX) and clustering based on input corruptions (defocus blur of severity level $4$). It is crucial here that corrupted data was not used in training of any of dimensionality reduction method. The goal was to use only the data available in training dataset, find the transformation of high-dimensional data into a lower-dimensional space and apply it to new samples. That is also why methods like t-sne \cite{t-sne} cannot be used here, because the transformation that t-sne learns cannot be applied to new samples. 
+In this case a two-dimensional representation was chosen. With the help of PCA, UMAP and their combination embeddings were projected into a 2D space. In Figure \ref{fig:umap-pca-embeddings} we can see the clouds of dots, where each dot represents a projected UNet embedding of a crop. Both research questions are addressed here: clustering based on phenotypes (CHOZN or PHX) and clustering based on input corruptions (defocus blur of severity level $4$). It is crucial here that corrupted data was not used in training of any of dimensionality reduction method. The goal was to use only the data available in training dataset, find the transformation of high-dimensional data into a lower-dimensional space and apply it to new samples. That is also why methods like t-sne (\cite{t-sne}) cannot be used here, because the transformation that t-sne learns cannot be applied to new samples. 
 
 From Figure \ref{fig:umap-pca-embeddings} it becomes evident that there is no clustering based on the phenotype. On the one hand, this means that it is not possible to detect phenotype based on the UNet embedding. But on the other hand, this also implies that PHX or CHOZn phenotypes do not influence the predictions so much supports previous conclusion from Section \ref{section:generalizability-across-phenotypes} that the model generalises well across them. 
 
@@ -20,3 +20,7 @@ In the Figure \ref{fig:umap-pca-embeddings} green corrupted dots seem to clump m
 \end{figure}
 
 A cluster of corrupted images is clearly present here, however it also intersects with many non-corrupted crops. The quantitative evaluation of how this cluster is separable from the rest of the points is provided in section \ref{section:clustering-on-unet-embeddings}. Although one can already state that there is a clear opportunity to differentiate between corrupted and not corrupted images, the accuracy cannot be high due to the clusters being not well separable. For further research it is suggested to additionally check whether clusters form into a high-dimensional space before projecting them into a 2D space. 
+
+\paragraph{Clustering with PaCMAP}
+\label{section:clustering-on-unet-embeddings}
+\input{content/unet-embeddings/unet-embeddings-clustering.tex}
