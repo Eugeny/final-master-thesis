@@ -1,8 +1,8 @@
-MMD algorithm in \textit{alibi-detect} library has an online version, which also presents an interest for our case. One of the main differences of an online drift detector is that it does not accept several inputs at once alerting whether they represent a drift all together, but it focuses on a single input at a time during its run. It assumes that there is a big dataset of reference data, that can be used as an example of a "correct" distribution and processes one embedding at a time. This single input would be sent into a test window where two-sample test-statistics (MMD essentially in this case) will be calculated. As soon as the test-statistic exceeds some pre-defined threshold a drift alert is send to the user. Apart from the threshold one has to define a so-called expected run-time (ERT). This time states how many inputs the detector should process on average before it makes a detection (false positive or true positive depending on which distributions the inputs were taken from). Another hyperparameter here is hidden in a size of a test-window. Becase the larger the window is, the more chance is there to detect a very slight drift, yet with a smaller window one gets a much faster response to severe drift. 
+MMD algorithm in \textit{alibi-detect} library has an online version, which also presents an interest for our case. One of the main differences of an online drift detector is that it does not accept several inputs at once alerting whether they represent a drift all together, but it focuses on a single input at a time during its run. It assumes that there is a big dataset of reference data, that can be used as an example of a "correct" distribution and processes one embedding at a time. This single input would be sent into a test window where two-sample test-statistics (MMD essentially in this case) will be calculated. As soon as the test-statistic exceeds some pre-defined threshold a drift alert is send to the user. Apart from the threshold one has to define a so-called expected run-time (ERT). This time states how many inputs the detector should process on average before it makes a detection (false positive or true positive depending on which distributions the inputs were taken from). Another hyperparameter here is a size of a test-window. Because the larger the window is, the more chance there is to detect a very slight drift, yet with a smaller window one gets a much faster response to severe drift. 
 
 It is usually recommened to reduce the dimensionality of the data before feeding it into the algorithm. But in this case the performance was exceptional even for high-dimensional embeddings of the UNET model. Nevertheless, there are also options on how to reduce the dimensionality of the data from the authors of the framework.
 
-This algorithm was trained on the same uncorrupted training data sent through the embeddings of a nucleus UNet. Yet, test crops are fed into a detector in a consecutive way --- in case of no corruptions present it is not enough to feed only several crops from one image, as the algorithm requires more data to be fed into the detector until it makes a decision. For example, ERT of not corrupted inputs can be even up to $180$ crops until a detector alerts a false positive detection. On the contrary for corrupted inputs drift detector needs normally $\leq 6$ crops (see Figure \ref{fig:online-ert})
+This algorithm was trained on the same uncorrupted training data sent through the embeddings of a nucleus UNet. Yet, test crops are fed into a detector in a consecutive way --- in case of no corruptions present it is not enough to feed only several crops from one image, as the algorithm requires more data to be fed into the detector until it makes a decision. For example, ERT of not corrupted inputs can reach a value up to $180$ crops until a detector alerts a false positive detection. On the contrary for corrupted inputs drift detector needs normally $\leq 6$ crops (see Figure \ref{fig:online-ert})
 \begin{figure}[htb]
 	\begin{center}
 		\includegraphics[width=0.6\linewidth]{bilder/drift-detection/online.png}
@@ -21,7 +21,7 @@ Having such a detector one measures ERTs for not corrupted inputs, then for corr
 
 \begin{table}[htb]
     \centering
-    \caption{Severity of corruptions on separability}
+    \caption{Severity of artificial defocus blur on separability}
         \begin{adjustbox}{width=0.4\textwidth}
             \begin{tabular}{|l||*{3}{c|}}\hline
                 \makebox{W}
@@ -39,7 +39,7 @@ Additionally, research has been performed on the influence of the hyperparameter
 
 \begin{table}[htb]
     \centering
-    \caption{Test window size influence on separability}
+    \caption{Test window size influence on separability (artificial defocus blur)}
         \begin{adjustbox}{width=0.6\textwidth}
             \begin{tabular}{|l||*{5}{c|}}\hline
                 \makebox{W}
@@ -57,7 +57,7 @@ Additionally, research has been performed on the influence of the hyperparameter
 
 \begin{table}[H]
     \centering
-    \caption{ERT influence on separability}
+    \caption{ERT influence on separability (artificial defocus blur)}
         \begin{adjustbox}{width=0.5\textwidth}
             \begin{tabular}{|l||*{4}{c|}}\hline
                 \makebox{W}
