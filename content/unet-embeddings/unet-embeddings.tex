@@ -1,4 +1,4 @@
-It is important that any image is fed into the network crop by crop, meaning that for each crop there is a separate embedding. In this section crops embeddings were not combined in any way together and were analysed separately. However, it is strongly recommended for a further research to evaluate all the experiments by finding projections in a lower-dimensional space not only of separate crops, but of the image as a whole. For example, by simply averaging embeddings for all crops from the same image. In all experiments here a model trained on nuclei dataset was used.
+It is important that any image is fed into the network crop by crop, meaning that for each crop there is a separate embedding. In this section crops embeddings were not combined in any way together and were analysed separately.
 
 The UNet embedding has a size of $16 \times 16 \times 256$ and can be flattened into a $655536$-dimensional vector. In order to comprehend the embeddings for us as humans, a dimensionality reduction algorithm has to be applied. One option would be to compress a vector to 2D or 3D representation, which is easily comprehendable by humans.
 \begin{figure}[htb]

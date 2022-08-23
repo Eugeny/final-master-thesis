@@ -60,7 +60,7 @@ There were other interesting approaches in asymmetrical losses tested that are d
 5. This improves the asymmetry approach 3, however now the highlighted regions simply include the whole cell.
 \begin{align}
 	&L_{i, j} = \left(Y_{i, j} - \hat{Y}_{i, j}\right)^2 * Y_{i, j} \\
-	&L = \frac{\sum\limits_i\sum\limits_j Y_{i, j}}{\sum\limits_i\sum\limits_j \hat{Y}_{i, j}}
+	&L = \frac{\sum\limits_{i, j}{L_{i, j} }}{N^2} +  \frac{\sum\limits_i\sum\limits_j Y_{i, j}}{\sum\limits_i\sum\limits_j \hat{Y}_{i, j}}
 \end{align}
 6. Usual MSE.
 
