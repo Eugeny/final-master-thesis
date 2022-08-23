@@ -34,28 +34,19 @@ SVM on Unet embeddings will give good Results fast
 
 Straightforward blur detection with Laplacian https://pyimagesearch.com/2015/09/07/blur-detection-with-opencv/
 
-Violin plots of ERTs
-
-nuclei troubles in predictions, add gournd truth and predict labels
 
 CONCLUSIONS
 using several scalings from in silico paper might help, but use the normal downstream metrics from Cohen paper
-CSI for for ood detection
 
 Use combined unet of several fluorescence outputs
 
 Non specific binding is the problem for Golgi
 
 
-Use a bigger model to to get more details
-
 Nice phrases rely on the premise that 
 N. N. Boustany, S. A. Boppart, V. Backman, Microscopic imaging and spectroscopy with scattered light. Annu. Rev. Biomed. Eng. 12, 285–314 (2010).
 "Our work relies on the premise that label-free scattering-based microscopy captures rich structural information and can be effective to characterize cell morphological features":
 
-Embeddings can be used as the input to the stability predictor (Gianni's presentation).
-
-add adam optim definition
 
 make the first loss for golgi worse
 change er no overfit with strong regularization plot

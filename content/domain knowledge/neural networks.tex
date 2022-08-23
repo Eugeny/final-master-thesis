@@ -118,8 +118,7 @@ Here one can obtain an unbiased estimator of a true gradient on a mini-batch of 
 	An Adadelta optimizer is a more sophisticated optimization technique, that follows algorithm \ref{alg:adadelta} for the parameter update.
 	\begin{algorithm}[H]
 		\caption{Adadelta optimization}\label{alg:adadelta}
-		\item 1. $E[g]^2_0 = 0$ and $E[\Delta \theta^2]_0 = 0$
-		In order to update the parameters one needs to:
+		\item 1. Initialize: $E[g]^2_0 = 0$ and $E[\Delta \theta^2]_0 = 0$
 		\item 2. Compute gradient: $g_t$
 		\item 3. Accumulate gradient: $E[g]^2_t = \rho E[g]^2_{t - 1} + (1 - \rho)g_t^2$
 		\item 4. Compute update: $\Delta \theta_t = \frac{\text{RMS}[\Delta \theta]_{t-1}}{\text{RMS}[g]_t} \hat{g_t}$
